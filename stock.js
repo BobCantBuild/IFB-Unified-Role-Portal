@@ -1,11 +1,11 @@
-/* ═══════════════════════════════════════════════════════
-   IFB Unified Role Portal — stock.js
-   CHANGE THE URL BELOW to your actual Vercel project URL
-═══════════════════════════════════════════════════════ */
+// const PROXY_URL = "https://ifb-unified-role-portal.vercel.app/api/stock";
+
+
+
 (function () {
 
-  const PROXY_URL = "https://ifb-unified-role-portal.vercel.app/api/stock";
-  // ↑↑↑ Replace YOUR-PROJECT with your actual Vercel project name
+  const PROXY_URL = "https://YOUR-PROJECT.vercel.app/api/stock";
+  // ↑↑↑ Keep your actual Vercel URL here
 
   const widgetEl = document.getElementById("widget-stock");
   if (!widgetEl) return;
@@ -44,6 +44,7 @@
     </div>
   `;
 
+  /* ── Helpers ── */
   function nowIST() {
     const n = new Date();
     return new Date(n.getTime() + n.getTimezoneOffset() * 60000 + 19800000);
@@ -81,18 +82,43 @@
     e.textContent = msg || ""; e.style.display = msg ? "inline" : "none";
   }
 
+  /* ── Flash animation on price change ── */
+  let lastNSE = null, lastBSE = null;
+  function flashPrice(id, newVal, oldVal) {
+    const el = document.getElementById(id);
+    if (!el || oldVal === null) return;
+    if (newVal === oldVal) return;
+    const cls = newVal > oldVal ? "flash-up" : "flash-dn";
+    el.classList.remove("flash-up", "flash-dn");
+    void el.offsetWidth; // force reflow to restart animation
+    el.classList.add(cls);
+    setTimeout(() => el.classList.remove(cls), 800);
+  }
+
+  /* ── Chart ── */
   const canvas = document.getElementById("ifb-chart");
   let   chart  = null;
   const cData  = { labels: [], nse: [], bse: [] };
 
+  function computeYRange() {
+    const all = [...cData.nse, ...cData.bse].filter(v => v != null && !isNaN(v));
+    if (all.length < 2) return null;
+    const mn = Math.min(...all);
+    const mx = Math.max(...all);
+    const pad = Math.max((mx - mn) * 0.3, 2); // 30% padding or min ₹2
+    return { min: Math.floor(mn - pad), max: Math.ceil(mx + pad) };
+  }
+
   function initChart() {
     if (!window.Chart || !canvas || chart) return;
     const ctx = canvas.getContext("2d");
-    const g1  = ctx.createLinearGradient(0, 0, 0, 150);
-    g1.addColorStop(0, "rgba(0,111,143,0.28)");
+
+    const g1 = ctx.createLinearGradient(0, 0, 0, 160);
+    g1.addColorStop(0, "rgba(0,111,143,0.35)");
     g1.addColorStop(1, "rgba(0,111,143,0.02)");
-    const g2  = ctx.createLinearGradient(0, 0, 0, 150);
-    g2.addColorStop(0, "rgba(26,135,84,0.18)");
+
+    const g2 = ctx.createLinearGradient(0, 0, 0, 160);
+    g2.addColorStop(0, "rgba(26,135,84,0.22)");
     g2.addColorStop(1, "rgba(26,135,84,0.02)");
 
     chart = new window.Chart(ctx, {
@@ -100,49 +126,89 @@
       data: {
         labels: cData.labels,
         datasets: [
-          { label: "NSE", data: cData.nse, borderColor: "#006f8f", borderWidth: 2,
-            backgroundColor: g1, pointRadius: 0, tension: 0.4, fill: true },
-          { label: "BSE", data: cData.bse, borderColor: "#1a8754", borderWidth: 1.5,
-            backgroundColor: g2, pointRadius: 0, tension: 0.4, fill: true }
+          {
+            label: "NSE",
+            data: cData.nse,
+            borderColor: "#006f8f",
+            borderWidth: 2,
+            backgroundColor: g1,
+            pointRadius: 0,
+            pointHoverRadius: 4,
+            tension: 0.4,
+            fill: true
+          },
+          {
+            label: "BSE",
+            data: cData.bse,
+            borderColor: "#1a8754",
+            borderWidth: 1.5,
+            backgroundColor: g2,
+            pointRadius: 0,
+            pointHoverRadius: 4,
+            tension: 0.4,
+            fill: true
+          }
         ]
       },
       options: {
-        responsive: true, maintainAspectRatio: false, animation: false,
+        responsive: true,
+        maintainAspectRatio: false,
+        animation: { duration: 300, easing: "easeOutQuart" },
         interaction: { mode: "index", intersect: false },
         plugins: {
-          legend: { display: true, position: "top",
-            labels: { boxWidth: 10, font: { size: 10 }, color: "#547086", padding: 10 } },
-          tooltip: { callbacks: {
-            label: c => ` ${c.dataset.label}: ₹${Number(c.parsed.y).toLocaleString("en-IN", { minimumFractionDigits: 2 })}`
-          }}
+          legend: {
+            display: true, position: "top",
+            labels: { boxWidth: 10, font: { size: 10 }, color: "#547086", padding: 10 }
+          },
+          tooltip: {
+            callbacks: {
+              label: c => ` ${c.dataset.label}: ₹${Number(c.parsed.y).toLocaleString("en-IN", { minimumFractionDigits: 2 })}`
+            }
+          }
         },
         scales: {
-          x: { ticks: { maxTicksLimit: 5, font: { size: 9 }, color: "#7a9aaa" },
-               grid: { color: "rgba(0,111,143,0.07)" } },
-          y: { ticks: { font: { size: 9 }, color: "#7a9aaa",
-               callback: v => "₹" + Number(v).toLocaleString("en-IN", { minimumFractionDigits: 0 }) },
-               grid: { color: "rgba(0,111,143,0.07)" } }
+          x: {
+            ticks: { maxTicksLimit: 4, font: { size: 9 }, color: "#7a9aaa" },
+            grid:  { color: "rgba(0,111,143,0.06)" }
+          },
+          y: {
+            ticks: {
+              font: { size: 9 }, color: "#7a9aaa", maxTicksLimit: 5,
+              callback: v => "₹" + Number(v).toLocaleString("en-IN", { maximumFractionDigits: 0 })
+            },
+            grid: { color: "rgba(0,111,143,0.06)" }
+          }
         }
       }
     });
   }
 
   function pushChart(nseP, bseP) {
-    if (cData.labels.length >= 150) {
+    if (cData.labels.length >= 300) {
       cData.labels.shift(); cData.nse.shift(); cData.bse.shift();
     }
     cData.labels.push(timeLbl());
     cData.nse.push(nseP);
     cData.bse.push(bseP);
-    if (chart) chart.update("none");
+
+    if (chart) {
+      // Apply tight Y range based on actual data
+      const range = computeYRange();
+      if (range) {
+        chart.options.scales.y.min = range.min;
+        chart.options.scales.y.max = range.max;
+      }
+      chart.update("none");
+    }
   }
 
+  /* ── Fetch ── */
   async function fetchExch(exch) {
     const r   = await fetch(PROXY_URL + "?exch=" + exch, { cache: "no-store" });
     if (!r.ok) throw new Error("Proxy error " + r.status);
     const j   = await r.json();
     const res = j?.chart?.result?.[0];
-    if (!res) throw new Error(j?.chart?.error?.description || "No data returned");
+    if (!res) throw new Error(j?.chart?.error?.description || "No data");
     const m    = res.meta;
     const prev = m.chartPreviousClose ?? m.regularMarketPrice;
     const last = m.regularMarketPrice;
@@ -157,6 +223,7 @@
     };
   }
 
+  /* ── Main tick ── */
   async function tick() {
     const open  = isMarketOpen();
     const badge = document.getElementById("mkt-badge");
@@ -166,6 +233,13 @@
     }
     try {
       const [nse, bse] = await Promise.all([fetchExch("nse"), fetchExch("bse")]);
+
+      /* Flash on change */
+      flashPrice("nse-price", nse.last, lastNSE);
+      flashPrice("bse-price", bse.last, lastBSE);
+      lastNSE = nse.last;
+      lastBSE = bse.last;
+
       setText("nse-price", rupee(nse.last));
       setText("bse-price", rupee(bse.last));
       setChg("nse-chg", nse.chg, nse.pct);
@@ -175,19 +249,27 @@
       setText("s-low",  rupee(nse.low));
       setText("s-prev", rupee(nse.prev));
       setText("s-vol",  shortVol(nse.vol));
+
       if (!chart && window.Chart) initChart();
       pushChart(nse.last, bse.last);
+
       setText("s-upd", "Updated " + timeLbl() + " IST");
       showErr("");
+
     } catch (err) {
       showErr("⚠ " + err.message);
-      setText("s-upd", "Retrying in 60s…");
+      setText("s-upd", "Retrying…");
     }
   }
 
-  const s = document.createElement("script");
-  s.src   = "https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js";
-  s.onload = () => { initChart(); tick(); setInterval(tick, 60000); };
+  /* ── Boot ── */
+  const s   = document.createElement("script");
+  s.src     = "https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js";
+  s.onload  = () => {
+    initChart();
+    tick();
+    setInterval(tick, 5000); // every 5 seconds
+  };
   document.head.appendChild(s);
 
 })();

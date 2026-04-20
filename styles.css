@@ -230,3 +230,15 @@ body {
   .widget-column { flex-direction: column; }
   .widget-card   { flex: unset; }
 }
+
+/* ── Price flash on update ── */
+@keyframes flashUp {
+  0%   { background: rgba(26,135,84,0.35); border-radius: 4px; }
+  100% { background: transparent; }
+}
+@keyframes flashDn {
+  0%   { background: rgba(192,57,43,0.25); border-radius: 4px; }
+  100% { background: transparent; }
+}
+.flash-up { animation: flashUp 0.8s ease-out forwards; }
+.flash-dn { animation: flashDn 0.8s ease-out forwards; }
