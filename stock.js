@@ -4,7 +4,7 @@
 ═══════════════════════════════════════════════════════ */
 (function () {
 
-  const PROXY_URL = "https://YOUR-PROJECT.vercel.app/api/stock";
+  const PROXY_URL = "https://ifb-unified-role-portal.vercel.app/api/stock";
   // ↑↑↑ Replace YOUR-PROJECT with your actual Vercel project name
 
   const widgetEl = document.getElementById("widget-stock");
