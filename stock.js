@@ -186,35 +186,44 @@
   /* ── Seed: anchor to LAST available data, not current clock ── */
   let seeded = false;
 
-  function seedHistory(raw) {
+function seedHistory(raw) {
     const timestamps = raw.timestamp || [];
     const closes     = raw.indicators?.quote?.[0]?.close || [];
     if (!timestamps.length) return;
 
-    /* Step 1: collect all non-null points for today */
+    /* Collect all non-null points */
     const allPts = [];
     for (let i = 0; i < timestamps.length; i++) {
       const val = closes[i];
       if (val != null && !isNaN(val)) {
-        allPts.push({ ts: timestamps[i], label: tsToIST(timestamps[i]), price: parseFloat(val.toFixed(2)) });
+        allPts.push({
+          ts    : timestamps[i],
+          label : tsToIST(timestamps[i]),
+          price : parseFloat(val.toFixed(2))
+        });
       }
     }
     if (!allPts.length) return;
 
-    /* Step 2: anchor to last available data point (works during market AND after close) */
-    const lastTs    = allPts[allPts.length - 1].ts;
-    const hrAgoTs   = lastTs - 3600;
+    /* Anchor 1hr window to last available data (works after market close too) */
+    const lastTs  = allPts[allPts.length - 1].ts;
+    const hrAgoTs = lastTs - 3600;
+    const slice   = allPts.filter(p => p.ts >= hrAgoTs && p.ts <= lastTs).slice(-MAX_PTS);
+    if (!slice.length) return;
 
-    /* Step 3: keep only points within 1hr window ending at last data */
-    const window1hr = allPts.filter(p => p.ts >= hrAgoTs && p.ts <= lastTs);
-    if (!window1hr.length) return;
+    /* ✅ MUTATE in-place — do NOT reassign cData.nse/bse/labels
+       Chart.js holds a reference to these arrays.
+       Reassigning breaks that reference and chart shows nothing. */
+    cData.labels.length = 0;
+    cData.nse.length    = 0;
+    cData.bse.length    = 0;
 
-    const slice      = window1hr.slice(-MAX_PTS);
-    cData.labels     = slice.map(p => p.label);
-    cData.nse        = slice.map(p => p.price);
-    cData.bse        = slice.map(p => p.price);
+    slice.forEach(p => {
+      cData.labels.push(p.label);
+      cData.nse.push(p.price);
+      cData.bse.push(p.price);
+    });
   }
-
   /* ── Push live tick ── */
   function pushTick(nseP, bseP) {
     const lbl     = nowHHMM();
