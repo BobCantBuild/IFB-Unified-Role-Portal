@@ -2,7 +2,6 @@
 (function () {
 
   const PROXY_URL = "https://ifb-unified-role-portal.vercel.app/api/stock";
-  // ↑↑↑ Your actual Vercel URL
 
   const widgetEl = document.getElementById("widget-stock");
   if (!widgetEl) return;
@@ -30,18 +29,18 @@
       <div class="s-ohlc-cell"><span class="s-ok">High</span><span class="s-ov hi" id="s-high">—</span></div>
       <div class="s-ohlc-cell"><span class="s-ok">Low</span> <span class="s-ov lo" id="s-low">—</span></div>
       <div class="s-ohlc-cell"><span class="s-ok">Prev</span><span class="s-ov"    id="s-prev">—</span></div>
-      <div class="s-ohlc-cell"><span class="s-ok">Vol</span> <span class="s-ov"    id="s-vol">—</span></div>
     </div>
     <div class="s-chart-wrap">
       <canvas id="ifb-chart"></canvas>
     </div>
     <div class="s-foot">
       <span id="s-upd">Loading…</span>
+      <span class="s-vol-lbl">Vol: <span id="s-vol">—</span></span>
       <span id="s-err" class="s-err-msg"></span>
     </div>
   `;
 
-  /* ── Time helpers — pure UTC, no browser timezone ── */
+  /* ── Time helpers ── */
   function nowIST() {
     return new Date(Date.now() + 5.5 * 3600 * 1000);
   }
@@ -56,7 +55,6 @@
            String(t.getUTCMinutes()).padStart(2, "0") + ":" +
            String(t.getUTCSeconds()).padStart(2, "0");
   }
-  /* Yahoo Unix UTC → IST HH:MM label */
   function tsToIST(unix) {
     const d = new Date(unix * 1000 + 5.5 * 3600 * 1000);
     return String(d.getUTCHours()).padStart(2, "0") + ":" +
@@ -183,15 +181,14 @@
     });
   }
 
-  /* ── Seed: anchor to LAST available data, not current clock ── */
+  /* ── Seed history ── */
   let seeded = false;
 
-function seedHistory(raw) {
+  function seedHistory(raw) {
     const timestamps = raw.timestamp || [];
     const closes     = raw.indicators?.quote?.[0]?.close || [];
     if (!timestamps.length) return;
 
-    /* Collect all non-null points */
     const allPts = [];
     for (let i = 0; i < timestamps.length; i++) {
       const val = closes[i];
@@ -205,26 +202,23 @@ function seedHistory(raw) {
     }
     if (!allPts.length) return;
 
-    /* Anchor 1hr window to last available data (works after market close too) */
     const lastTs  = allPts[allPts.length - 1].ts;
     const hrAgoTs = lastTs - 3600;
     const slice   = allPts.filter(p => p.ts >= hrAgoTs && p.ts <= lastTs).slice(-MAX_PTS);
     if (!slice.length) return;
 
-    /* ✅ MUTATE in-place — do NOT reassign cData.nse/bse/labels
-       Chart.js holds a reference to these arrays.
-       Reassigning breaks that reference and chart shows nothing. */
+    /* Mutate in-place — do NOT reassign or Chart.js loses reference */
     cData.labels.length = 0;
     cData.nse.length    = 0;
     cData.bse.length    = 0;
-
     slice.forEach(p => {
       cData.labels.push(p.label);
       cData.nse.push(p.price);
       cData.bse.push(p.price);
     });
   }
-  /* ── Push live tick ── */
+
+  /* ── Live tick ── */
   function pushTick(nseP, bseP) {
     const lbl     = nowHHMM();
     const lastLbl = cData.labels[cData.labels.length - 1];
@@ -260,8 +254,8 @@ function seedHistory(raw) {
     return {
       last, prev,
       open : m.regularMarketOpen
-       ?? res.indicators?.quote?.[0]?.open?.find(v => v != null)
-       ?? prev,
+             ?? res.indicators?.quote?.[0]?.open?.find(v => v != null)
+             ?? prev,
       high : m.regularMarketDayHigh,
       low  : m.regularMarketDayLow,
       vol  : m.regularMarketVolume,

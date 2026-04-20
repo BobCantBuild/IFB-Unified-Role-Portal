@@ -2,6 +2,7 @@
    IFB Unified Role Portal — styles.css
 ═══════════════════════════════════════════════════════ */
 
+
 :root {
   --bg:           #eef4f7;
   --panel:        #ffffff;
@@ -20,7 +21,9 @@
   --radius:       14px;
 }
 
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -30,10 +33,12 @@ body {
   font-size: 14px;
 }
 
+
 .page-shell {
   width: min(1320px, 95%);
   margin: 28px auto 48px;
 }
+
 
 /* ── Topbar ── */
 .topbar { margin-bottom: 22px; }
@@ -46,6 +51,7 @@ body {
 .subtitle   { margin-top: 5px; color: var(--subtle); font-size: 0.88rem; }
 .topbar-logo { flex-shrink: 0; }
 
+
 /* ── 3-col layout ── */
 .main-layout {
   display: grid;
@@ -53,6 +59,7 @@ body {
   gap: 18px;
   align-items: start;
 }
+
 
 /* ── Generic panel ── */
 .panel {
@@ -64,6 +71,7 @@ body {
 }
 .panel h2 { font-size: 1rem; margin-bottom: 6px; }
 .help-text { color: var(--subtle); font-size: 0.82rem; margin-bottom: 14px; }
+
 
 /* ── Role list ── */
 .role-list { display: flex; flex-direction: column; gap: 8px; }
@@ -81,6 +89,7 @@ body {
 }
 .role-btn:hover  { border-color: #9bc9d5; transform: translateY(-1px); }
 .role-btn.active { background: var(--accent-soft); border-color: var(--accent); color: #003a4d; }
+
 
 /* ── Links panel ── */
 .links-header {
@@ -129,6 +138,7 @@ body {
 }
 .open-btn:hover { color: #004f6a; text-decoration: underline; }
 
+
 /* ═══════════════════════════════════════════════════════
    WIDGET COLUMN
 ═══════════════════════════════════════════════════════ */
@@ -157,6 +167,7 @@ body {
   color: var(--subtle); font-size: 0.82rem; text-align: center;
 }
 
+
 /* ═══════════════════════════════════════════════════════
    STOCK WIDGET  (built by stock.js)
 ═══════════════════════════════════════════════════════ */
@@ -168,6 +179,7 @@ body {
 .s-badge-live   { background: #d6f4e5; color: #1a8754; border-color: #a8dfc7; }
 .s-badge-closed { background: #fff3cd; color: #856404; border-color: #ffe08a; }
 
+/* NSE / BSE price row */
 .s-exch-row {
   display: flex; align-items: stretch;
   background: var(--widget-bg); border: 1px solid var(--widget-bdr);
@@ -186,26 +198,45 @@ body {
   font-size: 1.16rem; font-weight: 800;
   font-variant-numeric: tabular-nums; color: var(--text); line-height: 1.1;
 }
-.s-exch-chg { font-size: 0.68rem; font-weight: 600; font-variant-numeric: tabular-nums; min-height: 14px; }
+.s-exch-chg {
+  font-size: 0.68rem; font-weight: 600;
+  font-variant-numeric: tabular-nums; min-height: 14px;
+}
 .s-exch-chg.up { color: var(--up); }
 .s-exch-chg.dn { color: var(--dn); }
 
+/* ── OHLC — 4 equal boxes, fills full container width ── */
 .s-ohlc {
-  display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  width: 100%;
 }
 .s-ohlc-cell {
-  display: flex; flex-direction: column; align-items: center;
-  background: var(--widget-bg); border: 1px solid var(--widget-bdr);
-  border-radius: 8px; padding: 5px 3px;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  background: var(--widget-bg);
+  border: 1px solid var(--widget-bdr);
+  border-radius: 8px;
+  padding: 6px 4px;
+  min-width: 0;
 }
 .s-ok {
   font-size: 0.58rem; font-weight: 700; color: var(--subtle);
   letter-spacing: 0.06em; text-transform: uppercase;
+  margin-bottom: 2px; white-space: nowrap;
 }
-.s-ov { font-size: 0.74rem; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--text); }
+.s-ov {
+  font-size: 0.74rem; font-weight: 700;
+  font-variant-numeric: tabular-nums; color: var(--text);
+  white-space: nowrap; overflow: hidden;
+  text-overflow: ellipsis; max-width: 100%;
+  text-align: center;
+}
 .s-ov.hi { color: var(--up); }
 .s-ov.lo { color: var(--dn); }
 
+/* Chart */
 .s-chart-wrap {
   position: relative; height: 170px;
   background: var(--widget-bg); border: 1px solid var(--widget-bdr);
@@ -213,11 +244,22 @@ body {
 }
 .s-chart-wrap canvas { display: block; width: 100% !important; height: 100% !important; }
 
+/* Footer — timestamp left, vol right */
 .s-foot {
   display: flex; justify-content: space-between; align-items: center;
   font-size: 0.62rem; color: var(--subtle);
 }
+.s-vol-lbl {
+  font-size: 0.62rem;
+  color: var(--subtle);
+  white-space: nowrap;
+}
+.s-vol-lbl span {
+  font-weight: 700;
+  color: var(--text);
+}
 .s-err-msg { color: var(--dn); font-size: 0.62rem; display: none; }
+
 
 /* ── Responsive ── */
 @media (max-width: 1060px) {
@@ -230,6 +272,7 @@ body {
   .widget-column { flex-direction: column; }
   .widget-card   { flex: unset; }
 }
+
 
 /* ── Price flash ── */
 @keyframes flashUp {
