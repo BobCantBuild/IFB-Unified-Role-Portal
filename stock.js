@@ -1,7 +1,5 @@
 // const PROXY_URL = "https://ifb-unified-role-portal.vercel.app/api/stock";
 
-
-
 (function () {
 
   const PROXY_URL = "https://ifb-unified-role-portal.vercel.app/api/stock";
@@ -68,44 +66,60 @@
   function timeLbl() {
     return nowIST().toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
   }
-  function setText(id, v) {
-    const e = document.getElementById(id); if (e) e.textContent = v;
-  }
-  function setChg(id, chg, pct) {
-    const el = document.getElementById(id); if (!el) return;
-    const sign = chg >= 0 ? "+" : "";
-    el.textContent = `${sign}${Number(chg).toFixed(2)} (${sign}${Number(pct).toFixed(2)}%)`;
-    el.className   = "s-exch-chg " + (chg > 0 ? "up" : chg < 0 ? "dn" : "");
-  }
-  function showErr(msg) {
-    const e = document.getElementById("s-err"); if (!e) return;
-    e.textContent = msg || ""; e.style.display = msg ? "inline" : "none";
+
+  /* ── Set text ── */
+  function setText(id, val) {
+    const el = document.getElementById(id);
+    if (el) el.textContent = val;
   }
 
-  /* ── Flash animation on price change ── */
-  let lastNSE = null, lastBSE = null;
-  function flashPrice(id, newVal, oldVal) {
+  /* ── Set change text + color ── */
+  function setChg(id, chg, pct) {
     const el = document.getElementById(id);
-    if (!el || oldVal === null) return;
-    if (newVal === oldVal) return;
-    const cls = newVal > oldVal ? "flash-up" : "flash-dn";
-    el.classList.remove("flash-up", "flash-dn");
-    void el.offsetWidth; // force reflow to restart animation
-    el.classList.add(cls);
-    setTimeout(() => el.classList.remove(cls), 800);
+    if (!el) return;
+    const sign = chg >= 0 ? "+" : "";
+    el.textContent = `${sign}${chg.toFixed(2)} (${sign}${pct.toFixed(2)}%)`;
+    el.className = "s-exch-chg " + (chg > 0 ? "up" : chg < 0 ? "dn" : "");
+  }
+
+  /* ── Flash: set text FIRST, then animate ── */
+  let lastNSE = null, lastBSE = null;
+
+  function setAndFlash(id, newVal, oldVal, displayText) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.textContent = displayText; // write value first
+    if (oldVal !== null && newVal !== oldVal) {
+      const cls = newVal > oldVal ? "flash-up" : "flash-dn";
+      el.classList.remove("flash-up", "flash-dn");
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          el.classList.add(cls);
+          setTimeout(() => el.classList.remove(cls), 800);
+        });
+      });
+    }
+  }
+
+  /* ── Error display ── */
+  function showErr(msg) {
+    const el = document.getElementById("s-err");
+    if (!el) return;
+    el.textContent = msg || "";
+    el.style.display = msg ? "inline" : "none";
   }
 
   /* ── Chart ── */
   const canvas = document.getElementById("ifb-chart");
-  let   chart  = null;
-  const cData  = { labels: [], nse: [], bse: [] };
+  let chart = null;
+  const cData = { labels: [], nse: [], bse: [] };
 
-  function computeYRange() {
+  function getYRange() {
     const all = [...cData.nse, ...cData.bse].filter(v => v != null && !isNaN(v));
     if (all.length < 2) return null;
-    const mn = Math.min(...all);
-    const mx = Math.max(...all);
-    const pad = Math.max((mx - mn) * 0.3, 2); // 30% padding or min ₹2
+    const mn  = Math.min(...all);
+    const mx  = Math.max(...all);
+    const pad = Math.max((mx - mn) * 0.4, 3);
     return { min: Math.floor(mn - pad), max: Math.ceil(mx + pad) };
   }
 
@@ -113,13 +127,13 @@
     if (!window.Chart || !canvas || chart) return;
     const ctx = canvas.getContext("2d");
 
-    const g1 = ctx.createLinearGradient(0, 0, 0, 160);
-    g1.addColorStop(0, "rgba(0,111,143,0.35)");
-    g1.addColorStop(1, "rgba(0,111,143,0.02)");
+    const g1 = ctx.createLinearGradient(0, 0, 0, 165);
+    g1.addColorStop(0, "rgba(0,111,143,0.38)");
+    g1.addColorStop(1, "rgba(0,111,143,0.01)");
 
-    const g2 = ctx.createLinearGradient(0, 0, 0, 160);
+    const g2 = ctx.createLinearGradient(0, 0, 0, 165);
     g2.addColorStop(0, "rgba(26,135,84,0.22)");
-    g2.addColorStop(1, "rgba(26,135,84,0.02)");
+    g2.addColorStop(1, "rgba(26,135,84,0.01)");
 
     chart = new window.Chart(ctx, {
       type: "line",
@@ -127,33 +141,23 @@
         labels: cData.labels,
         datasets: [
           {
-            label: "NSE",
-            data: cData.nse,
-            borderColor: "#006f8f",
-            borderWidth: 2,
-            backgroundColor: g1,
-            pointRadius: 0,
-            pointHoverRadius: 4,
-            tension: 0.4,
-            fill: true
+            label: "NSE", data: cData.nse,
+            borderColor: "#006f8f", borderWidth: 2,
+            backgroundColor: g1, pointRadius: 0,
+            pointHoverRadius: 4, tension: 0.4, fill: true
           },
           {
-            label: "BSE",
-            data: cData.bse,
-            borderColor: "#1a8754",
-            borderWidth: 1.5,
-            backgroundColor: g2,
-            pointRadius: 0,
-            pointHoverRadius: 4,
-            tension: 0.4,
-            fill: true
+            label: "BSE", data: cData.bse,
+            borderColor: "#1a8754", borderWidth: 1.5,
+            backgroundColor: g2, pointRadius: 0,
+            pointHoverRadius: 4, tension: 0.4, fill: true
           }
         ]
       },
       options: {
         responsive: true,
         maintainAspectRatio: false,
-        animation: { duration: 300, easing: "easeOutQuart" },
+        animation: { duration: 250, easing: "easeOutQuart" },
         interaction: { mode: "index", intersect: false },
         plugins: {
           legend: {
@@ -173,7 +177,7 @@
           },
           y: {
             ticks: {
-              font: { size: 9 }, color: "#7a9aaa", maxTicksLimit: 5,
+              maxTicksLimit: 5, font: { size: 9 }, color: "#7a9aaa",
               callback: v => "₹" + Number(v).toLocaleString("en-IN", { maximumFractionDigits: 0 })
             },
             grid: { color: "rgba(0,111,143,0.06)" }
@@ -190,10 +194,8 @@
     cData.labels.push(timeLbl());
     cData.nse.push(nseP);
     cData.bse.push(bseP);
-
     if (chart) {
-      // Apply tight Y range based on actual data
-      const range = computeYRange();
+      const range = getYRange();
       if (range) {
         chart.options.scales.y.min = range.min;
         chart.options.scales.y.max = range.max;
@@ -202,13 +204,14 @@
     }
   }
 
-  /* ── Fetch ── */
+  /* ── Fetch one exchange ── */
   async function fetchExch(exch) {
-    const r   = await fetch(PROXY_URL + "?exch=" + exch, { cache: "no-store" });
-    if (!r.ok) throw new Error("Proxy error " + r.status);
-    const j   = await r.json();
+    const r = await fetch(PROXY_URL + "?exch=" + exch, { cache: "no-store" });
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    const j = await r.json();
+    if (j.error) throw new Error(j.error);
     const res = j?.chart?.result?.[0];
-    if (!res) throw new Error(j?.chart?.error?.description || "No data");
+    if (!res) throw new Error("No data");
     const m    = res.meta;
     const prev = m.chartPreviousClose ?? m.regularMarketPrice;
     const last = m.regularMarketPrice;
@@ -225,31 +228,35 @@
 
   /* ── Main tick ── */
   async function tick() {
+    /* Market badge */
     const open  = isMarketOpen();
     const badge = document.getElementById("mkt-badge");
     if (badge) {
       badge.textContent = open ? "● Live" : "● Closed";
       badge.className   = "s-badge " + (open ? "s-badge-live" : "s-badge-closed");
     }
+
     try {
       const [nse, bse] = await Promise.all([fetchExch("nse"), fetchExch("bse")]);
 
-      /* Flash on change */
-      flashPrice("nse-price", nse.last, lastNSE);
-      flashPrice("bse-price", bse.last, lastBSE);
+      /* Prices with flash */
+      setAndFlash("nse-price", nse.last, lastNSE, rupee(nse.last));
+      setAndFlash("bse-price", bse.last, lastBSE, rupee(bse.last));
       lastNSE = nse.last;
       lastBSE = bse.last;
 
-      setText("nse-price", rupee(nse.last));
-      setText("bse-price", rupee(bse.last));
+      /* Change */
       setChg("nse-chg", nse.chg, nse.pct);
       setChg("bse-chg", bse.chg, bse.pct);
+
+      /* OHLC */
       setText("s-open", rupee(nse.open));
       setText("s-high", rupee(nse.high));
       setText("s-low",  rupee(nse.low));
       setText("s-prev", rupee(nse.prev));
       setText("s-vol",  shortVol(nse.vol));
 
+      /* Chart */
       if (!chart && window.Chart) initChart();
       pushChart(nse.last, bse.last);
 
@@ -263,13 +270,10 @@
   }
 
   /* ── Boot ── */
-  const s   = document.createElement("script");
-  s.src     = "https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js";
-  s.onload  = () => {
-    initChart();
-    tick();
-    setInterval(tick, 5000); // every 5 seconds
-  };
+  const s  = document.createElement("script");
+  s.src    = "https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js";
+  s.onload = () => { initChart(); tick(); setInterval(tick, 10000); };
+  s.onerror = () => setText("s-err", "Chart.js failed to load");
   document.head.appendChild(s);
 
 })();

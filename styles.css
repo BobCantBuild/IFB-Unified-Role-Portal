@@ -231,13 +231,13 @@ body {
   .widget-card   { flex: unset; }
 }
 
-/* ── Price flash on update ── */
+/* ── Price flash ── */
 @keyframes flashUp {
-  0%   { background: rgba(26,135,84,0.35); border-radius: 4px; }
+  0%   { background: rgba(26,135,84,0.4); border-radius: 4px; }
   100% { background: transparent; }
 }
 @keyframes flashDn {
-  0%   { background: rgba(192,57,43,0.25); border-radius: 4px; }
+  0%   { background: rgba(192,57,43,0.3); border-radius: 4px; }
   100% { background: transparent; }
 }
 .flash-up { animation: flashUp 0.8s ease-out forwards; }
