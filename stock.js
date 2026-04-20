@@ -1,8 +1,6 @@
-// const PROXY_URL = "https://ifb-unified-role-portal.vercel.app/api/stock";
-
 (function () {
 
-  const PROXY_URL = "https://ifb-unified-role-portal.vercel.app/api/stock";
+  const PROXY_URL = "https://YOUR-PROJECT.vercel.app/api/stock";
   // ↑↑↑ Keep your actual Vercel URL here
 
   const widgetEl = document.getElementById("widget-stock");
@@ -63,8 +61,19 @@
     if (n >= 1e5) return (n / 1e5).toFixed(2) + " L";
     return Number(n).toLocaleString("en-IN");
   }
+
+  /* ── Time labels ── */
   function timeLbl() {
-    return nowIST().toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+    // Full time — used in tooltip on hover
+    return nowIST().toLocaleTimeString("en-IN", {
+      hour: "2-digit", minute: "2-digit", second: "2-digit"
+    });
+  }
+  function shortTimeLbl() {
+    // Short time — used on X axis (HH:MM only)
+    return nowIST().toLocaleTimeString("en-IN", {
+      hour: "2-digit", minute: "2-digit"
+    });
   }
 
   /* ── Set text ── */
@@ -73,22 +82,22 @@
     if (el) el.textContent = val;
   }
 
-  /* ── Set change text + color ── */
+  /* ── Set change row ── */
   function setChg(id, chg, pct) {
     const el = document.getElementById(id);
     if (!el) return;
     const sign = chg >= 0 ? "+" : "";
     el.textContent = `${sign}${chg.toFixed(2)} (${sign}${pct.toFixed(2)}%)`;
-    el.className = "s-exch-chg " + (chg > 0 ? "up" : chg < 0 ? "dn" : "");
+    el.className   = "s-exch-chg " + (chg > 0 ? "up" : chg < 0 ? "dn" : "");
   }
 
-  /* ── Flash: set text FIRST, then animate ── */
+  /* ── Flash: write text first, then animate ── */
   let lastNSE = null, lastBSE = null;
 
   function setAndFlash(id, newVal, oldVal, displayText) {
     const el = document.getElementById(id);
     if (!el) return;
-    el.textContent = displayText; // write value first
+    el.textContent = displayText;
     if (oldVal !== null && newVal !== oldVal) {
       const cls = newVal > oldVal ? "flash-up" : "flash-dn";
       el.classList.remove("flash-up", "flash-dn");
@@ -105,14 +114,15 @@
   function showErr(msg) {
     const el = document.getElementById("s-err");
     if (!el) return;
-    el.textContent = msg || "";
+    el.textContent   = msg || "";
     el.style.display = msg ? "inline" : "none";
   }
 
-  /* ── Chart ── */
+  /* ── Chart data ── */
   const canvas = document.getElementById("ifb-chart");
-  let chart = null;
-  const cData = { labels: [], nse: [], bse: [] };
+  let   chart  = null;
+  const cData  = { labels: [], nse: [], bse: [] };
+  const MAX_POINTS = 360; // 360 × 10s = 1 hour of history
 
   function getYRange() {
     const all = [...cData.nse, ...cData.bse].filter(v => v != null && !isNaN(v));
@@ -166,19 +176,31 @@
           },
           tooltip: {
             callbacks: {
-              label: c => ` ${c.dataset.label}: ₹${Number(c.parsed.y).toLocaleString("en-IN", { minimumFractionDigits: 2 })}`
+              label: c =>
+                ` ${c.dataset.label}: ₹${Number(c.parsed.y).toLocaleString("en-IN", { minimumFractionDigits: 2 })}`
             }
           }
         },
         scales: {
           x: {
-            ticks: { maxTicksLimit: 4, font: { size: 9 }, color: "#7a9aaa" },
-            grid:  { color: "rgba(0,111,143,0.06)" }
+            ticks: {
+              maxTicksLimit: 6,
+              font: { size: 9 },
+              color: "#7a9aaa",
+              callback: function(val, index) {
+                // Show label every 6th point = every ~60s gap on axis
+                return index % 6 === 0 ? cData.labels[index] : "";
+              }
+            },
+            grid: { color: "rgba(0,111,143,0.06)" }
           },
           y: {
             ticks: {
-              maxTicksLimit: 5, font: { size: 9 }, color: "#7a9aaa",
-              callback: v => "₹" + Number(v).toLocaleString("en-IN", { maximumFractionDigits: 0 })
+              maxTicksLimit: 5,
+              font: { size: 9 },
+              color: "#7a9aaa",
+              callback: v =>
+                "₹" + Number(v).toLocaleString("en-IN", { maximumFractionDigits: 0 })
             },
             grid: { color: "rgba(0,111,143,0.06)" }
           }
@@ -188,12 +210,13 @@
   }
 
   function pushChart(nseP, bseP) {
-    if (cData.labels.length >= 300) {
+    if (cData.labels.length >= MAX_POINTS) {
       cData.labels.shift(); cData.nse.shift(); cData.bse.shift();
     }
-    cData.labels.push(timeLbl());
+    cData.labels.push(shortTimeLbl()); // HH:MM on axis
     cData.nse.push(nseP);
     cData.bse.push(bseP);
+
     if (chart) {
       const range = getYRange();
       if (range) {
@@ -228,7 +251,6 @@
 
   /* ── Main tick ── */
   async function tick() {
-    /* Market badge */
     const open  = isMarketOpen();
     const badge = document.getElementById("mkt-badge");
     if (badge) {
@@ -245,7 +267,7 @@
       lastNSE = nse.last;
       lastBSE = bse.last;
 
-      /* Change */
+      /* Change row */
       setChg("nse-chg", nse.chg, nse.pct);
       setChg("bse-chg", bse.chg, bse.pct);
 
@@ -270,10 +292,10 @@
   }
 
   /* ── Boot ── */
-  const s  = document.createElement("script");
-  s.src    = "https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js";
-  s.onload = () => { initChart(); tick(); setInterval(tick, 10000); };
-  s.onerror = () => setText("s-err", "Chart.js failed to load");
+  const s   = document.createElement("script");
+  s.src     = "https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js";
+  s.onload  = () => { initChart(); tick(); setInterval(tick, 10000); };
+  s.onerror = () => setText("s-upd", "Chart.js failed to load");
   document.head.appendChild(s);
 
 })();
