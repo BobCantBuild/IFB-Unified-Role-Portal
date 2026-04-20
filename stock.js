@@ -1,6 +1,8 @@
+// const PROXY_URL = "https://ifb-unified-role-portal.vercel.app/api/stock";
+
 (function () {
 
-  const PROXY_URL = "https://YOUR-PROJECT.vercel.app/api/stock";
+  const PROXY_URL = "https://ifb-unified-role-portal.vercel.app/api/stock";
   // ↑↑↑ Keep your actual Vercel URL here
 
   const widgetEl = document.getElementById("widget-stock");
