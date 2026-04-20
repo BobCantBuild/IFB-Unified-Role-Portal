@@ -8,7 +8,12 @@
 
   widgetEl.innerHTML = `
     <div class="widget-header">
-      <span class="widget-title">IFB Industries — Stock</span>
+<a class="widget-title s-title-link"
+   href="https://www.nseindia.com/get-quotes/equity?symbol=IFBIND"
+   target="_blank"
+   rel="noopener noreferrer">
+  IFB Industries — Stock ↗
+</a>
       <span class="s-badge" id="mkt-badge">—</span>
     </div>
     <div class="s-exch-row">
