@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IFB Unified Role Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div>
+          <h1>IFB Unified Role Portal</h1>
+          <p class="subtitle">Single access layer for role-based tools and links</p>
+        </div>
+        <svg class="topbar-logo" width="38" height="38" viewBox="0 0 38 38" fill="none">
+          <rect width="38" height="38" rx="9" fill="#006f8f"/>
+          <text x="19" y="25" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="13" font-weight="800" fill="white">IFB</text>
+        </svg>
+      </div>
+    </header>
+
+    <main class="main-layout">
+
+      <section class="panel role-panel">
+        <h2>Select Role</h2>
+        <p class="help-text">Choose a role to see all accessible portal links.</p>
+        <div id="roleList" class="role-list"></div>
+      </section>
+
+      <section class="panel links-panel">
+        <div class="links-header">
+          <h2 id="activeRoleHeading">Links</h2>
+          <span id="linkCount" class="count-badge">0 links</span>
+        </div>
+        <div id="inheritanceText" class="inheritance-text"></div>
+        <div id="linkGrid" class="link-grid" aria-live="polite"></div>
+      </section>
+
+      <aside class="widget-column">
+        <div class="widget-card" id="widget-stock"></div>
+        <div class="widget-card widget-placeholder">
+          <div class="widget-header"><span class="widget-title">Widget Slot 2</span></div>
+          <div class="placeholder-body">
+            <svg width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <rect x="3" y="3" width="7" height="7" rx="1"/>
+              <rect x="14" y="3" width="7" height="7" rx="1"/>
+              <rect x="3" y="14" width="7" height="7" rx="1"/>
+              <rect x="14" y="14" width="7" height="7" rx="1"/>
+            </svg>
+            <p>Next widget goes here</p>
+          </div>
+        </div>
+      </aside>
+
+    </main>
+  </div>
+  <script src="app.js"></script>
+  <script src="stock.js"></script>
+</body>
+</html>
