@@ -1,11 +1,18 @@
 /* ═══════════════════════════════════════════════════════
    IFB Unified Role Portal — stock.js
-   CHANGE THE URL BELOW to your actual Vercel project URL
+   Live NSE + BSE prices via Vercel Edge proxy
+   (free, unlimited — vercel.com)
+
+   SETUP:
+   1. Deploy the api/stock.js file to Vercel (free)
+   2. Replace PROXY_URL below with your Vercel URL
+   3. Done — works for all IFB employees
 ═══════════════════════════════════════════════════════ */
 (function () {
 
-  const PROXY_URL = "https://YOUR-PROJECT.vercel.app/api/stock";
-  // ↑↑↑ Replace YOUR-PROJECT with your actual Vercel project name
+  /* ── REPLACE THIS with your Vercel URL after deploy ── */
+  const PROXY_URL = "https://ifb-unified-role-portal.vercel.app/api/stock";
+  /* ─────────────────────────────────────────────────── */
 
   const widgetEl = document.getElementById("widget-stock");
   if (!widgetEl) return;
