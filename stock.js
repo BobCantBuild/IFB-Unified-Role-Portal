@@ -259,7 +259,9 @@ function seedHistory(raw) {
     const last = m.regularMarketPrice;
     return {
       last, prev,
-      open : m.regularMarketOpen ?? prev,
+      open : m.regularMarketOpen
+       ?? res.indicators?.quote?.[0]?.open?.find(v => v != null)
+       ?? prev,
       high : m.regularMarketDayHigh,
       low  : m.regularMarketDayLow,
       vol  : m.regularMarketVolume,
