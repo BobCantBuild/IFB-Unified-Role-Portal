@@ -3,7 +3,7 @@
 (function () {
 
   const PROXY_URL = "https://ifb-unified-role-portal.vercel.app/api/stock";
-  // ↑↑↑ Keep your actual Vercel URL here
+  // ↑↑↑ Your actual Vercel URL
 
   const widgetEl = document.getElementById("widget-stock");
   if (!widgetEl) return;
@@ -63,11 +63,19 @@
     if (n >= 1e5) return (n / 1e5).toFixed(2) + " L";
     return Number(n).toLocaleString("en-IN");
   }
-  function shortTimeLbl() {
-    return nowIST().toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit" });
+
+  /* Convert Unix timestamp → IST HH:MM string */
+  function tsToIST(unix) {
+    const d = new Date((unix + 19800) * 1000);
+    const h = String(d.getUTCHours()).padStart(2, "0");
+    const m = String(d.getUTCMinutes()).padStart(2, "0");
+    return h + ":" + m;
   }
+
   function fullTimeLbl() {
-    return nowIST().toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+    return nowIST().toLocaleTimeString("en-IN", {
+      hour: "2-digit", minute: "2-digit", second: "2-digit"
+    });
   }
   function setText(id, val) {
     const el = document.getElementById(id); if (el) el.textContent = val;
@@ -98,33 +106,11 @@
     }
   }
 
-  /* ── Chart — 1 hour rolling window ── */
-  const canvas   = document.getElementById("ifb-chart");
-  let   chart    = null;
-  const INTERVAL = 10;           // seconds between ticks
-  const WINDOW   = 60 * 60;     // 1 hour in seconds
-  const MAX_PTS  = WINDOW / INTERVAL; // 360 points
-
-  /* Pre-fill X axis with the past 1 hour of HH:MM labels */
-  function buildInitialLabels() {
-    const labels = [];
-    const now    = nowIST();
-    for (let i = MAX_PTS - 1; i >= 0; i--) {
-      const t = new Date(now.getTime() - i * INTERVAL * 1000);
-      labels.push(
-        t.toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit" })
-      );
-    }
-    return labels;
-  }
-
-  /* Init with empty data but full time axis already showing */
-  const initialLabels = buildInitialLabels();
-  const cData = {
-    labels : initialLabels,
-    nse    : new Array(MAX_PTS).fill(null),
-    bse    : new Array(MAX_PTS).fill(null)
-  };
+  /* ── Chart ── */
+  const canvas  = document.getElementById("ifb-chart");
+  let   chart   = null;
+  const cData   = { labels: [], nse: [], bse: [] };
+  const MAX_PTS = 60; // show last 60 minutes
 
   function getYRange() {
     const all = [...cData.nse, ...cData.bse].filter(v => v != null && !isNaN(v));
@@ -157,14 +143,14 @@
             borderColor: "#006f8f", borderWidth: 2,
             backgroundColor: g1, pointRadius: 0,
             pointHoverRadius: 4, tension: 0.4,
-            fill: true, spanGaps: false
+            fill: true, spanGaps: true
           },
           {
             label: "BSE", data: cData.bse,
             borderColor: "#1a8754", borderWidth: 1.5,
             backgroundColor: g2, pointRadius: 0,
             pointHoverRadius: 4, tension: 0.4,
-            fill: true, spanGaps: false
+            fill: true, spanGaps: true
           }
         ]
       },
@@ -189,10 +175,11 @@
           x: {
             ticks: {
               font: { size: 9 }, color: "#7a9aaa",
-              maxTicksLimit: 7,
-              /* Show only every 6th label = ~1 per 10 mins on 1hr window */
+              maxRotation: 0,
+              /* Show ~6 labels across the 60-min window */
               callback: function(val, index) {
-                return index % 36 === 0 ? cData.labels[index] : "";
+                const step = Math.floor(cData.labels.length / 6);
+                return (step > 0 && index % step === 0) ? cData.labels[index] : "";
               }
             },
             grid: { color: "rgba(0,111,143,0.06)" }
@@ -209,12 +196,46 @@
     });
   }
 
-  function pushChart(nseP, bseP) {
-    /* Shift oldest off, push newest on — rolling 1hr window */
-    cData.labels.shift(); cData.nse.shift(); cData.bse.shift();
-    cData.labels.push(shortTimeLbl());
-    cData.nse.push(nseP);
-    cData.bse.push(bseP);
+  /* ── Seed chart with historical 1-min candles from Yahoo ── */
+  function seedHistory(result) {
+    const timestamps = result.timestamp || [];
+    const closes     = result.indicators?.quote?.[0]?.close || [];
+    if (!timestamps.length) return;
+
+    const nowTs   = Math.floor(Date.now() / 1000);
+    const oneHrAgo = nowTs - 3600;
+
+    const pts = [];
+    timestamps.forEach((ts, i) => {
+      const price = closes[i];
+      if (ts >= oneHrAgo && price != null && !isNaN(price)) {
+        pts.push({ label: tsToIST(ts), price });
+      }
+    });
+
+    cData.labels = pts.map(p => p.label);
+    cData.nse    = pts.map(p => p.price);
+    cData.bse    = pts.map(p => p.price); // seed BSE with NSE history; BSE live ticks update it
+  }
+
+  /* ── Push new live tick onto rolling window ── */
+  function pushTick(nseP, bseP) {
+    if (cData.labels.length >= MAX_PTS) {
+      cData.labels.shift(); cData.nse.shift(); cData.bse.shift();
+    }
+    const now = nowIST();
+    const lbl = now.toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit" });
+
+    // Update last label if same minute, otherwise push new point
+    const lastLbl = cData.labels[cData.labels.length - 1];
+    if (lastLbl === lbl && cData.labels.length > 0) {
+      cData.nse[cData.nse.length - 1] = nseP;
+      cData.bse[cData.bse.length - 1] = bseP;
+    } else {
+      cData.labels.push(lbl);
+      cData.nse.push(nseP);
+      cData.bse.push(bseP);
+    }
 
     if (chart) {
       const range = getYRange();
@@ -227,6 +248,8 @@
   }
 
   /* ── Fetch ── */
+  let seeded = false;
+
   async function fetchExch(exch) {
     const r = await fetch(PROXY_URL + "?exch=" + exch, { cache: "no-store" });
     if (!r.ok) throw new Error("HTTP " + r.status);
@@ -244,7 +267,8 @@
       low  : m.regularMarketDayLow,
       vol  : m.regularMarketVolume,
       chg  : last - prev,
-      pct  : prev ? ((last - prev) / prev) * 100 : 0
+      pct  : prev ? ((last - prev) / prev) * 100 : 0,
+      _raw : res   // pass raw result for history seeding
     };
   }
 
@@ -259,6 +283,14 @@
     try {
       const [nse, bse] = await Promise.all([fetchExch("nse"), fetchExch("bse")]);
 
+      /* On first tick: seed chart with full 1-hr history from NSE data */
+      if (!seeded) {
+        seedHistory(nse._raw);
+        seeded = true;
+        if (chart) chart.update();
+      }
+
+      /* Prices */
       setAndFlash("nse-price", nse.last, lastNSE, rupee(nse.last));
       setAndFlash("bse-price", bse.last, lastBSE, rupee(bse.last));
       lastNSE = nse.last; lastBSE = bse.last;
@@ -271,7 +303,9 @@
       setText("s-prev", rupee(nse.prev));
       setText("s-vol",  shortVol(nse.vol));
 
-      pushChart(nse.last, bse.last);
+      /* Push live tick */
+      pushTick(nse.last, bse.last);
+
       setText("s-upd", "Updated " + fullTimeLbl() + " IST");
       showErr("");
 

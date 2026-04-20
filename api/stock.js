@@ -2,16 +2,14 @@ export default async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "GET, OPTIONS");
 
-  if (req.method === "OPTIONS") {
-    return res.status(204).end();
-  }
+  if (req.method === "OPTIONS") return res.status(204).end();
 
   const exch   = (req.query.exch || "nse").toLowerCase();
   const symbol = exch === "bse" ? "IFBIND.BO" : "IFBIND.NS";
 
   const yahooURL =
     `https://query2.finance.yahoo.com/v8/finance/chart/${symbol}` +
-    `?interval=2m&range=1d&corsDomain=finance.yahoo.com&.tsrc=finance`;
+    `?interval=1m&range=1d&corsDomain=finance.yahoo.com&.tsrc=finance`;
 
   try {
     const response = await fetch(yahooURL, {
