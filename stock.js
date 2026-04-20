@@ -42,17 +42,37 @@
     </div>
   `;
 
-  /* ── Helpers ── */
+  /* ── Time helpers — all UTC-based, no browser timezone dependency ── */
   function nowIST() {
-    const n = new Date();
-    return new Date(n.getTime() + n.getTimezoneOffset() * 60000 + 19800000);
+    return new Date(Date.now() + 5.5 * 3600 * 1000);
+  }
+  function nowHHMM() {
+    const t = nowIST();
+    return String(t.getUTCHours()).padStart(2, "0") + ":" +
+           String(t.getUTCMinutes()).padStart(2, "0");
+  }
+  function fullTimeLbl() {
+    const t = nowIST();
+    const h = String(t.getUTCHours()).padStart(2, "0");
+    const m = String(t.getUTCMinutes()).padStart(2, "0");
+    const s = String(t.getUTCSeconds()).padStart(2, "0");
+    return h + ":" + m + ":" + s;
+  }
+  /* Convert Yahoo Unix UTC timestamp → IST HH:MM */
+  function tsToIST(unix) {
+    const ist = new Date(unix * 1000 + 5.5 * 3600 * 1000);
+    return String(ist.getUTCHours()).padStart(2, "0") + ":" +
+           String(ist.getUTCMinutes()).padStart(2, "0");
   }
   function isMarketOpen() {
-    const t = nowIST(), d = t.getDay();
+    const t = nowIST();
+    const d = t.getUTCDay();
     if (!d || d === 6) return false;
-    const m = t.getHours() * 60 + t.getMinutes();
+    const m = t.getUTCHours() * 60 + t.getUTCMinutes();
     return m >= 555 && m <= 930;
   }
+
+  /* ── Format helpers ── */
   function rupee(n) {
     if (n == null || isNaN(n)) return "—";
     return "₹" + Number(n).toLocaleString("en-IN", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
@@ -64,26 +84,7 @@
     return Number(n).toLocaleString("en-IN");
   }
 
-  /* Convert Unix UTC timestamp → IST HH:MM */
-  function tsToIST(unix) {
-    const d   = new Date(unix * 1000);          // unix is UTC seconds
-    const ist = new Date(d.getTime() + 5.5 * 3600 * 1000); // +5:30
-    const h   = String(ist.getUTCHours()).padStart(2, "0");
-    const m   = String(ist.getUTCMinutes()).padStart(2, "0");
-    return h + ":" + m;
-  }
-
-  function fullTimeLbl() {
-    return nowIST().toLocaleTimeString("en-IN", {
-      hour: "2-digit", minute: "2-digit", second: "2-digit"
-    });
-  }
-  function nowHHMM() {
-    const t = nowIST();
-    return String(t.getHours()).padStart(2, "0") + ":" +
-           String(t.getMinutes()).padStart(2, "0");
-  }
-
+  /* ── DOM helpers ── */
   function setText(id, val) {
     const el = document.getElementById(id); if (el) el.textContent = val;
   }
@@ -98,7 +99,7 @@
     el.textContent = msg || ""; el.style.display = msg ? "inline" : "none";
   }
 
-  /* ── Flash ── */
+  /* ── Flash on price change ── */
   let lastNSE = null, lastBSE = null;
   function setAndFlash(id, newVal, oldVal, displayText) {
     const el = document.getElementById(id); if (!el) return;
@@ -113,11 +114,11 @@
     }
   }
 
-  /* ── Chart ── */
+  /* ── Chart setup ── */
   const canvas  = document.getElementById("ifb-chart");
   let   chart   = null;
   const cData   = { labels: [], nse: [], bse: [] };
-  const MAX_PTS = 60; // last 60 minutes shown
+  const MAX_PTS = 60; // 60 minutes shown
 
   function getYRange() {
     const all = [...cData.nse, ...cData.bse].filter(v => v != null && !isNaN(v));
@@ -202,38 +203,36 @@
     });
   }
 
-  /* ── Seed chart with real 1-hr history from Yahoo ── */
+  /* ── Seed chart with past 1hr of real Yahoo 1-min candles ── */
   let seeded = false;
 
   function seedHistory(raw) {
     const timestamps = raw.timestamp || [];
     const closes     = raw.indicators?.quote?.[0]?.close || [];
-
     if (!timestamps.length) return;
 
-    const nowUnix  = Math.floor(Date.now() / 1000);
+    const nowUnix   = Math.floor(Date.now() / 1000);
     const hrAgoUnix = nowUnix - 3600;
 
-    /* Filter: last 60 mins only + non-null closes */
     const pts = [];
     for (let i = 0; i < timestamps.length; i++) {
       const ts  = timestamps[i];
       const val = closes[i];
-      if (ts >= hrAgoUnix && val != null && !isNaN(val)) {
+      /* Only past 1 hour, skip null/future candles */
+      if (ts >= hrAgoUnix && ts <= nowUnix && val != null && !isNaN(val)) {
         pts.push({ label: tsToIST(ts), price: parseFloat(val.toFixed(2)) });
       }
     }
 
     if (!pts.length) return;
 
-    /* Take last MAX_PTS points */
-    const slice      = pts.slice(-MAX_PTS);
-    cData.labels     = slice.map(p => p.label);
-    cData.nse        = slice.map(p => p.price);
-    cData.bse        = slice.map(p => p.price); // BSE ticks update this live
+    const slice  = pts.slice(-MAX_PTS);
+    cData.labels = slice.map(p => p.label);
+    cData.nse    = slice.map(p => p.price);
+    cData.bse    = slice.map(p => p.price);
   }
 
-  /* ── Push live tick (every 10s) ── */
+  /* ── Push live tick every 10s ── */
   function pushTick(nseP, bseP) {
     const lbl     = nowHHMM();
     const lastLbl = cData.labels[cData.labels.length - 1];
@@ -243,7 +242,7 @@
       cData.nse[cData.nse.length - 1] = nseP;
       cData.bse[cData.bse.length - 1] = bseP;
     } else {
-      /* New minute — add new point, drop oldest if over limit */
+      /* New minute — roll window */
       if (cData.labels.length >= MAX_PTS) {
         cData.labels.shift(); cData.nse.shift(); cData.bse.shift();
       }
@@ -297,7 +296,7 @@
     try {
       const [nse, bse] = await Promise.all([fetchExch("nse"), fetchExch("bse")]);
 
-      /* First tick only: seed full history then draw chart */
+      /* First tick: seed full 1-hr history immediately */
       if (!seeded) {
         seedHistory(nse._raw);
         seeded = true;
@@ -311,11 +310,12 @@
         }
       }
 
-      /* Prices */
+      /* Prices with flash */
       setAndFlash("nse-price", nse.last, lastNSE, rupee(nse.last));
       setAndFlash("bse-price", bse.last, lastBSE, rupee(bse.last));
       lastNSE = nse.last; lastBSE = bse.last;
 
+      /* Change, OHLC */
       setChg("nse-chg", nse.chg, nse.pct);
       setChg("bse-chg", bse.chg, bse.pct);
       setText("s-open", rupee(nse.open));
@@ -324,7 +324,9 @@
       setText("s-prev", rupee(nse.prev));
       setText("s-vol",  shortVol(nse.vol));
 
+      /* Push current price as live tick */
       pushTick(nse.last, bse.last);
+
       setText("s-upd", "Updated " + fullTimeLbl() + " IST");
       showErr("");
 
