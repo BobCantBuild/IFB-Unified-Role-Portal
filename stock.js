@@ -63,68 +63,68 @@
     if (n >= 1e5) return (n / 1e5).toFixed(2) + " L";
     return Number(n).toLocaleString("en-IN");
   }
-
-  /* ── Time labels ── */
-  function timeLbl() {
-    // Full time — used in tooltip on hover
-    return nowIST().toLocaleTimeString("en-IN", {
-      hour: "2-digit", minute: "2-digit", second: "2-digit"
-    });
-  }
   function shortTimeLbl() {
-    // Short time — used on X axis (HH:MM only)
-    return nowIST().toLocaleTimeString("en-IN", {
-      hour: "2-digit", minute: "2-digit"
-    });
+    return nowIST().toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit" });
   }
-
-  /* ── Set text ── */
+  function fullTimeLbl() {
+    return nowIST().toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+  }
   function setText(id, val) {
-    const el = document.getElementById(id);
-    if (el) el.textContent = val;
+    const el = document.getElementById(id); if (el) el.textContent = val;
   }
-
-  /* ── Set change row ── */
   function setChg(id, chg, pct) {
-    const el = document.getElementById(id);
-    if (!el) return;
+    const el = document.getElementById(id); if (!el) return;
     const sign = chg >= 0 ? "+" : "";
     el.textContent = `${sign}${chg.toFixed(2)} (${sign}${pct.toFixed(2)}%)`;
     el.className   = "s-exch-chg " + (chg > 0 ? "up" : chg < 0 ? "dn" : "");
   }
+  function showErr(msg) {
+    const el = document.getElementById("s-err"); if (!el) return;
+    el.textContent = msg || ""; el.style.display = msg ? "inline" : "none";
+  }
 
-  /* ── Flash: write text first, then animate ── */
+  /* ── Flash ── */
   let lastNSE = null, lastBSE = null;
-
   function setAndFlash(id, newVal, oldVal, displayText) {
-    const el = document.getElementById(id);
-    if (!el) return;
+    const el = document.getElementById(id); if (!el) return;
     el.textContent = displayText;
     if (oldVal !== null && newVal !== oldVal) {
       const cls = newVal > oldVal ? "flash-up" : "flash-dn";
       el.classList.remove("flash-up", "flash-dn");
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          el.classList.add(cls);
-          setTimeout(() => el.classList.remove(cls), 800);
-        });
-      });
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        el.classList.add(cls);
+        setTimeout(() => el.classList.remove(cls), 800);
+      }));
     }
   }
 
-  /* ── Error display ── */
-  function showErr(msg) {
-    const el = document.getElementById("s-err");
-    if (!el) return;
-    el.textContent   = msg || "";
-    el.style.display = msg ? "inline" : "none";
+  /* ── Chart — 1 hour rolling window ── */
+  const canvas   = document.getElementById("ifb-chart");
+  let   chart    = null;
+  const INTERVAL = 10;           // seconds between ticks
+  const WINDOW   = 60 * 60;     // 1 hour in seconds
+  const MAX_PTS  = WINDOW / INTERVAL; // 360 points
+
+  /* Pre-fill X axis with the past 1 hour of HH:MM labels */
+  function buildInitialLabels() {
+    const labels = [];
+    const now    = nowIST();
+    for (let i = MAX_PTS - 1; i >= 0; i--) {
+      const t = new Date(now.getTime() - i * INTERVAL * 1000);
+      labels.push(
+        t.toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit" })
+      );
+    }
+    return labels;
   }
 
-  /* ── Chart data ── */
-  const canvas = document.getElementById("ifb-chart");
-  let   chart  = null;
-  const cData  = { labels: [], nse: [], bse: [] };
-  const MAX_POINTS = 360; // 360 × 10s = 1 hour of history
+  /* Init with empty data but full time axis already showing */
+  const initialLabels = buildInitialLabels();
+  const cData = {
+    labels : initialLabels,
+    nse    : new Array(MAX_PTS).fill(null),
+    bse    : new Array(MAX_PTS).fill(null)
+  };
 
   function getYRange() {
     const all = [...cData.nse, ...cData.bse].filter(v => v != null && !isNaN(v));
@@ -156,13 +156,15 @@
             label: "NSE", data: cData.nse,
             borderColor: "#006f8f", borderWidth: 2,
             backgroundColor: g1, pointRadius: 0,
-            pointHoverRadius: 4, tension: 0.4, fill: true
+            pointHoverRadius: 4, tension: 0.4,
+            fill: true, spanGaps: false
           },
           {
             label: "BSE", data: cData.bse,
             borderColor: "#1a8754", borderWidth: 1.5,
             backgroundColor: g2, pointRadius: 0,
-            pointHoverRadius: 4, tension: 0.4, fill: true
+            pointHoverRadius: 4, tension: 0.4,
+            fill: true, spanGaps: false
           }
         ]
       },
@@ -178,7 +180,7 @@
           },
           tooltip: {
             callbacks: {
-              label: c =>
+              label: c => c.parsed.y == null ? null :
                 ` ${c.dataset.label}: ₹${Number(c.parsed.y).toLocaleString("en-IN", { minimumFractionDigits: 2 })}`
             }
           }
@@ -186,23 +188,19 @@
         scales: {
           x: {
             ticks: {
-              maxTicksLimit: 6,
-              font: { size: 9 },
-              color: "#7a9aaa",
+              font: { size: 9 }, color: "#7a9aaa",
+              maxTicksLimit: 7,
+              /* Show only every 6th label = ~1 per 10 mins on 1hr window */
               callback: function(val, index) {
-                // Show label every 6th point = every ~60s gap on axis
-                return index % 6 === 0 ? cData.labels[index] : "";
+                return index % 36 === 0 ? cData.labels[index] : "";
               }
             },
             grid: { color: "rgba(0,111,143,0.06)" }
           },
           y: {
             ticks: {
-              maxTicksLimit: 5,
-              font: { size: 9 },
-              color: "#7a9aaa",
-              callback: v =>
-                "₹" + Number(v).toLocaleString("en-IN", { maximumFractionDigits: 0 })
+              maxTicksLimit: 5, font: { size: 9 }, color: "#7a9aaa",
+              callback: v => "₹" + Number(v).toLocaleString("en-IN", { maximumFractionDigits: 0 })
             },
             grid: { color: "rgba(0,111,143,0.06)" }
           }
@@ -212,10 +210,9 @@
   }
 
   function pushChart(nseP, bseP) {
-    if (cData.labels.length >= MAX_POINTS) {
-      cData.labels.shift(); cData.nse.shift(); cData.bse.shift();
-    }
-    cData.labels.push(shortTimeLbl()); // HH:MM on axis
+    /* Shift oldest off, push newest on — rolling 1hr window */
+    cData.labels.shift(); cData.nse.shift(); cData.bse.shift();
+    cData.labels.push(shortTimeLbl());
     cData.nse.push(nseP);
     cData.bse.push(bseP);
 
@@ -229,7 +226,7 @@
     }
   }
 
-  /* ── Fetch one exchange ── */
+  /* ── Fetch ── */
   async function fetchExch(exch) {
     const r = await fetch(PROXY_URL + "?exch=" + exch, { cache: "no-store" });
     if (!r.ok) throw new Error("HTTP " + r.status);
@@ -259,32 +256,23 @@
       badge.textContent = open ? "● Live" : "● Closed";
       badge.className   = "s-badge " + (open ? "s-badge-live" : "s-badge-closed");
     }
-
     try {
       const [nse, bse] = await Promise.all([fetchExch("nse"), fetchExch("bse")]);
 
-      /* Prices with flash */
       setAndFlash("nse-price", nse.last, lastNSE, rupee(nse.last));
       setAndFlash("bse-price", bse.last, lastBSE, rupee(bse.last));
-      lastNSE = nse.last;
-      lastBSE = bse.last;
+      lastNSE = nse.last; lastBSE = bse.last;
 
-      /* Change row */
       setChg("nse-chg", nse.chg, nse.pct);
       setChg("bse-chg", bse.chg, bse.pct);
-
-      /* OHLC */
       setText("s-open", rupee(nse.open));
       setText("s-high", rupee(nse.high));
       setText("s-low",  rupee(nse.low));
       setText("s-prev", rupee(nse.prev));
       setText("s-vol",  shortVol(nse.vol));
 
-      /* Chart */
-      if (!chart && window.Chart) initChart();
       pushChart(nse.last, bse.last);
-
-      setText("s-upd", "Updated " + timeLbl() + " IST");
+      setText("s-upd", "Updated " + fullTimeLbl() + " IST");
       showErr("");
 
     } catch (err) {
@@ -293,11 +281,9 @@
     }
   }
 
-  /* ── Boot ── */
-  const s   = document.createElement("script");
-  s.src     = "https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js";
-  s.onload  = () => { initChart(); tick(); setInterval(tick, 10000); };
-  s.onerror = () => setText("s-upd", "Chart.js failed to load");
-  document.head.appendChild(s);
+  /* ── Boot — Chart.js preloaded from index.html ── */
+  initChart();
+  tick();
+  setInterval(tick, 10000);
 
 })();
