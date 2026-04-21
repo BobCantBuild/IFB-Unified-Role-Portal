@@ -81,7 +81,7 @@ async function fetchAndCacheSocial() {
 
   const [liRaw, igRaw] = await Promise.all([
     runApifyActor('joSdIauvTIWpMI8yR', {
-      urls: ['https://www.linkedin.com/company/ifb-industries-ltd/'],
+      urls: ['https://www.linkedin.com/company/ifb-appliances/'],
       maxPosts: 3,
     }),
     runApifyActor('dSCLg0C3YEZ83HzYX', {
@@ -91,9 +91,9 @@ async function fetchAndCacheSocial() {
   ]);
 
   console.log('LinkedIn raw count:', liRaw.length);
-  console.log('LinkedIn raw sample:', JSON.stringify(liRaw[0] || {}).slice(0, 400));
+  console.log('LinkedIn sample:', JSON.stringify(liRaw[0] || {}).slice(0, 400));
 
-  // Instagram — profile object with latestPosts nested
+  // Instagram — nested latestPosts inside profile object
   let igPosts = [];
   if (igRaw.length > 0) {
     const latestPosts = igRaw[0].latestPosts || [];
@@ -111,7 +111,7 @@ async function fetchAndCacheSocial() {
   const liPosts = liRaw.slice(0, 3).map((p) => ({
     platform: 'linkedin',
     text:     (p.text || p.commentary || p.postText || p.content || p.description || p.body || 'View post on LinkedIn').slice(0, 150),
-    url:      p.url || p.postUrl || p.link || p.shareUrl || 'https://www.linkedin.com/company/ifb-industries-ltd',
+    url:      p.url || p.postUrl || p.link || p.shareUrl || 'https://www.linkedin.com/company/ifb-appliances',
     likes:    p.likeCount || p.totalReactionCount || p.likes || p.reactions || 0,
     comments: p.commentCount || p.commentsCount || p.comments || 0,
     time:     p.postedAt || p.createdAt || p.publishedAt || p.date || null,
