@@ -1,4 +1,3 @@
-const { fetchAndCacheSocial } = require('./social');
 const Redis = require('ioredis');
 
 function getRedis() {
@@ -13,35 +12,67 @@ function getRedis() {
   });
 }
 
+const APIFY_TOKEN = process.env.APIFY_API_TOKEN;
+
+async function startActor(actorId, input, webhookUrl) {
+  const res = await fetch(
+    `https://api.apify.com/v2/acts/${actorId}/runs?token=${APIFY_TOKEN}&webhookUrl=${encodeURIComponent(webhookUrl)}`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(input),
+    }
+  );
+  const json = await res.json();
+  console.log(`Actor ${actorId} started. RunId:`, json.data?.id);
+  return json.data?.id;
+}
+
 module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
-
   const redis = getRedis();
 
+  // ?debug=1
+  if (req.query.debug === '1') {
+    const cached = await redis.get('ifb_social_v2');
+    return res.status(200).json(cached ? JSON.parse(cached) : { empty: true });
+  }
+
+  // ?clear=1
+  if (req.query.clear === '1') {
+    await redis.del('ifb_social_v2');
+    return res.status(200).json({ ok: true, message: 'Cache cleared.' });
+  }
+
   try {
-    // ?debug=1 — show cached data
-    if (req.query.debug === '1') {
-      const cached = await redis.get('ifb_social_v2');
-      return res.status(200).json(cached ? JSON.parse(cached) : { empty: true });
-    }
+    const host    = `https://${req.headers.host}`;
+    const webhook = `${host}/api/social-webhook`;
 
-    // ?clear=1 — delete cache key, force fresh fetch next cron
-    if (req.query.clear === '1') {
-      await redis.del('ifb_social_v2');
-      return res.status(200).json({ ok: true, message: 'Cache cleared. Now hit /api/social-cron to refetch.' });
-    }
+    // Fire both actors — don't wait
+    const [liRunId, igRunId] = await Promise.all([
+      startActor('A3cAPGpwBEG8RJwse', {
+        profileUrls: ['https://www.linkedin.com/company/ifb-industries-ltd/'],
+        maxPosts: 3,
+      }, webhook),
+      startActor('dSCLg0C3YEZ83HzYX', {
+        usernames:    ['ifbappliances'],
+        resultsLimit: 3,
+      }, webhook),
+    ]);
 
-    // Normal run — fetch and cache
-    console.log('Social cron started:', new Date().toISOString());
-    const data = await fetchAndCacheSocial();
-    console.log('Done. LI:', data.linkedin.length, 'IG:', data.instagram.length);
+    // Store pending run IDs in Redis so webhook knows what to collect
+    await redis.set('ifb_social_runs', JSON.stringify({
+      li: liRunId,
+      ig: igRunId,
+      startedAt: new Date().toISOString(),
+    }), 'EX', 300); // expires in 5 min
+
     return res.status(200).json({
       ok: true,
-      updatedAt: data.updatedAt,
-      linkedinCount: data.linkedin.length,
-      instagramCount: data.instagram.length,
+      message: 'Actors started. Webhook will update cache when done.',
+      liRunId,
+      igRunId,
     });
-
   } catch (err) {
     console.error('Cron error:', err.message);
     return res.status(500).json({ ok: false, error: err.message });
