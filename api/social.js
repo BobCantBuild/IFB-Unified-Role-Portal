@@ -7,7 +7,7 @@ function getRedis() {
       connectTimeout: 5000,
       maxRetriesPerRequest: 2,
       retryStrategy(times) {
-        if (times > 3) return null; // stop retrying
+        if (times > 3) return null;
         return Math.min(times * 200, 1000);
       },
       tls: process.env.REDIS_URL && process.env.REDIS_URL.startsWith('rediss://') ? {} : undefined,
@@ -23,7 +23,7 @@ const CACHE_TTL   = 3600;
 
 async function runApifyActor(actorId, input) {
   try {
-    console.log(`Starting actor ${actorId}...`);
+    console.log(`Starting actor ${actorId} with input:`, JSON.stringify(input));
     const startRes = await fetch(
       `https://api.apify.com/v2/acts/${actorId}/runs?token=${APIFY_TOKEN}`,
       {
@@ -35,19 +35,22 @@ async function runApifyActor(actorId, input) {
     );
 
     if (!startRes.ok) {
-      console.error(`Actor start failed ${actorId}: ${startRes.status}`);
+      const errText = await startRes.text();
+      console.error(`Actor start failed [${actorId}]: ${startRes.status} — ${errText}`);
       return [];
     }
 
     const startJson = await startRes.json();
     const runId     = startJson.data?.id;
-    if (!runId) { console.error('No runId:', JSON.stringify(startJson)); return []; }
+    if (!runId) {
+      console.error('No runId returned:', JSON.stringify(startJson).slice(0, 300));
+      return [];
+    }
 
-    console.log(`Actor ${actorId} runId: ${runId}`);
+    console.log(`Actor ${actorId} started. RunId: ${runId}`);
 
-    // Poll up to 45 seconds
     for (let i = 0; i < 15; i++) {
-      await new Promise((r) => setTimeout(r, 3000));
+      await new Promise((res) => setTimeout(res, 3000));
       const statusRes  = await fetch(
         `https://api.apify.com/v2/actor-runs/${runId}?token=${APIFY_TOKEN}`,
         { signal: AbortSignal.timeout(4000) }
@@ -62,11 +65,11 @@ async function runApifyActor(actorId, input) {
           { signal: AbortSignal.timeout(5000) }
         );
         const items = await dataRes.json();
-        console.log(`[${actorId}] dataset items count: ${items.length}`);
+        console.log(`[${actorId}] items: ${items.length}, sample: ${JSON.stringify(items[0] || {}).slice(0, 500)}`);
         return items;
       }
       if (['FAILED', 'ABORTED', 'TIMED-OUT'].includes(status)) {
-        console.error(`[${actorId}] ended: ${status}`);
+        console.error(`[${actorId}] run ended: ${status}`);
         break;
       }
     }
@@ -80,9 +83,9 @@ async function fetchAndCacheSocial() {
   const r = getRedis();
 
   const [liRaw, igRaw] = await Promise.all([
-    runApifyActor('joSdIauvTIWpMI8yR', {
-      urls: ['https://www.linkedin.com/company/ifb-appliances/'],
-      maxPosts: 3,
+    runApifyActor('WI0tj4Ieb5Kq458gB', {
+      startUrls: [{ url: 'https://www.linkedin.com/company/ifb-industries-ltd/' }],
+      maxResults: 3,
     }),
     runApifyActor('dSCLg0C3YEZ83HzYX', {
       usernames:    ['ifbappliances'],
@@ -90,10 +93,7 @@ async function fetchAndCacheSocial() {
     }),
   ]);
 
-  console.log('LinkedIn raw count:', liRaw.length);
-  console.log('LinkedIn sample:', JSON.stringify(liRaw[0] || {}).slice(0, 400));
-
-  // Instagram — nested latestPosts inside profile object
+  // Instagram — profile object with latestPosts nested
   let igPosts = [];
   if (igRaw.length > 0) {
     const latestPosts = igRaw[0].latestPosts || [];
@@ -107,17 +107,17 @@ async function fetchAndCacheSocial() {
     }));
   }
 
-  // LinkedIn — direct posts in dataset
+  // LinkedIn — direct posts
   const liPosts = liRaw.slice(0, 3).map((p) => ({
     platform: 'linkedin',
     text:     (p.text || p.commentary || p.postText || p.content || p.description || p.body || 'View post on LinkedIn').slice(0, 150),
-    url:      p.url || p.postUrl || p.link || p.shareUrl || 'https://www.linkedin.com/company/ifb-appliances',
+    url:      p.url || p.postUrl || p.link || p.shareUrl || 'https://www.linkedin.com/company/ifb-industries-ltd',
     likes:    p.likeCount || p.totalReactionCount || p.likes || p.reactions || 0,
     comments: p.commentCount || p.commentsCount || p.comments || 0,
     time:     p.postedAt || p.createdAt || p.publishedAt || p.date || null,
   }));
 
-  console.log(`Mapped: ${liPosts.length} LI, ${igPosts.length} IG`);
+  console.log(`Final: ${liPosts.length} LI posts, ${igPosts.length} IG posts`);
 
   const data = {
     linkedin:  liPosts,
@@ -128,7 +128,7 @@ async function fetchAndCacheSocial() {
   await r.set(CACHE_KEY, JSON.stringify(data), 'EX', CACHE_TTL);
   return data;
 }
-// ── Main handler ──
+
 module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Cache-Control', 's-maxage=3600, stale-while-revalidate');
@@ -146,12 +146,7 @@ module.exports = async function handler(req, res) {
 
     return res.status(200).json({
       source: 'pending',
-      data: {
-        linkedin:  [],
-        instagram: [],
-        updatedAt: null,
-        message:   'Visit /api/social-cron once to trigger first fetch',
-      },
+      data: { linkedin: [], instagram: [], updatedAt: null },
     });
   } catch (err) {
     console.error('Social API error:', err.message);
