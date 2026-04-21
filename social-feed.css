@@ -291,6 +291,19 @@
 }
 
 /* Make all column cards equal height */
+/* .feed-grid {
+  align-items: stretch;
+}
+.feed-col {
+  display: flex;
+  flex-direction: column;
+}
+.news-list,
+.social-list {
+  flex: 1;
+} */
+
+/* ── Equal column heights ── */
 .feed-grid {
   align-items: stretch;
 }
@@ -300,5 +313,11 @@
 }
 .news-list,
 .social-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.news-card,
+.social-card {
   flex: 1;
 }
