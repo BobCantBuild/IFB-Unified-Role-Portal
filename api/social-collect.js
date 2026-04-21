@@ -21,60 +21,62 @@ module.exports = async function handler(req, res) {
   const redis = getRedis();
 
   try {
-    // Get stored run IDs
     const runsRaw = await redis.get('ifb_social_runs');
     if (!runsRaw) {
       return res.status(200).json({ ok: false, message: 'No pending runs. Trigger /api/social-cron first.' });
     }
 
     const runs = JSON.parse(runsRaw);
-    console.log('Collecting runs:', runs);
+    console.log('Runs to collect:', runs);
 
-    // Check both run statuses
-    const [liStatus, igStatus] = await Promise.all([
+    // Check statuses
+    const [liData, igData] = await Promise.all([
       fetch(`https://api.apify.com/v2/actor-runs/${runs.li}?token=${APIFY_TOKEN}`)
-        .then(r => r.json()).then(j => j.data?.status),
+        .then(r => r.json()),
       fetch(`https://api.apify.com/v2/actor-runs/${runs.ig}?token=${APIFY_TOKEN}`)
-        .then(r => r.json()).then(j => j.data?.status),
+        .then(r => r.json()),
     ]);
 
-    console.log('LinkedIn run status:', liStatus, '| Instagram run status:', igStatus);
+    const liStatus = liData.data?.status;
+    const igStatus = igData.data?.status;
+    console.log('LI status:', liStatus, '| IG status:', igStatus);
 
     if (liStatus !== 'SUCCEEDED' && igStatus !== 'SUCCEEDED') {
       return res.status(200).json({
         ok: false,
-        message: 'Actors still running. Wait a bit more.',
+        message: 'Still running. Wait more and try again.',
         liStatus,
         igStatus,
       });
     }
 
-    const cachedRaw = await redis.get(CACHE_KEY);
-    const current   = cachedRaw ? JSON.parse(cachedRaw) : { linkedin: [], instagram: [], updatedAt: null };
+    const current = { linkedin: [], instagram: [], updatedAt: null };
 
-// Collect LinkedIn if done
-if (liStatus === 'SUCCEEDED') {
-  const liItems = await fetch(
-    `https://api.apify.com/v2/actor-runs/${runs.li}/dataset/items?token=${APIFY_TOKEN}&limit=10`
-  ).then(r => r.json());
+    // Collect LinkedIn
+    if (liStatus === 'SUCCEEDED') {
+      const liItems = await fetch(
+        `https://api.apify.com/v2/actor-runs/${runs.li}/dataset/items?token=${APIFY_TOKEN}&limit=10`
+      ).then(r => r.json());
 
-  console.log(`LinkedIn items: ${liItems.length}`, JSON.stringify(liItems[0] || {}).slice(0, 400));
+      console.log(`LI items: ${liItems.length} | sample:`, JSON.stringify(liItems[0] || {}).slice(0, 500));
 
-current.linkedin = liItems.slice(0, 3).map((p) => ({
-  platform: 'linkedin',
-  text:     (p.text || p.commentary || p.content || p.description || 'View post on LinkedIn').slice(0, 150),
-  url:      p.url || p.postUrl || p.link || 'https://www.linkedin.com/company/ifb-industries-ltd',
-  likes:    p.reactions || p.likeCount || p.totalReactionCount || p.likes || 0,
-  comments: p.commentsCount || p.commentCount || p.comments || 0,
-  time:     p.postedAt || p.createdAt || p.publishedAt || p.date || null,
-}));
-}
+      current.linkedin = liItems.slice(0, 3).map((p) => ({
+        platform: 'linkedin',
+        text:     (p.text || p.commentary || p.content || p.description || p.body || 'View post on LinkedIn').slice(0, 150),
+        url:      p.url || p.postUrl || p.link || p.postLink || 'https://www.linkedin.com/company/ifb-industries-ltd',
+        likes:    p.reactions || p.likeCount || p.totalReactionCount || p.likes || 0,
+        comments: p.commentsCount || p.commentCount || p.comments || 0,
+        time:     p.postedAt || p.createdAt || p.publishedAt || p.date || null,
+      }));
+    }
 
-    // Collect Instagram if done
+    // Collect Instagram
     if (igStatus === 'SUCCEEDED') {
       const igItems = await fetch(
         `https://api.apify.com/v2/actor-runs/${runs.ig}/dataset/items?token=${APIFY_TOKEN}&limit=10`
       ).then(r => r.json());
+
+      console.log(`IG items: ${igItems.length} | sample:`, JSON.stringify(igItems[0] || {}).slice(0, 400));
 
       const latestPosts = (igItems[0] || {}).latestPosts || [];
       current.instagram = latestPosts.slice(0, 3).map((p) => ({
