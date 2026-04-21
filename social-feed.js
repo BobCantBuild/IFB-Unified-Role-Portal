@@ -11,15 +11,30 @@ function timeAgo(dateStr) {
   return Math.floor(diff / 86400) + 'd ago';
 }
 
+function isFresh(dateStr) {
+  if (!dateStr) return false;
+  const diffH = (Date.now() - new Date(dateStr)) / 1000 / 3600;
+  return diffH < 6; // "NEW" badge if posted in last 6 hours
+}
+
 function renderNewsList(articles) {
   const el = document.getElementById('newsList');
   if (!articles || articles.length === 0) {
-    el.innerHTML = '<div class="feed-error">No news found at the moment.</div>';
+    el.innerHTML = `
+      <div class="feed-error">
+        No recent IFB news in the last 48 hours.<br>
+        <small style="color:#94a3b8">Check back later or
+          <a href="https://news.google.com/search?q=IFB+appliances" target="_blank">search Google News</a>.
+        </small>
+      </div>`;
     return;
   }
-  el.innerHTML = articles.slice(0, 6).map(a => `
+  el.innerHTML = articles.map(a => `
     <a class="news-card" href="${a.link}" target="_blank" rel="noopener noreferrer">
-      <div class="news-source">${a.source || 'News'}</div>
+      <div class="news-card-top">
+        <span class="news-source">${a.source || 'News'}</span>
+        ${isFresh(a.pubDate) ? '<span class="news-badge-new">NEW</span>' : ''}
+      </div>
       <div class="news-title">${a.title}</div>
       <div class="news-footer">
         <span class="news-time">${timeAgo(a.pubDate)}</span>
@@ -29,7 +44,7 @@ function renderNewsList(articles) {
   `).join('');
 }
 
-function renderSocialList(posts, containerId, platform) {
+function renderSocialList(posts, containerId) {
   const el = document.getElementById(containerId);
   if (!posts || posts.length === 0) {
     el.innerHTML = '<div class="feed-error">No posts available.</div>';
@@ -54,7 +69,6 @@ function renderTicker(articles) {
   const items = articles.map(a =>
     `<a href="${a.link}" target="_blank" rel="noopener noreferrer">📌 ${a.title}</a>`
   ).join('<span style="color:#334155;padding:0 8px">◆</span>');
-  // Duplicate for seamless loop
   el.innerHTML = items + '<span style="padding:0 40px"></span>' + items;
 }
 
@@ -74,6 +88,9 @@ async function loadSocialFeed() {
       const newsJson = await newsRes.json();
       renderNewsList(newsJson.data?.articles);
       renderTicker(newsJson.data?.articles);
+      if (newsJson.data?.updatedAt) {
+        updatedEl.textContent = 'News: ' + timeAgo(newsJson.data.updatedAt);
+      }
     } else {
       document.getElementById('newsList').innerHTML =
         '<div class="feed-error">Could not load news.</div>';
@@ -81,10 +98,10 @@ async function loadSocialFeed() {
 
     if (socialRes.ok) {
       const socialJson = await socialRes.json();
-      renderSocialList(socialJson.data?.linkedin,  'linkedinList',  'linkedin');
-      renderSocialList(socialJson.data?.instagram, 'instagramList', 'instagram');
+      renderSocialList(socialJson.data?.linkedin,  'linkedinList');
+      renderSocialList(socialJson.data?.instagram, 'instagramList');
       if (socialJson.data?.updatedAt) {
-        updatedEl.textContent = 'Updated ' + timeAgo(socialJson.data.updatedAt);
+        updatedEl.textContent += ' · Social: ' + timeAgo(socialJson.data.updatedAt);
       }
     } else {
       document.getElementById('linkedinList').innerHTML =
@@ -101,8 +118,5 @@ async function loadSocialFeed() {
   }
 }
 
-// Load on page ready
 document.addEventListener('DOMContentLoaded', () => loadSocialFeed());
-
-// Auto refresh every 60 minutes
 setInterval(loadSocialFeed, 60 * 60 * 1000);

@@ -321,3 +321,26 @@
 .social-card {
   flex: 1;
 }
+
+/* Fresh news badge */
+.news-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+.news-badge-new {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #fff;
+  background: #16a34a;
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+/* Equal column heights */
+.feed-grid   { align-items: stretch; }
+.feed-col    { display: flex; flex-direction: column; }
+.news-list,
+.social-list { flex: 1; }
