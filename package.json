@@ -2,9 +2,7 @@
   "name": "ifb-unified-role-portal",
   "version": "1.0.0",
   "private": true,
-  "engines": {
-    "node": "20.x"
-  },
+  "engines": { "node": "20.x" },
   "dependencies": {
     "ioredis": "^5.3.2"
   }
