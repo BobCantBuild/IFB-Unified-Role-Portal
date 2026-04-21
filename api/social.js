@@ -80,9 +80,9 @@ async function fetchAndCacheSocial() {
   const r = getRedis();
 
   const [liRaw, igRaw] = await Promise.all([
-    runApifyActor('WI0tj4Ieb5Kq458gB', {
-      startUrls: [{ url: 'https://www.linkedin.com/company/ifb-industries-ltd/' }],
-      maxResults: 3,
+    runApifyActor('joSdIauvTIWpMI8yR', {
+      urls: ['https://www.linkedin.com/company/ifb-industries-ltd/'],
+      maxPosts: 3,
     }),
     runApifyActor('dSCLg0C3YEZ83HzYX', {
       usernames:    ['ifbappliances'],
@@ -90,21 +90,13 @@ async function fetchAndCacheSocial() {
     }),
   ]);
 
-  // ── LinkedIn: posts are direct items in dataset ──
-  const liPosts = liRaw.slice(0, 3).map((p) => ({
-    platform: 'linkedin',
-    text:     (p.text || p.commentary || p.description || p.content || 'View post on LinkedIn').slice(0, 150),
-    url:      p.url || p.postUrl || p.linkedInUrl || 'https://www.linkedin.com/company/ifb-industries-ltd',
-    likes:    p.likeCount || p.totalReactionCount || p.likes || 0,
-    comments: p.commentCount || p.commentsCount || p.comments || 0,
-    time:     p.postedAt || p.createdAt || p.date || null,
-  }));
+  console.log('LinkedIn raw count:', liRaw.length);
+  console.log('LinkedIn raw sample:', JSON.stringify(liRaw[0] || {}).slice(0, 400));
 
-  // ── Instagram: actor returns 1 profile object, posts are inside latestPosts[] ──
+  // Instagram — profile object with latestPosts nested
   let igPosts = [];
   if (igRaw.length > 0) {
-    const profile    = igRaw[0];                          // first (only) profile object
-    const latestPosts = profile.latestPosts || [];        // nested posts array
+    const latestPosts = igRaw[0].latestPosts || [];
     igPosts = latestPosts.slice(0, 3).map((p) => ({
       platform: 'instagram',
       text:     (p.caption || p.text || p.alt || 'View post on Instagram').slice(0, 150),
@@ -115,7 +107,17 @@ async function fetchAndCacheSocial() {
     }));
   }
 
-  console.log(`Mapped: ${liPosts.length} LI posts, ${igPosts.length} IG posts`);
+  // LinkedIn — direct posts in dataset
+  const liPosts = liRaw.slice(0, 3).map((p) => ({
+    platform: 'linkedin',
+    text:     (p.text || p.commentary || p.postText || p.content || p.description || p.body || 'View post on LinkedIn').slice(0, 150),
+    url:      p.url || p.postUrl || p.link || p.shareUrl || 'https://www.linkedin.com/company/ifb-industries-ltd',
+    likes:    p.likeCount || p.totalReactionCount || p.likes || p.reactions || 0,
+    comments: p.commentCount || p.commentsCount || p.comments || 0,
+    time:     p.postedAt || p.createdAt || p.publishedAt || p.date || null,
+  }));
+
+  console.log(`Mapped: ${liPosts.length} LI, ${igPosts.length} IG`);
 
   const data = {
     linkedin:  liPosts,
@@ -126,7 +128,6 @@ async function fetchAndCacheSocial() {
   await r.set(CACHE_KEY, JSON.stringify(data), 'EX', CACHE_TTL);
   return data;
 }
-
 // ── Main handler ──
 module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
