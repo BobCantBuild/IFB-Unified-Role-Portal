@@ -9,7 +9,7 @@
     { "src": "/(.*)",     "dest": "/$1" }
   ],
   "crons": [
-    { "path": "/api/social-cron", "schedule": "0 * * * *"    },
-    { "path": "/api/news",        "schedule": "*/30 * * * *" }
+    { "path": "/api/social-cron", "schedule": "0 9 * * *" },
+    { "path": "/api/news",        "schedule": "0 8 * * *" }
   ]
 }
