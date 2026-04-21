@@ -4,10 +4,12 @@ let redis;
 function getRedis() {
   if (!redis) {
     redis = new Redis(process.env.REDIS_URL, {
-      connectTimeout: 3000,
-      maxRetriesPerRequest: 1,
-      enableOfflineQueue: false,
-      lazyConnect: true,
+      connectTimeout: 5000,
+      maxRetriesPerRequest: 2,
+      retryStrategy(times) {
+        if (times > 3) return null; // stop retrying
+        return Math.min(times * 200, 1000);
+      },
       tls: process.env.REDIS_URL && process.env.REDIS_URL.startsWith('rediss://') ? {} : undefined,
     });
     redis.on('error', (e) => console.error('Redis error:', e.message));
