@@ -5,24 +5,104 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IFB Unified Role Portal</title>
   <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
 </head>
 <body>
   <div class="page-shell">
 
+    <!-- ── Topbar ── -->
     <header class="topbar">
       <div class="topbar-inner">
-        <div>
-          <h1>IFB Unified Role Portal</h1>
-          <p class="subtitle">Single access layer for role-based tools and links</p>
+        <div class="topbar-brand">
+          <img src="img\IFB.png" alt="IFB" class="topbar-ifb-logo">
+          <div>
+            <h1>Unified Role Portal</h1>
+            <p class="subtitle">Single access layer for role-based tools and links</p>
+          </div>
         </div>
-        <svg class="topbar-logo" width="38" height="38" viewBox="0 0 38 38" fill="none">
-          <rect width="38" height="38" rx="9" fill="#006f8f"/>
-          <text x="19" y="25" text-anchor="middle" font-family="Segoe UI,sans-serif" font-size="13" font-weight="800" fill="white">IFB</text>
-        </svg>
       </div>
     </header>
 
+    <!-- ── Infinite Carousel ── -->
+    <div class="carousel-outer">
+
+      <!-- Left arrow -->
+      <button class="carousel-arrow carousel-arrow-left" id="carouselLeft" aria-label="Scroll left">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+             stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+      </button>
+
+      <!-- Scrolling strip -->
+      <div class="carousel-wrap" id="carouselWrap">
+        <div class="carousel-track" id="carouselTrack">
+
+          <a href="https://apps.bsharpcorp.com/dashboard?destination=users_dashboard"
+             target="_blank" rel="noopener noreferrer" class="carousel-card">
+            <img src="img/Bsharp_Learning.png" alt="Bsharp Learning">
+            <span>Bsharp Learning</span>
+          </a>
+
+          <a href="https://mployee.ifbhub.com/Account/Login?ReturnUrl=%2fHome"
+             target="_blank" rel="noopener noreferrer" class="carousel-card">
+            <img src="img/HR_portal.png" alt="HR Portal">
+            <span>HR Portal</span>
+          </a>
+
+          <a href="https://www.ifbappliances.com/employee"
+             target="_blank" rel="noopener noreferrer" class="carousel-card">
+            <img src="img/IFB_Appliances.png" alt="IFB Appliances">
+            <span>IFB Appliances</span>
+          </a>
+
+          <a href="https://www.linkedin.com/company/ifb-industries-ltd/"
+             target="_blank" rel="noopener noreferrer" class="carousel-card">
+            <svg viewBox="0 0 24 24" fill="#0077b5" class="carousel-brand-icon">
+              <path d="M20.45 20.45h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.354V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.284zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+
+          <a href="https://www.facebook.com/IFBappliances/"
+             target="_blank" rel="noopener noreferrer" class="carousel-card">
+            <svg viewBox="0 0 24 24" fill="#1877f2" class="carousel-brand-icon">
+              <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.971h-1.514c-1.491 0-1.956.93-1.956 1.886v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+            </svg>
+            <span>Facebook</span>
+          </a>
+
+          <a href="https://www.instagram.com/ifbappliances/"
+             target="_blank" rel="noopener noreferrer" class="carousel-card">
+            <svg viewBox="0 0 24 24" class="carousel-brand-icon">
+              <defs>
+                <linearGradient id="ig" x1="0%" y1="100%" x2="100%" y2="0%">
+                  <stop offset="0%"   stop-color="#f09433"/>
+                  <stop offset="25%"  stop-color="#e6683c"/>
+                  <stop offset="50%"  stop-color="#dc2743"/>
+                  <stop offset="75%"  stop-color="#cc2366"/>
+                  <stop offset="100%" stop-color="#bc1888"/>
+                </linearGradient>
+              </defs>
+              <path fill="url(#ig)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+            </svg>
+            <span>Instagram</span>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Right arrow -->
+      <button class="carousel-arrow carousel-arrow-right" id="carouselRight" aria-label="Scroll right">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+             stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"/>
+        </svg>
+      </button>
+
+    </div>
+
+    <!-- ── Main layout ── -->
     <main class="main-layout">
 
       <section class="panel role-panel">
@@ -45,7 +125,8 @@
         <div class="widget-card widget-placeholder">
           <div class="widget-header"><span class="widget-title">Widget Slot 2</span></div>
           <div class="placeholder-body">
-            <svg width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <svg width="30" height="30" fill="none" stroke="currentColor"
+                 stroke-width="1.5" viewBox="0 0 24 24">
               <rect x="3" y="3" width="7" height="7" rx="1"/>
               <rect x="14" y="3" width="7" height="7" rx="1"/>
               <rect x="3" y="14" width="7" height="7" rx="1"/>
@@ -58,7 +139,68 @@
 
     </main>
   </div>
+
   <script src="app.js"></script>
   <script src="stock.js"></script>
+
+  <!-- ── Carousel JS ── -->
+  <script>
+    (function () {
+      const track    = document.getElementById("carouselTrack");
+      const leftBtn  = document.getElementById("carouselLeft");
+      const rightBtn = document.getElementById("carouselRight");
+      if (!track) return;
+
+      /* Clone 4x for infinite loop */
+      const original = Array.from(track.children);
+      for (let i = 0; i < 4; i++) {
+        original.forEach(card => {
+          const clone = card.cloneNode(true);
+          clone.setAttribute("aria-hidden", "true");
+          track.appendChild(clone);
+        });
+      }
+
+      let offset = 0;
+      let paused = false;
+      let nudge  = 0;
+      const speed        = 0.7;
+      const NUDGE_AMOUNT = 160;
+
+      function getOneSetWidth() {
+        const gap       = 14;
+        const firstCard = track.children[0];
+        return (firstCard.offsetWidth + gap) * original.length;
+      }
+
+      function animate() {
+        const oneSet = getOneSetWidth();
+
+        if (nudge !== 0) {
+          offset += nudge * 0.08;
+          nudge  *= 0.88;
+          if (Math.abs(nudge) < 0.3) nudge = 0;
+        } else if (!paused) {
+          offset += speed;
+        }
+
+        /* Seamless wrap both directions */
+        if (offset >= oneSet) offset -= oneSet;
+        if (offset < 0)       offset += oneSet;
+
+        track.style.transform = `translateX(-${offset}px)`;
+        requestAnimationFrame(animate);
+      }
+
+      track.addEventListener("mouseenter", () => paused = true);
+      track.addEventListener("mouseleave", () => paused = false);
+
+      rightBtn.addEventListener("click", () => nudge += NUDGE_AMOUNT);
+      leftBtn.addEventListener("click",  () => nudge -= NUDGE_AMOUNT);
+
+      window.addEventListener("load", () => requestAnimationFrame(animate));
+    })();
+  </script>
+
 </body>
 </html>
