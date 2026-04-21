@@ -419,3 +419,16 @@ body {
 .flash-up { animation: flashUp 0.8s ease-out forwards; }
 .flash-dn { animation: flashDn 0.8s ease-out forwards; }
 
+/* Make all column cards equal height */
+.feed-grid {
+  align-items: stretch;
+}
+.feed-col {
+  display: flex;
+  flex-direction: column;
+}
+.news-list,
+.social-list {
+  flex: 1;
+}
+
