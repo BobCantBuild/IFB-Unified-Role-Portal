@@ -60,15 +60,14 @@ module.exports = async function handler(req, res) {
 
       console.log(`LI items: ${liItems.length} | sample:`, JSON.stringify(liItems[0] || {}).slice(0, 500));
 
-current.linkedin = liItems.slice(0, 3).map((p) => ({
-  platform: 'linkedin',
-  text:     (p.text || p.commentary || p.content || p.description || p.body || 'View post on LinkedIn').slice(0, 150),
-  // postUrl and shareUrl are the direct post links — prioritise them
-  url:      p.postUrl || p.shareUrl || p.url || p.link || p.postLink || 'https://www.linkedin.com/company/ifb-industries-ltd',
-  likes:    p.reactions || p.likeCount || p.totalReactionCount || p.likes || 0,
-  comments: p.commentsCount || p.commentCount || p.comments || 0,
-  time:     p.postedAt || p.createdAt || p.publishedAt || p.date || null,
-}));
+      current.linkedin = liItems.slice(0, 3).map((p) => ({
+        platform: 'linkedin',
+        text:     (p.text || p.commentary || p.content || p.description || p.body || 'View post on LinkedIn').slice(0, 150),
+        url:      p.url || p.postUrl || p.link || p.postLink || 'https://www.linkedin.com/company/ifb-industries-ltd',
+        likes:    p.reactions || p.likeCount || p.totalReactionCount || p.likes || 0,
+        comments: p.commentsCount || p.commentCount || p.comments || 0,
+        time:     p.postedAt || p.createdAt || p.publishedAt || p.date || null,
+      }));
     }
 
     // ── Collect Instagram ──
