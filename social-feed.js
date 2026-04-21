@@ -11,30 +11,90 @@ function timeAgo(dateStr) {
   return Math.floor(diff / 86400) + 'd ago';
 }
 
-function isFresh(dateStr) {
-  if (!dateStr) return false;
-  const diffH = (Date.now() - new Date(dateStr)) / 1000 / 3600;
-  return diffH < 6; // "NEW" badge if posted in last 6 hours
+// ── Fetch Google News RSS directly in browser via proxy ──
+const RSS_FEEDS = [
+  'https://news.google.com/rss/search?q=IFB+appliances+washing+machine+OR+microwave+OR+refrigerator&hl=en-IN&gl=IN&ceid=IN:en',
+  'https://news.google.com/rss/search?q=IFB+Industries+launch+OR+award+OR+service+OR+innovation&hl=en-IN&gl=IN&ceid=IN:en',
+  'https://news.google.com/rss/search?q=home+appliance+India+new+product+2025&hl=en-IN&gl=IN&ceid=IN:en',
+];
+
+const EXCLUDE_KEYWORDS = [
+  'share price', 'stock', 'nse', 'bse', 'sensex', 'nifty',
+  'quarterly result', 'q1', 'q2', 'q3', 'q4', 'dividend',
+  'market cap', 'revenue', 'profit', 'loss', 'earnings',
+  'investor', 'trading', 'intraday', 'target price', 'buy rating',
+];
+
+function isExcluded(title) {
+  const lower = title.toLowerCase();
+  return EXCLUDE_KEYWORDS.some((kw) => lower.includes(kw));
+}
+
+function parseRSS(xml) {
+  const items = [];
+  const itemRegex = /<item>([\s\S]*?)<\/item>/g;
+  let match;
+  while ((match = itemRegex.exec(xml)) !== null) {
+    const item    = match[1];
+    const title   = item.match(/<title><!\[CDATA\[(.*?)\]\]><\/title>/)?.[1] || item.match(/<title>(.*?)<\/title>/)?.[1] || '';
+    const link    = item.match(/<link>(.*?)<\/link>/)?.[1] || item.match(/<feedburner:origLink>(.*?)<\/feedburner:origLink>/)?.[1] || '';
+    const pubDate = item.match(/<pubDate>(.*?)<\/pubDate>/)?.[1] || '';
+    const source  = item.match(/<source[^>]*>(.*?)<\/source>/)?.[1] || 'News';
+    if (title && link) items.push({ title: title.trim(), link: link.trim(), pubDate: pubDate.trim(), source: source.trim() });
+  }
+  return items;
+}
+
+async function fetchFreshNews() {
+  try {
+    const results = await Promise.allSettled(
+      RSS_FEEDS.map((url) =>
+        fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(url)}`)
+          .then((r) => r.json())
+          .then((j) => j.contents)
+      )
+    );
+
+    const articles = [];
+    const seenTitles = new Set();
+
+    for (const result of results) {
+      if (result.status !== 'fulfilled') continue;
+      const parsed = parseRSS(result.value);
+      for (const article of parsed) {
+        const key = article.title.slice(0, 60).toLowerCase();
+        if (!isExcluded(article.title) && !seenTitles.has(key)) {
+          seenTitles.add(key);
+          articles.push(article);
+          break; // 1 per feed
+        }
+      }
+    }
+
+    // Fallback if all excluded
+    if (articles.length === 0) {
+      const fallback = await fetch(
+        `https://api.allorigins.win/get?url=${encodeURIComponent('https://news.google.com/rss/search?q=IFB+Industries&hl=en-IN&gl=IN&ceid=IN:en')}`
+      ).then((r) => r.json()).then((j) => parseRSS(j.contents));
+      articles.push(...fallback.slice(0, 3));
+    }
+
+    return articles.slice(0, 3);
+  } catch (err) {
+    console.error('RSS fetch error:', err);
+    return [];
+  }
 }
 
 function renderNewsList(articles) {
   const el = document.getElementById('newsList');
   if (!articles || articles.length === 0) {
-    el.innerHTML = `
-      <div class="feed-error">
-        No recent IFB news in the last 48 hours.<br>
-        <small style="color:#94a3b8">Check back later or
-          <a href="https://news.google.com/search?q=IFB+appliances" target="_blank">search Google News</a>.
-        </small>
-      </div>`;
+    el.innerHTML = '<div class="feed-error">No news found at the moment.</div>';
     return;
   }
   el.innerHTML = articles.map(a => `
     <a class="news-card" href="${a.link}" target="_blank" rel="noopener noreferrer">
-      <div class="news-card-top">
-        <span class="news-source">${a.source || 'News'}</span>
-        ${isFresh(a.pubDate) ? '<span class="news-badge-new">NEW</span>' : ''}
-      </div>
+      <div class="news-source">${a.source || 'News'}</div>
       <div class="news-title">${a.title}</div>
       <div class="news-footer">
         <span class="news-time">${timeAgo(a.pubDate)}</span>
@@ -79,35 +139,26 @@ async function loadSocialFeed() {
   updatedEl.textContent = 'Refreshing...';
 
   try {
-    const [newsRes, socialRes] = await Promise.all([
-      fetch('/api/news'),
-      fetch('/api/social')
+    // News — fresh from RSS every time
+    const [articles, socialRes] = await Promise.all([
+      fetchFreshNews(),
+      fetch('/api/social'),
     ]);
 
-    if (newsRes.ok) {
-      const newsJson = await newsRes.json();
-      renderNewsList(newsJson.data?.articles);
-      renderTicker(newsJson.data?.articles);
-      if (newsJson.data?.updatedAt) {
-        updatedEl.textContent = 'News: ' + timeAgo(newsJson.data.updatedAt);
-      }
-    } else {
-      document.getElementById('newsList').innerHTML =
-        '<div class="feed-error">Could not load news.</div>';
-    }
+    renderNewsList(articles);
+    renderTicker(articles);
+    updatedEl.textContent = 'News live • ';
 
     if (socialRes.ok) {
       const socialJson = await socialRes.json();
       renderSocialList(socialJson.data?.linkedin,  'linkedinList');
       renderSocialList(socialJson.data?.instagram, 'instagramList');
       if (socialJson.data?.updatedAt) {
-        updatedEl.textContent += ' · Social: ' + timeAgo(socialJson.data.updatedAt);
+        updatedEl.textContent += 'Social updated ' + timeAgo(socialJson.data.updatedAt);
       }
     } else {
-      document.getElementById('linkedinList').innerHTML =
-        '<div class="feed-error">Could not load posts.</div>';
-      document.getElementById('instagramList').innerHTML =
-        '<div class="feed-error">Could not load posts.</div>';
+      document.getElementById('linkedinList').innerHTML  = '<div class="feed-error">Could not load posts.</div>';
+      document.getElementById('instagramList').innerHTML = '<div class="feed-error">Could not load posts.</div>';
     }
 
   } catch (err) {
