@@ -1,8 +1,19 @@
 import Redis from 'ioredis';
 
-const redis = new Redis(process.env.REDIS_URL);
-const CACHE_KEY = 'ifb_news_cache';
-const CACHE_TTL = 1800; // 30 mins
+let redis;
+function getRedis() {
+  if (!redis) {
+    redis = new Redis(process.env.REDIS_URL, {
+      connectTimeout: 3000,
+      maxRetriesPerRequest: 1,
+      enableOfflineQueue: false,
+      lazyConnect: true,
+      tls: process.env.REDIS_URL?.startsWith('rediss://') ? {} : undefined,
+    });
+    redis.on('error', (e) => console.error('Redis error:', e.message));
+  }
+  return redis;
+}
 
 function parseRSS(xml) {
   const items = [];
@@ -16,31 +27,68 @@ function parseRSS(xml) {
       || item.match(/<feedburner:origLink>(.*?)<\/feedburner:origLink>/)?.[1] || '';
     const pubDate = item.match(/<pubDate>(.*?)<\/pubDate>/)?.[1] || '';
     const source = item.match(/<source[^>]*>(.*?)<\/source>/)?.[1] || 'News';
-    items.push({ title: title.trim(), link: link.trim(), pubDate, source: source.trim() });
+    if (title && link) {
+      items.push({ title: title.trim(), link: link.trim(), pubDate, source: source.trim() });
+    }
   }
   return items.slice(0, 10);
 }
 
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Cache-Control', 's-maxage=1800, stale-while-revalidate');
+
+  const CACHE_KEY = 'ifb_news_v2';
 
   try {
-    const cached = await redis.get(CACHE_KEY);
+    const r = getRedis();
+
+    // Try cache
+    let cached = null;
+    try {
+      cached = await r.get(CACHE_KEY);
+    } catch (e) {
+      console.warn('Redis get failed, fetching fresh:', e.message);
+    }
+
     if (cached) {
       return res.status(200).json({ source: 'cache', data: JSON.parse(cached) });
     }
 
+    // Fetch from Google News RSS
     const rssUrl = 'https://news.google.com/rss/search?q=IFB+Industries+Limited&hl=en-IN&gl=IN&ceid=IN:en';
-    const response = await fetch(rssUrl);
+    const response = await fetch(rssUrl, {
+      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; IFBPortal/1.0)' },
+      signal: AbortSignal.timeout(4000)
+    });
+
+    if (!response.ok) throw new Error(`RSS fetch failed: ${response.status}`);
+
     const xml = await response.text();
     const articles = parseRSS(xml);
 
+    if (articles.length === 0) throw new Error('No articles parsed from RSS');
+
     const data = { articles, updatedAt: new Date().toISOString() };
-    await redis.set(CACHE_KEY, JSON.stringify(data), 'EX', CACHE_TTL);
+
+    // Save to cache (don't await — fire and forget to save time)
+    r.set(CACHE_KEY, JSON.stringify(data), 'EX', 1800).catch(e =>
+      console.warn('Redis set failed:', e.message)
+    );
 
     return res.status(200).json({ source: 'fresh', data });
+
   } catch (err) {
-    console.error('News API error:', err);
-    return res.status(500).json({ error: 'Failed to fetch news' });
+    console.error('News API error:', err.message);
+
+    // Return fallback structure so frontend doesn't break
+    return res.status(200).json({
+      source: 'error',
+      data: {
+        articles: [],
+        error: err.message,
+        updatedAt: new Date().toISOString()
+      }
+    });
   }
 }
