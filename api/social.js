@@ -1,110 +1,140 @@
 import Redis from 'ioredis';
 
-const redis = new Redis(process.env.REDIS_URL);
-
-const APIFY_TOKEN = process.env.APIFY_API_TOKEN;
-const CACHE_KEY = 'ifb_social_cache';
-const CACHE_TTL = 3600; // 1 hour in seconds
-
-async function fetchLinkedIn() {
-  try {
-    const runRes = await fetch(`https://api.apify.com/v2/acts/apidojo~linkedin-company-posts-scraper/runs?token=${APIFY_TOKEN}`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        companyUrls: ['https://www.linkedin.com/company/ifb-industries-ltd'],
-        maxResults: 3
-      })
+let redis;
+function getRedis() {
+  if (!redis) {
+    redis = new Redis(process.env.REDIS_URL, {
+      connectTimeout: 3000,
+      maxRetriesPerRequest: 1,
+      enableOfflineQueue: false,
+      lazyConnect: true,
+      tls: process.env.REDIS_URL?.startsWith('rediss://') ? {} : undefined,
     });
-    const run = await runRes.json();
-    const runId = run.data?.id;
-    if (!runId) return [];
-
-    // Wait for run to finish (poll every 3s, max 30s)
-    for (let i = 0; i < 10; i++) {
-      await new Promise(r => setTimeout(r, 3000));
-      const statusRes = await fetch(`https://api.apify.com/v2/actor-runs/${runId}?token=${APIFY_TOKEN}`);
-      const status = await statusRes.json();
-      if (status.data?.status === 'SUCCEEDED') {
-        const dataRes = await fetch(`https://api.apify.com/v2/actor-runs/${runId}/dataset/items?token=${APIFY_TOKEN}&limit=3`);
-        const items = await dataRes.json();
-        return items.map(p => ({
-          platform: 'linkedin',
-          text: p.text?.slice(0, 150) || p.commentary?.slice(0, 150) || 'View post on LinkedIn',
-          url: p.url || p.postUrl || 'https://www.linkedin.com/company/ifb-industries-ltd',
-          likes: p.likeCount || p.totalReactionCount || 0,
-          comments: p.commentCount || 0,
-          time: p.postedAt || p.createdAt || null,
-        }));
-      }
-      if (status.data?.status === 'FAILED') break;
-    }
-    return [];
-  } catch (e) {
-    console.error('LinkedIn fetch error:', e);
-    return [];
+    redis.on('error', (e) => console.error('Redis error:', e.message));
   }
+  return redis;
 }
 
-async function fetchInstagram() {
-  try {
-    const runRes = await fetch(`https://api.apify.com/v2/acts/apify~instagram-profile-scraper/runs?token=${APIFY_TOKEN}`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        usernames: ['ifbappliances'],
-        resultsLimit: 3
-      })
-    });
-    const run = await runRes.json();
-    const runId = run.data?.id;
-    if (!runId) return [];
+const APIFY_TOKEN = process.env.APIFY_API_TOKEN;
+const CACHE_KEY   = 'ifb_social_v2';
+const CACHE_TTL   = 3600;
 
-    for (let i = 0; i < 10; i++) {
-      await new Promise(r => setTimeout(r, 3000));
-      const statusRes = await fetch(`https://api.apify.com/v2/actor-runs/${runId}?token=${APIFY_TOKEN}`);
-      const status = await statusRes.json();
-      if (status.data?.status === 'SUCCEEDED') {
-        const dataRes = await fetch(`https://api.apify.com/v2/actor-runs/${runId}/dataset/items?token=${APIFY_TOKEN}&limit=3`);
-        const items = await dataRes.json();
-        return items.map(p => ({
-          platform: 'instagram',
-          text: p.caption?.slice(0, 150) || 'View post on Instagram',
-          url: p.url || `https://www.instagram.com/ifbappliances`,
-          likes: p.likesCount || 0,
-          comments: p.commentsCount || 0,
-          time: p.timestamp || null,
-        }));
+async function fetchAndCacheSocial() {
+  const r = getRedis();
+
+  async function runActor(actorId, input) {
+    try {
+      // Start actor run
+      const startRes = await fetch(
+        `https://api.apify.com/v2/acts/${actorId}/runs?token=${APIFY_TOKEN}`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(input),
+          signal: AbortSignal.timeout(5000)
+        }
+      );
+      const startJson = await startRes.json();
+      const runId = startJson.data?.id;
+      if (!runId) return [];
+
+      // Poll until done (max 45s — used by cron job only)
+      for (let i = 0; i < 15; i++) {
+        await new Promise(res => setTimeout(res, 3000));
+        const statusRes = await fetch(
+          `https://api.apify.com/v2/actor-runs/${runId}?token=${APIFY_TOKEN}`,
+          { signal: AbortSignal.timeout(4000) }
+        );
+        const status = await statusRes.json();
+        if (status.data?.status === 'SUCCEEDED') {
+          const dataRes = await fetch(
+            `https://api.apify.com/v2/actor-runs/${runId}/dataset/items?token=${APIFY_TOKEN}&limit=3`,
+            { signal: AbortSignal.timeout(4000) }
+          );
+          return await dataRes.json();
+        }
+        if (status.data?.status === 'FAILED') break;
       }
-      if (status.data?.status === 'FAILED') break;
+    } catch (e) {
+      console.error('Actor run error:', e.message);
     }
     return [];
-  } catch (e) {
-    console.error('Instagram fetch error:', e);
-    return [];
   }
+
+  const [liItems, igItems] = await Promise.all([
+    runActor('apidojo~linkedin-company-posts-scraper', {
+      companyUrls: ['https://www.linkedin.com/company/ifb-industries-ltd'],
+      maxResults: 3
+    }),
+    runActor('apify~instagram-profile-scraper', {
+      usernames: ['ifbappliances'],
+      resultsLimit: 3
+    })
+  ]);
+
+  const data = {
+    linkedin: liItems.map(p => ({
+      platform: 'linkedin',
+      text: (p.text || p.commentary || 'View post on LinkedIn').slice(0, 150),
+      url: p.url || p.postUrl || 'https://www.linkedin.com/company/ifb-industries-ltd',
+      likes: p.likeCount || p.totalReactionCount || 0,
+      comments: p.commentCount || 0,
+      time: p.postedAt || p.createdAt || null,
+    })),
+    instagram: igItems.map(p => ({
+      platform: 'instagram',
+      text: (p.caption || 'View post on Instagram').slice(0, 150),
+      url: p.url || 'https://www.instagram.com/ifbappliances',
+      likes: p.likesCount || 0,
+      comments: p.commentsCount || 0,
+      time: p.timestamp || null,
+    })),
+    updatedAt: new Date().toISOString()
+  };
+
+  await r.set(CACHE_KEY, JSON.stringify(data), 'EX', CACHE_TTL);
+  return data;
 }
 
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Cache-Control', 's-maxage=3600, stale-while-revalidate');
+
+  const r = getRedis();
 
   try {
-    // Check cache first
-    const cached = await redis.get(CACHE_KEY);
+    // Always serve from cache to stay within 5s limit
+    let cached = null;
+    try {
+      cached = await r.get(CACHE_KEY);
+    } catch (e) {
+      console.warn('Redis get failed:', e.message);
+    }
+
     if (cached) {
       return res.status(200).json({ source: 'cache', data: JSON.parse(cached) });
     }
 
-    // Fetch fresh data
-    const [linkedin, instagram] = await Promise.all([fetchLinkedIn(), fetchInstagram()]);
-    const data = { linkedin, instagram, updatedAt: new Date().toISOString() };
+    // No cache yet — return empty with a message, cron will populate
+    // Trigger background fetch via cron (don't await)
+    return res.status(200).json({
+      source: 'pending',
+      data: {
+        linkedin: [],
+        instagram: [],
+        updatedAt: null,
+        message: 'Posts loading — check back in 2 minutes'
+      }
+    });
 
-    // Save to cache
-    await redis.set(CACHE_KEY, JSON.stringify(data), 'EX', CACHE_TTL);
-
-    return res.status(200).json({ source: 'fresh', data });
   } catch (err) {
-    console.error('Social API error:', err);
-    return res.status(500).json({ error: 'Failed to fetch social data' });
+    console.error('Social API error:', err.message);
+    return res.status(200).json({
+      source: 'error',
+      data: { linkedin: [], instagram: [], updatedAt: null }
+    });
   }
 }
+
+// This is called by the Vercel cron job (runs outside 5s limit)
+export { fetchAndCacheSocial };
