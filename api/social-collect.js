@@ -60,14 +60,14 @@ if (liStatus === 'SUCCEEDED') {
 
   console.log(`LinkedIn items: ${liItems.length}`, JSON.stringify(liItems[0] || {}).slice(0, 400));
 
-  current.linkedin = liItems.slice(0, 3).map((p) => ({
-    platform: 'linkedin',
-    text:     (p.text || p.content || p.postContent || p.commentary || p.description || p.body || 'View post on LinkedIn').slice(0, 150),
-    url:      p.url || p.postUrl || p.link || p.postLink || 'https://www.linkedin.com/company/ifb-industries-ltd',
-    likes:    p.likesCount || p.likeCount || p.totalReactionCount || p.reactions || 0,
-    comments: p.commentsCount || p.commentCount || p.comments || 0,
-    time:     p.postedAt || p.publishedAt || p.createdAt || p.date || null,
-  }));
+current.linkedin = liItems.slice(0, 3).map((p) => ({
+  platform: 'linkedin',
+  text:     (p.text || p.commentary || p.content || p.description || 'View post on LinkedIn').slice(0, 150),
+  url:      p.url || p.postUrl || p.link || 'https://www.linkedin.com/company/ifb-industries-ltd',
+  likes:    p.reactions || p.likeCount || p.totalReactionCount || p.likes || 0,
+  comments: p.commentsCount || p.commentCount || p.comments || 0,
+  time:     p.postedAt || p.createdAt || p.publishedAt || p.date || null,
+}));
 }
 
     // Collect Instagram if done

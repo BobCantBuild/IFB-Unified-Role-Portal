@@ -50,10 +50,11 @@ module.exports = async function handler(req, res) {
 
     // Fire both actors — don't wait
     const [liRunId, igRunId] = await Promise.all([
-      startActor('A3cAPGpwBEG8RJwse', {
-        profileUrls: ['https://www.linkedin.com/company/ifb-industries-ltd/'],
-        maxPosts: 3,
-      }, webhook),
+startActor('mrThmKLmkxJPehxCg', {
+  company_name: 'ifb-industries-ltd',
+  limit: 3,
+  sort: 'recent',
+}, webhook),
 startActor('apimaestro~linkedin-company-posts', {
   startUrls: [{ url: 'https://www.linkedin.com/company/ifb-industries-ltd/' }],
   maxResults: 3,
