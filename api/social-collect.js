@@ -52,23 +52,23 @@ module.exports = async function handler(req, res) {
     const cachedRaw = await redis.get(CACHE_KEY);
     const current   = cachedRaw ? JSON.parse(cachedRaw) : { linkedin: [], instagram: [], updatedAt: null };
 
-    // Collect LinkedIn if done
-    if (liStatus === 'SUCCEEDED') {
-      const liItems = await fetch(
-        `https://api.apify.com/v2/actor-runs/${runs.li}/dataset/items?token=${APIFY_TOKEN}&limit=10`
-      ).then(r => r.json());
+// Collect LinkedIn if done
+if (liStatus === 'SUCCEEDED') {
+  const liItems = await fetch(
+    `https://api.apify.com/v2/actor-runs/${runs.li}/dataset/items?token=${APIFY_TOKEN}&limit=10`
+  ).then(r => r.json());
 
-      console.log(`LinkedIn items: ${liItems.length}`, JSON.stringify(liItems[0] || {}).slice(0, 400));
+  console.log(`LinkedIn items: ${liItems.length}`, JSON.stringify(liItems[0] || {}).slice(0, 400));
 
-      current.linkedin = liItems.slice(0, 3).map((p) => ({
-        platform: 'linkedin',
-        text:     (p.text || p.content || p.postContent || p.commentary || p.description || p.body || 'View post on LinkedIn').slice(0, 150),
-        url:      p.url || p.postUrl || p.link || p.postLink || 'https://www.linkedin.com/company/ifb-industries-ltd',
-        likes:    p.likesCount || p.likeCount || p.totalReactionCount || p.reactions || 0,
-        comments: p.commentsCount || p.commentCount || p.comments || 0,
-        time:     p.postedAt || p.publishedAt || p.createdAt || p.date || null,
-      }));
-    }
+  current.linkedin = liItems.slice(0, 3).map((p) => ({
+    platform: 'linkedin',
+    text:     (p.text || p.content || p.postContent || p.commentary || p.description || p.body || 'View post on LinkedIn').slice(0, 150),
+    url:      p.url || p.postUrl || p.link || p.postLink || 'https://www.linkedin.com/company/ifb-industries-ltd',
+    likes:    p.likesCount || p.likeCount || p.totalReactionCount || p.reactions || 0,
+    comments: p.commentsCount || p.commentCount || p.comments || 0,
+    time:     p.postedAt || p.publishedAt || p.createdAt || p.date || null,
+  }));
+}
 
     // Collect Instagram if done
     if (igStatus === 'SUCCEEDED') {

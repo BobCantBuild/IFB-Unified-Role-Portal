@@ -54,10 +54,10 @@ module.exports = async function handler(req, res) {
         profileUrls: ['https://www.linkedin.com/company/ifb-industries-ltd/'],
         maxPosts: 3,
       }, webhook),
-      startActor('dSCLg0C3YEZ83HzYX', {
-        usernames:    ['ifbappliances'],
-        resultsLimit: 3,
-      }, webhook),
+startActor('apimaestro~linkedin-company-posts', {
+  startUrls: [{ url: 'https://www.linkedin.com/company/ifb-industries-ltd/' }],
+  maxResults: 3,
+}, webhook),
     ]);
 
     // Store pending run IDs in Redis so webhook knows what to collect
