@@ -5,12 +5,13 @@
     { "src": "**/*",        "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1.js" },
-    { "src": "/(.*)",     "dest": "/$1" }
+    { "src": "/api/social", "dest": "/api/social-feed.js" },
+    { "src": "/api/(.*)",   "dest": "/api/$1.js" },
+    { "src": "/(.*)",       "dest": "/$1" }
   ],
   "crons": [
-  { "path": "/api/social-cron",    "schedule": "0 9 * * *" },
-  { "path": "/api/social-collect", "schedule": "1 9 * * *" },
-  { "path": "/api/news",           "schedule": "0 8 * * *" }
+    { "path": "/api/social-cron",    "schedule": "0 9 * * *" },
+    { "path": "/api/social-collect", "schedule": "1 9 * * *" },
+    { "path": "/api/news",           "schedule": "0 8 * * *" }
   ]
 }
