@@ -47,14 +47,14 @@ module.exports = async function handler(req, res) {
   }
 
   try {
-    const liRunId = await startActor('mrThmKLmkxJPehxCg', {
-      company_name: 'ifb-industries-ltd',
-      limit: 3,
-      sort: 'recent',
+    // ✅ FIXED: same actor IDs and input format as social-collect.js
+    const liRunId = await startActor('A3cAPGpwBEG8RJwse', {
+      profileUrls: ['https://www.linkedin.com/company/ifb-industries-ltd/'],
+      maxPosts: 3,
     });
 
     const igRunId = await startActor('dSCLg0C3YEZ83HzYX', {
-      usernames: ['ifbappliances'],
+      usernames:    ['ifbappliances'],
       resultsLimit: 3,
     });
 
