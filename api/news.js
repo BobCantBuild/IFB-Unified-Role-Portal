@@ -38,7 +38,6 @@ function parseRSS(xml) {
   return items;
 }
 
-// Keywords to EXCLUDE (financial/stock noise)
 const EXCLUDE_KEYWORDS = [
   'share price', 'stock', 'nse', 'bse', 'sensex', 'nifty',
   'quarterly result', 'q1', 'q2', 'q3', 'q4', 'dividend',
@@ -51,27 +50,36 @@ function isExcluded(title) {
   return EXCLUDE_KEYWORDS.some((kw) => lower.includes(kw));
 }
 
-// 3 different RSS queries — each targeting a different topic
+// ✅ sort=date added — newest articles first from Google News
 const RSS_QUERIES = [
   {
-    label:   'product',
-    url:     'https://news.google.com/rss/search?q=IFB+appliances+washing+machine+OR+microwave+OR+dishwasher&hl=en-IN&gl=IN&ceid=IN:en',
+    label: 'product',
+    url:   'https://news.google.com/rss/search?q=IFB+appliances+washing+machine+OR+microwave+OR+dishwasher&hl=en-IN&gl=IN&ceid=IN:en&sort=date',
   },
   {
-    label:   'brand',
-    url:     'https://news.google.com/rss/search?q=IFB+Industries+launch+OR+award+OR+service+OR+innovation&hl=en-IN&gl=IN&ceid=IN:en',
+    label: 'brand',
+    url:   'https://news.google.com/rss/search?q=IFB+Industries+launch+OR+award+OR+service+OR+innovation&hl=en-IN&gl=IN&ceid=IN:en&sort=date',
   },
   {
-    label:   'industry',
-    url:     'https://news.google.com/rss/search?q=home+appliance+industry+India+2025&hl=en-IN&gl=IN&ceid=IN:en',
+    label: 'industry',
+    url:   'https://news.google.com/rss/search?q=home+appliance+industry+India&hl=en-IN&gl=IN&ceid=IN:en&sort=date',
   },
 ];
+
+// ✅ 7 days cutoff — wide enough to always find results
+const CUTOFF_MS = 7 * 24 * 60 * 60 * 1000;
 
 module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Cache-Control', 's-maxage=1800, stale-while-revalidate');
 
   const CACHE_KEY = 'ifb_news_v3';
+
+  // ?clear=1 — force refresh cache
+  if (req.query.clear === '1') {
+    try { await getRedis().del(CACHE_KEY); } catch (e) {}
+    return res.status(200).json({ ok: true, message: 'News cache cleared.' });
+  }
 
   try {
     const r = getRedis();
@@ -91,35 +99,48 @@ module.exports = async function handler(req, res) {
       )
     );
 
-    // Pick best 1 article from each feed (skip excluded ones)
     const articles = [];
     const seenTitles = new Set();
+    const cutoff = Date.now() - CUTOFF_MS;
 
     for (let i = 0; i < results.length; i++) {
       if (results[i].status !== 'fulfilled') continue;
       const parsed = parseRSS(results[i].value);
 
-      // Pick first non-excluded, non-duplicate article from this feed
+      // ✅ Pick newest non-excluded article from each feed
       for (const article of parsed) {
         const titleKey = article.title.slice(0, 60).toLowerCase();
-        if (!isExcluded(article.title) && !seenTitles.has(titleKey)) {
-          seenTitles.add(titleKey);
-          articles.push(article);
-          break; // only 1 per feed
-        }
+        const pubTime  = article.pubDate ? new Date(article.pubDate).getTime() : 0;
+
+        if (pubTime < cutoff)           continue; // too old
+        if (isExcluded(article.title))  continue; // financial noise
+        if (seenTitles.has(titleKey))   continue; // duplicate
+
+        seenTitles.add(titleKey);
+        articles.push(article);
+        break; // 1 per feed
       }
     }
 
-    // If all feeds excluded, fall back to first 3 from original query
+    // Fallback — if all feeds empty or excluded, relax the cutoff
     if (articles.length === 0) {
-      const fallbackRes = await fetch(
-        'https://news.google.com/rss/search?q=IFB+Industries&hl=en-IN&gl=IN&ceid=IN:en',
-        { headers: { 'User-Agent': 'Mozilla/5.0' }, signal: AbortSignal.timeout(4000) }
-      );
-      const fallbackXml = await fallbackRes.text();
-      const fallback    = parseRSS(fallbackXml);
-      articles.push(...fallback.slice(0, 3));
+      for (let i = 0; i < results.length; i++) {
+        if (results[i].status !== 'fulfilled') continue;
+        const parsed = parseRSS(results[i].value);
+        for (const article of parsed) {
+          const titleKey = article.title.slice(0, 60).toLowerCase();
+          if (!isExcluded(article.title) && !seenTitles.has(titleKey)) {
+            seenTitles.add(titleKey);
+            articles.push(article);
+            if (articles.length >= 3) break;
+          }
+        }
+        if (articles.length >= 3) break;
+      }
     }
+
+    // ✅ Sort newest first before caching
+    articles.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 
     const data = { articles: articles.slice(0, 3), updatedAt: new Date().toISOString() };
 
