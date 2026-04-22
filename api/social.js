@@ -33,7 +33,6 @@ async function runApifyActor(actorId, input) {
       }
     );
     if (!startRes.ok) return [];
-
     const startJson = await startRes.json();
     const runId     = startJson.data?.id;
     if (!runId) return [];
@@ -46,7 +45,6 @@ async function runApifyActor(actorId, input) {
       );
       const statusJson = await statusRes.json();
       const status     = statusJson.data?.status;
-
       if (status === 'SUCCEEDED') {
         const dataRes = await fetch(
           `https://api.apify.com/v2/actor-runs/${runId}/dataset/items?token=${APIFY_TOKEN}&limit=10`,
@@ -76,7 +74,6 @@ async function fetchAndCacheSocial() {
     }),
   ]);
 
-  // ── Instagram ──
   let igPosts = [];
   if (igRaw.length > 0) {
     const latestPosts = igRaw[0].latestPosts || [];
@@ -90,7 +87,6 @@ async function fetchAndCacheSocial() {
     }));
   }
 
-  // ── LinkedIn ──
   const liPosts = liRaw.slice(0, 3).map((p) => ({
     platform: 'linkedin',
     text:     (p.text || p.content || p.commentary || p.description || 'View post on LinkedIn').slice(0, 150),
@@ -120,10 +116,8 @@ module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Cache-Control', 's-maxage=3600, stale-while-revalidate');
 
-  const r = getRedis();
-
   try {
-    // Try Redis cache first
+    const r = getRedis();
     let cached = null;
     try { cached = await r.get(CACHE_KEY); }
     catch (e) { console.warn('Redis get failed:', e.message); }
@@ -132,8 +126,6 @@ module.exports = async function handler(req, res) {
       return res.status(200).json({ source: 'cache', data: JSON.parse(cached) });
     }
 
-    // Cache empty — return empty immediately, let cron fill it
-    // Don't block the request waiting for Apify (takes 45+ seconds)
     return res.status(200).json({
       source: 'empty',
       data: { linkedin: [], instagram: [], updatedAt: null },
