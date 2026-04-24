@@ -71,10 +71,10 @@ module.exports = async function handler(req, res) {
   // TRIGGER: start both actors
   try {
     // LinkedIn — automation-lab company posts scraper (no login, free tier)
-    const liRunId = await startActor('automation-lab~linkedin-company-posts-scraper', {
-      companyUrl: 'https://www.linkedin.com/company/ifb-industries-ltd/',
-      maxPosts: 5,
-    });
+const liRunId = await startActor('oAf7819001ttSmFDv', {
+  companyUrl: 'https://www.linkedin.com/company/ifb-industries-ltd/',
+  maxPosts: 5,
+});
 
     // Instagram — working profile scraper
     const igRunId = await startActor('dSCLg0C3YEZ83HzYX', {
