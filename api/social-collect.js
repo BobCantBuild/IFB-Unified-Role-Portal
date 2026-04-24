@@ -1,20 +1,103 @@
 const Redis = require('ioredis');
 
+let redisClient = null;
+
 function getRedis() {
-  return new Redis(process.env.REDIS_URL, {
-    connectTimeout: 5000,
-    maxRetriesPerRequest: 2,
-    retryStrategy(times) {
-      if (times > 3) return null;
-      return Math.min(times * 200, 1000);
-    },
-    tls: process.env.REDIS_URL && process.env.REDIS_URL.startsWith('rediss://') ? {} : undefined,
-  });
+  if (!redisClient) {
+    redisClient = new Redis(process.env.REDIS_URL, {
+      connectTimeout: 5000,
+      maxRetriesPerRequest: 2,
+      retryStrategy(times) {
+        if (times > 3) return null;
+        return Math.min(times * 200, 1000);
+      },
+      tls: process.env.REDIS_URL && process.env.REDIS_URL.startsWith('rediss://') ? {} : undefined,
+    });
+    redisClient.on('error', e => console.error('[Redis Error]', e.message));
+  }
+  return redisClient;
 }
 
 const APIFY_TOKEN = process.env.APIFY_API_TOKEN;
-const CACHE_KEY   = 'ifb_social_v2';
-const CACHE_TTL   = 86400;
+
+async function getRunStatus(runId) {
+  if (!runId) return { status: 'MISSING' };
+  try {
+    const r = await fetch(
+      `https://api.apify.com/v2/actor-runs/${runId}?token=${APIFY_TOKEN}`,
+      { signal: AbortSignal.timeout(8000) }
+    );
+    const json = await r.json();
+    return { status: json?.data?.status || 'UNKNOWN' };
+  } catch (e) {
+    console.error('[Apify] getRunStatus error:', e.message);
+    return { status: 'ERROR' };
+  }
+}
+
+async function getRunItems(runId) {
+  if (!runId) return [];
+  try {
+    const r = await fetch(
+      `https://api.apify.com/v2/actor-runs/${runId}/dataset/items?token=${APIFY_TOKEN}&limit=10`,
+      { signal: AbortSignal.timeout(8000) }
+    );
+    const items = await r.json();
+    console.log(`[Apify] runId ${runId} → ${items?.length ?? 0} items`);
+    if (items?.length) {
+      console.log('[Apify] First item sample:', JSON.stringify(items[0]).slice(0, 400));
+    }
+    return Array.isArray(items) ? items : [];
+  } catch (e) {
+    console.error('[Apify] getRunItems error:', e.message);
+    return [];
+  }
+}
+
+function mapLinkedIn(items) {
+  return items.slice(0, 3).map(p => ({
+    platform: 'linkedin',
+    text: (
+      p.text || p.postText || p.content || p.description || p.commentary || 'View post on LinkedIn'
+    ).replace(/<[^>]+>/g, '').trim().slice(0, 150),
+    url:
+      p.postUrl || p.url || p.shareUrl || p.permalinkUrl ||
+      'https://www.linkedin.com/company/ifb-industries-ltd',
+    likes:    p.likes    || p.reactions    || p.likeCount    || p.totalReactions || 0,
+    comments: p.comments || p.commentsCount || p.commentCount || 0,
+    time:     p.date     || p.postedAt     || p.publishedAt  || p.createdAt      || null,
+  }));
+}
+
+function mapInstagram(items) {
+  let posts = [];
+
+  if (!items.length) return posts;
+
+  const first = items[0];
+
+  if (first.latestPosts?.length)           posts = first.latestPosts.slice(0, 3);
+  else if (first.topPosts?.length)         posts = first.topPosts.slice(0, 3);
+  else if (first.caption || first.shortCode) posts = items.slice(0, 3);
+  else {
+    for (const item of items) {
+      const found = item.latestPosts || item.topPosts || item.posts || [];
+      if (found.length) { posts = found.slice(0, 3); break; }
+    }
+  }
+
+  return posts.map(p => ({
+    platform: 'instagram',
+    text: (p.caption || p.text || p.alt || 'View post on Instagram').slice(0, 150),
+    url:
+      p.url ||
+      (p.shortCode ? `https://www.instagram.com/p/${p.shortCode}/` : null) ||
+      'https://www.instagram.com/ifbappliances',
+    likes:    p.likesCount    || p.likes    || 0,
+    comments: p.commentsCount || p.comments || 0,
+    time:     p.timestamp     || p.takenAt  || null,
+  }));
+}
 
 module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -23,108 +106,60 @@ module.exports = async function handler(req, res) {
   try {
     const runsRaw = await redis.get('ifb_social_runs');
     if (!runsRaw) {
-      return res.status(200).json({ ok: false, message: 'No pending runs. Trigger /api/social-cron first.' });
-    }
-
-    const runs = JSON.parse(runsRaw);
-
-    const [liData, igData] = await Promise.all([
-      fetch(`https://api.apify.com/v2/actor-runs/${runs.li}?token=${APIFY_TOKEN}`).then(r => r.json()),
-      fetch(`https://api.apify.com/v2/actor-runs/${runs.ig}?token=${APIFY_TOKEN}`).then(r => r.json()),
-    ]);
-
-    const liStatus = liData.data?.status;
-    const igStatus = igData.data?.status;
-    console.log('LI status:', liStatus, '| IG status:', igStatus);
-
-    if (liStatus !== 'SUCCEEDED' && igStatus !== 'SUCCEEDED') {
-      return res.status(200).json({
+      return res.status(400).json({
         ok: false,
-        message: 'Still running. Wait more and try again.',
-        liStatus,
-        igStatus,
+        message: 'No runs found. Call /api/social-cron first.',
       });
     }
 
-    const current = { linkedin: [], instagram: [], updatedAt: null };
+    const runs = JSON.parse(runsRaw);
+    const { li: liRunId, ig: igRunId } = runs;
 
-    // ── Collect LinkedIn ──
-    if (liStatus === 'SUCCEEDED') {
-      const liItems = await fetch(
-        `https://api.apify.com/v2/actor-runs/${runs.li}/dataset/items?token=${APIFY_TOKEN}&limit=10`
-      ).then(r => r.json());
+    const [liStatus, igStatus] = await Promise.all([
+      getRunStatus(liRunId),
+      getRunStatus(igRunId),
+    ]);
 
-      console.log(`LI items: ${liItems.length}`, JSON.stringify(liItems[0] || {}).slice(0, 500));
+    console.log(`[Collect] LI: ${liStatus.status} | IG: ${igStatus.status}`);
 
-      // ✅ Handle both direct posts and nested posts array
-      let liPosts = [];
-      if (liItems.length > 0) {
-        const first = liItems[0];
-        if (first.posts && Array.isArray(first.posts)) {
-          liPosts = first.posts.slice(0, 3);
-        } else if (first.text || first.commentary || first.content) {
-          liPosts = liItems.slice(0, 3);
-        } else {
-          liPosts = liItems.slice(0, 3);
-        }
-      }
-
-      current.linkedin = liPosts.map((p) => ({
-        platform: 'linkedin',
-        text:     (p.text || p.commentary || p.content || p.description || p.body || 'View post on LinkedIn').slice(0, 150),
-        url:      p.postUrl || p.shareUrl || p.url || p.link || p.postLink || 'https://www.linkedin.com/company/ifb-industries-ltd',
-        likes:    p.reactions || p.likeCount || p.totalReactionCount || p.numLikes || p.likes || 0,
-        comments: p.commentsCount || p.commentCount || p.numComments || p.comments || 0,
-        time:     p.postedAt || p.createdAt || p.publishedAt || p.date || null,
-      }));
+    const PENDING = ['RUNNING', 'READY', 'ABORTING'];
+    if (PENDING.includes(liStatus.status) || PENDING.includes(igStatus.status)) {
+      return res.status(200).json({
+        ok: false,
+        message: 'Actors still running. Try again in 1-2 minutes.',
+        liStatus: liStatus.status,
+        igStatus: igStatus.status,
+      });
     }
 
-    // ── Collect Instagram ──
-    if (igStatus === 'SUCCEEDED') {
-      const igItems = await fetch(
-        `https://api.apify.com/v2/actor-runs/${runs.ig}/dataset/items?token=${APIFY_TOKEN}&limit=20`
-      ).then(r => r.json());
+    const [liItems, igItems] = await Promise.all([
+      getRunItems(liRunId),
+      getRunItems(igRunId),
+    ]);
 
-      console.log(`IG raw items: ${igItems.length}`, Object.keys(igItems[0] || {}).join(', '));
+    const linkedin  = mapLinkedIn(liItems);
+    const instagram = mapInstagram(igItems);
 
-      let igPosts = [];
-      if (igItems.length > 0) {
-        const first = igItems[0];
-        if (first.latestPosts?.length > 0)      igPosts = first.latestPosts.slice(0, 3);
-        else if (first.topPosts?.length > 0)    igPosts = first.topPosts.slice(0, 3);
-        else if (first.caption || first.shortCode) igPosts = igItems.slice(0, 3);
-        else {
-          for (const item of igItems) {
-            const found = item.latestPosts || item.topPosts || item.posts || [];
-            if (found.length > 0) { igPosts = found.slice(0, 3); break; }
-          }
-        }
-      }
+    const result = {
+      linkedin,
+      instagram,
+      updatedAt: new Date().toISOString(),
+    };
 
-      current.instagram = igPosts.map((p) => ({
-        platform: 'instagram',
-        text:     (p.caption || p.text || p.alt || p.accessibility_caption || 'View post on Instagram').slice(0, 150),
-        url:      p.url || (p.shortCode ? `https://www.instagram.com/p/${p.shortCode}/` : null) || 'https://www.instagram.com/ifbappliances',
-        likes:    p.likesCount || p.likes || p.like_count || 0,
-        comments: p.commentsCount || p.comments || p.comments_count || 0,
-        time:     p.timestamp || p.takenAt || p.taken_at || p.date || null,
-      }));
-    }
-
-    current.updatedAt = new Date().toISOString();
-    await redis.set(CACHE_KEY, JSON.stringify(current), 'EX', CACHE_TTL);
+    // Save to Redis cache for 24 hours
+    await redis.set('ifb_social_v2', JSON.stringify(result), 'EX', 86400);
 
     return res.status(200).json({
       ok: true,
-      updatedAt: current.updatedAt,
-      linkedinCount: current.linkedin.length,
-      instagramCount: current.instagram.length,
-      liStatus,
-      igStatus,
+      updatedAt:      result.updatedAt,
+      linkedinCount:  linkedin.length,
+      instagramCount: instagram.length,
+      liStatus:       liStatus.status,
+      igStatus:       igStatus.status,
     });
 
   } catch (err) {
-    console.error('Collect error:', err.message);
+    console.error('[Collect] Error:', err.message);
     return res.status(500).json({ ok: false, error: err.message });
   }
 };
