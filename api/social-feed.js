@@ -19,7 +19,7 @@ function getRedis() {
 
 const APIFY_TOKEN = process.env.APIFY_API_TOKEN;
 const CACHE_KEY   = 'ifb_social_v2';
-const CACHE_TTL   = 3600;
+const CACHE_TTL   = 86400;
 
 async function runApifyActor(actorId, input) {
   try {
