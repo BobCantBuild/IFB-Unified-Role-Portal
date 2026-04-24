@@ -24,7 +24,25 @@ const RSS_FEEDS = [
 ];
 
 const CACHE_KEY = 'ifb_news_cache';
-const CACHE_TTL = 1800; // 🔧 NEW: 30 minutes
+const CACHE_TTL = 900; // 🔧 CHANGED: 15 minutes (was 30) - ensure fresh news
+const MAX_ARTICLE_AGE_DAYS = 7; // 🔧 NEW: Only articles from last 7 days
+
+function isArticleRecent(pubDateStr) {
+  if (!pubDateStr) return false;
+  
+  try {
+    const pubDate = new Date(pubDateStr);
+    const now = new Date();
+    const ageInMs = now.getTime() - pubDate.getTime();
+    const ageInDays = ageInMs / (1000 * 60 * 60 * 24);
+    
+    // Only keep articles from last 7 days
+    return ageInDays <= MAX_ARTICLE_AGE_DAYS && ageInDays >= 0;
+  } catch (e) {
+    console.warn(`Failed to parse date: ${pubDateStr}`);
+    return false; // If we can't parse, exclude it
+  }
+}
 
 async function fetchFreshNews() {
   const results = await Promise.allSettled(
@@ -40,14 +58,24 @@ async function fetchFreshNews() {
     for (const item of result.value.items) {
       const title   = item.title || '';
       const titleKey = title.slice(0, 60).toLowerCase();
+      const pubDate = item.pubDate || item.isoDate || '';
+      
+      // 🔧 NEW: Filter out old articles (older than 7 days)
+      if (!isArticleRecent(pubDate)) {
+        console.log(`[OLD] Skipping article from ${pubDate}: ${title.slice(0, 50)}...`);
+        continue;
+      }
+      
       if (isExcluded(title))        continue;
       if (seenTitles.has(titleKey)) continue;
       seenTitles.add(titleKey);
+      
       allArticles.push({
         title,
         link:    item.link || '',
-        pubDate: item.pubDate || item.isoDate || '',
-        source:  item.source?.title || item.creator || 'News',
+        pubDate: pubDate,
+        source:  item.source?.title || item.creator || 'Google News',
+        daysOld: Math.floor((new Date().getTime() - new Date(pubDate).getTime()) / (1000 * 60 * 60 * 24)),
       });
     }
   }
@@ -56,7 +84,13 @@ async function fetchFreshNews() {
   allArticles.sort((a, b) => {
     const da = a.pubDate ? new Date(a.pubDate).getTime() : 0;
     const db = b.pubDate ? new Date(b.pubDate).getTime() : 0;
-    return db - da;
+    return db - da; // Newest first
+  });
+
+  // Log the articles we're returning
+  console.log(`[NEWS] Found ${allArticles.length} fresh articles (within last ${MAX_ARTICLE_AGE_DAYS} days)`);
+  allArticles.forEach((article, i) => {
+    console.log(`[NEWS #${i+1}] ${article.daysOld} days old - ${article.title.slice(0, 60)}...`);
   });
 
   // ✅ Take top 3 newest only
@@ -76,7 +110,8 @@ module.exports = async function handler(req, res) {
         return res.status(200).json({
           source: 'cache',
           cacheHitTime: Date.now() - startTime,
-          nextRefreshIn: '~30 minutes',
+          nextRefreshIn: '~15 minutes',
+          cacheExpiresIn: CACHE_TTL,
           data: {
             articles: cached,
             updatedAt: new Date().toISOString(),
@@ -86,6 +121,7 @@ module.exports = async function handler(req, res) {
     }
 
     // 🔧 Fetch fresh if no cache
+    console.log('[NEWS] Fetching fresh news articles from RSS feeds...');
     const articles = await fetchFreshNews();
     
     // 🔧 Store in node-cache (no external API)
@@ -95,6 +131,8 @@ module.exports = async function handler(req, res) {
       source: 'fresh',
       fetchTime: Date.now() - startTime,
       cacheExpiresIn: CACHE_TTL,
+      articleCount: articles.length,
+      oldestArticleAge: articles.length > 0 ? articles[articles.length - 1].daysOld : null,
       data: {
         articles,
         updatedAt: new Date().toISOString(),
