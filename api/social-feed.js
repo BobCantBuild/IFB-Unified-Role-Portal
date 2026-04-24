@@ -1,18 +1,7 @@
-const Redis = require('ioredis');
+const NodeCache = require('node-cache');
 
-let redis;
-function getRedis() {
-  if (!redis) {
-    redis = new Redis(process.env.REDIS_URL, {
-      connectTimeout: 5000,
-      maxRetriesPerRequest: 2,
-      retryStrategy(times) { if (times > 3) return null; return Math.min(times * 200, 1000); },
-      tls: process.env.REDIS_URL?.startsWith('rediss://') ? {} : undefined,
-    });
-    redis.on('error', e => console.error('Redis:', e.message));
-  }
-  return redis;
-}
+// ✅ In-memory cache with no external dependencies
+const cache = new NodeCache({ stdTTL: 1800, checkperiod: 300 }); // 30 min TTL, check every 5 min
 
 // ✅ VALIDATION: Fail loudly if token is missing
 const APIFY_TOKEN = process.env.APIFY_API_TOKEN;
@@ -118,26 +107,22 @@ module.exports = async function handler(req, res) {
   
   // 🔧 NEW: Add response metadata
   const startTime = Date.now();
-  const r = getRedis();
 
   try {
     if (req.query.refresh !== '1') {
-      try {
-        const cached = await r.get(CACHE_KEY);
-        if (cached) {
-          const data = JSON.parse(cached);
-          return res.status(200).json({
-            source: 'cache',
-            cacheHitTime: Date.now() - startTime,
-            nextRefreshIn: '~30 minutes',
-            data
-          });
-        }
-      } catch (e) { console.warn('Redis get failed:', e.message); }
+      const cached = cache.get(CACHE_KEY);
+      if (cached) {
+        return res.status(200).json({
+          source: 'cache',
+          cacheHitTime: Date.now() - startTime,
+          nextRefreshIn: '~30 minutes',
+          data: cached
+        });
+      }
     }
 
     const data = await fetchFreshData();
-    try { await r.set(CACHE_KEY, JSON.stringify(data), 'EX', CACHE_TTL); } catch (e) {}
+    cache.set(CACHE_KEY, data); // Uses default TTL from NodeCache init
 
     return res.status(200).json({
       source: 'fresh',

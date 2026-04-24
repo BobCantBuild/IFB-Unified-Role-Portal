@@ -9,7 +9,7 @@ All code changes have been completed, tested, and pushed to GitHub. **Now you ju
 ## ✅ WHAT'S ALREADY DONE
 
 - ✅ Fixed cron schedule (every 30 min instead of daily)
-- ✅ Reduced Redis cache TTL (30 min instead of 24 hours)
+- ✅ Replaced Redis with node-cache (zero external APIs needed!)
 - ✅ Implemented news caching
 - ✅ Added API token validation
 - ✅ Removed redundant code
@@ -18,13 +18,13 @@ All code changes have been completed, tested, and pushed to GitHub. **Now you ju
 
 ---
 
-## 🎯 WHAT YOU NEED TO DO (5 MINUTES)
+## 🎯 WHAT YOU NEED TO DO (3 MINUTES)
 
 ### Step 1: Go to Vercel Dashboard
 1. Open **https://vercel.com/dashboard**
 2. Click on project **"unified-role-portal"**
 
-### Step 2: Add Environment Variables
+### Step 2: Add Apify API Token
 1. Click **Settings** tab (top menu)
 2. Click **Environment Variables** (left sidebar)
 3. Add the Apify API token:
@@ -36,16 +36,13 @@ Environment: Production, Preview, Development (select all)
 Click: "Add"
 ```
 
-4. Verify REDIS_URL exists:
-   - Should already be set
-   - Should look like: `rediss://...` (with TLS)
-   - If missing, add it from your Redis provider
+**That's it!** No REDIS_URL needed - we now use node-cache (in-memory, zero config) ✅
 
 ### Step 3: Redeploy
 - Vercel will auto-redeploy when you add environment variables
 - OR manually: Go to **Deployments** tab → Click latest commit → **Redeploy**
 
-### Step 4: Verify (2-3 minutes after redeploy)
+### Step 4: Verify (1-2 minutes after redeploy)
 1. Check Vercel **Crons** tab
    - Should show `/api/social?refresh=1` runs every 30 min
    - Should show `/api/news` runs every 30 min
@@ -86,9 +83,9 @@ Read these files for detailed information.
 |------|-------|
 | Now | You add APIFY_API_TOKEN to Vercel |
 | +1 min | Vercel starts redeploy |
-| +5 min | Redeploy complete, code live |
-| +7 min | First cron job runs |
-| +10 min | Fresh posts appear on portal |
+| +3 min | Redeploy complete, code live |
+| +5 min | First cron job runs |
+| +8 min | Fresh posts appear on portal |
 | +30 min | Second cron job runs, posts update again |
 
 ---
@@ -111,10 +108,11 @@ A: Check Vercel Logs → Functions tab to see error messages. Most likely cause:
 
 ## 🎉 YOU'RE ALMOST DONE!
 
-Just add the Vercel environment variables and the portal will be live with 30-minute refreshes!
+Just add the Vercel APIFY_API_TOKEN and the portal will be live with 30-minute refreshes using in-memory caching (no external services needed)!
 
-**Time to complete:** ~5 minutes  
-**Difficulty:** Easy - just copy-paste the API token
+**Time to complete:** ~3 minutes  
+**Complexity:** Easy - just add one environment variable  
+**Configuration:** Zero needed - node-cache works out-of-box!
 
 ---
 

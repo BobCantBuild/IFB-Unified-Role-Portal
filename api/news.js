@@ -1,21 +1,10 @@
 const Parser = require('rss-parser');
-const Redis = require('ioredis');
+const NodeCache = require('node-cache');
 
 const parser = new Parser();
 
-let redis;
-function getRedis() {
-  if (!redis) {
-    redis = new Redis(process.env.REDIS_URL, {
-      connectTimeout: 5000,
-      maxRetriesPerRequest: 2,
-      retryStrategy(times) { if (times > 3) return null; return Math.min(times * 200, 1000); },
-      tls: process.env.REDIS_URL?.startsWith('rediss://') ? {} : undefined,
-    });
-    redis.on('error', e => console.error('Redis:', e.message));
-  }
-  return redis;
-}
+// ✅ In-memory cache with no external dependencies
+const cache = new NodeCache({ stdTTL: 1800, checkperiod: 300 }); // 30 min TTL, check every 5 min
 
 const EXCLUDE_KEYWORDS = [
   'share price', 'stock', 'nse', 'bse', 'sensex', 'nifty',
@@ -78,39 +67,29 @@ module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   
   const startTime = Date.now();
-  const r = getRedis();
 
   try {
-    // 🔧 NEW: Check cache first
+    // 🔧 Check cache first (now with node-cache - synchronous)
     if (req.query.refresh !== '1') {
-      try {
-        const cached = await r.get(CACHE_KEY);
-        if (cached) {
-          const articles = JSON.parse(cached);
-          return res.status(200).json({
-            source: 'cache',
-            cacheHitTime: Date.now() - startTime,
-            nextRefreshIn: '~30 minutes',
-            data: {
-              articles,
-              updatedAt: new Date().toISOString(),
-            },
-          });
-        }
-      } catch (e) {
-        console.warn('Redis get failed:', e.message);
+      const cached = cache.get(CACHE_KEY);
+      if (cached) {
+        return res.status(200).json({
+          source: 'cache',
+          cacheHitTime: Date.now() - startTime,
+          nextRefreshIn: '~30 minutes',
+          data: {
+            articles: cached,
+            updatedAt: new Date().toISOString(),
+          },
+        });
       }
     }
 
-    // 🔧 NEW: Fetch fresh if no cache
+    // 🔧 Fetch fresh if no cache
     const articles = await fetchFreshNews();
     
-    // 🔧 NEW: Store in Redis
-    try {
-      await r.set(CACHE_KEY, JSON.stringify(articles), 'EX', CACHE_TTL);
-    } catch (e) {
-      console.warn('Redis set failed:', e.message);
-    }
+    // 🔧 Store in node-cache (no external API)
+    cache.set(CACHE_KEY, articles); // Uses default TTL from NodeCache init
 
     return res.status(200).json({
       source: 'fresh',
