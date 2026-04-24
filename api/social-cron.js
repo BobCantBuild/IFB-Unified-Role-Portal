@@ -71,9 +71,10 @@ module.exports = async function handler(req, res) {
   // TRIGGER: start both actors
   try {
     // LinkedIn — automation-lab company posts scraper (no login, free tier)
+// REPLACE the LinkedIn startActor block with this:
 const liRunId = await startActor('oAf7819001ttSmFDv', {
-  companyUrl: 'https://www.linkedin.com/company/ifb-industries-ltd/',
-  maxPosts: 5,
+  urls: ['https://www.linkedin.com/company/ifb-industries-ltd/'],
+  max_Company_Posts: 5,
 });
 
     // Instagram — working profile scraper

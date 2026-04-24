@@ -58,14 +58,14 @@ function mapLinkedIn(items) {
   return items.slice(0, 3).map(p => ({
     platform: 'linkedin',
     text: (
-      p.text || p.postText || p.content || p.description || p.commentary || 'View post on LinkedIn'
+      p.text || p.postText || p.post_text || p.content || p.body || 'View post on LinkedIn'
     ).replace(/<[^>]+>/g, '').trim().slice(0, 150),
     url:
-      p.postUrl || p.url || p.shareUrl || p.permalinkUrl ||
+      p.postUrl || p.post_url || p.url || p.shareUrl ||
       'https://www.linkedin.com/company/ifb-industries-ltd',
-    likes:    p.likes    || p.reactions    || p.likeCount    || p.totalReactions || 0,
-    comments: p.comments || p.commentsCount || p.commentCount || 0,
-    time:     p.date     || p.postedAt     || p.publishedAt  || p.createdAt      || null,
+    likes:    p.likes    || p.reactions    || p.reaction_count || p.likeCount    || 0,
+    comments: p.comments || p.commentsCount || p.comment_count  || p.commentCount || 0,
+    time:     p.date     || p.postedAt     || p.posted_at      || p.publishedAt  || null,
   }));
 }
 
