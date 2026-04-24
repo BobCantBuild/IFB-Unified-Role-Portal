@@ -73,7 +73,7 @@ module.exports = async function handler(req, res) {
     // LinkedIn — automation-lab company posts scraper (no login, free tier)
 // REPLACE the LinkedIn startActor block with this:
 const liRunId = await startActor('oAf7819001ttSmFDv', {
-  urls: ['https://www.linkedin.com/company/ifb-industries-ltd/'],
+  companyUrls: ['https://www.linkedin.com/company/ifb-industries-ltd/'],
   max_Company_Posts: 5,
 });
 
