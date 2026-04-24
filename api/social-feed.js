@@ -14,12 +14,20 @@ function getRedis() {
   return redis;
 }
 
+// ✅ VALIDATION: Fail loudly if token is missing
 const APIFY_TOKEN = process.env.APIFY_API_TOKEN;
+if (!APIFY_TOKEN) {
+  console.error('❌ CRITICAL: APIFY_API_TOKEN is not set in environment variables!');
+}
 const CACHE_KEY   = 'ifb_social_v4';
-const CACHE_TTL   = 86400; // 24 hours
+const CACHE_TTL   = 1800; // 🔧 CHANGED: 30 minutes (was 86400 = 24 hours)
 
 async function runAndCollect(actorId, input) {
   try {
+    if (!APIFY_TOKEN) {
+      throw new Error('APIFY_API_TOKEN is not configured');
+    }
+
     const startRes = await fetch(
       `https://api.apify.com/v2/acts/${actorId}/runs?token=${APIFY_TOKEN}`,
       { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(input), signal: AbortSignal.timeout(8000) }
@@ -107,6 +115,9 @@ async function fetchFreshData() {
 
 module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
+  
+  // 🔧 NEW: Add response metadata
+  const startTime = Date.now();
   const r = getRedis();
 
   try {
@@ -114,7 +125,13 @@ module.exports = async function handler(req, res) {
       try {
         const cached = await r.get(CACHE_KEY);
         if (cached) {
-          return res.status(200).json({ source: 'cache', data: JSON.parse(cached) });
+          const data = JSON.parse(cached);
+          return res.status(200).json({
+            source: 'cache',
+            cacheHitTime: Date.now() - startTime,
+            nextRefreshIn: '~30 minutes',
+            data
+          });
         }
       } catch (e) { console.warn('Redis get failed:', e.message); }
     }
@@ -122,10 +139,19 @@ module.exports = async function handler(req, res) {
     const data = await fetchFreshData();
     try { await r.set(CACHE_KEY, JSON.stringify(data), 'EX', CACHE_TTL); } catch (e) {}
 
-    return res.status(200).json({ source: 'fresh', data });
+    return res.status(200).json({
+      source: 'fresh',
+      fetchTime: Date.now() - startTime,
+      cacheExpiresIn: CACHE_TTL,
+      data
+    });
 
   } catch (err) {
     console.error('Handler error:', err.message);
-    return res.status(200).json({ source: 'error', data: { linkedin: [], instagram: [], updatedAt: null } });
+    return res.status(200).json({
+      source: 'error',
+      error: err.message,
+      data: { linkedin: [], instagram: [], updatedAt: null }
+    });
   }
 };
