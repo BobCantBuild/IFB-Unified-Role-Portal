@@ -34,31 +34,32 @@ module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   const redis = getRedis();
 
-  // ?debug=1 — show cached data
   if (req.query.debug === '1') {
     const cached = await redis.get('ifb_social_v2');
     return res.status(200).json(cached ? JSON.parse(cached) : { empty: true });
   }
 
-  // ?clear=1 — clear ONLY social cache, NOT run IDs
   if (req.query.clear === '1') {
     await redis.del('ifb_social_v2');
-    return res.status(200).json({ ok: true, message: 'Social cache cleared.' });
+    await redis.del('ifb_social_runs');
+    return res.status(200).json({ ok: true, message: 'Cache cleared.' });
   }
 
   try {
-    // ✅ FIXED: same actor IDs and input format as social-collect.js
+    // ✅ LinkedIn — correct input for A3cAPGpwBEG8RJwse
     const liRunId = await startActor('A3cAPGpwBEG8RJwse', {
-      profileUrls: ['https://www.linkedin.com/company/ifb-industries-ltd/'],
-      maxPosts: 3,
+      profileUrls: [
+        { url: 'https://www.linkedin.com/company/ifb-industries-ltd/' }
+      ],
+      maxPosts: 5,
     });
 
+    // ✅ Instagram — correct input for dSCLg0C3YEZ83HzYX
     const igRunId = await startActor('dSCLg0C3YEZ83HzYX', {
       usernames:    ['ifbappliances'],
-      resultsLimit: 3,
+      resultsLimit: 5,
     });
 
-    // Store run IDs — separate key, not cleared by ?clear=1
     await redis.set('ifb_social_runs', JSON.stringify({
       li: liRunId,
       ig: igRunId,
@@ -67,7 +68,7 @@ module.exports = async function handler(req, res) {
 
     return res.status(200).json({
       ok: true,
-      message: 'Actors started. Call /api/social-collect after 60 seconds.',
+      message: 'Actors started. Call /api/social-collect after 5 minutes.',
       liRunId,
       igRunId,
     });

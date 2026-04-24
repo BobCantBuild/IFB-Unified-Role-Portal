@@ -27,14 +27,10 @@ module.exports = async function handler(req, res) {
     }
 
     const runs = JSON.parse(runsRaw);
-    console.log('Runs to collect:', runs);
 
-    // Check statuses
     const [liData, igData] = await Promise.all([
-      fetch(`https://api.apify.com/v2/actor-runs/${runs.li}?token=${APIFY_TOKEN}`)
-        .then(r => r.json()),
-      fetch(`https://api.apify.com/v2/actor-runs/${runs.ig}?token=${APIFY_TOKEN}`)
-        .then(r => r.json()),
+      fetch(`https://api.apify.com/v2/actor-runs/${runs.li}?token=${APIFY_TOKEN}`).then(r => r.json()),
+      fetch(`https://api.apify.com/v2/actor-runs/${runs.ig}?token=${APIFY_TOKEN}`).then(r => r.json()),
     ]);
 
     const liStatus = liData.data?.status;
@@ -58,17 +54,29 @@ module.exports = async function handler(req, res) {
         `https://api.apify.com/v2/actor-runs/${runs.li}/dataset/items?token=${APIFY_TOKEN}&limit=10`
       ).then(r => r.json());
 
-      console.log(`LI items: ${liItems.length} | sample:`, JSON.stringify(liItems[0] || {}).slice(0, 500));
+      console.log(`LI items: ${liItems.length}`, JSON.stringify(liItems[0] || {}).slice(0, 500));
 
-current.linkedin = liItems.slice(0, 3).map((p) => ({
-  platform: 'linkedin',
-  text:     (p.text || p.commentary || p.content || p.description || p.body || 'View post on LinkedIn').slice(0, 150),
-  // postUrl and shareUrl are the direct post links — prioritise them
-  url:      p.postUrl || p.shareUrl || p.url || p.link || p.postLink || 'https://www.linkedin.com/company/ifb-industries-ltd',
-  likes:    p.reactions || p.likeCount || p.totalReactionCount || p.likes || 0,
-  comments: p.commentsCount || p.commentCount || p.comments || 0,
-  time:     p.postedAt || p.createdAt || p.publishedAt || p.date || null,
-}));
+      // ✅ Handle both direct posts and nested posts array
+      let liPosts = [];
+      if (liItems.length > 0) {
+        const first = liItems[0];
+        if (first.posts && Array.isArray(first.posts)) {
+          liPosts = first.posts.slice(0, 3);
+        } else if (first.text || first.commentary || first.content) {
+          liPosts = liItems.slice(0, 3);
+        } else {
+          liPosts = liItems.slice(0, 3);
+        }
+      }
+
+      current.linkedin = liPosts.map((p) => ({
+        platform: 'linkedin',
+        text:     (p.text || p.commentary || p.content || p.description || p.body || 'View post on LinkedIn').slice(0, 150),
+        url:      p.postUrl || p.shareUrl || p.url || p.link || p.postLink || 'https://www.linkedin.com/company/ifb-industries-ltd',
+        likes:    p.reactions || p.likeCount || p.totalReactionCount || p.numLikes || p.likes || 0,
+        comments: p.commentsCount || p.commentCount || p.numComments || p.comments || 0,
+        time:     p.postedAt || p.createdAt || p.publishedAt || p.date || null,
+      }));
     }
 
     // ── Collect Instagram ──
@@ -77,32 +85,21 @@ current.linkedin = liItems.slice(0, 3).map((p) => ({
         `https://api.apify.com/v2/actor-runs/${runs.ig}/dataset/items?token=${APIFY_TOKEN}&limit=20`
       ).then(r => r.json());
 
-      console.log(`IG raw items: ${igItems.length} | first item keys:`, Object.keys(igItems[0] || {}).join(', '));
+      console.log(`IG raw items: ${igItems.length}`, Object.keys(igItems[0] || {}).join(', '));
 
       let igPosts = [];
-
       if (igItems.length > 0) {
         const first = igItems[0];
-
-        if (first.latestPosts && first.latestPosts.length > 0) {
-          // Profile object with nested latestPosts
-          igPosts = first.latestPosts.slice(0, 3);
-        } else if (first.topPosts && first.topPosts.length > 0) {
-          // Some versions return topPosts
-          igPosts = first.topPosts.slice(0, 3);
-        } else if (first.caption || first.shortCode || first.type === 'Image' || first.type === 'Video') {
-          // Direct post items (not wrapped in profile)
-          igPosts = igItems.slice(0, 3);
-        } else {
-          // Last resort — look inside every item for any posts array
+        if (first.latestPosts?.length > 0)      igPosts = first.latestPosts.slice(0, 3);
+        else if (first.topPosts?.length > 0)    igPosts = first.topPosts.slice(0, 3);
+        else if (first.caption || first.shortCode) igPosts = igItems.slice(0, 3);
+        else {
           for (const item of igItems) {
             const found = item.latestPosts || item.topPosts || item.posts || [];
             if (found.length > 0) { igPosts = found.slice(0, 3); break; }
           }
         }
       }
-
-      console.log(`IG posts to map: ${igPosts.length} | sample:`, JSON.stringify(igPosts[0] || {}).slice(0, 400));
 
       current.instagram = igPosts.map((p) => ({
         platform: 'instagram',
