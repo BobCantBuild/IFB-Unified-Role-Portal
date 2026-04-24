@@ -10,126 +10,114 @@ function getRedis() {
         if (times > 3) return null;
         return Math.min(times * 200, 1000);
       },
-      tls: process.env.REDIS_URL && process.env.REDIS_URL.startsWith('rediss://') ? {} : undefined,
+      tls: process.env.REDIS_URL?.startsWith('rediss://') ? {} : undefined,
     });
     redis.on('error', (e) => console.error('Redis error:', e.message));
   }
   return redis;
 }
 
-const APIFY_TOKEN = process.env.APIFY_API_TOKEN;
-const CACHE_KEY   = 'ifb_social_v2';
-const CACHE_TTL   = 86400;
+const CACHE_KEY = 'ifb_social_v3';
+const CACHE_TTL = 86400;
 
-async function runApifyActor(actorId, input) {
-  try {
-    const startRes = await fetch(
-      `https://api.apify.com/v2/acts/${actorId}/runs?token=${APIFY_TOKEN}`,
-      {
-        method:  'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body:    JSON.stringify(input),
-        signal:  AbortSignal.timeout(8000),
-      }
-    );
-    if (!startRes.ok) return [];
-    const startJson = await startRes.json();
-    const runId     = startJson.data?.id;
-    if (!runId) return [];
-
-    for (let i = 0; i < 15; i++) {
-      await new Promise((res) => setTimeout(res, 3000));
-      const statusRes  = await fetch(
-        `https://api.apify.com/v2/actor-runs/${runId}?token=${APIFY_TOKEN}`,
-        { signal: AbortSignal.timeout(4000) }
-      );
-      const statusJson = await statusRes.json();
-      const status     = statusJson.data?.status;
-      if (status === 'SUCCEEDED') {
-        const dataRes = await fetch(
-          `https://api.apify.com/v2/actor-runs/${runId}/dataset/items?token=${APIFY_TOKEN}&limit=10`,
-          { signal: AbortSignal.timeout(5000) }
-        );
-        return await dataRes.json();
-      }
-      if (['FAILED', 'ABORTED', 'TIMED-OUT'].includes(status)) break;
-    }
-  } catch (e) {
-    console.error(`runApifyActor error:`, e.message);
+// ── Parse RSS/Atom XML ──
+function parseRSS(xml) {
+  const items = [];
+  const itemRegex = /<item[^>]*>([\s\S]*?)<\/item>/gi;
+  let match;
+  while ((match = itemRegex.exec(xml)) !== null) {
+    const block = match[1];
+    const get = (tag) => {
+      const m = block.match(new RegExp(`<${tag}[^>]*><!\\[CDATA\\[([\\s\\S]*?)\\]\\]><\\/${tag}>|<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`, 'i'));
+      return m ? (m[1] || m[2] || '').trim() : '';
+    };
+    items.push({
+      title:   get('title'),
+      link:    get('link'),
+      pubDate: get('pubDate'),
+      desc:    get('description'),
+    });
   }
-  return [];
+  return items;
 }
 
-async function fetchAndCacheSocial() {
-  const r = getRedis();
-
-  const [liRaw, igRaw] = await Promise.all([
-    runApifyActor('A3cAPGpwBEG8RJwse', {
-      profileUrls: ['https://www.linkedin.com/company/ifb-industries-ltd/'],
-      maxPosts: 3,
-    }),
-    runApifyActor('dSCLg0C3YEZ83HzYX', {
-      usernames:    ['ifbappliances'],
-      resultsLimit: 3,
-    }),
-  ]);
-
-  let igPosts = [];
-  if (igRaw.length > 0) {
-    const latestPosts = igRaw[0].latestPosts || [];
-    igPosts = latestPosts.slice(0, 3).map((p) => ({
-      platform: 'instagram',
-      text:     (p.caption || p.text || p.alt || 'View post on Instagram').slice(0, 150),
-      url:      p.url || (p.shortCode ? `https://www.instagram.com/p/${p.shortCode}/` : 'https://www.instagram.com/ifbappliances'),
-      likes:    p.likesCount || p.likes || 0,
-      comments: p.commentsCount || p.comments || 0,
-      time:     p.timestamp || p.takenAt || null,
+async function fetchLinkedIn() {
+  try {
+    // LinkedIn company posts via rss2json (free tier, 10k/day)
+    const url = `https://api.rss2json.com/v1/api.json?rss_url=https://www.linkedin.com/company/ifb-industries-ltd/`;
+    const res = await fetch(url, { signal: AbortSignal.timeout(8000) });
+    const json = await res.json();
+    const items = (json.items || []).slice(0, 3);
+    return items.map((p) => ({
+      platform: 'linkedin',
+      text:     (p.title || p.description || 'View post on LinkedIn').replace(/<[^>]+>/g, '').slice(0, 150),
+      url:      p.link || 'https://www.linkedin.com/company/ifb-industries-ltd',
+      likes:    0,
+      comments: 0,
+      time:     p.pubDate || null,
     }));
-  }
-
-  const liPosts = liRaw.slice(0, 3).map((p) => ({
-    platform: 'linkedin',
-    text:     (p.text || p.content || p.commentary || p.description || 'View post on LinkedIn').slice(0, 150),
-    url:      p.postUrl || p.shareUrl || p.url || p.link || 'https://www.linkedin.com/company/ifb-industries-ltd',
-    likes:    p.reactions || p.likeCount || p.totalReactionCount || p.likes || 0,
-    comments: p.commentsCount || p.commentCount || p.comments || 0,
-    time:     p.postedAt || p.createdAt || p.publishedAt || p.date || null,
-  }));
-
-  const data = {
-    linkedin:  liPosts,
-    instagram: igPosts,
-    updatedAt: new Date().toISOString(),
-  };
-
-  try {
-    await r.set(CACHE_KEY, JSON.stringify(data), 'EX', CACHE_TTL);
   } catch (e) {
-    console.warn('Redis set failed:', e.message);
+    console.error('LinkedIn fetch error:', e.message);
+    return [];
   }
-
-  return data;
 }
 
-// ── Main handler ──
+async function fetchInstagram() {
+  try {
+    // Instagram via Picuki public RSS proxy
+    const url = `https://api.rss2json.com/v1/api.json?rss_url=https://picuki.com/profile/ifbappliances`;
+    const res = await fetch(url, { signal: AbortSignal.timeout(8000) });
+    const json = await res.json();
+    const items = (json.items || []).slice(0, 3);
+    return items.map((p) => ({
+      platform: 'instagram',
+      text:     (p.title || p.description || 'View post on Instagram').replace(/<[^>]+>/g, '').slice(0, 150),
+      url:      p.link || 'https://www.instagram.com/ifbappliances',
+      likes:    0,
+      comments: 0,
+      time:     p.pubDate || null,
+    }));
+  } catch (e) {
+    console.error('Instagram fetch error:', e.message);
+    return [];
+  }
+}
+
 module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Cache-Control', 's-maxage=3600, stale-while-revalidate');
 
+  const r = getRedis();
+
+  // Force refresh
+  if (req.query.refresh === '1') {
+    await r.del(CACHE_KEY);
+  }
+
   try {
-    const r = getRedis();
+    // Check cache first
     let cached = null;
-    try { cached = await r.get(CACHE_KEY); }
-    catch (e) { console.warn('Redis get failed:', e.message); }
+    try { cached = await r.get(CACHE_KEY); } catch (e) {}
 
     if (cached) {
       return res.status(200).json({ source: 'cache', data: JSON.parse(cached) });
     }
 
-    return res.status(200).json({
-      source: 'empty',
-      data: { linkedin: [], instagram: [], updatedAt: null },
-    });
+    // Fetch fresh
+    const [linkedin, instagram] = await Promise.all([
+      fetchLinkedIn(),
+      fetchInstagram(),
+    ]);
+
+    const data = {
+      linkedin,
+      instagram,
+      updatedAt: new Date().toISOString(),
+    };
+
+    try { await r.set(CACHE_KEY, JSON.stringify(data), 'EX', CACHE_TTL); } catch (e) {}
+
+    return res.status(200).json({ source: 'fresh', data });
 
   } catch (err) {
     console.error('Social API error:', err.message);
@@ -139,5 +127,3 @@ module.exports = async function handler(req, res) {
     });
   }
 };
-
-module.exports.fetchAndCacheSocial = fetchAndCacheSocial;
