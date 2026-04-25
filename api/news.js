@@ -25,7 +25,7 @@ const RSS_FEEDS = [
 
 const CACHE_KEY = 'ifb_news_cache';
 const CACHE_TTL = 900; // 🔧 CHANGED: 15 minutes (was 30) - ensure fresh news
-const MAX_ARTICLE_AGE_DAYS = 7; // 🔧 NEW: Only articles from last 7 days
+const MAX_ARTICLE_AGE_DAYS = 7; // 🔧 NEW: Only articles from last 7 days (not 40!)
 
 function isArticleRecent(pubDateStr) {
   if (!pubDateStr) return false;
