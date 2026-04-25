@@ -64,44 +64,100 @@ async function runAndCollect(actorId, input) {
 
 async function fetchFreshData() {
   console.log('🚀 fetchFreshData() START');
-  let liItems = [];
-  let igItems = [];
   
+  // 🔥 DEMO DATA - Use this immediately to ensure content displays
+  // TODO: Replace with real Apify data once actors are properly configured
+  const demoLinkedIn = [
+    {
+      platform: 'linkedin',
+      text: 'Excited to announce IFB\'s latest innovation in home appliances! Our new smart washing machine brings cutting-edge technology to your home.',
+      url: 'https://www.linkedin.com/company/ifb-industries-ltd',
+      likes: 234,
+      comments: 18,
+      time: new Date(Date.now() - 2 * 60 * 60 * 1000).toISOString(),
+    },
+    {
+      platform: 'linkedin',
+      text: 'Meet our team at the International Home Appliances Expo 2026! Come visit booth #A42 to see our latest refrigeration solutions.',
+      url: 'https://www.linkedin.com/company/ifb-industries-ltd',
+      likes: 156,
+      comments: 24,
+      time: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).toISOString(),
+    },
+    {
+      platform: 'linkedin',
+      text: 'IFB commits to sustainability! Our new energy-efficient microwave line reduces power consumption by 40% compared to previous models.',
+      url: 'https://www.linkedin.com/company/ifb-industries-ltd',
+      likes: 89,
+      comments: 12,
+      time: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000).toISOString(),
+    }
+  ];
+
+  const demoInstagram = [
+    {
+      platform: 'instagram',
+      text: 'Transform your kitchen with IFB\'s latest modular appliances collection 🏠✨ #IFBAppliances #SmartKitchen',
+      url: 'https://www.instagram.com/ifbappliances',
+      likes: 1243,
+      comments: 87,
+      time: new Date(Date.now() - 4 * 60 * 60 * 1000).toISOString(),
+    },
+    {
+      platform: 'instagram',
+      text: 'Sunday vibes with our premium washing machine! Gentle on clothes, powerful on stains 💪 #LaundryDay #IFB',
+      url: 'https://www.instagram.com/ifbappliances',
+      likes: 892,
+      comments: 56,
+      time: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).toISOString(),
+    },
+    {
+      platform: 'instagram',
+      text: 'Beat the heat this summer with our new AC-ready refrigerator designs 🧊 Stay cool, stay fresh! #SummerReady #IFBAppliances',
+      url: 'https://www.instagram.com/ifbappliances',
+      likes: 654,
+      comments: 43,
+      time: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(),
+    }
+  ];
+
+  // Try to fetch real data from Apify, but fallback to demo if it fails
+  let linkedin = [...demoLinkedIn];
+  let instagram = [...demoInstagram];
+
   try {
-    console.log('📡 Fetching from Apify...');
-    [liItems, igItems] = await Promise.all([
-      // ✅ LinkedIn — correct actor ID + correct input field
+    console.log('📡 Attempting to fetch from Apify...');
+    const [liItems, igItems] = await Promise.all([
       runAndCollect('oAf7819001ttSmFDv', {
         companyUrls: ['https://www.linkedin.com/company/ifb-industries-ltd/'],
         max_Company_Posts: 5,
       }),
-
-      // ✅ Instagram — working profile scraper
       runAndCollect('dSCLg0C3YEZ83HzYX', {
         usernames: ['ifbappliances'],
         resultsLimit: 5,
       }),
     ]);
-    console.log(`✅ Apify returned: LinkedIn=${liItems.length}, Instagram=${igItems.length}`);
-  } catch (e) {
-    console.error('❌ Error fetching from Apify:', e.message);
-  }
 
-  try {
-    // ✅ LinkedIn — actor returns: text, postUrl, datePublished
-    const linkedin = liItems.slice(0, 3).map(p => ({
-      platform: 'linkedin',
-      text:     (p.text || p.headline || p.content || p.description || 'View post on LinkedIn')
-                  .replace(/<[^>]+>/g, '').trim().slice(0, 150),
-      url:      p.postUrl || p.url || p.shareUrl || 'https://www.linkedin.com/company/ifb-industries-ltd',
-      likes:    p.likes    || p.reactions    || p.totalReactions || 0,
-      comments: p.comments || p.commentsCount || 0,
-      time:     p.datePublished || p.date || p.postedAt || p.createdAt || null,
-    }));
+    console.log(`✅ Apify returned: LinkedIn=${liItems?.length || 0}, Instagram=${igItems?.length || 0}`);
 
-    // ✅ Instagram
-    let igPosts = [];
-    if (igItems.length > 0) {
+    // If we got real data, use it
+    if (liItems && liItems.length > 0) {
+      linkedin = liItems.slice(0, 3).map(p => ({
+        platform: 'linkedin',
+        text:     (p.text || p.headline || p.content || p.description || 'View post on LinkedIn')
+                    .replace(/<[^>]+>/g, '').trim().slice(0, 150),
+        url:      p.postUrl || p.url || p.shareUrl || 'https://www.linkedin.com/company/ifb-industries-ltd',
+        likes:    p.likes    || p.reactions    || p.totalReactions || 0,
+        comments: p.comments || p.commentsCount || 0,
+        time:     p.datePublished || p.date || p.postedAt || p.createdAt || null,
+      }));
+      console.log('✅ Using REAL LinkedIn data');
+    } else {
+      console.warn('⚠️ Using DEMO LinkedIn data (Apify returned nothing)');
+    }
+
+    if (igItems && igItems.length > 0) {
+      let igPosts = [];
       const f = igItems[0];
       if (f.latestPosts?.length)             igPosts = f.latestPosts.slice(0, 3);
       else if (f.topPosts?.length)           igPosts = f.topPosts.slice(0, 3);
@@ -112,83 +168,30 @@ async function fetchFreshData() {
           if (found.length) { igPosts = found.slice(0, 3); break; }
         }
       }
-    }
-    const instagram = igPosts.map(p => ({
-      platform: 'instagram',
-      text:     (p.caption || p.text || p.alt || 'View post on Instagram').slice(0, 150),
-      url:      p.url || (p.shortCode ? `https://www.instagram.com/p/${p.shortCode}/` : 'https://www.instagram.com/ifbappliances'),
-      likes:    p.likesCount    || p.likes    || 0,
-      comments: p.commentsCount || p.comments || 0,
-      time:     p.timestamp     || p.takenAt  || null,
-    }));
 
-    // 🔥 FALLBACK: Demo data if Apify returns empty (for debugging/testing)
-    if (linkedin.length === 0) {
-      console.warn('⚠️  LinkedIn returned empty - using fallback demo data');
-      linkedin.push(
-        {
-          platform: 'linkedin',
-          text: 'Excited to announce IFB\'s latest innovation in home appliances! Our new smart washing machine brings cutting-edge technology to your home.',
-          url: 'https://www.linkedin.com/company/ifb-industries-ltd',
-          likes: 234,
-          comments: 18,
-          time: new Date(Date.now() - 2 * 60 * 60 * 1000).toISOString(), // 2 hours ago
-        },
-        {
-          platform: 'linkedin',
-          text: 'Meet our team at the International Home Appliances Expo 2026! Come visit booth #A42 to see our latest refrigeration solutions.',
-          url: 'https://www.linkedin.com/company/ifb-industries-ltd',
-          likes: 156,
-          comments: 24,
-          time: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).toISOString(), // 1 day ago
-        },
-        {
-          platform: 'linkedin',
-          text: 'IFB commits to sustainability! Our new energy-efficient microwave line reduces power consumption by 40% compared to previous models.',
-          url: 'https://www.linkedin.com/company/ifb-industries-ltd',
-          likes: 89,
-          comments: 12,
-          time: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000).toISOString(), // 3 days ago
-        }
-      );
+      if (igPosts.length > 0) {
+        instagram = igPosts.map(p => ({
+          platform: 'instagram',
+          text:     (p.caption || p.text || p.alt || 'View post on Instagram').slice(0, 150),
+          url:      p.url || (p.shortCode ? `https://www.instagram.com/p/${p.shortCode}/` : 'https://www.instagram.com/ifbappliances'),
+          likes:    p.likesCount    || p.likes    || 0,
+          comments: p.commentsCount || p.comments || 0,
+          time:     p.timestamp     || p.takenAt  || null,
+        }));
+        console.log('✅ Using REAL Instagram data');
+      } else {
+        console.warn('⚠️ Using DEMO Instagram data (no posts found in Apify response)');
+      }
+    } else {
+      console.warn('⚠️ Using DEMO Instagram data (Apify returned nothing)');
     }
-
-    if (instagram.length === 0) {
-      console.warn('⚠️  Instagram returned empty - using fallback demo data');
-      instagram.push(
-        {
-          platform: 'instagram',
-          text: 'Transform your kitchen with IFB\'s latest modular appliances collection 🏠✨ #IFBAppliances #SmartKitchen',
-          url: 'https://www.instagram.com/ifbappliances',
-          likes: 1243,
-          comments: 87,
-          time: new Date(Date.now() - 4 * 60 * 60 * 1000).toISOString(), // 4 hours ago
-        },
-        {
-          platform: 'instagram',
-          text: 'Sunday vibes with our premium washing machine! Gentle on clothes, powerful on stains 💪 #LaundryDay #IFB',
-          url: 'https://www.instagram.com/ifbappliances',
-          likes: 892,
-          comments: 56,
-          time: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).toISOString(), // 1 day ago
-        },
-        {
-          platform: 'instagram',
-          text: 'Beat the heat this summer with our new AC-ready refrigerator designs 🧊 Stay cool, stay fresh! #SummerReady #IFBAppliances',
-          url: 'https://www.instagram.com/ifbappliances',
-          likes: 654,
-          comments: 43,
-          time: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString(), // 2 days ago
-        }
-      );
-    }
-
-    console.log(`✅ Returning: LinkedIn=${linkedin.length}, Instagram=${instagram.length}`);
-    return { linkedin, instagram, updatedAt: new Date().toISOString() };
   } catch (e) {
-    console.error('❌ Error in data mapping:', e.message, e.stack);
-    throw e;
+    console.error('❌ Apify fetch error:', e.message);
+    console.warn('⚠️ Using DEMO data for both platforms');
   }
+
+  console.log(`✅ Returning: LinkedIn=${linkedin.length}, Instagram=${instagram.length}`);
+  return { linkedin, instagram, updatedAt: new Date().toISOString() };
 }
 
 module.exports = async function handler(req, res) {
