@@ -150,7 +150,7 @@
   </div>
 
   <!-- HEADER -->
-<div class="feed-col-header">
+<!-- <div class="feed-col-header">
   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
     <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/>
     <path d="M18 14h-8M15 18h-5M10 6h8v4h-8V6Z"/>
@@ -165,7 +165,7 @@
     </svg>
     Refresh
   </button>
-</div>
+</div> -->
 
   <!-- TOP 5 NEWS LIST -->
   <div class="feed-col news-col">
@@ -175,13 +175,15 @@
         <path d="M18 14h-8M15 18h-5M10 6h8v4h-8V6Z"/>
       </svg>
       Latest News
-    </div>
-    <div class="news-list" id="newsList">
-      <div class="skeleton-card"><div class="skeleton-line"></div><div class="skeleton-line short"></div></div>
-      <div class="skeleton-card"><div class="skeleton-line"></div><div class="skeleton-line short"></div></div>
-      <div class="skeleton-card"><div class="skeleton-line"></div><div class="skeleton-line short"></div></div>
-      <div class="skeleton-card"><div class="skeleton-line"></div><div class="skeleton-line short"></div></div>
-      <div class="skeleton-card"><div class="skeleton-line"></div><div class="skeleton-line short"></div></div>
+      <span class="feed-updated" id="feedUpdated" style="margin-left:auto;font-size:11px;font-weight:400;color:#94a3b8;">Fetching...</span>
+      <button class="feed-refresh-btn" id="feedRefreshBtn" onclick="loadSocialFeed()">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="23 4 23 10 17 10"/>
+          <polyline points="1 20 1 14 7 14"/>
+          <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+        </svg>
+        Refresh
+      </button>
     </div>
   </div>
 
