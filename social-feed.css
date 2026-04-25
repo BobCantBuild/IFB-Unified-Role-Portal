@@ -302,3 +302,8 @@
 .social-list {
   flex: 1;
 }
+
+/* 5-column responsive news grid */
+.feed-grid {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}

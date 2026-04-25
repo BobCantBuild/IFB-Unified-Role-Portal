@@ -1,6 +1,5 @@
-// ═══════════════════════════════════════
-//   IFB Social & News Feed — social-feed.js
-// ═══════════════════════════════════════
+// IFB News Feed — social-feed.js (frontend)
+// Renders 5 IFB news categories, auto-refresh every 10 min
 
 function timeAgo(dateStr) {
   if (!dateStr) return '';
@@ -11,13 +10,27 @@ function timeAgo(dateStr) {
   return Math.floor(diff / 86400) + 'd ago';
 }
 
-function renderNewsList(articles) {
-  const el = document.getElementById('newsList');
-  if (!articles || articles.length === 0) {
-    el.innerHTML = '<div class="feed-error">No news found at the moment.</div>';
+function renderTicker(articles) {
+  const el = document.getElementById('newsTicker');
+  if (!el || !articles?.length) return;
+  const items = articles.map(a =>
+    `<a href="${a.link}" target="_blank" rel="noopener noreferrer">
+      <span class="ticker-category">${a.category || 'IFB'}</span> ${a.title}
+    </a>`
+  ).join('<span class="ticker-divider">◆</span>');
+  el.innerHTML = items + '<span style="padding:0 40px"></span>' + items;
+}
+
+function renderCategory(containerId, articles) {
+  const el = document.getElementById(containerId);
+  if (!el) return;
+
+  if (!articles?.length) {
+    el.innerHTML = '<div class="feed-error">No recent news found.</div>';
     return;
   }
-  el.innerHTML = articles.slice(0, 6).map(a => `
+
+  el.innerHTML = articles.map(a => `
     <a class="news-card" href="${a.link}" target="_blank" rel="noopener noreferrer">
       <div class="news-source">${a.source || 'News'}</div>
       <div class="news-title">${a.title}</div>
@@ -29,80 +42,53 @@ function renderNewsList(articles) {
   `).join('');
 }
 
-function renderSocialList(posts, containerId, platform) {
-  const el = document.getElementById(containerId);
-  if (!posts || posts.length === 0) {
-    el.innerHTML = '<div class="feed-error">No posts available.</div>';
-    return;
-  }
-  el.innerHTML = posts.map(p => `
-    <a class="social-card" href="${p.url}" target="_blank" rel="noopener noreferrer">
-      <div class="social-text">${p.text}</div>
-      <div class="social-stats">
-        <span class="social-stat">❤️ ${(p.likes || 0).toLocaleString()}</span>
-        <span class="social-stat">💬 ${(p.comments || 0).toLocaleString()}</span>
-        ${p.time ? `<span class="social-stat">${timeAgo(p.time)}</span>` : ''}
-        <span class="social-view-link">View Post →</span>
-      </div>
-    </a>
-  `).join('');
-}
+const CATEGORY_CONTAINERS = {
+  business: 'cat_business',
+  launches: 'cat_launches',
+  company:  'cat_company',
+  market:   'cat_market',
+  awards:   'cat_awards',
+};
 
-function renderTicker(articles) {
-  const el = document.getElementById('newsTicker');
-  if (!articles || articles.length === 0) return;
-  const items = articles.map(a =>
-    `<a href="${a.link}" target="_blank" rel="noopener noreferrer">📌 ${a.title}</a>`
-  ).join('<span style="color:#334155;padding:0 8px">◆</span>');
-  // Duplicate for seamless loop
-  el.innerHTML = items + '<span style="padding:0 40px"></span>' + items;
-}
-
-async function loadSocialFeed() {
+async function loadSocialFeed(isAutoRefresh = false) {
   const btn       = document.getElementById('feedRefreshBtn');
   const updatedEl = document.getElementById('feedUpdated');
-  if (btn) btn.classList.add('spinning');
-  updatedEl.textContent = 'Refreshing...';
+
+  if (!isAutoRefresh && btn) btn.classList.add('spinning');
+  if (updatedEl) updatedEl.textContent = 'Refreshing...';
 
   try {
-    const [newsRes, socialRes] = await Promise.all([
-      fetch('/api/news'),
-      fetch('/api/social')
-    ]);
+    const url = isAutoRefresh ? '/api/news?refresh=1' : '/api/news';
+    const res  = await fetch(url);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
 
-    if (newsRes.ok) {
-      const newsJson = await newsRes.json();
-      renderNewsList(newsJson.data?.articles);
-      renderTicker(newsJson.data?.articles);
-    } else {
-      document.getElementById('newsList').innerHTML =
-        '<div class="feed-error">Could not load news.</div>';
+    const json = await res.json();
+    const data = json.data;
+
+    if (data?.categories?.length) {
+      for (const cat of data.categories) {
+        const containerId = CATEGORY_CONTAINERS[cat.key];
+        if (containerId) renderCategory(containerId, cat.articles);
+      }
     }
 
-    if (socialRes.ok) {
-      const socialJson = await socialRes.json();
-      renderSocialList(socialJson.data?.linkedin,  'linkedinList',  'linkedin');
-      renderSocialList(socialJson.data?.instagram, 'instagramList', 'instagram');
-      if (socialJson.data?.updatedAt) {
-        updatedEl.textContent = 'Updated ' + timeAgo(socialJson.data.updatedAt);
-      }
-    } else {
-      document.getElementById('linkedinList').innerHTML =
-        '<div class="feed-error">Could not load posts.</div>';
-      document.getElementById('instagramList').innerHTML =
-        '<div class="feed-error">Could not load posts.</div>';
+    if (data?.allArticles?.length) renderTicker(data.allArticles);
+
+    if (data?.updatedAt && updatedEl) {
+      updatedEl.textContent = 'Updated ' + timeAgo(data.updatedAt);
     }
 
   } catch (err) {
-    console.error('Feed load error:', err);
-    updatedEl.textContent = 'Failed to load';
+    console.error('[social-feed] Error:', err.message);
+    Object.values(CATEGORY_CONTAINERS).forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.innerHTML = '<div class="feed-error">Could not load. Retrying soon...</div>';
+    });
+    if (updatedEl) updatedEl.textContent = 'Failed to load';
   } finally {
-    if (btn) btn.classList.remove('spinning');
+    if (!isAutoRefresh && btn) btn.classList.remove('spinning');
   }
 }
 
-// Load on page ready
-document.addEventListener('DOMContentLoaded', () => loadSocialFeed());
-
-// Auto refresh every 60 minutes
-setInterval(loadSocialFeed, 60 * 60 * 1000);
+document.addEventListener('DOMContentLoaded', () => loadSocialFeed(false));
+setInterval(() => loadSocialFeed(true), 10 * 60 * 1000);
