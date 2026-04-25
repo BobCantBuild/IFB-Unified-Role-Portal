@@ -4,58 +4,34 @@ const parser = new Parser();
 
 let cachedData    = null;
 let cachedUntilMs = 0;
-const CACHE_TTL   = 600; // 10 minutes
+const CACHE_TTL   = 600;
 
-const CATEGORIES = [
-  {
-    key:   'business',
-    label: 'Business & Finance',
-    query: 'IFB+Industries+results+revenue+profit+financial+quarterly',
-  },
-  {
-    key:   'launches',
-    label: 'Product Launches',
-    query: 'IFB+new+product+launch+appliances+washing+machine+microwave',
-  },
-  {
-    key:   'company',
-    label: 'Company & Leadership',
-    query: 'IFB+Industries+CEO+MD+director+appointment+management+board',
-  },
-  {
-    key:   'market',
-    label: 'Market & Expansion',
-    query: 'IFB+Industries+expansion+store+market+partnership+dealer',
-  },
-  {
-    key:   'awards',
-    label: 'Awards & Recognition',
-    query: 'IFB+Industries+award+recognition+achievement+milestone',
-  },
+const RSS_FEEDS = [
+  'https://news.google.com/rss/search?q=IFB+Industries&hl=en-IN&gl=IN&ceid=IN:en',
+  'https://news.google.com/rss/search?q=IFB+appliances&hl=en-IN&gl=IN&ceid=IN:en',
 ];
-
-const MAX_AGE_DAYS = 30;
-
-function isRecent(pubDateStr) {
-  if (!pubDateStr) return false;
-  try {
-    const age = (Date.now() - new Date(pubDateStr).getTime()) / 86400000;
-    return age >= 0 && age <= MAX_AGE_DAYS;
-  } catch { return false; }
-}
 
 function stripSource(title) {
   return (title || '').replace(/\s+-\s+[^-]+$/, '').trim();
 }
 
-async function fetchCategory(cat) {
-  const url = `https://news.google.com/rss/search?q=${cat.query}&hl=en-IN&gl=IN&ceid=IN:en`;
+function isRecent(pubDateStr) {
+  if (!pubDateStr) return false;
   try {
-    const feed     = await parser.parseURL(url);
-    const seen     = new Set();
-    const articles = [];
+    const age = (Date.now() - new Date(pubDateStr).getTime()) / 86400000;
+    return age >= 0 && age <= 30;
+  } catch { return false; }
+}
 
-    for (const item of feed.items || []) {
+async function fetchFreshData() {
+  const results = await Promise.allSettled(RSS_FEEDS.map(url => parser.parseURL(url)));
+
+  const seen     = new Set();
+  const articles = [];
+
+  for (const result of results) {
+    if (result.status !== 'fulfilled') continue;
+    for (const item of result.value.items || []) {
       const pubDate = item.pubDate || item.isoDate || '';
       if (!isRecent(pubDate)) continue;
 
@@ -70,33 +46,12 @@ async function fetchCategory(cat) {
         pubDate,
         source: item.source?.title || item.creator || 'Google News',
       });
-
-      if (articles.length >= 5) break;
     }
-
-    console.log(`[news] ${cat.key}: ${articles.length} articles`);
-    return articles;
-  } catch (e) {
-    console.error(`[news] fetchCategory error [${cat.key}]:`, e.message);
-    return [];
   }
-}
 
-async function fetchFreshData() {
-  const results = await Promise.allSettled(CATEGORIES.map(fetchCategory));
+  articles.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 
-  const categories = CATEGORIES.map((cat, i) => ({
-    key:      cat.key,
-    label:    cat.label,
-    articles: results[i].status === 'fulfilled' ? results[i].value : [],
-  }));
-
-  const allArticles = categories
-    .flatMap(c => c.articles.map(a => ({ ...a, category: c.label })))
-    .sort((a, b) => new Date(b.pubDate || 0) - new Date(a.pubDate || 0))
-    .slice(0, 20);
-
-  return { categories, allArticles, updatedAt: new Date().toISOString() };
+  return { articles: articles.slice(0, 5), updatedAt: new Date().toISOString() };
 }
 
 module.exports = async function handler(req, res) {
@@ -105,28 +60,20 @@ module.exports = async function handler(req, res) {
 
   try {
     if (req.query.refresh !== '1' && cachedData && Date.now() < cachedUntilMs) {
-      return res.status(200).json({
-        source: 'cache',
-        cacheHitTime: Date.now() - startTime,
-        data: cachedData,
-      });
+      return res.status(200).json({ source: 'cache', cacheHitTime: Date.now() - startTime, data: cachedData });
     }
 
     const data    = await fetchFreshData();
     cachedData    = data;
     cachedUntilMs = Date.now() + CACHE_TTL * 1000;
 
-    return res.status(200).json({
-      source:    'fresh',
-      fetchTime: Date.now() - startTime,
-      data,
-    });
+    return res.status(200).json({ source: 'fresh', fetchTime: Date.now() - startTime, data });
   } catch (err) {
-    console.error('[news] Handler error:', err.message);
+    console.error('[news] error:', err.message);
     return res.status(200).json({
       source: 'error',
       error:  err.message,
-      data:   { categories: [], allArticles: [], updatedAt: new Date().toISOString() },
+      data:   { articles: [], updatedAt: new Date().toISOString() },
     });
   }
 };
