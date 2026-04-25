@@ -15,12 +15,18 @@ function stripSource(title) {
   return (title || '').replace(/\s+-\s+[^-]+$/, '').trim();
 }
 
-function isRecent(pubDateStr) {
-  if (!pubDateStr) return false;
-  try {
-    const age = (Date.now() - new Date(pubDateStr).getTime()) / 86400000;
-    return age >= 0 && age <= 30;
-  } catch { return false; }
+function extractSource(item) {
+  // Google News embeds the real publisher inside the title after " - "
+  // e.g. "IFB launches new washer - Mojo Story"
+  const titleRaw = item.title || '';
+  const dashMatch = titleRaw.match(/\s+-\s+(.+)$/);
+  if (dashMatch && dashMatch[1]) return dashMatch[1].trim();
+
+  // Fallback: rss-parser source field
+  if (item.source?.title) return item.source.title;
+  if (item.creator)       return item.creator;
+
+  return 'News';
 }
 
 async function fetchFreshData() {
@@ -32,9 +38,6 @@ async function fetchFreshData() {
   for (const result of results) {
     if (result.status !== 'fulfilled') continue;
     for (const item of result.value.items || []) {
-      const pubDate = item.pubDate || item.isoDate || '';
-      if (!isRecent(pubDate)) continue;
-
       const title = stripSource(item.title);
       const key   = title.slice(0, 60).toLowerCase();
       if (!title || seen.has(key)) continue;
@@ -42,13 +45,14 @@ async function fetchFreshData() {
 
       articles.push({
         title,
-        link:   item.link || '',
-        pubDate,
-        source: item.source?.title || item.creator || 'Google News',
+        link:    item.link || '',
+        pubDate: item.pubDate || item.isoDate || '',
+        source:  extractSource(item),
       });
     }
   }
 
+  // Sort newest first, take top 5
   articles.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 
   return { articles: articles.slice(0, 5), updatedAt: new Date().toISOString() };
