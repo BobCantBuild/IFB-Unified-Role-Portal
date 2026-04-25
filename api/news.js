@@ -9,6 +9,7 @@ const CACHE_TTL   = 600;
 const RSS_FEEDS = [
   'https://news.google.com/rss/search?q=IFB+Industries&hl=en-IN&gl=IN&ceid=IN:en',
   'https://news.google.com/rss/search?q=IFB+appliances&hl=en-IN&gl=IN&ceid=IN:en',
+  'https://news.google.com/rss/search?q=IFB&hl=en-IN&gl=IN&ceid=IN:en'
 ];
 
 function stripSource(title) {
