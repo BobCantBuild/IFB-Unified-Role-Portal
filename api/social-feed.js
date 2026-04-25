@@ -10,6 +10,7 @@ if (!APIFY_TOKEN) {
 }
 const CACHE_KEY   = 'ifb_social_v4';
 const CACHE_TTL   = 1800; // 🔧 CHANGED: 30 minutes (was 86400 = 24 hours)
+const VERSION = 'v2.0.1-fallback'; // 🔧 Force redeploy
 
 async function runAndCollect(actorId, input) {
   try {
