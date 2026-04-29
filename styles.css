@@ -190,7 +190,7 @@ body {
   display: grid;
   grid-template-columns: 230px 1fr 280px;
   gap: 18px;
-  align-items: start;
+  align-items: stretch;
 }
 
 
@@ -437,4 +437,18 @@ body {
 #modelOverlay.open     { display: flex !important; position: fixed; inset: 0;
                          background: rgba(0,0,0,0.45); z-index: 9000;
                          align-items: center; justify-content: center; padding: 20px; }
-                         
+
+
+                         /* ── Equal-height fix: all 3 columns match stock widget height ── */
+.role-panel,
+.links-panel {
+  height: 100%;
+}
+
+.widget-column {
+  height: 100%;
+}
+
+.widget-column .widget-card {
+  flex: 1;          /* fills the stretched widget-column vertically */
+}
