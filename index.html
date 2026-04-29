@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="/css/model-lookup.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
 
-  <!-- ✅ Nav model search styles -->
   <style>
+    /* ── Nav model search — scoped styles only ── */
     .topbar-model-search {
       display: flex;
       align-items: center;
@@ -19,7 +19,6 @@
       flex: 0 0 320px;
       position: relative;
     }
-
     .topbar-model-search #modelSearchInput {
       flex: 1;
       padding: 7px 12px;
@@ -32,16 +31,13 @@
       transition: border-color 180ms, background 180ms;
       font-family: inherit;
     }
-
     .topbar-model-search #modelSearchInput::placeholder {
       color: rgba(255,255,255,0.55);
     }
-
     .topbar-model-search #modelSearchInput:focus {
       border-color: rgba(255,255,255,0.65);
       background: rgba(255,255,255,0.18);
     }
-
     .topbar-model-search #modelSearchBtn {
       padding: 7px 14px;
       background: rgba(255,255,255,0.18);
@@ -55,15 +51,13 @@
       font-family: inherit;
       transition: background 160ms;
     }
-
     .topbar-model-search #modelSearchBtn:hover {
       background: rgba(255,255,255,0.28);
     }
-
     .topbar-model-search #modelSuggestions {
       background: #ffffff;
-      border: 1px solid #d4d1ca;
-      color: #1a1a1a;
+      border: 1px solid #d8e3ea;
+      color: #16324a;
       top: calc(100% + 6px);
       left: 0;
       right: auto;
@@ -73,28 +67,19 @@
       z-index: 9999;
       overflow: hidden;
     }
-
     .topbar-model-search .ml-suggest-item {
       padding: 9px 13px;
       font-size: 0.83rem;
       cursor: pointer;
-      border-bottom: 1px solid #eeeeee;
-      color: #1a1a1a;
+      border-bottom: 1px solid #eee;
+      color: #16324a;
       transition: background 100ms;
     }
-
-    .topbar-model-search .ml-suggest-item:last-child {
-      border-bottom: none;
-    }
-
-    .topbar-model-search .ml-suggest-item:hover {
-      background: #e0f0ef;
-    }
+    .topbar-model-search .ml-suggest-item:last-child { border-bottom: none; }
+    .topbar-model-search .ml-suggest-item:hover { background: #d5edf3; }
 
     @media (max-width: 860px) {
-      .topbar-model-search {
-        display: none;
-      }
+      .topbar-model-search { display: none; }
     }
   </style>
 </head>
@@ -112,7 +97,7 @@
           </div>
         </div>
 
-        <!-- ✅ MODEL LOOKUP IN TOPBAR -->
+        <!-- ✅ MODEL SEARCH IN TOPBAR -->
         <div class="topbar-model-search ml-search-wrap">
           <input
             type="text"
@@ -178,10 +163,10 @@
             <svg viewBox="0 0 24 24" class="carousel-brand-icon">
               <defs>
                 <linearGradient id="ig" x1="0%" y1="100%" x2="100%" y2="0%">
-                  <stop offset="0%" stop-color="#f09433"/>
-                  <stop offset="25%" stop-color="#e6683c"/>
-                  <stop offset="50%" stop-color="#dc2743"/>
-                  <stop offset="75%" stop-color="#cc2366"/>
+                  <stop offset="0%"   stop-color="#f09433"/>
+                  <stop offset="25%"  stop-color="#e6683c"/>
+                  <stop offset="50%"  stop-color="#dc2743"/>
+                  <stop offset="75%"  stop-color="#cc2366"/>
                   <stop offset="100%" stop-color="#bc1888"/>
                 </linearGradient>
               </defs>
@@ -241,7 +226,6 @@
     <!-- IFB LATEST NEWS SECTION -->
     <section class="ifb-feed-section">
 
-      <!-- TICKER -->
       <div class="news-ticker-bar">
         <span class="ticker-label">📰 IFB News</span>
         <div class="ticker-track-wrapper">
@@ -251,7 +235,6 @@
         </div>
       </div>
 
-      <!-- NEWS CARD -->
       <div class="feed-col news-col">
         <div class="feed-col-header">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -281,9 +264,9 @@
 
     </section>
 
-  </div><!-- end .page-shell -->
+  </div><!-- ✅ END .page-shell — overlay is OUTSIDE this div -->
 
-  <!-- ✅ MODEL LOOKUP OVERLAY -->
+  <!-- ✅ MODEL OVERLAY — outside .page-shell so position:fixed works correctly -->
   <div id="modelOverlay" role="dialog" aria-modal="true" aria-label="Model Details">
     <div class="ml-overlay-panel">
       <div class="ml-overlay-header">
@@ -298,6 +281,7 @@
   <script src="app.js"></script>
   <script src="stock.js"></script>
   <script src="social-feed.js"></script>
+  <!-- ✅ Model Lookup -->
   <script src="/js/model-lookup.js"></script>
 
   <!-- Carousel JS -->
@@ -339,7 +323,7 @@
           offset += speed;
         }
         if (offset >= oneSet) offset -= oneSet;
-        if (offset < 0) offset += oneSet;
+        if (offset < 0)       offset += oneSet;
         track.style.transform = `translateX(-${offset}px)`;
         requestAnimationFrame(animate);
       }
@@ -347,7 +331,7 @@
       track.addEventListener("mouseenter", () => paused = true);
       track.addEventListener("mouseleave", () => paused = false);
       rightBtn.addEventListener("click", () => nudge += NUDGE_AMOUNT);
-      leftBtn.addEventListener("click", () => nudge -= NUDGE_AMOUNT);
+      leftBtn.addEventListener("click",  () => nudge -= NUDGE_AMOUNT);
       window.addEventListener("load", () => requestAnimationFrame(animate));
     })();
   </script>
