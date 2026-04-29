@@ -605,7 +605,7 @@
       "Express 15'",
       "Wool",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Bulky/Bedding"
     ],
     "keyFeatures": {
@@ -615,7 +615,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -656,17 +656,17 @@
       "Express 15'",
       "Wool",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Bulky/Bedding"
     ],
     "keyFeatures": {
       "Advanced Wash Technology": [
         "Powered by Ai",
-        "Oxyjet\u00ae Technology",
+        "Oxyjet Technology",
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -706,7 +706,7 @@
       "Cotton Eco",
       "Synthetic/Daily",
       "Quick 30",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Woollens 30",
       "Mix Soiled 40"
     ],
@@ -717,7 +717,7 @@
         "Start/Pause (Program Interrupt)",
         "2D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -759,7 +759,7 @@
       "Cotton Eco",
       "Synthetic/Daily",
       "Quick 30",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Woollens 30",
       "Mix Soiled 40"
     ],
@@ -770,7 +770,7 @@
         "Start/Pause",
         "2D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -815,7 +815,7 @@
       "Express 15'",
       "Wool",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Bulky/Bedding"
     ],
     "keyFeatures": {
@@ -824,7 +824,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -867,7 +867,7 @@
       "Express 15'",
       "Refresh",
       "Synthetic",
-      "Cradlewash\u00ae",
+      "Cradlewash",
       "Wool",
       "Bulky/ Bedding"
     ],
@@ -920,7 +920,7 @@
       "Express 15'",
       "Refresh",
       "Synthetic",
-      "Cradlewash\u00ae",
+      "Cradlewash",
       "Wool",
       "Bulky Bedding"
     ],
@@ -970,7 +970,7 @@
       "Cotton Normal/Cotton Eco Plus",
       "Synthetic/Daily",
       "Baby Wear",
-      "Cradlewash\u00ae",
+      "Cradlewash",
       "Express Wash",
       "Woolens"
     ],
@@ -1021,7 +1021,7 @@
       "Cotton Eco",
       "Synthetic/Daily",
       "Quick 30",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Woollens 30",
       "Mix Soiled 40"
     ],
@@ -1030,7 +1030,7 @@
         "Powered by AI",
         "2D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1073,7 +1073,7 @@
       "Express 15",
       "Refresh",
       "Synthetic",
-      "Cradlewash\u00ae",
+      "Cradlewash",
       "Wool",
       "bulky/Bedding"
     ],
@@ -1084,7 +1084,7 @@
         "9 Swirl Wash",
         "Crescent Moon Drum",
         "Powered by AI",
-        "CradleWash\u00ae"
+        "CradleWash"
       ],
       "Machine Care": [
         "High-Low Voltage Protection",
@@ -1124,7 +1124,7 @@
       "Cotton Eco",
       "Synthetic/Daily",
       "Quick 30",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Woollens 30",
       "Mix Soiled 40"
     ],
@@ -1135,7 +1135,7 @@
         "Start/Pause (Program Interrupt)",
         "2D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1174,7 +1174,7 @@
     "programs": [
       "Mixed Soiled",
       "Cotton Normal/Cotton Eco",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Baby Wear",
       "Synthetic/Daily",
       "Express Wash",
@@ -1188,7 +1188,7 @@
         "7 Swirl Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1226,7 +1226,7 @@
     "programs": [
       "Mixed Soiled",
       "Cotton Normal/Cotton Eco",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Baby Wear",
       "Synthetic/Daily",
       "Express Wash",
@@ -1240,7 +1240,7 @@
         "7 Swirl Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1281,15 +1281,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam\u00ae",
+      "PowerSteam",
       "Shirts",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -1300,7 +1300,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1343,15 +1343,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam\u00ae",
+      "PowerSteam",
       "Shirts",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -1362,7 +1362,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1370,7 +1370,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "User Convenience": [
@@ -1401,7 +1401,7 @@
     "programs": [
       "Mixed Soiled",
       "Cotton Normal/Cotton Eco",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Baby Wear",
       "Synthetic/Daily",
       "Express Wash",
@@ -1415,7 +1415,7 @@
         "7 Swirl Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1458,7 +1458,7 @@
       "Anti Allergen",
       "Woollens",
       "Synthetic/Daily",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Express Wash",
       "Curtains"
@@ -1468,7 +1468,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1506,7 +1506,7 @@
     "programs": [
       "Mixed Soiled",
       "Cotton Normal/Cotton Eco",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Baby Wear",
       "Synthetic/Daily",
       "Express Wash",
@@ -1520,7 +1520,7 @@
         "7 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1559,7 +1559,7 @@
     "programs": [
       "Mixed Soiled",
       "Cotton Normal/Cotton Eco",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Baby Wear",
       "Synthetic/Daily",
       "Express Wash",
@@ -1573,7 +1573,7 @@
         "7 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1615,7 +1615,7 @@
       "Baby Wear",
       "Express Wash",
       "Wool",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Synthetic/Daily",
       "Hygiene",
       "Bulky/Bedding"
@@ -1626,7 +1626,7 @@
         "3D Wash",
         "7 Swirl",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1663,33 +1663,33 @@
   {
     "model": "IFB Executive BHC 9014 SSLC",
     "programs": [
-      "Mix/Daily 60\u2019",
+      "Mix/Daily 60",
       "Cotton",
       "Uniform",
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash",
       "Jeans",
       "Shirts",
       "Inner Wear",
-      "PowerSteam\u00ae"
+      "PowerSteam"
     ],
     "keyFeatures": {
       "Advanced Wash Technology": [
         "Powered by Ai",
-        "Oxyjet\u00ae Technology",
+        "Oxyjet Technology",
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1733,15 +1733,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Jeans",
       "Synthetic",
       "Inner Wear",
-      "PowerSteam\u00ae",
+      "PowerSteam",
       "Shirts",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -1752,7 +1752,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1795,15 +1795,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Jeans",
       "Synthetic",
       "Inner Wear",
-      "PowerSteam\u00ae",
+      "PowerSteam",
       "Shirts",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -1816,15 +1816,15 @@
         "Baby Wear",
         "Refresh",
         "Anti Allergen",
-        "Express 30\u2019",
-        "Express 15\u2019",
+        "Express 30",
+        "Express 15",
         "Wool",
         "Jeans",
         "Synthetic",
         "Inner Wear",
-        "PowerSteam\u00ae",
+        "PowerSteamae",
         "Shirts",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Sports Wear",
         "Bulky/Bedding",
         "Dark Wash"
@@ -1836,15 +1836,15 @@
         "Baby Wear",
         "Refresh",
         "Anti Allergen",
-        "Express 30\u2019",
-        "Express 15\u2019",
+        "Express 30",
+        "Express 15",
         "Wool",
         "Jeans",
         "Synthetic",
         "Inner Wear",
-        "PowerSteam\u00ae",
+        "PowerSteam",
         "Shirts",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Sports Wear",
         "Bulky/Bedding",
         "Dark Wash"
@@ -1874,17 +1874,17 @@
   {
     "model": "IFB Executive MSC 9014 SSLC",
     "programs": [
-      "Mix/Daily 60\u2019",
+      "Mix/Daily 60",
       "Cotton",
       "Uniform",
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash",
@@ -1896,11 +1896,11 @@
     "keyFeatures": {
       "Advanced Wash Technology": [
         "Powered by Ai",
-        "Oxyjet\u00ae Technology",
+        "Oxyjet Technology",
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1944,15 +1944,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam\u00ae",
+      "PowerSteam",
       "Shirts",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -1963,7 +1963,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -2006,15 +2006,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam\u00ae",
+      "PowerSteam",
       "Shirts",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -2025,7 +2025,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -2072,17 +2072,17 @@
       "Express Wash",
       "Woollens",
       "Synthetic/Daily",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Bulky/Bedding",
-      "PowerSteam\u00ae"
+      "PowerSteam"
     ],
     "keyFeatures": {
       "Advanced Wash Technology": [
         "Powered by Ai",
-        "9 Swirl\u00ae",
+        "9 Swirl",
         "4D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum",
         "Hot Rinse"
       ],
@@ -2121,17 +2121,17 @@
   {
     "model": "IFB Executive MXC  9014 SSLC",
     "programs": [
-      "Mix/Daily 60\u2019",
+      "Mix/Daily 60",
       "Cotton",
       "Uniform",
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash",
@@ -2143,11 +2143,11 @@
     "keyFeatures": {
       "Advanced Wash Technology": [
         "Powered by Ai",
-        "Oxyjet\u00ae Technology",
+        "Oxyjet Technology",
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -2194,17 +2194,17 @@
       "Express Wash",
       "Woollens",
       "Synthetic/Daily",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Bulky/Bedding",
-      "PowerSteam\u00ae"
+      "PowerSteam"
     ],
     "keyFeatures": {
       "Advanced Wash Technology": [
         "Powered by Ai",
-        "9 Swirl\u00ae",
+        "9 Swirl",
         "4D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum",
         "Hot Rinse"
       ],
@@ -2250,15 +2250,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam\u00ae",
+      "PowerSteam",
       "Shirts",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -2269,7 +2269,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -2311,15 +2311,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam\u00ae",
+      "PowerSteam",
       "Shirts",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -2330,7 +2330,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -2375,15 +2375,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam\u00ae",
+      "PowerSteam",
       "Shirts",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -2394,7 +2394,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -2439,15 +2439,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam\u00ae",
+      "PowerSteam",
       "Shirts",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -2458,7 +2458,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -2493,17 +2493,17 @@
   {
     "model": "IFB Executive Plus MXC 1014 SSL",
     "programs": [
-      "Mix/Daily 60\u2019",
+      "Mix/Daily 60",
       "Cotton",
       "Uniform",
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Synthetic",
-      "CrandleWash\u00ae",
+      "CrandleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash",
@@ -2514,11 +2514,11 @@
     "keyFeatures": {
       "Advanced Wash Technology": [
         "Powered by Ai",
-        "Oxyjet\u00ae Technology",
+        "Oxyjet Technology",
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -2561,8 +2561,8 @@
       "Baby Wear",
       "Power Steam",
       "Refresh",
-      "CradleWash\u00ae",
-      "Express 15\u2019",
+      "CradleWash",
+      "Express 15",
       "Synthetic",
       "Bulky",
       "Anti Allergen",
@@ -2574,7 +2574,7 @@
         "Aqua Energie",
         "Crescent Moon Drum",
         "Powered by AI",
-        "CradleWash\u00ae"
+        "CradleWash"
       ],
       "Machine Care": [
         "High-Low Voltage Protection",
@@ -2610,17 +2610,17 @@
   {
     "model": "IFB Executive Plus VSC 1014 SSL",
     "programs": [
-      "Mix/Daily 60\u2019",
+      "Mix/Daily 60",
       "Cotton",
       "Uniform",
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash",
@@ -2632,11 +2632,11 @@
     "keyFeatures": {
       "Advanced Wash Technology": [
         "Powered by Ai",
-        "Oxyjet\u00ae Technology",
+        "Oxyjet Technology",
         "9 Swirl Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -2684,8 +2684,8 @@
       "Wool",
       "Bulky/Bedding",
       "Synthetic",
-      "CradleWash\u00ae",
-      "PowerSteam\u00ae",
+      "CradleWash",
+      "PowerSteam",
       "Active Wear/Sports wear",
       "Dark Wash",
       "Inner Wear",
@@ -2699,7 +2699,7 @@
         "3D Wash",
         "Ai Dos",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum",
         "BLDC Motor Technology",
         "Hot Rinse"
@@ -2740,7 +2740,7 @@
       "Synthetic",
       "Mixed",
       "Express Wash",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Anti Allergen",
       "Baby Wear",
       "Bulky/ Bedding",
@@ -2751,7 +2751,7 @@
         "3D Wash System",
         "Air-Bubble Wash",
         "Powered by AI",
-        "CradleWash\u00ae"
+        "CradleWash"
       ],
       "Machine Care": [
         "High-Low Voltage Protection",
@@ -2793,15 +2793,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam\u00ae",
+      "PowerSteam",
       "Shirts",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -2812,7 +2812,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -2853,7 +2853,7 @@
       "Cotton Normal/Cotton Eco Plus",
       "Anti Allergen",
       "Baby Wear",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Express Wash",
       "Synthetic/Daily",
       "Bulky/Bedding",
@@ -2907,7 +2907,7 @@
       "Cotton Normal/Cotton Eco Plus",
       "Synthetic/Daily",
       "Baby Wear",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Express Wash",
       "Woollens"
     ],
@@ -2917,7 +2917,7 @@
         "Aqua Energie",
         "Crescent Moon Drum",
         "7 Swirl Wash",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Powered by AI"
       ],
       "Machine Care": [
@@ -2958,7 +2958,7 @@
       "Cotton Normal/Cotton Eco Plus",
       "Synthetic/Daily",
       "Baby Wear",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Express Wash",
       "Woollens"
     ],
@@ -2968,7 +2968,7 @@
         "Aqua Energie",
         "Crescent Moon Drum",
         "7 Swirl Wash",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Powered by AI"
       ],
       "Machine Care": [
@@ -3009,7 +3009,7 @@
       "Cotton Normal/Cotton Eco Plus",
       "Synthetic/Daily",
       "Baby Wear",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Express Wash",
       "Woollens"
     ],
@@ -3019,7 +3019,7 @@
         "Aqua Energie",
         "Crescent Moon Drum",
         "7 Swirl Wash",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Powered by AI"
       ],
       "Machine Care": [
@@ -3060,7 +3060,7 @@
       "Cotton Normal/Cotton Eco Plus",
       "Synthetic/Daily",
       "Baby Wear",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Express Wash",
       "Woollens"
     ],
@@ -3084,7 +3084,7 @@
         "Auto Foam Control System",
         "Auto Tub Clean",
         "7 Swirl Wash",
-        "CradleWash\u00ae"
+        "CradleWash"
       ]
     },
     "nomenclature": {
@@ -3112,7 +3112,7 @@
       "Cotton Normal/Cotton Eco Plus",
       "Synthetic/Daily",
       "Baby Wear",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Express Wash",
       "Woollens"
     ],
@@ -3123,7 +3123,7 @@
         "Aqua Energie",
         "Crescent Moon Drum",
         "7 Swirl Wash",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Powered by AI"
       ],
       "Machine Care": [
@@ -3164,7 +3164,7 @@
       "Cotton Normal",
       "Synthetic/Daily",
       "Baby Wear",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Express Wash",
       "Woollens",
       "Cotton Eco Plus",
@@ -3176,7 +3176,7 @@
       "Advanced Wash Technology": [
         "2D Wash",
         "3D Wash",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Aqua Energie",
         "Crescent Moon Drum",
         "7 Swirl Wash",
@@ -3222,15 +3222,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam\u00ae",
+      "PowerSteam",
       "Shirts",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -3241,7 +3241,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -3282,12 +3282,12 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 15\u2019",
-      "Express 30\u2019",
+      "Express 15",
+      "Express 30",
       "Wool",
       "Synthetic",
-      "CradleWash\u00ae",
-      "PowerSteam\u00ae",
+      "CradleWash",
+      "PowerSteam",
       "Dark Wash",
       "Shirts",
       "Sports Wear",
@@ -3301,7 +3301,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -3343,15 +3343,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam\u00ae",
+      "PowerSteam",
       "Shirts",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -3362,7 +3362,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -3405,15 +3405,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam\u00ae",
+      "PowerSteam",
       "Shirts",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -3424,7 +3424,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -3467,12 +3467,12 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 15\u2019",
-      "Express 30\u2019",
+      "Express 15",
+      "Express 30",
       "Wool",
       "Synthetic",
-      "CradleWash\u00ae",
-      "PowerSteam\u00ae",
+      "CradleWash",
+      "PowerSteam",
       "Dark Wash",
       "Shirts",
       "Sports Wear",
@@ -3486,7 +3486,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -3528,12 +3528,12 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 15\u2019",
-      "Express 30\u2019",
+      "Express 15",
+      "Express 30",
       "Wool",
       "Synthetic",
-      "CradleWash\u00ae",
-      "PowerSteam\u00ae",
+      "CradleWash",
+      "PowerSteam",
       "Dark Wash",
       "Shirts",
       "Sports Wear",
@@ -3547,7 +3547,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -3589,15 +3589,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam\u00ae",
+      "PowerSteam",
       "Shirts",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -3608,7 +3608,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -3652,12 +3652,12 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 15\u2019",
-      "Express 30\u2019",
+      "Express 15",
+      "Express 30",
       "Wool",
       "Synthetic",
-      "CradleWash\u00ae",
-      "PowerSteam\u00ae",
+      "CradleWash",
+      "PowerSteam",
       "Dark Wash",
       "Shirts",
       "Sports Wear",
@@ -3671,7 +3671,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -3714,15 +3714,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam\u00ae",
+      "PowerSteam",
       "Shirts",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -3733,7 +3733,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -3777,15 +3777,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam\u00ae",
+      "PowerSteam",
       "Shirts",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -3796,7 +3796,7 @@
         "Powered by AI",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -3840,12 +3840,12 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 15\u2019",
-      "Express 30\u2019",
+      "Express 15",
+      "Express 30",
       "Wool",
       "Synthetic",
-      "CradleWash\u00ae",
-      "PowerSteam\u00ae",
+      "CradleWash",
+      "PowerSteam",
       "Dark Wash",
       "Shirts",
       "Sports Wear",
@@ -3859,7 +3859,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -3901,7 +3901,7 @@
       "Anti Allergen",
       "Baby Wear",
       "Cotton Eco Plus",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Express Wash",
       "Synthetic/Daily",
       "Bulky/Bedding",
@@ -3954,7 +3954,7 @@
       "Cotton Normal/Cotton Eco Plus",
       "Synthetic/Daily",
       "Baby Wear",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Express Wash",
       "Woollens"
     ],
@@ -4003,7 +4003,7 @@
       "Cotton Normal/Cotton Eco Plus",
       "Synthetic/Daily",
       "Baby Wear",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Express Wash",
       "Woollens"
     ],
@@ -4053,7 +4053,7 @@
       "Cotton Normal/Cotton Eco Plus",
       "Synthetic/Daily",
       "Baby Wear",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Express Wash",
       "Woollens",
       "Cradlewash"
@@ -4100,17 +4100,17 @@
   {
     "model": "IFB Senator Plus MSC 8014 SSL",
     "programs": [
-      "Mix/Daily 60\u2019",
+      "Mix/Daily 60",
       "Cotton",
       "Uniform",
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash",
@@ -4121,11 +4121,11 @@
     "keyFeatures": {
       "Advanced Wash Technology": [
         "Powered by Ai",
-        "Oxyjet\u00ae Technology",
+        "Oxyjet Technology",
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -4163,17 +4163,17 @@
   {
     "model": "IFB Senator Plus MXC 8014 SSL",
     "programs": [
-      "Mix/Daily 60\u2019",
+      "Mix/Daily 60",
       "Cotton",
       "Uniform",
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash",
@@ -4184,11 +4184,11 @@
     "keyFeatures": {
       "Advanced Wash Technology": [
         "Powered by Ai",
-        "Oxyjet\u00ae Technology",
+        "Oxyjet Technology",
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -4241,7 +4241,7 @@
         "4D Wash",
         "Aqua Energie",
         "Crescent Moon Drum",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Powered by Ai"
       ],
       "Machine Care": [
@@ -4282,7 +4282,7 @@
       "Anti Allergen",
       "Baby Wear",
       "Cotton Rinse",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Express Wash",
       "Synthetic/Daily",
       "Bulky/Bedding",
@@ -4295,7 +4295,7 @@
         "Crescent Moon Drum",
         "Air Bubble Wash",
         "Powered by Ai",
-        "CradleWash\u00ae"
+        "CradleWash"
       ],
       "Machine Care": [
         "Auto Foam Control System",
@@ -4332,17 +4332,17 @@
   {
     "model": "IFB Senator Plus SXC 8014 SSL",
     "programs": [
-      "Mix/Daily 60\u2019",
+      "Mix/Daily 60",
       "Cotton",
       "Uniform",
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash",
@@ -4353,11 +4353,11 @@
     "keyFeatures": {
       "Advanced Wash Technology": [
         "Powered by Ai",
-        "Oxyjet\u00ae Technology",
+        "Oxyjet Technology",
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -4397,7 +4397,7 @@
       "Cotton Normal/Cotton Eco Plus",
       "Anti Allergen",
       "Baby Wear",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Express Wash",
       "Synthetic/Daily",
       "Bulky/Bedding",
@@ -4410,7 +4410,7 @@
         "Crescent Moon Drum",
         "Air Bubble Wash",
         "Powered by Ai",
-        "CradleWash\u00ae"
+        "CradleWash"
       ],
       "Machine Care": [
         "High-Low Voltage Protection",
@@ -4450,7 +4450,7 @@
       "Cotton Normal/Cotton Eco Plus",
       "Anti Allergen",
       "Baby Wear",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Express Wash",
       "Synthetic/Daily",
       "Bulky/Bedding",
@@ -4463,7 +4463,7 @@
         "Crescent Moon Drum",
         "Air Bubble Wash",
         "Powered by Ai",
-        "CradleWash\u00ae"
+        "CradleWash"
       ],
       "Machine Care": [
         "High-Low Voltage Protection",
@@ -4502,7 +4502,7 @@
       "Cotton Normal/Cotton Eco",
       "Synthetic/Daily",
       "Mixed",
-      "Cradlewash\u00ae",
+      "Cradlewash",
       "Woollens",
       "Express Wash",
       "Bulky Bedding",
@@ -4514,7 +4514,7 @@
         "3D Wash System",
         "Air-Bubble Wash",
         "Powered by Ai",
-        "Cradlewash\u00ae"
+        "Cradlewash"
       ],
       "Machine Care": [
         "Auto Balance System",
@@ -4557,15 +4557,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam\u00ae",
+      "PowerSteam",
       "Shirts",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -4576,7 +4576,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -4619,11 +4619,11 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 15\u2019",
-      "Express 30\u2019",
+      "Express 15",
+      "Express 30",
       "Wool",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding"
     ],
@@ -4633,7 +4633,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -4676,15 +4676,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30\u2019",
-      "Express 15\u2019",
+      "Express 30",
+      "Express 15",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam\u00ae",
+      "PowerSteam",
       "Shirts",
       "Synthetic",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -4695,7 +4695,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -4737,7 +4737,7 @@
       "Cotton Eco Plus",
       "Uniform",
       "Baby Wear",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Express Wash",
       "Synthetic/Daily",
       "Anti Allergen",
@@ -4751,7 +4751,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -4787,7 +4787,7 @@
       "Mixed Soiled",
       "Cotton Normal/Cotton Eco Plus/Uniform",
       "Baby Wear",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Express Wash",
       "Synthetic/Daily",
       "Anti Allergen",
@@ -4801,7 +4801,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -4844,7 +4844,7 @@
       "Baby Wear",
       "Power Steam",
       "Refresh",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Express 15",
       "Synthetic",
       "Bulky",
@@ -4856,7 +4856,7 @@
         "4D Wash",
         "Aqua Energie",
         "Crescent Moon Drum",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Powered by AI"
       ],
       "Machine Care": [
@@ -4896,7 +4896,7 @@
       "Baby Wear",
       "Power Steam",
       "Refresh",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Express 15",
       "Synthetic",
       "Bulky",
@@ -4908,7 +4908,7 @@
         "4D Wash",
         "Aqua Energie",
         "Crescent Moon Drum",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Powered by AI"
       ],
       "Machine Care": [
@@ -4950,7 +4950,7 @@
     "programs": [
       "Mixed Soiled",
       "Cotton Normal/Cotton Eco",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Baby Wear",
       "Synthetic/Daily",
       "Express Wash",
@@ -4964,7 +4964,7 @@
         "7 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5014,7 +5014,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5065,7 +5065,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5116,7 +5116,7 @@
         "7 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5159,7 +5159,7 @@
       "Baby Wear",
       "Express Wash",
       "Wool",
-      "CradleWash\u00ae",
+      "CradleWash",
       "Synthetic/Daily",
       "Hygiene",
       "Bulky/Bedding"
@@ -5170,7 +5170,7 @@
         "3D Wash",
         "7 Swirl",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5224,7 +5224,7 @@
         "7 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5286,7 +5286,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5347,7 +5347,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5407,7 +5407,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5467,7 +5467,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5528,7 +5528,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5589,7 +5589,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5649,7 +5649,7 @@
         "7 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash\u00ae",
+        "CradleWash",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5710,7 +5710,7 @@
         "Aqua Energie",
         "Crescent Moon Drum",
         "7 Swirl Wash",
-        "CradleWash\u00ae"
+        "CradleWash"
       ],
       "Machine Care": [
         "High-Low Voltage Protection",
