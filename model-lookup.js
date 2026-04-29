@@ -4,61 +4,221 @@
      PROGRAM DESCRIPTIONS — embedded from txt file
   ═══════════════════════════════════════════════ */
   const PROG_DESC = {
-    "Cotton Normal": "Cotton colour-fast garments such as shirts, pants, uniforms, bed and table linen, towels, nightdresses, pyjamas, underwear, etc.",
-    "Cotton Eco Plus": "An energy-efficient cotton wash for lightly to normally soiled cotton items. Achieves effective cleaning at lower temperatures, reducing electricity and water consumption.",
-    "Cotton Eco": "A resource-saving wash variant for cotton items, optimising water levels and temperature to deliver clean results while minimising energy use.",
-    "Cotton": "Cotton, synthetic and easy-care garments. Not recommended for special garments like silk/delicates, dark clothes, wool, duvets, curtains, etc.",
-    "Cotton Whites": "A higher-temperature cotton wash specifically designed for white cotton fabrics, providing thorough cleaning and helping maintain brightness.",
-    "Cotton Coloured": "Coloured cotton garments requiring gentle lower-temperature washing to preserve vibrancy and prevent colour run or fading.",
-    "Cotton Rinse": "An additional standalone rinse cycle for cotton garments to guarantee complete removal of detergent and softener residues.",
-    "Cotton/Cotton Eco": "Cotton colour-fast garments washed under a combined cotton or eco-friendly cotton setting. Switches between full-power and energy-saving modes based on load and soiling level.",
-    "Cotton/Cotton Eco Plus": "Cotton garments washed under a combined standard or eco-plus setting, offering thorough cleaning or energy-efficient performance depending on the level of soiling.",
-    "Cotton Normal/Cotton Eco": "Standard cotton wash for colour-fast garments, with an eco variant option for lightly soiled loads — reduces energy and water consumption without compromising cleanliness.",
-    "Cotton Normal/Cotton Eco Plus": "Standard cotton wash for colour-fast everyday garments, combined with an eco-plus option for lightly soiled loads to maximise energy and water efficiency.",
-    "Synthetic Daily": "Daily wear garments that are made of polyester, acrylic, or polyamide.",
-    "Synthetic": "Polyester, acrylic or polyamide daily wear garments.",
-    "Synthetic/Daily": "Daily wear garments made of polyester, acrylic, or polyamide. Gentle drum action and moderate temperatures protect synthetic fibres during the wash.",
-    "CradleWash": "Hand wash only garments, as well as lingerie, delicate washable fabrics made of silk, satin, synthetic or sheer fabrics.",
-    "Woolens": "Machine washable woollen garments only. Use appropriate detergent.",
-    "Woollens": "Machine washable woollen garments only. Gentle drum action and cool temperatures preserve the natural properties of wool. Use a neutral wool wash detergent.",
-    "Woollens 30": "A 30-minute gentle cycle for machine washable woollen garments. A neutral wool wash detergent is recommended.",
-    "Wool": "Machine washable wool and wool-blend garments only. A neutral wool wash detergent is recommended.",
-    "Mix/Daily": "Cotton, synthetic and easy-care garments. Not recommended for special garments like silk/delicates, dark clothes, wool, duvets, curtains, etc.",
-    "Mix/Daily 60'": "Cotton, synthetic and easy-care garments with moderate soiling. Extended 60-minute cycle for a deeper clean. Not recommended for silk/delicates, dark clothes, wool, duvets, or curtains.",
-    "Mixed": "A versatile programme for a mixed load of cotton, synthetic, and easy-care fabrics with varying soiling levels. Balances wash performance and fabric care for everyday mixed laundry.",
-    "Mixed Soiled": "Various types of cotton, synthetic or easy-care garments except special garments such as silk/delicates, dark clothes, woollens, duvets, curtains, etc.",
-    "Mixed Soiled+": "Various types of cotton, synthetic or easy-care garments with heavier soiling, except special garments such as silk/delicates, dark clothes, woollens, duvets, curtains, etc.",
-    "Mix Soiled 40": "Various types of cotton, synthetic or easy-care garments washed at 40°C — balances effective cleaning with energy efficiency.",
-    "Express Wash": "Lightly soiled, coloured laundry made of cotton, linen, synthetic or blended fabrics.",
-    "Express 30": "Lightly soiled coloured laundry made of cotton, linen, synthetic or blended fabrics. Completed in 30 minutes.",
-    "Express 15": "Lightly soiled coloured laundry made of cotton, linen, synthetic or blended fabrics. Completed in 15 minutes — the fastest programme available.",
-    "Express 15'/Express 30": "Lightly soiled coloured laundry made of cotton, linen, synthetic or blended fabrics. Available in a 15-minute or 30-minute cycle depending on load size and soiling level.",
-    "Baby Wear": "Baby wear items such as baby clothes, underwear, cloth diapers, pillows, bed sheets, etc. High temperature wash and extra rinses to ensure better rinse performance and hygiene.",
-    "Bulky/Bedding": "Machine washable cotton curtains and large items like blankets and bedding covers.",
-    "Bulky": "Machine washable large oversized items like blankets and bedding covers. Low spin speed and gentle drum movement prevent damage to large bulky items during the wash.",
-    "Hygiene": "A high-temperature sanitising programme that kills bacteria, viruses, and common household allergens. Ideal for underwear, gym wear, towels, and items used by allergy-prone individuals.",
-    "Refresh": "For removing odour and de-wrinkling the laundry. Suitable for cotton, synthetic and mixed fabrics.",
-    "Anti Allergen": "Cotton and linen fabrics that come in direct contact with the skin. Removes allergens through high-temperature wash with additional rinse cycles.",
-    "Jeans": "Jeans or other coloured garments that don't bleed colours.",
-    "Inner Wear": "Machine washable lingerie or innerwear.",
-    "PowerSteam": "Recommended for effective stain removal. Lightly soiled cotton, synthetic and mixed fabrics.",
-    "Shirts": "Casual shirts that do not need to be ironed after washing.",
-    "Shirts/Blouses": "Casual shirts and blouses that do not need to be ironed after washing.",
-    "Sports Wear": "Singlets, leggings, jogging clothes and running wear.",
-    "Fitness Wear": "Gym and athletic clothing including singlets, leggings, jogging clothes and running wear. Removes sweat and odour while preserving performance fabric properties.",
-    "Dark Wash": "Dark-coloured cotton or easy-care fabric garments.",
-    "Uniform": "Cotton colour-fast work uniforms, shirts, pants and school wear. Thorough wash with strong mechanical action for heavily soiled items.",
-    "Linen": "Household linen items such as bed sheets, table linen, and towels. Effective stain removal with proper care for the fabric blend.",
-    "Uniform/Linen": "Cotton colour-fast work uniforms, household linen, bed sheets, and table linen. Combines thorough cleaning performance with appropriate care for both uniform fabrics and household linen blends.",
-    "Curtains": "Machine washable cotton curtains washed with gentle action and low spin speed to avoid distortion and creasing.",
-    "Daily Wear": "A balanced programme for normally soiled everyday clothing such as casual shirts, trousers, and mixed fabrics — efficient use of water and energy.",
-    "Quick 30": "A condensed 30-minute wash for small loads of lightly soiled clothes or recently worn garments.",
-    "Quick Wash 30": "A condensed 30-minute wash for small loads of lightly soiled clothes or recently worn garments — delivers a fast, effective clean without a full cycle.",
-    "Spin Dry/Drain": "A standalone water-extraction cycle that spins laundry at high speed to remove residual water, or drains remaining water from the drum — no washing involved.",
-    "Additives/Rinse + Spin": "An extra rinse cycle followed by a full spin to thoroughly flush out detergent or fabric-softener residues — especially useful for people with sensitive skin.",
-    "Tub Clean": "Run this programme to eliminate impurities, scaling, bacteria and unpleasant smell from the washing machine.",
-    "Eco Wash": "An environment-conscious programme that uses lower water temperatures and reduced cycle time to minimise energy and water consumption while cleaning lightly soiled items effectively."
-  };
+  "Cotton Normal": "Cotton colour-fast garments such as shirts, pants, uniforms, bed and table linen, towels, nightdresses, pyjamas, underwear, etc.",
+
+  "Cotton Eco Plus": "An energy-efficient cotton wash for lightly to normally soiled cotton items. Achieves effective cleaning at lower temperatures, reducing electricity and water consumption.",
+
+  "Cotton Eco": "A resource-saving wash variant for cotton items, optimising water levels and temperature to deliver clean results while minimising energy use.",
+
+  "Cotton": "Cotton, synthetic and easy-care garments. Not recommended for special garments like silk/delicates, dark clothes, wool, duvets, curtains, etc.",
+
+  "Cotton Whites": "A higher-temperature cotton wash specifically designed for white cotton fabrics, providing thorough cleaning and helping maintain brightness.",
+
+  "Cotton Coloured": "Coloured cotton garments requiring gentle lower-temperature washing to preserve vibrancy and prevent colour run or fading.",
+
+  "Cotton Rinse": "An additional standalone rinse cycle for cotton garments to guarantee complete removal of detergent and softener residues.",
+
+  "Cotton/Cotton Eco": "Cotton colour-fast garments washed under a combined cotton or eco-friendly cotton setting. Switches between full-power and energy-saving modes based on load and soiling level.",
+
+  "Cotton/Cotton Eco Plus": "Cotton garments washed under a combined standard or eco-plus setting, offering thorough cleaning or energy-efficient performance depending on the level of soiling.",
+
+  "Cotton Normal/Cotton Eco": "Standard cotton wash for colour-fast garments, with an eco variant option for lightly soiled loads — reduces energy and water consumption without compromising cleanliness.",
+
+  "Cotton Normal/Cotton Eco Plus": "Standard cotton wash for colour-fast everyday garments, combined with an eco-plus option for lightly soiled loads to maximise energy and water efficiency.",
+
+  "Synthetic Daily": "Daily wear garments that are made of polyester, acrylic, or polyamide.",
+
+  "Synthetic": "Polyester, acrylic or polyamide daily wear garments.",
+
+  "Synthetic/Daily": "Daily wear garments made of polyester, acrylic, or polyamide. Gentle drum action and moderate temperatures protect synthetic fibres during the wash.",
+
+  "CradleWash": "Hand wash only garments, as well as lingerie, delicate washable fabrics made of silk, satin, synthetic or sheer fabrics.",
+
+  "Woolens": "Machine washable woollen garments only. Use appropriate detergent.",
+
+  "Woollens": "Machine washable woollen garments only. Gentle drum action and cool temperatures preserve the natural properties of wool. Use a neutral wool wash detergent.",
+
+  "Woollens 30": "A 30-minute gentle cycle for machine washable woollen garments. A neutral wool wash detergent is recommended.",
+
+  "Wool": "Machine washable wool and wool-blend garments only. A neutral wool wash detergent is recommended.",
+
+  "Mix/Daily": "Cotton, synthetic and easy-care garments. Not recommended for special garments like silk/delicates, dark clothes, wool, duvets, curtains, etc.",
+
+  "Mix/Daily 60'": "Cotton, synthetic and easy-care garments with moderate soiling. Extended 60-minute cycle for a deeper clean. Not recommended for silk/delicates, dark clothes, wool, duvets, or curtains.",
+
+  "Mixed": "A versatile programme for a mixed load of cotton, synthetic, and easy-care fabrics with varying soiling levels. Balances wash performance and fabric care for everyday mixed laundry.",
+
+  "Mixed Soiled": "Various types of cotton, synthetic or easy-care garments except special garments such as silk/delicates, dark clothes, woollens, duvets, curtains, etc.",
+
+  "Mixed Soiled+": "Various types of cotton, synthetic or easy-care garments with heavier soiling, except special garments such as silk/delicates, dark clothes, woollens, duvets, curtains, etc.",
+
+  "Mix Soiled 40": "Various types of cotton, synthetic or easy-care garments washed at 40°C — balances effective cleaning with energy efficiency.",
+
+  "Express Wash": "Lightly soiled, coloured laundry made of cotton, linen, synthetic or blended fabrics.",
+
+  "Express 30": "Lightly soiled coloured laundry made of cotton, linen, synthetic or blended fabrics. Completed in 30 minutes.",
+
+  "Express 15": "Lightly soiled coloured laundry made of cotton, linen, synthetic or blended fabrics. Completed in 15 minutes — the fastest programme available.",
+
+  "Express 15'/Express 30": "Lightly soiled coloured laundry made of cotton, linen, synthetic or blended fabrics. Available in a 15-minute or 30-minute cycle depending on load size and soiling level.",
+
+  "Baby Wear": "Baby wear items such as baby clothes, underwear, cloth diapers, pillows, bed sheets, etc. High temperature wash and extra rinses to ensure better rinse performance and hygiene.",
+
+  "Bulky/Bedding": "Machine washable cotton curtains and large items like blankets and bedding covers.",
+
+  "Bulky": "Machine washable large oversized items like blankets and bedding covers. Low spin speed and gentle drum movement prevent damage to large bulky items during the wash.",
+
+  "Hygiene": "A high-temperature sanitising programme that kills bacteria, viruses, and common household allergens. Ideal for underwear, gym wear, towels, and items used by allergy-prone individuals.",
+
+  "Refresh": "For removing odour and de-wrinkling the laundry. Suitable for cotton, synthetic and mixed fabrics.",
+
+  "Anti Allergen": "Cotton and linen fabrics that come in direct contact with the skin. Removes allergens through high-temperature wash with additional rinse cycles.",
+
+  "Jeans": "Jeans or other coloured garments that don't bleed colours.",
+
+  "Inner Wear": "Machine washable lingerie or innerwear.",
+
+  "PowerSteam": "Recommended for effective stain removal. Lightly soiled cotton, synthetic and mixed fabrics.",
+
+  "Shirts": "Casual shirts that do not need to be ironed after washing.",
+
+  "Shirts/Blouses": "Casual shirts and blouses that do not need to be ironed after washing.",
+
+  "Sports Wear": "Singlets, leggings, jogging clothes and running wear.",
+
+  "Fitness Wear": "Gym and athletic clothing including singlets, leggings, jogging clothes and running wear. Removes sweat and odour while preserving performance fabric properties.",
+
+  "Dark Wash": "Dark-coloured cotton or easy-care fabric garments.",
+
+  "Uniform": "Cotton colour-fast work uniforms, shirts, pants and school wear. Thorough wash with strong mechanical action for heavily soiled items.",
+
+  "Linen": "Household linen items such as bed sheets, table linen, and towels. Effective stain removal with proper care for the fabric blend.",
+
+  "Uniform/Linen": "Cotton colour-fast work uniforms, household linen, bed sheets, and table linen. Combines thorough cleaning performance with appropriate care for both uniform fabrics and household linen blends.",
+
+  "Curtains": "Machine washable cotton curtains washed with gentle action and low spin speed to avoid distortion and creasing.",
+
+  "Daily Wear": "A balanced programme for normally soiled everyday clothing such as casual shirts, trousers, and mixed fabrics — efficient use of water and energy.",
+
+  "Quick 30": "A condensed 30-minute wash for small loads of lightly soiled clothes or recently worn garments.",
+
+  "Quick Wash 30": "A condensed 30-minute wash for small loads of lightly soiled clothes or recently worn garments — delivers a fast, effective clean without a full cycle.",
+
+  "Spin Dry/Drain": "A standalone water-extraction cycle that spins laundry at high speed to remove residual water, or drains remaining water from the drum — no washing involved.",
+
+  "Additives/Rinse + Spin": "An extra rinse cycle followed by a full spin to thoroughly flush out detergent or fabric-softener residues — especially useful for people with sensitive skin.",
+
+  "Tub Clean": "Run this programme to eliminate impurities, scaling, bacteria and unpleasant smell from the washing machine.",
+
+  "Eco Wash": "An environment-conscious programme that uses lower water temperatures and reduced cycle time to minimise energy and water consumption while cleaning lightly soiled items effectively.",
+
+  "Cotton Normal": "Cotton colour-fast garments such as shirts, pants, uniforms, bed and table linen, towels, nightdresses, pyjamas, underwear, etc.",
+
+  "Cotton Eco Plus": "An energy-efficient cotton wash for lightly to normally soiled cotton items. Achieves effective cleaning at lower temperatures, reducing electricity and water consumption.",
+
+  "Cotton Eco": "A resource-saving wash variant for cotton items, optimising water levels and temperature to deliver clean results while minimising energy use.",
+
+  "Cotton": "Cotton, synthetic and easy-care garments. Not recommended for special garments like silk/delicates, dark clothes, wool, duvets, curtains, etc.",
+
+  "Cotton Whites": "A higher-temperature cotton wash specifically designed for white cotton fabrics, providing thorough cleaning and helping maintain brightness.",
+
+  "Cotton Coloured": "Coloured cotton garments requiring gentle lower-temperature washing to preserve vibrancy and prevent colour run or fading.",
+
+  "Cotton Rinse": "An additional standalone rinse cycle for cotton garments to guarantee complete removal of detergent and softener residues.",
+
+  "Cotton/Cotton Eco": "Cotton colour-fast garments washed under a combined cotton or eco-friendly cotton setting. Switches between full-power and energy-saving modes based on load and soiling level.",
+
+  "Cotton/Cotton Eco Plus": "Cotton garments washed under a combined standard or eco-plus setting, offering thorough cleaning or energy-efficient performance depending on the level of soiling.",
+
+  "Cotton Normal/Cotton Eco": "Standard cotton wash for colour-fast garments, with an eco variant option for lightly soiled loads — reduces energy and water consumption without compromising cleanliness.",
+
+  "Cotton Normal/Cotton Eco Plus": "Standard cotton wash for colour-fast everyday garments, combined with an eco-plus option for lightly soiled loads to maximise energy and water efficiency.",
+
+  "Synthetic Daily": "Daily wear garments that are made of polyester, acrylic, or polyamide.",
+
+  "Synthetic": "Polyester, acrylic or polyamide daily wear garments.",
+
+  "Synthetic/Daily": "Daily wear garments made of polyester, acrylic, or polyamide. Gentle drum action and moderate temperatures protect synthetic fibres during the wash.",
+
+  "CradleWash": "Hand wash only garments, as well as lingerie, delicate washable fabrics made of silk, satin, synthetic or sheer fabrics.",
+
+  "Woolens": "Machine washable woollen garments only. Use appropriate detergent.",
+
+  "Woollens": "Machine washable woollen garments only. Gentle drum action and cool temperatures preserve the natural properties of wool. Use a neutral wool wash detergent.",
+
+  "Woollens 30": "A 30-minute gentle cycle for machine washable woollen garments. A neutral wool wash detergent is recommended.",
+
+  "Wool": "Machine washable wool and wool-blend garments only. A neutral wool wash detergent is recommended.",
+
+  "Mix/Daily": "Cotton, synthetic and easy-care garments. Not recommended for special garments like silk/delicates, dark clothes, wool, duvets, curtains, etc.",
+
+  "Mix/Daily 60'": "Cotton, synthetic and easy-care garments with moderate soiling. Extended 60-minute cycle for a deeper clean. Not recommended for silk/delicates, dark clothes, wool, duvets, or curtains.",
+
+  "Mixed": "A versatile programme for a mixed load of cotton, synthetic, and easy-care fabrics with varying soiling levels. Balances wash performance and fabric care for everyday mixed laundry.",
+
+  "Mixed Soiled": "Various types of cotton, synthetic or easy-care garments except special garments such as silk/delicates, dark clothes, woollens, duvets, curtains, etc.",
+
+  "Mixed Soiled+": "Various types of cotton, synthetic or easy-care garments with heavier soiling, except special garments such as silk/delicates, dark clothes, woollens, duvets, curtains, etc.",
+
+  "Mix Soiled 40": "Various types of cotton, synthetic or easy-care garments washed at 40°C — balances effective cleaning with energy efficiency.",
+
+  "Express Wash": "Lightly soiled, coloured laundry made of cotton, linen, synthetic or blended fabrics.",
+
+  "Express 30": "Lightly soiled coloured laundry made of cotton, linen, synthetic or blended fabrics. Completed in 30 minutes.",
+
+  "Express 15": "Lightly soiled coloured laundry made of cotton, linen, synthetic or blended fabrics. Completed in 15 minutes — the fastest programme available.",
+
+  "Express 15'/Express 30": "Lightly soiled coloured laundry made of cotton, linen, synthetic or blended fabrics. Available in a 15-minute or 30-minute cycle depending on load size and soiling level.",
+
+  "Baby Wear": "Baby wear items such as baby clothes, underwear, cloth diapers, pillows, bed sheets, etc. High temperature wash and extra rinses to ensure better rinse performance and hygiene.",
+
+  "Bulky/Bedding": "Machine washable cotton curtains and large items like blankets and bedding covers.",
+
+  "Bulky": "Machine washable large oversized items like blankets and bedding covers. Low spin speed and gentle drum movement prevent damage to large bulky items during the wash.",
+
+  "Hygiene": "A high-temperature sanitising programme that kills bacteria, viruses, and common household allergens. Ideal for underwear, gym wear, towels, and items used by allergy-prone individuals.",
+
+  "Refresh": "For removing odour and de-wrinkling the laundry. Suitable for cotton, synthetic and mixed fabrics.",
+
+  "Anti Allergen": "Cotton and linen fabrics that come in direct contact with the skin. Removes allergens through high-temperature wash with additional rinse cycles.",
+
+  "Jeans": "Jeans or other coloured garments that don't bleed colours.",
+
+  "Inner Wear": "Machine washable lingerie or innerwear.",
+
+  "PowerSteam": "Recommended for effective stain removal. Lightly soiled cotton, synthetic and mixed fabrics.",
+
+  "Shirts": "Casual shirts that do not need to be ironed after washing.",
+
+  "Shirts/Blouses": "Casual shirts and blouses that do not need to be ironed after washing.",
+
+  "Sports Wear": "Singlets, leggings, jogging clothes and running wear.",
+
+  "Fitness Wear": "Gym and athletic clothing including singlets, leggings, jogging clothes and running wear. Removes sweat and odour while preserving performance fabric properties.",
+
+  "Dark Wash": "Dark-coloured cotton or easy-care fabric garments.",
+
+  "Uniform": "Cotton colour-fast work uniforms, shirts, pants and school wear. Thorough wash with strong mechanical action for heavily soiled items.",
+
+  "Linen": "Household linen items such as bed sheets, table linen, and towels. Effective stain removal with proper care for the fabric blend.",
+
+  "Uniform/Linen": "Cotton colour-fast work uniforms, household linen, bed sheets, and table linen. Combines thorough cleaning performance with appropriate care for both uniform fabrics and household linen blends.",
+
+  "Curtains": "Machine washable cotton curtains washed with gentle action and low spin speed to avoid distortion and creasing.",
+
+  "Daily Wear": "A balanced programme for normally soiled everyday clothing such as casual shirts, trousers, and mixed fabrics — efficient use of water and energy.",
+
+  "Quick 30": "A condensed 30-minute wash for small loads of lightly soiled clothes or recently worn garments.",
+
+  "Quick Wash 30": "A condensed 30-minute wash for small loads of lightly soiled clothes or recently worn garments — delivers a fast, effective clean without a full cycle.",
+
+  "Spin Dry/Drain": "A standalone water-extraction cycle that spins laundry at high speed to remove residual water, or drains remaining water from the drum — no washing involved.",
+
+  "Additives/Rinse + Spin": "An extra rinse cycle followed by a full spin to thoroughly flush out detergent or fabric-softener residues — especially useful for people with sensitive skin.",
+
+  "Tub Clean": "Run this programme to eliminate impurities, scaling, bacteria and unpleasant smell from the washing machine.",
+
+  "Eco Wash": "An environment-conscious programme that uses lower water temperatures and reduced cycle time to minimise energy and water consumption while cleaning lightly soiled items effectively."};
 
   /* ═══════════════════════════════════════════════
      DOM refs
