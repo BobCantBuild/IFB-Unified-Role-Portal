@@ -61,6 +61,7 @@
     "Eco Wash": "An environment-conscious programme that uses lower water temperatures and reduced cycle time to minimise energy and water consumption while cleaning lightly soiled items effectively.",
 
     "Powered by AI": "Available on selected models only. The intuitive sensing logic detects two parameters — Type of fabric (Cotton, Mixed or Synthetic) and Weight of the fabric. The AI model, based on thousands of parameters, selects the optimised wash configuration to reduce washing time and water consumption while ensuring the best care for your clothes without any manual intervention.",
+    "Powered by Ai": "Available on selected models only. The intuitive sensing logic detects two parameters — Type of fabric (Cotton, Mixed or Synthetic) and Weight of the fabric. The AI model, based on thousands of parameters, selects the optimised wash configuration to reduce washing time and water consumption while ensuring the best care for your clothes without any manual intervention.",
     "9 Swirl": "Swirl technology that generates nine powerful yet gentle water currents inside the drum, caring for your clothes while effectively removing dirt and stains.",
     "7 Swirl": "Swirl technology that generates seven distinct water currents inside the drum, providing gentle yet thorough cleaning action suited for everyday fabric care.",
     "2D Wash": "Jets of water and showers from two directions via the paddles completely soak the clothes. The water and detergent mixture is sprayed onto the clothes in a special mechanism for a better wash.",
