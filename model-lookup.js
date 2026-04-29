@@ -4,6 +4,7 @@
      PROGRAM DESCRIPTIONS — embedded from txt file
   ═══════════════════════════════════════════════ */
   const PROG_DESC = {
+    "Cotton Normal/ Cotton Eco Plus": "Cotton colour-fast garments such as shirts, pants, uniforms, bed and table linen, towels, nightdresses, pyjamas, underwear, etc. An energy-efficient cotton wash for lightly to normally soiled cotton items. Achieves effective cleaning at lower temperatures, reducing electricity and water consumption.",
     "Cotton Normal": "Cotton colour-fast garments such as shirts, pants, uniforms, bed and table linen, towels, nightdresses, pyjamas, underwear, etc.",
     "Cotton Eco Plus": "An energy-efficient cotton wash for lightly to normally soiled cotton items. Achieves effective cleaning at lower temperatures, reducing electricity and water consumption.",
     "Cotton Eco": "A resource-saving wash variant for cotton items, optimising water levels and temperature to deliver clean results while minimising energy use.",
@@ -69,6 +70,7 @@
     "3D/4D Wash": "An advanced multi-directional wash system using three or four planes of water jets to saturate the entire load uniformly, delivering deeper cleaning performance especially suited for heavier fabric loads.",
     "2D Shower System": "A dual-directional water shower system that sprays water from two angles inside the drum, ensuring thorough soaking of all garments before the wash cycle begins, improving detergent distribution and cleaning efficiency.",
     "Aqua Energie": "The technology that energises water to carry the detergent deep into the fabric, enhancing cleaning performance and ensuring thorough soil removal even at lower temperatures.",
+    "Aqua Energy": "The technology that energises water to carry the detergent deep into the fabric, enhancing cleaning performance and ensuring thorough soil removal even at lower temperatures.",
     "Crescent Moon Drum": "The crescent moon design of the drum allows the water to cushion the wash and protect the fabric from mechanical damage during the cycle.",
     "Oxyjet Technology": "Infuses oxygen into the wash water to create a powerful oxygenated solution that actively breaks down tough stains at the molecular level, delivering deep-cleaning performance comparable to hot washes even at lower temperatures.",
     "Air Bubble Wash": "Infuses millions of fine air bubbles into the wash water that penetrate deep into fabric fibres, loosening and lifting dirt and stains gently without aggressive mechanical action, resulting in effective cleaning with minimal fabric stress.",
