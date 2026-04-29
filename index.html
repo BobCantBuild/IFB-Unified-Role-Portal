@@ -6,87 +6,109 @@
   <title>IFB Unified Role Portal</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="social-feed.css">
-<link rel="stylesheet" href="model-lookup.css">
+  <link rel="stylesheet" href="model-lookup.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
 
   <style>
-    /* ── Nav model search — scoped styles only ── */
-    .topbar-model-search {
+    /* ── Model Search Bar — full width section ── */
+    .model-search-section {
+      margin: 18px 0 0 0;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 16px 20px;
       display: flex;
       align-items: center;
-      gap: 8px;
-      margin-left: auto;
-      flex: 0 0 320px;
-      position: relative;
+      gap: 14px;
     }
-    .topbar-model-search #modelSearchInput {
-      flex: 1;
-      padding: 7px 12px;
-      border: 1px solid rgba(255,255,255,0.28);
-      border-radius: 8px;
-      background: rgba(255,255,255,0.1);
-      color: #fff;
+    .model-search-label {
       font-size: 0.82rem;
-      outline: none;
-      transition: border-color 180ms, background 180ms;
-      font-family: inherit;
+      font-weight: 700;
+      color: var(--subtle);
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 6px;
     }
-    .topbar-model-search #modelSearchInput::placeholder {
-      color: rgba(255,255,255,0.55);
+    .model-search-label svg {
+      flex-shrink: 0;
     }
-    .topbar-model-search #modelSearchInput:focus {
-      border-color: rgba(255,255,255,0.65);
-      background: rgba(255,255,255,0.18);
+    .model-search-section .ml-search-wrap {
+      flex: 1;
+      position: relative;
+      display: flex;
+      gap: 8px;
     }
-    .topbar-model-search #modelSearchBtn {
-      padding: 7px 14px;
-      background: rgba(255,255,255,0.18);
-      border: 1px solid rgba(255,255,255,0.32);
+    .model-search-section #modelSearchInput {
+      flex: 1;
+      padding: 9px 14px;
+      border: 1px solid var(--border);
       border-radius: 8px;
+      font-size: 0.88rem;
+      background: var(--widget-bg);
+      color: var(--text);
+      outline: none;
+      font-family: inherit;
+      transition: border-color 180ms, background 180ms;
+    }
+    .model-search-section #modelSearchInput:focus {
+      border-color: var(--accent);
+      background: #fff;
+    }
+    .model-search-section #modelSearchInput::placeholder {
+      color: var(--subtle);
+    }
+    .model-search-section #modelSearchBtn {
+      padding: 9px 20px;
+      background: var(--accent);
       color: #fff;
-      font-size: 0.8rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.85rem;
       font-weight: 700;
       cursor: pointer;
-      white-space: nowrap;
       font-family: inherit;
       transition: background 160ms;
+      white-space: nowrap;
     }
-    .topbar-model-search #modelSearchBtn:hover {
-      background: rgba(255,255,255,0.28);
+    .model-search-section #modelSearchBtn:hover {
+      background: #004f6a;
     }
-    .topbar-model-search #modelSuggestions {
-      background: #ffffff;
-      border: 1px solid #d8e3ea;
-      color: #16324a;
-      top: calc(100% + 6px);
+    /* Suggestions dropdown */
+    .model-search-section #modelSuggestions {
+      display: none;
+      position: absolute;
+      top: calc(100% + 4px);
       left: 0;
-      right: auto;
-      width: 320px;
+      right: 80px;
+      background: #fff;
+      border: 1px solid var(--border);
       border-radius: 8px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
       z-index: 9999;
       overflow: hidden;
     }
-    .topbar-model-search .ml-suggest-item {
-      padding: 9px 13px;
-      font-size: 0.83rem;
+    .ml-suggest-item {
+      padding: 9px 14px;
+      font-size: 0.85rem;
       cursor: pointer;
-      border-bottom: 1px solid #eee;
-      color: #16324a;
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
       transition: background 100ms;
     }
-    .topbar-model-search .ml-suggest-item:last-child { border-bottom: none; }
-    .topbar-model-search .ml-suggest-item:hover { background: #d5edf3; }
+    .ml-suggest-item:last-child { border-bottom: none; }
+    .ml-suggest-item:hover { background: var(--accent-soft); }
 
-    @media (max-width: 860px) {
-      .topbar-model-search { display: none; }
+    @media (max-width: 600px) {
+      .model-search-label { display: none; }
     }
   </style>
 </head>
 <body>
   <div class="page-shell">
 
-    <!-- Topbar -->
+    <!-- Topbar — clean, no search bar -->
     <header class="topbar">
       <div class="topbar-inner">
         <div class="topbar-brand">
@@ -95,19 +117,6 @@
             <h1>Unified Role Portal</h1>
             <p class="subtitle">Single access layer for role-based tools and links</p>
           </div>
-        </div>
-
-        <!-- ✅ MODEL SEARCH IN TOPBAR -->
-        <div class="topbar-model-search ml-search-wrap">
-          <input
-            type="text"
-            id="modelSearchInput"
-            placeholder="🔍 Search model… e.g. Eva ZX"
-            autocomplete="off"
-            spellcheck="false"
-          />
-          <button id="modelSearchBtn">Lookup</button>
-          <div id="modelSuggestions"></div>
         </div>
       </div>
     </header>
@@ -186,7 +195,7 @@
       </button>
     </div>
 
-    <!-- Main layout -->
+    <!-- Main layout — Widget Slot 2 removed -->
     <main class="main-layout">
 
       <section class="panel role-panel">
@@ -204,24 +213,35 @@
         <div id="linkGrid" class="link-grid" aria-live="polite"></div>
       </section>
 
+      <!-- ✅ Widget column — only stock, Widget Slot 2 removed -->
       <aside class="widget-column">
         <div class="widget-card" id="widget-stock"></div>
-        <div class="widget-card widget-placeholder">
-          <div class="widget-header"><span class="widget-title">Widget Slot 2</span></div>
-          <div class="placeholder-body">
-            <svg width="30" height="30" fill="none" stroke="currentColor"
-                 stroke-width="1.5" viewBox="0 0 24 24">
-              <rect x="3" y="3" width="7" height="7" rx="1"/>
-              <rect x="14" y="3" width="7" height="7" rx="1"/>
-              <rect x="3" y="14" width="7" height="7" rx="1"/>
-              <rect x="14" y="14" width="7" height="7" rx="1"/>
-            </svg>
-            <p>Next widget goes here</p>
-          </div>
-        </div>
       </aside>
 
     </main>
+
+    <!-- ✅ MODEL SEARCH — full width, between main grid and news -->
+    <div class="model-search-section">
+      <div class="model-search-label">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        Model Lookup
+      </div>
+      <div class="ml-search-wrap">
+        <input
+          type="text"
+          id="modelSearchInput"
+          placeholder="Type a model name… e.g. Senator Neo, Eva ZX, Executive Plus"
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <button id="modelSearchBtn">Search</button>
+        <div id="modelSuggestions"></div>
+      </div>
+    </div>
 
     <!-- IFB LATEST NEWS SECTION -->
     <section class="ifb-feed-section">
@@ -264,9 +284,9 @@
 
     </section>
 
-  </div><!-- ✅ END .page-shell — overlay is OUTSIDE this div -->
+  </div><!-- ✅ END .page-shell -->
 
-  <!-- ✅ MODEL OVERLAY — outside .page-shell so position:fixed works correctly -->
+  <!-- ✅ MODEL OVERLAY — outside .page-shell -->
   <div id="modelOverlay" role="dialog" aria-modal="true" aria-label="Model Details">
     <div class="ml-overlay-panel">
       <div class="ml-overlay-header">
@@ -281,8 +301,7 @@
   <script src="app.js"></script>
   <script src="stock.js"></script>
   <script src="social-feed.js"></script>
-  <!-- ✅ Model Lookup -->
-  <script src="/js/model-lookup.js"></script>
+  <script src="model-lookup.js"></script>
 
   <!-- Carousel JS -->
   <script>

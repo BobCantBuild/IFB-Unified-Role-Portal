@@ -1,4 +1,5 @@
 (function () {
+
   const input     = document.getElementById('modelSearchInput');
   const btn       = document.getElementById('modelSearchBtn');
   const overlay   = document.getElementById('modelOverlay');
@@ -8,7 +9,7 @@
   const bodyEl    = document.getElementById('modelTabBody');
   const suggestEl = document.getElementById('modelSuggestions');
 
-  if (!input) return;
+  if (!input) { console.warn('[ModelLookup] #modelSearchInput not found'); return; }
 
   function fmtCurrency(val) {
     if (!val && val !== 0) return '—';
@@ -29,7 +30,7 @@
       { title: '🛡️ Machine Care',              key: 'Machine Care' },
       { title: '🎯 User Convenience',           key: 'User Convenience' },
     ];
-    return sections.map(s => {
+    const html = sections.map(s => {
       const items = kf[s.key] || [];
       if (!items.length) return '';
       return `<div class="ml-feature-section">
@@ -38,7 +39,8 @@
           ${items.map(i => `<span class="ml-chip ml-chip-feat">${i}</span>`).join('')}
         </div>
       </div>`;
-    }).join('') || '<p class="ml-empty">No feature data available.</p>';
+    }).join('');
+    return html || '<p class="ml-empty">No feature data available.</p>';
   }
 
   function renderNomenclature(data) {
@@ -75,9 +77,9 @@
     const t = data.testMode || {};
     if (!Object.keys(t).length) return '<p class="ml-empty">No test mode data available.</p>';
     const steps = [
-      { label: '1. Program Position', value: t.Program_Position  || '—' },
-      { label: '2. Press Button',      value: t.Test_Mode_Button  || '—' },
-      { label: '3. Display Shows',     value: t.Display_Shows     || '—' },
+      { label: '1. Program Position', value: t.Program_Position || '—' },
+      { label: '2. Press Button',     value: t.Test_Mode_Button || '—' },
+      { label: '3. Display Shows',    value: t.Display_Shows    || '—' },
     ];
     return `<div class="ml-testmode">
       ${steps.map(s => `
@@ -89,11 +91,11 @@
   }
 
   const TABS = [
-    { id: 'programs',     label: '📋 Programs',     render: renderPrograms },
-    { id: 'features',     label: '✨ Key Features',  render: renderKeyFeatures },
-    { id: 'nomenclature', label: '🔤 Nomenclature',  render: renderNomenclature },
-    { id: 'amc',          label: '💰 AMC / EW',      render: renderAMC },
-    { id: 'testmode',     label: '🛠️ Test Mode',     render: renderTestMode },
+    { id: 'programs',     label: '📋 Programs',    render: renderPrograms },
+    { id: 'features',     label: '✨ Key Features', render: renderKeyFeatures },
+    { id: 'nomenclature', label: '🔤 Nomenclature', render: renderNomenclature },
+    { id: 'amc',          label: '💰 AMC / EW',     render: renderAMC },
+    { id: 'testmode',     label: '🛠️ Test Mode',    render: renderTestMode },
   ];
 
   let currentData  = null;
@@ -105,20 +107,18 @@
     currentData = modelObj;
     activeTab   = 'programs';
     titleEl.textContent = modelObj.model;
-
     tabsEl.innerHTML = TABS.map(t =>
       `<button class="ml-tab ${t.id === activeTab ? 'active' : ''}" data-tab="${t.id}">${t.label}</button>`
     ).join('');
-
     bodyEl.innerHTML = renderPrograms(modelObj);
     overlay.classList.add('open');
     document.body.style.overflow = 'hidden';
   }
 
   tabsEl?.addEventListener('click', e => {
-    const btn = e.target.closest('[data-tab]');
-    if (!btn || !currentData) return;
-    activeTab = btn.dataset.tab;
+    const tabBtn = e.target.closest('[data-tab]');
+    if (!tabBtn || !currentData) return;
+    activeTab = tabBtn.dataset.tab;
     tabsEl.querySelectorAll('.ml-tab').forEach(t =>
       t.classList.toggle('active', t.dataset.tab === activeTab)
     );
@@ -131,7 +131,6 @@
     document.body.style.overflow = '';
     currentData = null;
   }
-
   closeBtn?.addEventListener('click', closeOverlay);
   overlay?.addEventListener('click', e => { if (e.target === overlay) closeOverlay(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeOverlay(); });
@@ -140,10 +139,14 @@
     if (q.length < 2) { hideSuggestions(); return; }
     try {
       const res  = await fetch(`/api/model?q=${encodeURIComponent(q)}`);
+      if (!res.ok) { console.warn('[ModelLookup] API:', res.status); hideSuggestions(); return; }
       const json = await res.json();
       suggestions = json.results || [];
       renderSuggestions();
-    } catch { hideSuggestions(); }
+    } catch (err) {
+      console.warn('[ModelLookup] fetch error:', err.message);
+      hideSuggestions();
+    }
   }
 
   function renderSuggestions() {
@@ -155,7 +158,7 @@
   }
 
   function hideSuggestions() {
-    suggestEl.style.display = 'none';
+    if (suggestEl) suggestEl.style.display = 'none';
     suggestions = [];
   }
 
@@ -172,30 +175,36 @@
     hideSuggestions();
     try {
       const res  = await fetch(`/api/model?q=${encodeURIComponent(q)}`);
+      if (!res.ok) throw new Error('HTTP ' + res.status);
       const json = await res.json();
       if (json.results?.length) {
         openOverlay(json.results[0]);
       } else {
         titleEl.textContent = 'No model found';
-        bodyEl.innerHTML    = '<p class="ml-empty">Try a different model name.</p>';
+        bodyEl.innerHTML    = `<p class="ml-empty">No results for "<strong>${q}</strong>". Try a different name.</p>`;
+        tabsEl.innerHTML    = '';
         overlay.classList.add('open');
       }
-    } catch (err) { console.error('[model-lookup]', err); }
+    } catch (err) {
+      console.error('[ModelLookup] error:', err);
+      titleEl.textContent = 'Error';
+      bodyEl.innerHTML    = '<p class="ml-empty">Could not reach API. Check DevTools console.</p>';
+      tabsEl.innerHTML    = '';
+      overlay.classList.add('open');
+    }
   }
 
   input.addEventListener('input', () => {
     clearTimeout(debounceTimer);
     debounceTimer = setTimeout(() => fetchSuggestions(input.value.trim()), 280);
   });
-
   input.addEventListener('keydown', e => {
-    if (e.key === 'Enter') doSearch();
+    if (e.key === 'Enter') { e.preventDefault(); doSearch(); }
     if (e.key === 'Escape') hideSuggestions();
   });
-
   btn?.addEventListener('click', doSearch);
-
   document.addEventListener('click', e => {
     if (!input.contains(e.target) && !suggestEl?.contains(e.target)) hideSuggestions();
   });
+
 })();
