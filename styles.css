@@ -431,3 +431,10 @@ body {
   --color-text-muted:        var(--subtle);         /* #547086 */
   --color-divider:           var(--border);         /* #d8e3ea */
 }
+
+/* ── Model overlay safety hide ── */
+#modelOverlay          { display: none !important; }
+#modelOverlay.open     { display: flex !important; position: fixed; inset: 0;
+                         background: rgba(0,0,0,0.45); z-index: 9000;
+                         align-items: center; justify-content: center; padding: 20px; }
+                         
