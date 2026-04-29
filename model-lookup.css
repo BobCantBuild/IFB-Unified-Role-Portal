@@ -262,3 +262,65 @@
   #modelOverlayTitle { font-size: 0.95rem; }
   #modelTabBody { padding: 14px; }
 }
+
+/* ── Chip wrapper ── */
+.ml-chip-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ── ⓘ Info button ── */
+.ml-info-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #9bc9d5;
+  background: #edf7fb;
+  color: #006f8f;
+  font-size: 0.7rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 140ms, color 140ms;
+  line-height: 1;
+  padding: 0;
+  font-family: inherit;
+}
+.ml-info-btn:hover {
+  background: #006f8f;
+  color: #fff;
+  border-color: #006f8f;
+}
+
+/* ── Floating tooltip ── */
+#mlInfoTooltip {
+  display: none;
+  position: absolute;
+  z-index: 99999;
+  max-width: 280px;
+  background: #16324a;
+  color: #fff;
+  border-radius: 10px;
+  padding: 12px 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.22);
+  pointer-events: none;
+}
+#mlInfoTooltip.visible {
+  display: block;
+}
+.ml-info-tooltip-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #7dd3e8;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.ml-info-tooltip-body {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.88);
+}
