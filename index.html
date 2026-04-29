@@ -6,7 +6,97 @@
   <title>IFB Unified Role Portal</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="social-feed.css">
+  <link rel="stylesheet" href="/css/model-lookup.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+
+  <!-- ✅ Nav model search styles -->
+  <style>
+    .topbar-model-search {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-left: auto;
+      flex: 0 0 320px;
+      position: relative;
+    }
+
+    .topbar-model-search #modelSearchInput {
+      flex: 1;
+      padding: 7px 12px;
+      border: 1px solid rgba(255,255,255,0.28);
+      border-radius: 8px;
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      font-size: 0.82rem;
+      outline: none;
+      transition: border-color 180ms, background 180ms;
+      font-family: inherit;
+    }
+
+    .topbar-model-search #modelSearchInput::placeholder {
+      color: rgba(255,255,255,0.55);
+    }
+
+    .topbar-model-search #modelSearchInput:focus {
+      border-color: rgba(255,255,255,0.65);
+      background: rgba(255,255,255,0.18);
+    }
+
+    .topbar-model-search #modelSearchBtn {
+      padding: 7px 14px;
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.32);
+      border-radius: 8px;
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      white-space: nowrap;
+      font-family: inherit;
+      transition: background 160ms;
+    }
+
+    .topbar-model-search #modelSearchBtn:hover {
+      background: rgba(255,255,255,0.28);
+    }
+
+    .topbar-model-search #modelSuggestions {
+      background: #ffffff;
+      border: 1px solid #d4d1ca;
+      color: #1a1a1a;
+      top: calc(100% + 6px);
+      left: 0;
+      right: auto;
+      width: 320px;
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      z-index: 9999;
+      overflow: hidden;
+    }
+
+    .topbar-model-search .ml-suggest-item {
+      padding: 9px 13px;
+      font-size: 0.83rem;
+      cursor: pointer;
+      border-bottom: 1px solid #eeeeee;
+      color: #1a1a1a;
+      transition: background 100ms;
+    }
+
+    .topbar-model-search .ml-suggest-item:last-child {
+      border-bottom: none;
+    }
+
+    .topbar-model-search .ml-suggest-item:hover {
+      background: #e0f0ef;
+    }
+
+    @media (max-width: 860px) {
+      .topbar-model-search {
+        display: none;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="page-shell">
@@ -20,6 +110,19 @@
             <h1>Unified Role Portal</h1>
             <p class="subtitle">Single access layer for role-based tools and links</p>
           </div>
+        </div>
+
+        <!-- ✅ MODEL LOOKUP IN TOPBAR -->
+        <div class="topbar-model-search ml-search-wrap">
+          <input
+            type="text"
+            id="modelSearchInput"
+            placeholder="🔍 Search model… e.g. Eva ZX"
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <button id="modelSearchBtn">Lookup</button>
+          <div id="modelSuggestions"></div>
         </div>
       </div>
     </header>
@@ -75,10 +178,10 @@
             <svg viewBox="0 0 24 24" class="carousel-brand-icon">
               <defs>
                 <linearGradient id="ig" x1="0%" y1="100%" x2="100%" y2="0%">
-                  <stop offset="0%"   stop-color="#f09433"/>
-                  <stop offset="25%"  stop-color="#e6683c"/>
-                  <stop offset="50%"  stop-color="#dc2743"/>
-                  <stop offset="75%"  stop-color="#cc2366"/>
+                  <stop offset="0%" stop-color="#f09433"/>
+                  <stop offset="25%" stop-color="#e6683c"/>
+                  <stop offset="50%" stop-color="#dc2743"/>
+                  <stop offset="75%" stop-color="#cc2366"/>
                   <stop offset="100%" stop-color="#bc1888"/>
                 </linearGradient>
               </defs>
@@ -180,9 +283,22 @@
 
   </div><!-- end .page-shell -->
 
+  <!-- ✅ MODEL LOOKUP OVERLAY -->
+  <div id="modelOverlay" role="dialog" aria-modal="true" aria-label="Model Details">
+    <div class="ml-overlay-panel">
+      <div class="ml-overlay-header">
+        <div id="modelOverlayTitle">Model Details</div>
+        <button id="modelOverlayClose" aria-label="Close">✕</button>
+      </div>
+      <div id="modelTabs"></div>
+      <div id="modelTabBody"></div>
+    </div>
+  </div>
+
   <script src="app.js"></script>
   <script src="stock.js"></script>
   <script src="social-feed.js"></script>
+  <script src="/js/model-lookup.js"></script>
 
   <!-- Carousel JS -->
   <script>
@@ -223,7 +339,7 @@
           offset += speed;
         }
         if (offset >= oneSet) offset -= oneSet;
-        if (offset < 0)       offset += oneSet;
+        if (offset < 0) offset += oneSet;
         track.style.transform = `translateX(-${offset}px)`;
         requestAnimationFrame(animate);
       }
@@ -231,7 +347,7 @@
       track.addEventListener("mouseenter", () => paused = true);
       track.addEventListener("mouseleave", () => paused = false);
       rightBtn.addEventListener("click", () => nudge += NUDGE_AMOUNT);
-      leftBtn.addEventListener("click",  () => nudge -= NUDGE_AMOUNT);
+      leftBtn.addEventListener("click", () => nudge -= NUDGE_AMOUNT);
       window.addEventListener("load", () => requestAnimationFrame(animate));
     })();
   </script>

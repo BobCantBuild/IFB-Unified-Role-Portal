@@ -420,4 +420,14 @@ body {
 .flash-dn { animation: flashDn 0.8s ease-out forwards; }
 
 
-
+/* ── Match model-lookup overlay to your theme colours ── */
+:root {
+  --color-primary:           var(--accent);        /* #006f8f */
+  --color-primary-highlight: var(--accent-soft);   /* #d5edf3 */
+  --color-border:            var(--border);         /* #d8e3ea */
+  --color-surface:           var(--panel);          /* #ffffff */
+  --color-surface-offset:    var(--widget-bg);      /* #f4fafd */
+  --color-text:              var(--text);           /* #16324a */
+  --color-text-muted:        var(--subtle);         /* #547086 */
+  --color-divider:           var(--border);         /* #d8e3ea */
+}

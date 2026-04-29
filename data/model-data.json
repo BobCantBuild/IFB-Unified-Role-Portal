@@ -1,0 +1,5747 @@
+[
+  {
+    "model": "Eva ZX",
+    "programs": [
+      "Cotton Normal/ Cotton Eco Plus",
+      "Synthetic Daily",
+      "CradleWash",
+      "Woolens",
+      "Express Wash",
+      "Mixed Soiled",
+      "Baby Wear",
+      "Bulky/ Bedding",
+      "Hygiene"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "2D Shower System",
+        "Aqua Energy",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Foam Control System",
+        "Auto Tub Clean",
+        "7 Swirl Wash",
+        "CradleWash"
+      ]
+    },
+    "nomenclature": {
+      "Eva": "Model Name",
+      "ZX": "Color: White"
+    },
+    "amcEw": {
+      "Motor Warranty 10 years": 847.5,
+      "AMC 1 Year without Rubber": 3300.0,
+      "Labour AMC 1 Year": 2250.0,
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 2 Year without Rubber": 5900.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Delay",
+      "Display_Shows": "SF01"
+    }
+  },
+  {
+    "model": "Eva ZXS",
+    "programs": [
+      "Cotton Normal/ Cotton Eco Plus",
+      "Synthetic Daily",
+      "CradleWash",
+      "Woolens",
+      "Express Wash",
+      "Mixed Soiled",
+      "Baby Wear",
+      "Bulky/ Bedding",
+      "Hygiene"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "2D Shower System",
+        "Aqua Energy",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Foam Control System",
+        "Auto Tub Clean",
+        "7 Swirl Wash",
+        "CradleWash"
+      ]
+    },
+    "nomenclature": {
+      "Eva": "Model Name",
+      "ZX": "Color: White",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "Motor Warranty 10 years": 847.5,
+      "AMC 1 Year without Rubber": 3450.0,
+      "AMC 2 Year without Rubber": 6150.0,
+      "Labour AMC 1 Year": 2250.0,
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Delay",
+      "Display_Shows": "SF01"
+    }
+  },
+  {
+    "model": "IFB Diva Aqua BXS 6008",
+    "programs": [
+      "Mix/ Daily",
+      "Cotton/ Cotton Eco",
+      "CradleWash",
+      "Wool",
+      "Express Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by AI",
+        "Cool Down Cycle",
+        "2D Wash",
+        "Eco Wash",
+        "Express Wash",
+        "Auto Restart",
+        "Aqua Restart",
+        "Aqua Energy",
+        "CradleWash"
+      ],
+      "Machine Care": [
+        "Auto Imbalance System",
+        "Start/Pause (Program Interrupt)",
+        "High-Low Voltage Protection"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Diva Aqua": "Model Name",
+      "BX": "Color: Black",
+      "S": "Steam Series",
+      "6008": "Capacity & RPM: 6 kg | 800 RPM"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 2 Year without Rubber": 4400.0,
+      "AMC 1 Year without Rubber": 2500.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Rapid Wash & Stream",
+      "Display_Shows": "All LED Glows"
+    }
+  },
+  {
+    "model": "IFB Diva Aqua BXS",
+    "programs": [
+      "Mix/ Daily",
+      "Cotton/ Cotton Eco",
+      "CradleWash",
+      "Wool",
+      "Express Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by AI",
+        "Cool Down Cycle",
+        "2D Wash",
+        "Eco Wash",
+        "Express Wash",
+        "Auto Restart",
+        "Aqua Restart",
+        "Aqua Energy",
+        "CradleWash"
+      ],
+      "Machine Care": [
+        "Auto Imbalance System",
+        "Start/Pause (Program Interrupt)",
+        "High-Low Voltage Protection"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Diva Aqua": "Model Name",
+      "BX": "Color: Black",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Rapid Wash & Stream",
+      "Display_Shows": "All LED Glows"
+    }
+  },
+  {
+    "model": "IFB Diva Aqua MXS 7010",
+    "programs": [
+      "Mix/ Daily",
+      "Cotton/ Cotton Eco",
+      "CradleWash",
+      "Wool",
+      "Express Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by AI",
+        "Cool Down Cycle",
+        "2D Wash",
+        "Eco Wash",
+        "Express Wash",
+        "Auto Restart",
+        "Aqua Restart",
+        "Aqua Energy",
+        "CradleWash"
+      ],
+      "Machine Care": [
+        "Auto Imbalance System",
+        "Start/Pause (Program Interrupt)",
+        "High-Low Voltage Protection"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Diva Aqua": "Model Name",
+      "MX": "Color: Mocha",
+      "S": "Steam Series",
+      "7010": "Capacity & RPM: 7 kg | 1000 RPM"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 2500.0,
+      "AMC 2 Year without Rubber": 4400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Rapid Wash & Stream",
+      "Display_Shows": "All LED Glows"
+    }
+  },
+  {
+    "model": "IFB Diva Aqua SBS 6008",
+    "programs": [
+      "Mix/ Daily",
+      "Cotton/ Cotton Eco",
+      "CradleWash",
+      "Wool",
+      "Express Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by AI",
+        "Cool Down Cycle",
+        "2D Wash",
+        "Eco Wash",
+        "Express Wash",
+        "Auto Restart",
+        "Aqua Restart",
+        "Aqua Energy",
+        "CradleWash"
+      ],
+      "Machine Care": [
+        "Auto Imbalance System",
+        "Start/Pause (Program Interrupt)",
+        "High-Low Voltage Protection"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Diva Aqua": "Model Name",
+      "SB": "Color: Silver Black Door",
+      "S": "Steam Series",
+      "6008": "Capacity & RPM: 6 kg | 800 RPM"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 2 Year without Rubber": 4400.0,
+      "AMC 1 Year without Rubber": 2500.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Rapid Wash & Stream",
+      "Display_Shows": "All LED Glows"
+    }
+  },
+  {
+    "model": "IFB Diva Aqua SBS",
+    "programs": [
+      "Mix/ Daily",
+      "Cotton/ Cotton Eco",
+      "CradleWash",
+      "Wool",
+      "Express Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by AI",
+        "Cool Down Cycle",
+        "2D Wash",
+        "Eco Wash",
+        "Express Wash",
+        "Auto Restart",
+        "Aqua Restart",
+        "Aqua Energy",
+        "CradleWash"
+      ],
+      "Machine Care": [
+        "Auto Imbalance System",
+        "Start/Pause (Program Interrupt)",
+        "High-Low Voltage Protection"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Diva Aqua": "Model Name",
+      "SB": "Color: Silver Black Door",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Rapid Wash & Stream",
+      "Display_Shows": "All LED Glows"
+    }
+  },
+  {
+    "model": "IFB Diva Aqua SXS 6008",
+    "programs": [
+      "Mix/ Daily",
+      "Cotton/ Cotton Eco",
+      "CradleWash",
+      "Wool",
+      "Express Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by AI",
+        "Cool Down Cycle",
+        "2D Wash",
+        "Eco Wash",
+        "Express Wash",
+        "Auto Restart",
+        "Aqua Restart",
+        "Aqua Energy",
+        "CradleWash"
+      ],
+      "Machine Care": [
+        "Auto Imbalance System",
+        "Start/Pause (Program Interrupt)",
+        "High-Low Voltage Protection"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Diva Aqua": "Model Name",
+      "SX": "Color: Silver",
+      "S": "Steam Series",
+      "6008": "Capacity & RPM: 6 kg | 800 RPM"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 2 Year without Rubber": 4400.0,
+      "AMC 1 Year without Rubber": 2500.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Rapid Wash & Stream",
+      "Display_Shows": "All LED Glows"
+    }
+  },
+  {
+    "model": "IFB Diva Aqua SXS 7010",
+    "programs": [
+      "Mix/ Daily",
+      "Cotton/ Cotton Eco",
+      "CradleWash",
+      "Wool",
+      "Express Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by AI",
+        "Cool Down Cycle",
+        "2D Wash",
+        "Eco Wash",
+        "Express Wash",
+        "Auto Restart",
+        "Aqua Restart",
+        "Aqua Energy",
+        "CradleWash"
+      ],
+      "Machine Care": [
+        "Auto Imbalance System",
+        "Start/Pause (Program Interrupt)",
+        "High-Low Voltage Protection"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Diva Aqua": "Model Name",
+      "SX": "Color: Silver",
+      "S": "Steam Series",
+      "7010": "Capacity & RPM: 7 kg | 1000 RPM"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 4000.0,
+      "AMC 2 Year without Rubber": 7150.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Rapid Wash & Stream",
+      "Display_Shows": "All LED Glows"
+    }
+  },
+  {
+    "model": "IFB Diva Aqua SXS",
+    "programs": [
+      "Mix/ Daily",
+      "Cotton/ Cotton Eco",
+      "CradleWash",
+      "Wool",
+      "Express Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by AI",
+        "Cool Down Cycle",
+        "2D Wash",
+        "Eco Wash",
+        "Express Wash",
+        "Auto Restart",
+        "Aqua Restart",
+        "Aqua Energy",
+        "CradleWash"
+      ],
+      "Machine Care": [
+        "Auto Imbalance System",
+        "Start/Pause (Program Interrupt)",
+        "High-Low Voltage Protection"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Diva Aqua": "Model Name",
+      "SX": "Color: Silver",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 4000.0,
+      "AMC 2 Year without Rubber": 7150.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Rapid Wash & Stream",
+      "Display_Shows": "All LED Glows"
+    }
+  },
+  {
+    "model": "IFB Diva Aqua VSS 6008",
+    "programs": [
+      "Mix/ Daily",
+      "Cotton/ Cotton Eco",
+      "CradleWash",
+      "Wool",
+      "Express Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by AI",
+        "Cool Down Cycle",
+        "2D Wash",
+        "Eco Wash",
+        "Express Wash",
+        "Auto Restart",
+        "Aqua Restart",
+        "Aqua Energy",
+        "CradleWash"
+      ],
+      "Machine Care": [
+        "Auto Imbalance System",
+        "Start/Pause (Program Interrupt)",
+        "High-Low Voltage Protection"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Diva Aqua": "Model Name",
+      "VS": "Color: VCM Silver",
+      "S": "Steam Series",
+      "6008": "Capacity & RPM: 6 kg | 800 RPM"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 2 Year without Rubber": 4400.0,
+      "AMC 1 Year without Rubber": 2500.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Rapid Wash & Stream",
+      "Display_Shows": "All LED Glows"
+    }
+  },
+  {
+    "model": "IFB Diva Aqua VSS 7010",
+    "programs": [
+      "Mix/ Daily",
+      "Cotton/ Cotton Eco",
+      "CradleWash",
+      "Wool",
+      "Express Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by AI",
+        "Cool Down Cycle",
+        "2D Wash",
+        "Eco Wash",
+        "Express Wash",
+        "Auto Restart",
+        "Aqua Restart",
+        "Aqua Energy",
+        "CradleWash"
+      ],
+      "Machine Care": [
+        "Auto Imbalance System",
+        "Start/Pause (Program Interrupt)",
+        "High-Low Voltage Protection"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Diva Aqua": "Model Name",
+      "VS": "Color: VCM Silver",
+      "S": "Steam Series",
+      "7010": "Capacity & RPM: 7 kg | 1000 RPM"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 2500.0,
+      "AMC 2 Year without Rubber": 4400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Rapid Wash & Stream",
+      "Display_Shows": "All LED Glows"
+    }
+  },
+  {
+    "model": "IFB Diva Aqua VSS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Baby Wear",
+      "Refresh",
+      "Express 15'",
+      "Wool",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Bulky/Bedding"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Technology",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Imbalance System",
+        "Start/Pause (Program Interrupt)",
+        "High-Low Voltage Protection"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Diva Aqua": "Model Name",
+      "VS": "Color: VCM Silver",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 2500.0,
+      "AMC 2 Year without Rubber": 4400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Rapid Wash & Stream",
+      "Display_Shows": "All LED Glows"
+    }
+  },
+  {
+    "model": "IFB Diva GXN 6010 CMS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Baby Wear",
+      "Refresh",
+      "Express 15'",
+      "Wool",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Bulky/Bedding"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Oxyjet\u00ae Technology",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Diva": "Model Name",
+      "GX": "Color: Grey",
+      "N": "Neo Series",
+      "6010": "Capacity & RPM: 6 kg | 1000 RPM",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Delay",
+      "Display_Shows": "SF01"
+    }
+  },
+  {
+    "model": "IFB Diva Plus BXS 6008",
+    "programs": [
+      "Cotton",
+      "Cotton Eco",
+      "Synthetic/Daily",
+      "Quick 30",
+      "CradleWash\u00ae",
+      "Woollens 30",
+      "Mix Soiled 40"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Cool Down Cycle",
+        "Start/Pause (Program Interrupt)",
+        "2D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Quick Wash",
+        "Eco Wash",
+        "High-Low Voltage Protection",
+        "Auto Restart",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Inbuilt Easy Iron",
+        "Pre Wash"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Diva Plus": "Model Name",
+      "BX": "Color: Black",
+      "S": "Steam Series",
+      "6008": "Capacity & RPM: 6 kg | 800 RPM"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 2 Year without Rubber": 4400.0,
+      "AMC 1 Year without Rubber": 2500.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Stream and Extra Rinse",
+      "Display_Shows": "SF01"
+    }
+  },
+  {
+    "model": "IFB Diva Plus VXS 6008",
+    "programs": [
+      "Cotton",
+      "Cotton Eco",
+      "Synthetic/Daily",
+      "Quick 30",
+      "CradleWash\u00ae",
+      "Woollens 30",
+      "Mix Soiled 40"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Cool Down Cycle",
+        "Start/Pause",
+        "2D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Quick Wash",
+        "Eco Wash",
+        "High-Low Voltage Protection",
+        "Auto Restart",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Inbuilt Easy Iron",
+        "Pre Wash"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Diva Plus": "Model Name",
+      "VX": "Color: White",
+      "S": "Steam Series",
+      "6008": "Capacity & RPM: 6 kg | 800 RPM"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 2 Year without Rubber": 4400.0,
+      "AMC 1 Year without Rubber": 2500.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Stream and Extra Rinse",
+      "Display_Shows": "SF01"
+    }
+  },
+  {
+    "model": "IFB Diva SXN 6010K CMS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Baby Wear",
+      "Refresh",
+      "Express 15'",
+      "Wool",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Bulky/Bedding"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Diva": "Model Name",
+      "SX": "Color: Silver",
+      "N": "Neo Series",
+      "6010": "Capacity & RPM: 6 kg | 1000 RPM",
+      "K": "Knob (Neo Series)",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Delay",
+      "Display_Shows": "SF01"
+    }
+  },
+  {
+    "model": "IFB Diva VXN 6010",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Baby Wear",
+      "Express 15'",
+      "Refresh",
+      "Synthetic",
+      "Cradlewash\u00ae",
+      "Wool",
+      "Bulky/ Bedding"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "3D Wash",
+        "Aqua Energie",
+        "Crescent Moon Drum",
+        "Powered by AI",
+        "CradleWash",
+        "9 Swirl Wash"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Balance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Foam Control System",
+        "Auto Tub Clean"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Diva": "Model Name",
+      "VX": "Color: White",
+      "N": "Neo Series",
+      "6010": "Capacity & RPM: 6 kg | 1000 RPM"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 2500.0,
+      "AMC 2 Year without Rubber": 4400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Delay",
+      "Display_Shows": "SF01"
+    }
+  },
+  {
+    "model": "IFB Elena GXN 6510 CMS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Baby Wear",
+      "Express 15'",
+      "Refresh",
+      "Synthetic",
+      "Cradlewash\u00ae",
+      "Wool",
+      "Bulky Bedding"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "3D Wash",
+        "Aqua Energie",
+        "Crescent Moon Drum",
+        "Powered by AI",
+        "CradleWash",
+        "9 Swirl Wash"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Balance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Foam Control System",
+        "Auto Tub Clean"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Elena": "Model Name",
+      "GX": "Color: Grey",
+      "N": "Neo Series",
+      "6510": "Capacity & RPM: 6.5 kg | 1000 RPM",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Elena Plus SXS",
+    "programs": [
+      "Mixed Soiled",
+      "Cotton Normal/Cotton Eco Plus",
+      "Synthetic/Daily",
+      "Baby Wear",
+      "Cradlewash\u00ae",
+      "Express Wash",
+      "Woolens"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "2D/3D Wash",
+        "Aqua Energie",
+        "Crescent Moon Drum",
+        "Powered by AI",
+        "7 Swirl Wash"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Foam Control System",
+        "Auto Tub Clean",
+        "7 Swirl Wash",
+        "CradleWash"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Elena Plus": "Model Name",
+      "SX": "Color: Silver",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 2 Year without Rubber": 4400.0,
+      "AMC 1 Year without Rubber": 2500.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temp & Steam",
+      "Display_Shows": "SF02"
+    }
+  },
+  {
+    "model": "IFB Elena SBS",
+    "programs": [
+      "Cotton",
+      "Cotton Eco",
+      "Synthetic/Daily",
+      "Quick 30",
+      "CradleWash\u00ae",
+      "Woollens 30",
+      "Mix Soiled 40"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by AI",
+        "2D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Quick Wash",
+        "Eco Wash",
+        "High-Low Voltage Protection",
+        "Auto Restart",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Inbuilt Easy Iron",
+        "Pre Wash"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Elena": "Model Name",
+      "SB": "Color: Silver Black Door",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 2500.0,
+      "AMC 2 Year without Rubber": 4400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Stream and Extra Rinse",
+      "Display_Shows": "SF01"
+    }
+  },
+  {
+    "model": "IFB Elena SXN 6510",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Baby Wear",
+      "Express 15",
+      "Refresh",
+      "Synthetic",
+      "Cradlewash\u00ae",
+      "Wool",
+      "bulky/Bedding"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "3D Wash",
+        "Aqua Energie",
+        "9 Swirl Wash",
+        "Crescent Moon Drum",
+        "Powered by AI",
+        "CradleWash\u00ae"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Balance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Foam Control System",
+        "Auto Tub Clean"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Elena": "Model Name",
+      "SX": "Color: Silver",
+      "N": "Neo Series",
+      "6510": "Capacity & RPM: 6.5 kg | 1000 RPM"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 2500.0,
+      "AMC 2 Year without Rubber": 4400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Elena SXS",
+    "programs": [
+      "Cotton",
+      "Cotton Eco",
+      "Synthetic/Daily",
+      "Quick 30",
+      "CradleWash\u00ae",
+      "Woollens 30",
+      "Mix Soiled 40"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Cool Down Cycle",
+        "Start/Pause (Program Interrupt)",
+        "2D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Quick Wash",
+        "Eco Wash",
+        "High-Low Voltage Protection",
+        "Auto Restart",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Inbuilt Easy Iron",
+        "Pre Wash"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Elena": "Model Name",
+      "SX": "Color: Silver",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 2 Year without Rubber": 4400.0,
+      "AMC 1 Year without Rubber": 2500.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Stream and Extra Rinse",
+      "Display_Shows": "SF01"
+    }
+  },
+  {
+    "model": "IFB Elena ZSS",
+    "programs": [
+      "Mixed Soiled",
+      "Cotton Normal/Cotton Eco",
+      "CradleWash\u00ae",
+      "Baby Wear",
+      "Synthetic/Daily",
+      "Express Wash",
+      "Fitness Wear",
+      "HYGIENE",
+      "Woollens"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "7 Swirl Powered by Ai",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Elena": "Model Name",
+      "ZS": "Color: Silver",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "AMC 1 Year without Rubber": 3700.0,
+      "AMC 2 Year without Rubber": 6650.0,
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Elena ZWS",
+    "programs": [
+      "Mixed Soiled",
+      "Cotton Normal/Cotton Eco",
+      "CradleWash\u00ae",
+      "Baby Wear",
+      "Synthetic/Daily",
+      "Express Wash",
+      "Woollens",
+      "Fitness Wear",
+      "Hygiene"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "7 Swirl Powered by Ai",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Elena": "Model Name",
+      "ZW": "Color: White",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "AMC 1 Year without Rubber": 3550.0,
+      "AMC 2 Year without Rubber": 6400.0,
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Elite BXN 7012HK CMS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Jeans",
+      "Inner Wear",
+      "PowerSteam\u00ae",
+      "Shirts",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "9 Swirl Powered by Ai",
+        "Powered by Ai",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Elite": "Model Name",
+      "BX": "Color: Black",
+      "N": "Neo Series",
+      "7012": "Capacity & RPM: 7 kg | 1200 RPM",
+      "K": "Knob (Neo Series)",
+      "H": "Hairline Finish / Premium Colour",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Elite MBN 7012HK CMS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Jeans",
+      "Inner Wear",
+      "PowerSteam\u00ae",
+      "Shirts",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "9 Swirl Powered by Ai",
+        "Powered by Ai",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "9 Swirl Powered by Ai",
+        "Powered by Ai",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Elite": "Model Name",
+      "MB": "Color: Mocha",
+      "N": "Neo Series",
+      "7012": "Capacity & RPM: 7 kg | 1200 RPM",
+      "K": "Knob (Neo Series)",
+      "H": "Hairline Finish / Premium Colour",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {},
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Elite MXS 7012",
+    "programs": [
+      "Mixed Soiled",
+      "Cotton Normal/Cotton Eco",
+      "CradleWash\u00ae",
+      "Baby Wear",
+      "Synthetic/Daily",
+      "Express Wash",
+      "Fitness Wear",
+      "Hygiene",
+      "Woollens"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "7 Swirl Powered by Ai",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Elite": "Model Name",
+      "MX": "Color: Mocha",
+      "S": "Steam Series",
+      "7012": "Capacity & RPM: 7 kg | 1200 RPM"
+    },
+    "amcEw": {
+      "AMC 1 Year without Rubber": 4100.0,
+      "AMC 2 Year without Rubber": 7350.0,
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Elite Plus WSS 7012",
+    "programs": [
+      "Mixed Soiled",
+      "Cotton Normal/Cotton Eco Plus",
+      "Baby Wear",
+      "Anti Allergen",
+      "Woollens",
+      "Synthetic/Daily",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Express Wash",
+      "Curtains"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Elite Plus": "Model Name",
+      "WS": "Color: Silver",
+      "S": "Steam Series",
+      "7012": "Capacity & RPM: 7 kg | 1200 RPM"
+    },
+    "amcEw": {
+      "AMC 1 Year without Rubber": 4000.0,
+      "AMC 2 Year without Rubber": 7150.0,
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Elite ZLS 7012",
+    "programs": [
+      "Mixed Soiled",
+      "Cotton Normal/Cotton Eco",
+      "CradleWash\u00ae",
+      "Baby Wear",
+      "Synthetic/Daily",
+      "Express Wash",
+      "Fitness Wear",
+      "HYGIENE*",
+      "Woollens"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "7 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Elite": "Model Name",
+      "ZL": "Color: Silver Light",
+      "S": "Steam Series",
+      "7012": "Capacity & RPM: 7 kg | 1200 RPM"
+    },
+    "amcEw": {
+      "AMC 1 Year without Rubber": 4200.0,
+      "AMC 2 Year without Rubber": 7500.0,
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Elite ZRS 7012",
+    "programs": [
+      "Mixed Soiled",
+      "Cotton Normal/Cotton Eco",
+      "CradleWash\u00ae",
+      "Baby Wear",
+      "Synthetic/Daily",
+      "Express Wash",
+      "Fitness Wear",
+      "HYGIENE*",
+      "Woollens"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "7 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Elite": "Model Name",
+      "ZR": "Color: Silver Rose",
+      "S": "Steam Series",
+      "7012": "Capacity & RPM: 7 kg | 1200 RPM"
+    },
+    "amcEw": {
+      "AMC 1 Year without Rubber": 4200.0,
+      "AMC 2 Year without Rubber": 7500.0,
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Eva Plus ZWS 6010",
+    "programs": [
+      "Mixed/Soiled",
+      "Cotton Normal/Cotton Eco Plus",
+      "Baby Wear",
+      "Express Wash",
+      "Wool",
+      "CradleWash\u00ae",
+      "Synthetic/Daily",
+      "Hygiene",
+      "Bulky/Bedding"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "3D Wash",
+        "7 Swirl",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Tub Clean",
+        "Auto Foam Control System"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Eva Plus": "Model Name",
+      "ZW": "Color: White",
+      "S": "Steam Series",
+      "6010": "Capacity & RPM: 6 kg | 1000 RPM"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 2 Year without Rubber": 4400.0,
+      "AMC 1 Year without Rubber": 2500.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temp & Steam",
+      "Display_Shows": "SF02"
+    }
+  },
+  {
+    "model": "IFB Executive BHC 9014 SSLC",
+    "programs": [
+      "Mix/Daily 60\u2019",
+      "Cotton",
+      "Uniform",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash",
+      "Jeans",
+      "Shirts",
+      "Inner Wear",
+      "PowerSteam\u00ae"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Oxyjet\u00ae Technology",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive": "Model Name",
+      "BH": "Color: Black Hairline",
+      "C": "Silver/Classic Series",
+      "9014": "Capacity & RPM: 9 kg | 1400 RPM",
+      "SSLC": "Smart Sense Logic (Common)"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 5200.0,
+      "AMC 2 Year without Rubber": 9400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Executive BXN 9014K CMS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Uniform/Linen",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Jeans",
+      "Synthetic",
+      "Inner Wear",
+      "PowerSteam\u00ae",
+      "Shirts",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "9 Swirl",
+        "Powered by Ai",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive": "Model Name",
+      "BX": "Color: Black",
+      "N": "Neo Series",
+      "9014": "Capacity & RPM: 9 kg | 1400 RPM",
+      "K": "Knob (Neo Series)",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Executive MBN 9014K CMS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Uniform/Linen",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Jeans",
+      "Synthetic",
+      "Inner Wear",
+      "PowerSteam\u00ae",
+      "Shirts",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Mix/Daily",
+        "Cotton",
+        "Uniform/Linen",
+        "Baby Wear",
+        "Refresh",
+        "Anti Allergen",
+        "Express 30\u2019",
+        "Express 15\u2019",
+        "Wool",
+        "Jeans",
+        "Synthetic",
+        "Inner Wear",
+        "PowerSteam\u00ae",
+        "Shirts",
+        "CradleWash\u00ae",
+        "Sports Wear",
+        "Bulky/Bedding",
+        "Dark Wash"
+      ],
+      "Machine Care": [
+        "Mix/Daily",
+        "Cotton",
+        "Uniform/Linen",
+        "Baby Wear",
+        "Refresh",
+        "Anti Allergen",
+        "Express 30\u2019",
+        "Express 15\u2019",
+        "Wool",
+        "Jeans",
+        "Synthetic",
+        "Inner Wear",
+        "PowerSteam\u00ae",
+        "Shirts",
+        "CradleWash\u00ae",
+        "Sports Wear",
+        "Bulky/Bedding",
+        "Dark Wash"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive": "Model Name",
+      "MB": "Color: Mocha",
+      "N": "Neo Series",
+      "9014": "Capacity & RPM: 9 kg | 1400 RPM",
+      "K": "Knob (Neo Series)",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {},
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Executive MSC 9014 SSLC",
+    "programs": [
+      "Mix/Daily 60\u2019",
+      "Cotton",
+      "Uniform",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash",
+      "Jeans",
+      "Inner Wear",
+      "Power Steam*",
+      "Shirts"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Oxyjet\u00ae Technology",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive": "Model Name",
+      "MS": "Color: Metallic Silver",
+      "C": "Silver/Classic Series",
+      "9014": "Capacity & RPM: 9 kg | 1400 RPM",
+      "SSLC": "Smart Sense Logic (Common)"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 5200.0,
+      "AMC 2 Year without Rubber": 9400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Executive MSN 9014K CMS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Uniform/Linen",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Jeans",
+      "Inner Wear",
+      "PowerSteam\u00ae",
+      "Shirts",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "9 Swirl",
+        "Powered by Ai",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive": "Model Name",
+      "MS": "Color: Metallic Silver",
+      "N": "Neo Series",
+      "9014": "Capacity & RPM: 9 kg | 1400 RPM",
+      "K": "Knob (Neo Series)",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Executive MSN 9014K",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Uniform/Linen",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Jeans",
+      "Inner Wear",
+      "PowerSteam\u00ae",
+      "Shirts",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "9 Swirl",
+        "Powered by Ai",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive": "Model Name",
+      "MS": "Color: Metallic Silver",
+      "N": "Neo Series",
+      "9014": "Capacity & RPM: 9 kg | 1400 RPM",
+      "K": "Knob (Neo Series)"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 5200.0,
+      "AMC 2 Year without Rubber": 9400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Executive MSS ID",
+    "programs": [
+      "Mixed Soiled+",
+      "Cotton Normal",
+      "Uniform",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express Wash",
+      "Woollens",
+      "Synthetic/Daily",
+      "CradleWash\u00ae",
+      "Bulky/Bedding",
+      "PowerSteam\u00ae"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "9 Swirl\u00ae",
+        "4D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum",
+        "Hot Rinse"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "BLDC Motor Technology"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive": "Model Name",
+      "MS": "Color: Metallic Silver",
+      "S": "Steam Series",
+      "ID": "Inverter Drive"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 4850.0,
+      "AMC 2 Year without Rubber": 8750.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Executive MXC  9014 SSLC",
+    "programs": [
+      "Mix/Daily 60\u2019",
+      "Cotton",
+      "Uniform",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash",
+      "Jeans",
+      "Inner Wear",
+      "Power Steam*",
+      "Shirts"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Oxyjet\u00ae Technology",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive": "Model Name",
+      "MX": "Color: Mocha",
+      "C": "Silver/Classic Series",
+      "9014": "Capacity & RPM: 9 kg | 1400 RPM",
+      "SSLC": "Smart Sense Logic (Common)"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 5200.0,
+      "AMC 2 Year without Rubber": 9400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Executive MXS ID 1014",
+    "programs": [
+      "Mixed Soiled +",
+      "Cotton Normal",
+      "Uniform",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express Wash",
+      "Woollens",
+      "Synthetic/Daily",
+      "CradleWash\u00ae",
+      "Bulky/Bedding",
+      "PowerSteam\u00ae"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "9 Swirl\u00ae",
+        "4D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum",
+        "Hot Rinse"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "BLDC Motor Technology"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive": "Model Name",
+      "MX": "Color: Mocha",
+      "S": "Steam Series",
+      "ID": "Inverter Drive",
+      "1014": "Capacity & RPM: 10 kg | 1400 RPM"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 5200.0,
+      "AMC 2 Year without Rubber": 9400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Executive OXN 9014 CMS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Uniform/Linen",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Jeans",
+      "Inner Wear",
+      "PowerSteam\u00ae",
+      "Shirts",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "9 Swirl",
+        "Powered by Ai",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive": "Model Name",
+      "OX": "Color: OX",
+      "N": "Neo Series",
+      "9014": "Capacity & RPM: 9 kg | 1400 RPM",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Executive Plus BXN 1014KH",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Uniform/Linen",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Jeans",
+      "Inner Wear",
+      "PowerSteam\u00ae",
+      "Shirts",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "9 Swirl",
+        "Powered by Ai",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive Plus": "Model Name",
+      "BX": "Color: Black",
+      "N": "Neo Series",
+      "1014": "Capacity & RPM: 10 kg | 1400 RPM",
+      "K": "Knob (Neo Series)",
+      "H": "Hairline Finish / Premium Colour"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 5200.0,
+      "AMC 2 Year without Rubber": 9400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Executive Plus BXN 1114KH",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Uniform/Linen",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Jeans",
+      "Inner Wear",
+      "PowerSteam\u00ae",
+      "Shirts",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "9 Swirl",
+        "Powered by Ai",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive Plus": "Model Name",
+      "BX": "Color: Black",
+      "N": "Neo Series",
+      "1114": "Capacity & RPM: 11 kg | 1400 RPM",
+      "K": "Knob (Neo Series)",
+      "H": "Hairline Finish / Premium Colour"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 5800.0,
+      "AMC 2 Year without Rubber": 9600.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Executive Plus MBN 1014K CMS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Uniform/Linen",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Jeans",
+      "Inner Wear",
+      "PowerSteam\u00ae",
+      "Shirts",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "9 Swirl",
+        "Powered by Ai",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive Plus": "Model Name",
+      "MB": "Color: Mocha",
+      "N": "Neo Series",
+      "1014": "Capacity & RPM: 10 kg | 1400 RPM",
+      "K": "Knob (Neo Series)",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {},
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Executive Plus MXC 1014 SSL",
+    "programs": [
+      "Mix/Daily 60\u2019",
+      "Cotton",
+      "Uniform",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Synthetic",
+      "CrandleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash",
+      "Jeans",
+      "Shirts",
+      "Inner Wear"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Oxyjet\u00ae Technology",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive Plus": "Model Name",
+      "MX": "Color: Mocha",
+      "C": "Silver/Classic Series",
+      "1014": "Capacity & RPM: 10 kg | 1400 RPM",
+      "SSL": "Smart Sense Logic"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 5200.0,
+      "AMC 2 Year without Rubber": 9400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Executive Plus MXS 9014",
+    "programs": [
+      "Mix/Daily",
+      "Cotton/Cotton Eco Plus",
+      "Baby Wear",
+      "Power Steam",
+      "Refresh",
+      "CradleWash\u00ae",
+      "Express 15\u2019",
+      "Synthetic",
+      "Bulky",
+      "Anti Allergen",
+      "Wool"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "4D Wash",
+        "Aqua Energie",
+        "Crescent Moon Drum",
+        "Powered by AI",
+        "CradleWash\u00ae"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Foam Control System"
+      ],
+      "User Convenience": [
+        "Auto Imbalance System",
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Tub Clean"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive Plus": "Model Name",
+      "MX": "Color: Mocha",
+      "S": "Steam Series",
+      "9014": "Capacity & RPM: 9 kg | 1400 RPM"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 2 Year without Rubber": 9400.0,
+      "AMC 1 Year without Rubber": 5200.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Executive Plus VSC 1014 SSL",
+    "programs": [
+      "Mix/Daily 60\u2019",
+      "Cotton",
+      "Uniform",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash",
+      "Jeans",
+      "Inner Wear",
+      "Power Steam",
+      "Shirts"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Oxyjet\u00ae Technology",
+        "9 Swirl Powered by Ai",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive Plus": "Model Name",
+      "VS": "Color: VCM Silver",
+      "C": "Silver/Classic Series",
+      "1014": "Capacity & RPM: 10 kg | 1400 RPM",
+      "SSL": "Smart Sense Logic"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 5200.0,
+      "AMC 2 Year without Rubber": 9400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Executive Plus VSG 1114",
+    "programs": [
+      "Mix/Daily",
+      "Cotton/Cotton Eco",
+      "Uniform/Linen/Cotton coloured's/cotton whites",
+      "Baby Wear",
+      "Anti Allergen",
+      "Express 15'/Express 30",
+      "Refresh",
+      "Wool",
+      "Bulky/Bedding",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "PowerSteam\u00ae",
+      "Active Wear/Sports wear",
+      "Dark Wash",
+      "Inner Wear",
+      "Shirts/Blouses",
+      "Jeans"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "9 Swirl",
+        "3D Wash",
+        "Ai Dos",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum",
+        "BLDC Motor Technology",
+        "Hot Rinse"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System",
+        "Drum Lamp"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Tub Clean",
+        "Auto Foam Control System"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive Plus": "Model Name",
+      "VS": "Color: VCM Silver",
+      "G": "Gold Series",
+      "1114": "Capacity & RPM: 11 kg | 1400 RPM"
+    },
+    "amcEw": {},
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Executive Smart Touch SXS",
+    "programs": [
+      "Cotton Normal",
+      "Cotton Eco",
+      "Synthetic",
+      "Mixed",
+      "Express Wash",
+      "CradleWash\u00ae",
+      "Anti Allergen",
+      "Baby Wear",
+      "Bulky/ Bedding",
+      "Woolens"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "3D Wash System",
+        "Air-Bubble Wash",
+        "Powered by AI",
+        "CradleWash\u00ae"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Auto Balance System",
+        "Auto Restart",
+        "Tub Clean"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Anti Crease",
+        "Rapid Wash",
+        "Laundry Add Option",
+        "Steam Wash"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive Smart Touch": "Model Name",
+      "SX": "Color: Silver",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 5200.0,
+      "AMC 2 Year without Rubber": 9400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "V & \u039b- Press OK to start",
+      "Display_Shows": "SF07"
+    }
+  },
+  {
+    "model": "IFB Executive SXN 9014K CMS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Uniform/Linen",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Jeans",
+      "Inner Wear",
+      "PowerSteam\u00ae",
+      "Shirts",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "9 Swirl",
+        "Powered by Ai",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive": "Model Name",
+      "SX": "Color: Silver",
+      "N": "Neo Series",
+      "9014": "Capacity & RPM: 9 kg | 1400 RPM",
+      "K": "Knob (Neo Series)",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Spin & Delay",
+      "Display_Shows": "SF04"
+    }
+  },
+  {
+    "model": "IFB Executive SXS 9014",
+    "programs": [
+      "Mixed Soiled",
+      "Cotton Normal/Cotton Eco Plus",
+      "Anti Allergen",
+      "Baby Wear",
+      "CradleWash\u00ae",
+      "Express Wash",
+      "Synthetic/Daily",
+      "Bulky/Bedding",
+      "Woollens"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "3D/4D Wash",
+        "Aqua Energie",
+        "Crescent Moon Drum",
+        "Air Bubble Wash System",
+        "Cradle Wash",
+        "Powered by AI"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Foam Control System",
+        "Tub Clean",
+        "Drum Lamp"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive": "Model Name",
+      "SX": "Color: Silver",
+      "S": "Steam Series",
+      "9014": "Capacity & RPM: 9 kg | 1400 RPM"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 4850.0,
+      "AMC 2 Year without Rubber": 7440.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Spin & Delay",
+      "Display_Shows": "SF04"
+    }
+  },
+  {
+    "model": "IFB Neo Diva BXS 7010",
+    "programs": [
+      "Mixed Soiled",
+      "Cotton Normal/Cotton Eco Plus",
+      "Synthetic/Daily",
+      "Baby Wear",
+      "CradleWash\u00ae",
+      "Express Wash",
+      "Woollens"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "3D Wash",
+        "Aqua Energie",
+        "Crescent Moon Drum",
+        "7 Swirl Wash",
+        "CradleWash\u00ae",
+        "Powered by AI"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Balance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Foam Control System",
+        "Auto Tub Clean"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Neo Diva": "Model Name",
+      "BX": "Color: Black",
+      "S": "Steam Series",
+      "7010": "Capacity & RPM: 7 kg | 1000 RPM"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 3600.0,
+      "AMC 2 Year without Rubber": 6400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temp & Steam",
+      "Display_Shows": "SF02"
+    }
+  },
+  {
+    "model": "IFB Neo Diva SXS 6010",
+    "programs": [
+      "Mixed Soiled",
+      "Cotton Normal/Cotton Eco Plus",
+      "Synthetic/Daily",
+      "Baby Wear",
+      "CradleWash\u00ae",
+      "Express Wash",
+      "Woollens"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "3D Wash",
+        "Aqua Energie",
+        "Crescent Moon Drum",
+        "7 Swirl Wash",
+        "CradleWash\u00ae",
+        "Powered by AI"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Balance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Foam Control System",
+        "Auto Tub Clean"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Neo Diva": "Model Name",
+      "SX": "Color: Silver",
+      "S": "Steam Series",
+      "6010": "Capacity & RPM: 6 kg | 1000 RPM"
+    },
+    "amcEw": {
+      "AMC 1 Year without Rubber": 3250.0,
+      "AMC 2 Year without Rubber": 5800.0,
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temp & Steam",
+      "Display_Shows": "SF02"
+    }
+  },
+  {
+    "model": "IFB Neo Diva SXS 7010",
+    "programs": [
+      "Mixed Soiled",
+      "Cotton Normal/Cotton Eco Plus",
+      "Synthetic/Daily",
+      "Baby Wear",
+      "CradleWash\u00ae",
+      "Express Wash",
+      "Woollens"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "3D Wash",
+        "Aqua Energie",
+        "Crescent Moon Drum",
+        "7 Swirl Wash",
+        "CradleWash\u00ae",
+        "Powered by AI"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Balance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Foam Control System",
+        "Auto Tub Clean"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Neo Diva": "Model Name",
+      "SX": "Color: Silver",
+      "S": "Steam Series",
+      "7010": "Capacity & RPM: 7 kg | 1000 RPM"
+    },
+    "amcEw": {
+      "AMC 1 Year without Rubber": 3700.0,
+      "AMC 2 Year without Rubber": 6650.0,
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temp & Steam",
+      "Display_Shows": "SF02"
+    }
+  },
+  {
+    "model": "IFB Neo Diva VXS 6010",
+    "programs": [
+      "Mixed Soiled",
+      "Cotton Normal/Cotton Eco Plus",
+      "Synthetic/Daily",
+      "Baby Wear",
+      "CradleWash\u00ae",
+      "Express Wash",
+      "Woollens"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "2D Wash",
+        "3D Wash",
+        "Aqua Energie",
+        "Crescent Moon Drum",
+        "Powered by AI"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Balance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Foam Control System",
+        "Auto Tub Clean",
+        "7 Swirl Wash",
+        "CradleWash\u00ae"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Neo Diva": "Model Name",
+      "VX": "Color: White",
+      "S": "Steam Series",
+      "6010": "Capacity & RPM: 6 kg | 1000 RPM"
+    },
+    "amcEw": {
+      "AMC 1 Year without Rubber": 3100.0,
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 2 Year without Rubber": 5550.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temp & Steam",
+      "Display_Shows": "SF02"
+    }
+  },
+  {
+    "model": "IFB Neo Diva VXS 7010",
+    "programs": [
+      "Mixed Soiled",
+      "Cotton Normal/Cotton Eco Plus",
+      "Synthetic/Daily",
+      "Baby Wear",
+      "CradleWash\u00ae",
+      "Express Wash",
+      "Woollens"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "2D Wash",
+        "3D Wash",
+        "Aqua Energie",
+        "Crescent Moon Drum",
+        "7 Swirl Wash",
+        "CradleWash\u00ae",
+        "Powered by AI"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Balance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Foam Control System",
+        "Auto Tub Clean"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Neo Diva": "Model Name",
+      "VX": "Color: White",
+      "S": "Steam Series",
+      "7010": "Capacity & RPM: 7 kg | 1000 RPM"
+    },
+    "amcEw": {
+      "AMC 1 Year without Rubber": 3550.0,
+      "AMC 2 Year without Rubber": 6400.0,
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temp & Steam",
+      "Display_Shows": "SF02"
+    }
+  },
+  {
+    "model": "IFB Neo Diva WSS 7010",
+    "programs": [
+      "Mixed Soiled",
+      "Cotton Normal",
+      "Synthetic/Daily",
+      "Baby Wear",
+      "CradleWash\u00ae",
+      "Express Wash",
+      "Woollens",
+      "Cotton Eco Plus",
+      "Spin Dry/Drain",
+      "Additives/Rinse + Spin",
+      "Tub Clean"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "2D Wash",
+        "3D Wash",
+        "CradleWash\u00ae",
+        "Aqua Energie",
+        "Crescent Moon Drum",
+        "7 Swirl Wash",
+        "Powered by AI"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Balance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Foam Control System",
+        "Auto Tub Clean"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Neo Diva": "Model Name",
+      "WS": "Color: Silver",
+      "S": "Steam Series",
+      "7010": "Capacity & RPM: 7 kg | 1000 RPM"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 2 Year without Rubber": 4400.0,
+      "AMC 1 Year without Rubber": 2500.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temp & Steam",
+      "Display_Shows": "SF02"
+    }
+  },
+  {
+    "model": "IFB Senator BCN 8014K CMS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Uniform/Linen",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Jeans",
+      "Inner Wear",
+      "PowerSteam\u00ae",
+      "Shirts",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "9 Swirl",
+        "Powered by Ai",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator": "Model Name",
+      "BC": "Color: Black with Chrome",
+      "N": "Neo Series",
+      "8014": "Capacity & RPM: 8 kg | 1400 RPM",
+      "K": "Knob (Neo Series)",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {},
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Senator BXN 8012 CMS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Uniform",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 15\u2019",
+      "Express 30\u2019",
+      "Wool",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "PowerSteam\u00ae",
+      "Dark Wash",
+      "Shirts",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Jeans",
+      "Inner Wear"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator": "Model Name",
+      "BX": "Color: Black",
+      "N": "Neo Series",
+      "8012": "Capacity & RPM: 8 kg | 1200 RPM",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Senator BXN 8012K CMS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Uniform/Linen",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Jeans",
+      "Inner Wear",
+      "PowerSteam\u00ae",
+      "Shirts",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "9 Swirl",
+        "Powered by Ai",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator": "Model Name",
+      "BX": "Color: Black",
+      "N": "Neo Series",
+      "8012": "Capacity & RPM: 8 kg | 1200 RPM",
+      "K": "Knob (Neo Series)",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Senator BXN 8014K CMS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Uniform/Linen",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Jeans",
+      "Inner Wear",
+      "PowerSteam\u00ae",
+      "Shirts",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "9 Swirl",
+        "Powered by Ai",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator": "Model Name",
+      "BX": "Color: Black",
+      "N": "Neo Series",
+      "8014": "Capacity & RPM: 8 kg | 1400 RPM",
+      "K": "Knob (Neo Series)",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Senator GXN 8012 CMS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Uniform",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 15\u2019",
+      "Express 30\u2019",
+      "Wool",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "PowerSteam\u00ae",
+      "Dark Wash",
+      "Shirts",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Jeans",
+      "Inner Wear"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator": "Model Name",
+      "GX": "Color: Grey",
+      "N": "Neo Series",
+      "8012": "Capacity & RPM: 8 kg | 1200 RPM",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Senator MBN 8012 CMS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Uniform",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 15\u2019",
+      "Express 30\u2019",
+      "Wool",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "PowerSteam\u00ae",
+      "Dark Wash",
+      "Shirts",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Jeans",
+      "Inner Wear"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator": "Model Name",
+      "MB": "Color: Mocha",
+      "N": "Neo Series",
+      "8012": "Capacity & RPM: 8 kg | 1200 RPM",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Senator MBN 8012K",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Uniform/Linen",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Jeans",
+      "Inner Wear",
+      "PowerSteam\u00ae",
+      "Shirts",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator": "Model Name",
+      "MB": "Color: Mocha",
+      "N": "Neo Series",
+      "8012": "Capacity & RPM: 8 kg | 1200 RPM",
+      "K": "Knob (Neo Series)"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 4300.0,
+      "AMC 2 Year without Rubber": 7750.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Senator MBN 8014",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Uniform",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 15\u2019",
+      "Express 30\u2019",
+      "Wool",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "PowerSteam\u00ae",
+      "Dark Wash",
+      "Shirts",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Jeans",
+      "Inner Wear"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator": "Model Name",
+      "MB": "Color: Mocha",
+      "N": "Neo Series",
+      "8014": "Capacity & RPM: 8 kg | 1400 RPM"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 4300.0,
+      "AMC 2 Year without Rubber": 7750.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Senator MBN 8014K",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Uniform/Linen",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Jeans",
+      "Inner Wear",
+      "PowerSteam\u00ae",
+      "Shirts",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "9 Swirl",
+        "Powered by Ai",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator": "Model Name",
+      "MB": "Color: Mocha",
+      "N": "Neo Series",
+      "8014": "Capacity & RPM: 8 kg | 1400 RPM",
+      "K": "Knob (Neo Series)"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 4300.0,
+      "AMC 2 Year without Rubber": 7750.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Senator MSN 8012K",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Uniform/Linen",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Jeans",
+      "Inner Wear",
+      "PowerSteam\u00ae",
+      "Shirts",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "9 Swirl",
+        "Powered by AI",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator": "Model Name",
+      "MS": "Color: Metallic Silver",
+      "N": "Neo Series",
+      "8012": "Capacity & RPM: 8 kg | 1200 RPM",
+      "K": "Knob (Neo Series)"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 4300.0,
+      "AMC 2 Year without Rubber": 7750.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Senator MSN 8014",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Uniform",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 15\u2019",
+      "Express 30\u2019",
+      "Wool",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "PowerSteam\u00ae",
+      "Dark Wash",
+      "Shirts",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Jeans",
+      "Inner Wear"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by AI",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator": "Model Name",
+      "MS": "Color: Metallic Silver",
+      "N": "Neo Series",
+      "8014": "Capacity & RPM: 8 kg | 1400 RPM"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 4300.0,
+      "AMC 2 Year without Rubber": 7750.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Senator MXS 8014",
+    "programs": [
+      "Mixed Soiled",
+      "Cotton Normal/Cotton Eco Plus",
+      "Anti Allergen",
+      "Baby Wear",
+      "Cotton Eco Plus",
+      "CradleWash\u00ae",
+      "Express Wash",
+      "Synthetic/Daily",
+      "Bulky/Bedding",
+      "Woollens"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "4D Wash",
+        "Aqua Energie",
+        "Crescent Moon Drum",
+        "Air Bubble Wash",
+        "Powered by AI"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Foam Control System",
+        "Tub Clean",
+        "Drum Lamp"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator": "Model Name",
+      "MX": "Color: Mocha",
+      "S": "Steam Series",
+      "8014": "Capacity & RPM: 8 kg | 1400 RPM"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 4300.0,
+      "AMC 2 Year without Rubber": 7750.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Senator Neo MXS",
+    "programs": [
+      "Mixed Soiled",
+      "Cotton Normal/Cotton Eco Plus",
+      "Synthetic/Daily",
+      "Baby Wear",
+      "CradleWash\u00ae",
+      "Express Wash",
+      "Woollens"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "3D Wash",
+        "Aqua Energie",
+        "7 Swirl Wash",
+        "Crescent Moon Drum",
+        "Powered by AI"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Foam Control System",
+        "Auto Tub Clean"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator Neo": "Model Name",
+      "MX": "Color: Mocha",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 4300.0,
+      "AMC 2 Year without Rubber": 7750.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temp & Steam",
+      "Display_Shows": "SF02"
+    }
+  },
+  {
+    "model": "IFB Senator Neo SXS 8012",
+    "programs": [
+      "Mixed Soiled",
+      "Cotton Normal/Cotton Eco Plus",
+      "Synthetic/Daily",
+      "Baby Wear",
+      "CradleWash\u00ae",
+      "Express Wash",
+      "Woollens"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "3D Wash",
+        "Aqua Energie",
+        "7 Swirl Wash",
+        "Crescent Moon Drum",
+        "Powered by AI"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Foam Control System",
+        "Auto Tub Clean"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator Neo": "Model Name",
+      "SX": "Color: Silver",
+      "S": "Steam Series",
+      "8012": "Capacity & RPM: 8 kg | 1200 RPM"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 4300.0,
+      "AMC 2 Year without Rubber": 7750.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temp & Steam",
+      "Display_Shows": "SF02"
+    }
+  },
+  {
+    "model": "IFB Senator Neo VXS 8012",
+    "programs": [
+      "Mixed Soiled",
+      "Cotton Normal/Cotton Eco Plus",
+      "Synthetic/Daily",
+      "Baby Wear",
+      "CradleWash\u00ae",
+      "Express Wash",
+      "Woollens",
+      "Cradlewash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "2D/3D Wash",
+        "Aqua Energie",
+        "Crescent Moon Drum",
+        "7 Swirl Wash",
+        "Powered by AI"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Foam Control System",
+        "Auto Tub Clean"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator Neo": "Model Name",
+      "VX": "Color: White",
+      "S": "Steam Series",
+      "8012": "Capacity & RPM: 8 kg | 1200 RPM"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 4300.0,
+      "AMC 2 Year without Rubber": 7750.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temp & Steam",
+      "Display_Shows": "SF02"
+    }
+  },
+  {
+    "model": "IFB Senator Plus MSC 8014 SSL",
+    "programs": [
+      "Mix/Daily 60\u2019",
+      "Cotton",
+      "Uniform",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash",
+      "Jeans",
+      "Shirts/Blouses",
+      "Inner Wear"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Oxyjet\u00ae Technology",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator Plus": "Model Name",
+      "MS": "Color: Metallic Silver",
+      "C": "Silver/Classic Series",
+      "8014": "Capacity & RPM: 8 kg | 1400 RPM",
+      "SSL": "Smart Sense Logic"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 4300.0,
+      "AMC 2 Year without Rubber": 7750.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Senator Plus MXC 8014 SSL",
+    "programs": [
+      "Mix/Daily 60\u2019",
+      "Cotton",
+      "Uniform",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash",
+      "Jeans",
+      "Shirts",
+      "Inner Wear"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Oxyjet\u00ae Technology",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator Plus": "Model Name",
+      "MX": "Color: Mocha",
+      "C": "Silver/Classic Series",
+      "8014": "Capacity & RPM: 8 kg | 1400 RPM",
+      "SSL": "Smart Sense Logic"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Senator Plus MXS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton/Cotton Eco Plus",
+      "Baby Wear",
+      "Power Steam",
+      "Refresh",
+      "CradleWash",
+      "Express 15'",
+      "Synthetic",
+      "Bulky",
+      "Anti Allergen",
+      "Wool"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "4D Wash",
+        "Aqua Energie",
+        "Crescent Moon Drum",
+        "CradleWash\u00ae",
+        "Powered by Ai"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Tub Clean",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Foam Control System"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator Plus": "Model Name",
+      "MX": "Color: Mocha",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 4300.0,
+      "AMC 2 Year without Rubber": 7750.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Senator Plus SRS",
+    "programs": [
+      "Mixed Soiled/Mixed Solid",
+      "Cotton Normal/Cotton Eco Plus",
+      "Anti Allergen",
+      "Baby Wear",
+      "Cotton Rinse",
+      "CradleWash\u00ae",
+      "Express Wash",
+      "Synthetic/Daily",
+      "Bulky/Bedding",
+      "Woollens"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "3D Wash",
+        "Aqua Energie",
+        "Crescent Moon Drum",
+        "Air Bubble Wash",
+        "Powered by Ai",
+        "CradleWash\u00ae"
+      ],
+      "Machine Care": [
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Tub Clean",
+        "Drum Lamp"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator Plus": "Model Name",
+      "SR": "Color: SR",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "Motor Warranty 10 years": 847.5,
+      "AMC 1 Year without Rubber": 4200.0,
+      "AMC 2 Year without Rubber": 7500.0,
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Senator Plus SXC 8014 SSL",
+    "programs": [
+      "Mix/Daily 60\u2019",
+      "Cotton",
+      "Uniform",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash",
+      "Jeans",
+      "Shirts",
+      "Inner Wear"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Oxyjet\u00ae Technology",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator Plus": "Model Name",
+      "SX": "Color: Silver",
+      "C": "Silver/Classic Series",
+      "8014": "Capacity & RPM: 8 kg | 1400 RPM",
+      "SSL": "Smart Sense Logic"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Senator Plus SXS",
+    "programs": [
+      "Mixed Soiled/Mixed Solid",
+      "Cotton Normal/Cotton Eco Plus",
+      "Anti Allergen",
+      "Baby Wear",
+      "CradleWash\u00ae",
+      "Express Wash",
+      "Synthetic/Daily",
+      "Bulky/Bedding",
+      "Woollens"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "3D Wash",
+        "Aqua Energie",
+        "Crescent Moon Drum",
+        "Air Bubble Wash",
+        "Powered by Ai",
+        "CradleWash\u00ae"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Balance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Foam Control System",
+        "Tub Clean",
+        "Drum Lamp"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator Plus": "Model Name",
+      "SX": "Color: Silver",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "AMC 1 Year without Rubber": 4300.0,
+      "AMC 2 Year without Rubber": 7750.0,
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Senator Plus VXS",
+    "programs": [
+      "Mixed Soiled/Mixed Solid",
+      "Cotton Normal/Cotton Eco Plus",
+      "Anti Allergen",
+      "Baby Wear",
+      "CradleWash\u00ae",
+      "Express Wash",
+      "Synthetic/Daily",
+      "Bulky/Bedding",
+      "Woollens"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "4D Wash",
+        "Aqua Energie",
+        "Crescent Moon Drum",
+        "Air Bubble Wash",
+        "Powered by Ai",
+        "CradleWash\u00ae"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Balance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Foam Control System",
+        "Tub Clean",
+        "Drum Lamp"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator Plus": "Model Name",
+      "VX": "Color: White",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 2 Year without Rubber": 7750.0,
+      "AMC 1 Year without Rubber": 4300.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Senator Smart Touch SX",
+    "programs": [
+      "Cotton Normal/Cotton Eco",
+      "Synthetic/Daily",
+      "Mixed",
+      "Cradlewash\u00ae",
+      "Woollens",
+      "Express Wash",
+      "Bulky Bedding",
+      "Daily Wear",
+      "Anti Allergen"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "3D Wash System",
+        "Air-Bubble Wash",
+        "Powered by Ai",
+        "Cradlewash\u00ae"
+      ],
+      "Machine Care": [
+        "Auto Balance System",
+        "High-Low Voltage Protection",
+        "Auto Restart"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Express Wash",
+        "Start/Pause Program Interrupt",
+        "Anti Crease",
+        "Laundry Add Option",
+        "Steam Wash"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator Smart Touch": "Model Name",
+      "SX": "Color: Silver"
+    },
+    "amcEw": {
+      "AMC 1 Year without Rubber": 6500.0,
+      "AMC 2 Year without Rubber": 7940.0,
+      "Labour AMC 1 Year": 2250.0,
+      "Motor Warranty 10 years": 847.5,
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "V & \u039b- Press OK to start",
+      "Display_Shows": "SF09"
+    }
+  },
+  {
+    "model": "IFB Senator SXN 8012K CMS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Uniform/Linen",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Jeans",
+      "Inner Wear",
+      "PowerSteam\u00ae",
+      "Shirts",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "9 Swirl",
+        "Powered by Ai",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator": "Model Name",
+      "SX": "Color: Silver",
+      "N": "Neo Series",
+      "8012": "Capacity & RPM: 8 kg | 1200 RPM",
+      "K": "Knob (Neo Series)",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "Cotton Cold",
+      "Test_Mode_Button": "Spin & Delay",
+      "Display_Shows": "SF03"
+    }
+  },
+  {
+    "model": "IFB Senator SXN 8014",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Uniform",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 15\u2019",
+      "Express 30\u2019",
+      "Wool",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator": "Model Name",
+      "SX": "Color: Silver",
+      "N": "Neo Series",
+      "8014": "Capacity & RPM: 8 kg | 1400 RPM"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 4300.0,
+      "AMC 2 Year without Rubber": 7750.0
+    },
+    "testMode": {
+      "Program_Position": "Cotton Cold",
+      "Test_Mode_Button": "Spin & Delay",
+      "Display_Shows": "SF03"
+    }
+  },
+  {
+    "model": "IFB Senator SXN 8014K CMS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Uniform/Linen",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 30\u2019",
+      "Express 15\u2019",
+      "Wool",
+      "Jeans",
+      "Inner Wear",
+      "PowerSteam\u00ae",
+      "Shirts",
+      "Synthetic",
+      "CradleWash\u00ae",
+      "Sports Wear",
+      "Bulky/Bedding",
+      "Dark Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "9 Swirl",
+        "Powered by Ai",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator": "Model Name",
+      "SX": "Color: Silver",
+      "N": "Neo Series",
+      "8014": "Capacity & RPM: 8 kg | 1400 RPM",
+      "K": "Knob (Neo Series)",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "Cotton Cold",
+      "Test_Mode_Button": "Spin & Delay",
+      "Display_Shows": "SF03"
+    }
+  },
+  {
+    "model": "IFB Senator SXS 8012",
+    "programs": [
+      "Mixed Soiled",
+      "Cotton Normal",
+      "Cotton Eco Plus",
+      "Uniform",
+      "Baby Wear",
+      "CradleWash\u00ae",
+      "Express Wash",
+      "Synthetic/Daily",
+      "Anti Allergen",
+      "Woollens",
+      "Sports Wear",
+      "Curtains"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {},
+    "amcEw": {
+      "Motor Warranty 10 years": 847.5,
+      "Labour AMC 1 Year": 2250.0,
+      "AMC 1 Year without Rubber": 4050.0,
+      "AMC 2 Year without Rubber": 7250.0,
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Senator VSS 8012",
+    "programs": [
+      "Mixed Soiled",
+      "Cotton Normal/Cotton Eco Plus/Uniform",
+      "Baby Wear",
+      "CradleWash\u00ae",
+      "Express Wash",
+      "Synthetic/Daily",
+      "Anti Allergen",
+      "Woollens",
+      "Sports Wear",
+      "Curtains"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator": "Model Name",
+      "VS": "Color: VCM Silver",
+      "S": "Steam Series",
+      "8012": "Capacity & RPM: 8 kg | 1200 RPM"
+    },
+    "amcEw": {
+      "Labour AMC 1 Year": 2250.0,
+      "AMC 1 Year without Rubber": 4450.0,
+      "AMC 2 Year without Rubber": 5200.0,
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Senator VXS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Baby Wear",
+      "Power Steam",
+      "Refresh",
+      "CradleWash\u00ae",
+      "Express 15",
+      "Synthetic",
+      "Bulky",
+      "Anti-Allergen",
+      "Wool"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "4D Wash",
+        "Aqua Energie",
+        "Crescent Moon Drum",
+        "CradleWash\u00ae",
+        "Powered by AI"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Auto Balance System",
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Foam Control System",
+        "Tub Clean"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator": "Model Name",
+      "VX": "Color: White",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Senator WSS STEAM",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Baby Wear",
+      "Power Steam",
+      "Refresh",
+      "CradleWash\u00ae",
+      "Express 15",
+      "Synthetic",
+      "Bulky",
+      "Anti-Allergen",
+      "Wool"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "4D Wash",
+        "Aqua Energie",
+        "Crescent Moon Drum",
+        "CradleWash\u00ae",
+        "Powered by AI"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Auto Balance System",
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Foam Control System",
+        "Tub Clean"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator": "Model Name",
+      "WS": "Color: Silver",
+      "S": "Steam Series",
+      "STEAM": "Steam Technology"
+    },
+    "amcEw": {
+      "Motor Warranty 10 years": 847.5,
+      "AMC 1 Year without Rubber": 4450.0,
+      "AMC 2 Year without Rubber": 8050.0,
+      "EXT WTY 5TH YEAR": 2400.0,
+      "Labour AMC 1 Year": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Senator ZMS",
+    "programs": [
+      "Mixed Soiled",
+      "Cotton Normal/Cotton Eco",
+      "CradleWash\u00ae",
+      "Baby Wear",
+      "Synthetic/Daily",
+      "Express Wash",
+      "Fitness Wear",
+      "Hygiene",
+      "Woollens"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "7 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senator": "Model Name",
+      "ZM": "Color: Mocha",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Senorita BXN 6512 CMS",
+    "programs": [
+      "Mix/ Daily",
+      "Cotton",
+      "Baby Wear",
+      "Express 15",
+      "Refresh",
+      "Wool",
+      "Synthetic",
+      "CradleWash",
+      "Bulky/ Bedding"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by AI",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Tub Clean",
+        "Auto Foam Control System"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senorita": "Model Name",
+      "BX": "Color: Black",
+      "N": "Neo Series",
+      "6512": "Capacity & RPM: 6.5 kg | 1200 RPM",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {},
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Spin & Delay",
+      "Display_Shows": "SF04"
+    }
+  },
+  {
+    "model": "IFB Senorita MSN 6512K CMS",
+    "programs": [
+      "Mix/ Daily",
+      "Cotton",
+      "Baby Wear",
+      "Express 15",
+      "Refresh",
+      "Wool",
+      "Synthetic",
+      "CradleWash",
+      "Bulky/ Bedding"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by AI",
+        "Oxyjet Technology",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Tub Clean",
+        "Auto Foam Control System"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senorita": "Model Name",
+      "MS": "Color: Metallic Silver",
+      "N": "Neo Series",
+      "6512": "Capacity & RPM: 6.5 kg | 1200 RPM",
+      "K": "Knob (Neo Series)",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {},
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Spin & Delay",
+      "Display_Shows": "SF04"
+    }
+  },
+  {
+    "model": "IFB Senorita SXN 6512K",
+    "programs": [
+      "Mix/ Daily",
+      "Cotton",
+      "Baby Wear",
+      "CradleWash",
+      "Express 15",
+      "Refresh",
+      "Wool",
+      "Synthetic",
+      "Bulky/ Beddling"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by AI",
+        "7 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Tub Clean",
+        "Auto Foam Control System"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senorita": "Model Name",
+      "SX": "Color: Silver",
+      "N": "Neo Series",
+      "6512": "Capacity & RPM: 6.5 kg | 1200 RPM",
+      "K": "Knob (Neo Series)"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 2500.0,
+      "AMC 2 Year without Rubber": 4400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Spin & Delay",
+      "Display_Shows": "SF04"
+    }
+  },
+  {
+    "model": "IFB Senorita SXS 6510",
+    "programs": [
+      "Mixed/Soiled",
+      "Cotton Normal/Cotton Eco Plus",
+      "Baby Wear",
+      "Express Wash",
+      "Wool",
+      "CradleWash\u00ae",
+      "Synthetic/Daily",
+      "Hygiene",
+      "Bulky/Bedding"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by AI",
+        "3D Wash",
+        "7 Swirl",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Tub Clean",
+        "Auto Foam Control System"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senorita": "Model Name",
+      "SX": "Color: Silver",
+      "S": "Steam Series",
+      "6510": "Capacity & RPM: 6.5 kg | 1000 RPM"
+    },
+    "amcEw": {
+      "Motor Warranty 10 years": 847.5,
+      "AMC 1 Year without Rubber": 3500.0,
+      "AMC 2 Year without Rubber": 6350.0,
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temp & Steam",
+      "Display_Shows": "SF02"
+    }
+  },
+  {
+    "model": "IFB Senorita VXS 6510",
+    "programs": [
+      "Mix Soiled",
+      "Cotton",
+      "Baby Wear",
+      "CradleWash",
+      "Express 15",
+      "Wool",
+      "Synthetic/ Daily",
+      "Bulky/ Beddling",
+      "Hygiene"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by AI",
+        "7 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Tub Clean",
+        "Auto Foam Control System"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Senorita": "Model Name",
+      "VX": "Color: White",
+      "S": "Steam Series",
+      "6510": "Capacity & RPM: 6.5 kg | 1000 RPM"
+    },
+    "amcEw": {
+      "Motor Warranty 10 years": 847.5,
+      "AMC 1 Year without Rubber": 3400.0,
+      "AMC 2 Year without Rubber": 6100.0,
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temp & Steam",
+      "Display_Shows": "SF02"
+    }
+  },
+  {
+    "model": "IFB Serena BXN 7012K CMS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Baby Wear",
+      "Anti Allergen",
+      "Express 30",
+      "Express 15",
+      "Refresh",
+      "Wool",
+      "Synthetic",
+      "CradleWash",
+      "Sports Wear",
+      "Bulky/ Bedding",
+      "Dark Wash",
+      "Jeans",
+      "PowerStream",
+      "Inner Wear",
+      "Shirts"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by AI",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Serena": "Model Name",
+      "BX": "Color: Black",
+      "N": "Neo Series",
+      "7012": "Capacity & RPM: 7 kg | 1200 RPM",
+      "K": "Knob (Neo Series)",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Serena GXN 7012 CMS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Baby Wear",
+      "Anti Allergen",
+      "Express 30",
+      "Express 15",
+      "Refresh",
+      "Wool",
+      "Synthetic",
+      "CradleWash",
+      "Sports Wear",
+      "Bulky/ Bedding",
+      "Dark Wash",
+      "Jeans",
+      "PowerStream",
+      "Inner Wear",
+      "Shirts"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by AI",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Serena": "Model Name",
+      "GX": "Color: Grey",
+      "N": "Neo Series",
+      "7012": "Capacity & RPM: 7 kg | 1200 RPM",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Serena MBN 7012 CMS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Baby Wear",
+      "Anti Allergen",
+      "Express 30",
+      "Express 15",
+      "Refresh",
+      "Wool",
+      "Synthetic",
+      "CradleWash",
+      "Sports Wear",
+      "Bulky/ Bedding",
+      "Dark Wash",
+      "Jeans",
+      "PowerStream",
+      "Inner Wear",
+      "Shirts"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by AI",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Serena": "Model Name",
+      "MB": "Color: Mocha",
+      "N": "Neo Series",
+      "7012": "Capacity & RPM: 7 kg | 1200 RPM",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Serena MBN 7012K CMS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Baby Wear",
+      "Anti Allergen",
+      "Express 30",
+      "Express 15",
+      "Refresh",
+      "Wool",
+      "Synthetic",
+      "CradleWash",
+      "Sports Wear",
+      "Bulky/ Bedding",
+      "Dark Wash",
+      "Jeans",
+      "PowerStream",
+      "Inner Wear",
+      "Shirts"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by AI",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Serena": "Model Name",
+      "MB": "Color: Mocha",
+      "N": "Neo Series",
+      "7012": "Capacity & RPM: 7 kg | 1200 RPM",
+      "K": "Knob (Neo Series)",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Serena MSN 7012K CMS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Baby Wear",
+      "Anti Allergen",
+      "Express 30",
+      "Express 15",
+      "Refresh",
+      "Wool",
+      "Synthetic",
+      "CradleWash",
+      "Sports Wear",
+      "Bulky/ Bedding",
+      "Dark Wash",
+      "Jeans",
+      "PowerStream",
+      "Inner Wear",
+      "Shirts"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by AI",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Serena": "Model Name",
+      "MS": "Color: Metallic Silver",
+      "N": "Neo Series",
+      "7012": "Capacity & RPM: 7 kg | 1200 RPM",
+      "K": "Knob (Neo Series)",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Serena SXN 7012 CMS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Baby Wear",
+      "Anti Allergen",
+      "Express 30",
+      "Express 15",
+      "Refresh",
+      "Wool",
+      "Synthetic",
+      "CradleWash",
+      "Sports Wear",
+      "Bulky/ Bedding",
+      "Dark Wash",
+      "Jeans",
+      "PowerStream",
+      "Inner Wear",
+      "Shirts"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by AI",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Serena": "Model Name",
+      "SX": "Color: Silver",
+      "N": "Neo Series",
+      "7012": "Capacity & RPM: 7 kg | 1200 RPM",
+      "CMS": "Common Motor Software"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Select",
+      "Display_Shows": "SF06"
+    }
+  },
+  {
+    "model": "IFB Serena ZSS 7010",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Baby Wear",
+      "Anti Allergen",
+      "Express 30",
+      "Express 15",
+      "Refresh",
+      "Wool",
+      "Synthetic",
+      "CradleWash",
+      "Sports Wear",
+      "Bulky/ Bedding",
+      "Dark Wash",
+      "Jeans",
+      "PowerStream",
+      "Inner Wear",
+      "Shirts"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by AI",
+        "7 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash\u00ae",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Foam Control System",
+        "Auto Tub Clean"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Serena": "Model Name",
+      "ZS": "Color: Silver",
+      "S": "Steam Series",
+      "7010": "Capacity & RPM: 7 kg | 1000 RPM"
+    },
+    "amcEw": {
+      "AMC 1 Year without Rubber": 3900.0,
+      "AMC 2 Year without Rubber": 7000.0,
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temp & Steam",
+      "Display_Shows": "SF02"
+    }
+  },
+  {
+    "model": "IFB Serena ZXS",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Baby Wear",
+      "Anti Allergen",
+      "Express 30",
+      "Express 15",
+      "Refresh",
+      "Wool",
+      "Synthetic",
+      "CradleWash",
+      "Sports Wear",
+      "Bulky/ Bedding",
+      "Dark Wash",
+      "Jeans",
+      "PowerStream",
+      "Inner Wear",
+      "Shirts"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "2D Shower System",
+        "Aqua Energie",
+        "Crescent Moon Drum",
+        "7 Swirl Wash",
+        "CradleWash\u00ae"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Foam Control System",
+        "Auto Tub Clean"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Serena": "Model Name",
+      "ZX": "Color: White",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "Motor Warranty 10 years": 847.5,
+      "AMC 1 Year without Rubber": 3800.0,
+      "AMC 2 Year without Rubber": 6800.0,
+      "Labour AMC 1 Year": 2250.0,
+      "EXT WTY 5TH YEAR": 2400.0
+    },
+    "testMode": {
+      "Program_Position": "OFF position",
+      "Test_Mode_Button": "Temperature & Delay",
+      "Display_Shows": "SF01"
+    }
+  }
+]
