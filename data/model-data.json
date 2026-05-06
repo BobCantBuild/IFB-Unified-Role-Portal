@@ -38,11 +38,11 @@
       "ZX": "Color: White"
     },
     "amcEw": {
-      "Motor Warranty 10 years": 847.5,
       "AMC 1 Year without Rubber": 3300.0,
+      "AMC 2 Year without Rubber": 5900.0,
       "Labour AMC 1 Year": 2250.0,
-      "EXT WTY 5TH YEAR": 2400.0,
-      "AMC 2 Year without Rubber": 5900.0
+      "Motor Warranty 10 years": 847.5,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -90,10 +90,10 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "Motor Warranty 10 years": 847.5,
       "AMC 1 Year without Rubber": 3450.0,
       "AMC 2 Year without Rubber": 6150.0,
       "Labour AMC 1 Year": 2250.0,
+      "Motor Warranty 10 years": 847.5,
       "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
@@ -142,9 +142,9 @@
       "6008": "Capacity & RPM: 6 kg | 800 RPM"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 2500.0,
       "AMC 2 Year without Rubber": 4400.0,
-      "AMC 1 Year without Rubber": 2500.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -191,6 +191,8 @@
       "S": "Steam Series"
     },
     "amcEw": {
+      "AMC 1 Year without Rubber": 2500.0,
+      "AMC 2 Year without Rubber": 4400.0,
       "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
@@ -239,9 +241,9 @@
       "7010": "Capacity & RPM: 7 kg | 1000 RPM"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year without Rubber": 4400.0
+      "AMC 2 Year without Rubber": 4400.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -289,9 +291,9 @@
       "6008": "Capacity & RPM: 6 kg | 800 RPM"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 2500.0,
       "AMC 2 Year without Rubber": 4400.0,
-      "AMC 1 Year without Rubber": 2500.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -338,6 +340,8 @@
       "S": "Steam Series"
     },
     "amcEw": {
+      "AMC 1 Year without Rubber": 2500.0,
+      "AMC 2 Year without Rubber": 4400.0,
       "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
@@ -386,9 +390,9 @@
       "6008": "Capacity & RPM: 6 kg | 800 RPM"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 2500.0,
       "AMC 2 Year without Rubber": 4400.0,
-      "AMC 1 Year without Rubber": 2500.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -436,9 +440,9 @@
       "7010": "Capacity & RPM: 7 kg | 1000 RPM"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 4000.0,
-      "AMC 2 Year without Rubber": 7150.0
+      "AMC 2 Year without Rubber": 7150.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -485,9 +489,9 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "AMC 1 Year without Rubber": 4000.0,
-      "AMC 2 Year without Rubber": 7150.0
+      "AMC 1 Year without Rubber": 2500.0,
+      "AMC 2 Year without Rubber": 4400.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -535,9 +539,9 @@
       "6008": "Capacity & RPM: 6 kg | 800 RPM"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 2500.0,
       "AMC 2 Year without Rubber": 4400.0,
-      "AMC 1 Year without Rubber": 2500.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -585,9 +589,9 @@
       "7010": "Capacity & RPM: 7 kg | 1000 RPM"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year without Rubber": 4400.0
+      "AMC 2 Year without Rubber": 4400.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -636,9 +640,9 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year without Rubber": 4400.0
+      "AMC 2 Year without Rubber": 4400.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -742,9 +746,9 @@
       "6008": "Capacity & RPM: 6 kg | 800 RPM"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 2500.0,
       "AMC 2 Year without Rubber": 4400.0,
-      "AMC 1 Year without Rubber": 2500.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -795,9 +799,9 @@
       "6008": "Capacity & RPM: 6 kg | 800 RPM"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 2500.0,
       "AMC 2 Year without Rubber": 4400.0,
-      "AMC 1 Year without Rubber": 2500.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -901,9 +905,9 @@
       "6010": "Capacity & RPM: 6 kg | 1000 RPM"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year without Rubber": 4400.0
+      "AMC 2 Year without Rubber": 4400.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -1004,9 +1008,9 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 2500.0,
       "AMC 2 Year without Rubber": 4400.0,
-      "AMC 1 Year without Rubber": 2500.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -1054,9 +1058,9 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year without Rubber": 4400.0
+      "AMC 2 Year without Rubber": 4400.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -1107,9 +1111,9 @@
       "6510": "Capacity & RPM: 6.5 kg | 1000 RPM"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year without Rubber": 4400.0
+      "AMC 2 Year without Rubber": 4400.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -1159,9 +1163,9 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 2500.0,
       "AMC 2 Year without Rubber": 4400.0,
-      "AMC 1 Year without Rubber": 2500.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -1389,7 +1393,11 @@
       "H": "Hairline Finish / Premium Colour",
       "CMS": "Common Motor Software"
     },
-    "amcEw": {},
+    "amcEw": {
+      "AMC 1 Year without Rubber": 2500.0,
+      "AMC 2 Year without Rubber": 4400.0,
+      "EXT WTY 5TH YEAR": 2400.0
+    },
     "testMode": {
       "Program_Position": "OFF position",
       "Test_Mode_Button": "Temperature & Select",
@@ -1650,9 +1658,9 @@
       "6010": "Capacity & RPM: 6 kg | 1000 RPM"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 2500.0,
       "AMC 2 Year without Rubber": 4400.0,
-      "AMC 1 Year without Rubber": 2500.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -1714,9 +1722,9 @@
       "SSLC": "Smart Sense Logic (Common)"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 5200.0,
-      "AMC 2 Year without Rubber": 9400.0
+      "AMC 2 Year without Rubber": 9400.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -1864,7 +1872,9 @@
       "K": "Knob (Neo Series)",
       "CMS": "Common Motor Software"
     },
-    "amcEw": {},
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
     "testMode": {
       "Program_Position": "OFF position",
       "Test_Mode_Button": "Temperature & Select",
@@ -1925,9 +1935,9 @@
       "SSLC": "Smart Sense Logic (Common)"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 5200.0,
-      "AMC 2 Year without Rubber": 9400.0
+      "AMC 2 Year without Rubber": 9400.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -2050,9 +2060,9 @@
       "K": "Knob (Neo Series)"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 5200.0,
-      "AMC 2 Year without Rubber": 9400.0
+      "AMC 2 Year without Rubber": 9400.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -2108,9 +2118,9 @@
       "ID": "Inverter Drive"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 4850.0,
-      "AMC 2 Year without Rubber": 8750.0
+      "AMC 2 Year without Rubber": 8750.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -2172,9 +2182,9 @@
       "SSLC": "Smart Sense Logic (Common)"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 5200.0,
-      "AMC 2 Year without Rubber": 9400.0
+      "AMC 2 Year without Rubber": 9400.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -2231,9 +2241,9 @@
       "1014": "Capacity & RPM: 10 kg | 1400 RPM"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 5200.0,
-      "AMC 2 Year without Rubber": 9400.0
+      "AMC 2 Year without Rubber": 9400.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -2356,9 +2366,9 @@
       "H": "Hairline Finish / Premium Colour"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 5200.0,
-      "AMC 2 Year without Rubber": 9400.0
+      "AMC 2 Year without Rubber": 9400.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -2420,9 +2430,9 @@
       "H": "Hairline Finish / Premium Colour"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 5800.0,
-      "AMC 2 Year without Rubber": 9600.0
+      "AMC 2 Year without Rubber": 9600.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -2483,7 +2493,9 @@
       "K": "Knob (Neo Series)",
       "CMS": "Common Motor Software"
     },
-    "amcEw": {},
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
     "testMode": {
       "Program_Position": "OFF position",
       "Test_Mode_Button": "Temperature & Select",
@@ -2543,9 +2555,9 @@
       "SSL": "Smart Sense Logic"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 5200.0,
-      "AMC 2 Year without Rubber": 9400.0
+      "AMC 2 Year without Rubber": 9400.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -2597,9 +2609,9 @@
       "9014": "Capacity & RPM: 9 kg | 1400 RPM"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 5200.0,
       "AMC 2 Year without Rubber": 9400.0,
-      "AMC 1 Year without Rubber": 5200.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -2661,9 +2673,9 @@
       "SSL": "Smart Sense Logic"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 5200.0,
-      "AMC 2 Year without Rubber": 9400.0
+      "AMC 2 Year without Rubber": 9400.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -2725,7 +2737,9 @@
       "G": "Gold Series",
       "1114": "Capacity & RPM: 11 kg | 1400 RPM"
     },
-    "amcEw": {},
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
     "testMode": {
       "Program_Position": "OFF position",
       "Test_Mode_Button": "Temperature & Select",
@@ -2774,13 +2788,13 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 5200.0,
-      "AMC 2 Year without Rubber": 9400.0
+      "AMC 2 Year without Rubber": 9400.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
-      "Test_Mode_Button": "V & \u039b- Press OK to start",
+      "Test_Mode_Button": "V & Λ- Press OK to start",
       "Display_Shows": "SF07"
     }
   },
@@ -2890,9 +2904,9 @@
       "9014": "Capacity & RPM: 9 kg | 1400 RPM"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 4850.0,
-      "AMC 2 Year without Rubber": 7440.0
+      "AMC 2 Year without Rubber": 7440.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -2941,9 +2955,9 @@
       "7010": "Capacity & RPM: 7 kg | 1000 RPM"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 3600.0,
-      "AMC 2 Year without Rubber": 6400.0
+      "AMC 2 Year without Rubber": 6400.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -3096,8 +3110,8 @@
     },
     "amcEw": {
       "AMC 1 Year without Rubber": 3100.0,
-      "EXT WTY 5TH YEAR": 2400.0,
-      "AMC 2 Year without Rubber": 5550.0
+      "AMC 2 Year without Rubber": 5550.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -3203,9 +3217,9 @@
       "7010": "Capacity & RPM: 7 kg | 1000 RPM"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 2500.0,
       "AMC 2 Year without Rubber": 4400.0,
-      "AMC 1 Year without Rubber": 2500.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -3266,7 +3280,9 @@
       "K": "Knob (Neo Series)",
       "CMS": "Common Motor Software"
     },
-    "amcEw": {},
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
     "testMode": {
       "Program_Position": "OFF position",
       "Test_Mode_Button": "Temperature & Select",
@@ -3633,9 +3649,9 @@
       "K": "Knob (Neo Series)"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 4300.0,
-      "AMC 2 Year without Rubber": 7750.0
+      "AMC 2 Year without Rubber": 7750.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -3695,9 +3711,9 @@
       "8014": "Capacity & RPM: 8 kg | 1400 RPM"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 4300.0,
-      "AMC 2 Year without Rubber": 7750.0
+      "AMC 2 Year without Rubber": 7750.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -3758,9 +3774,9 @@
       "K": "Knob (Neo Series)"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 4300.0,
-      "AMC 2 Year without Rubber": 7750.0
+      "AMC 2 Year without Rubber": 7750.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -3821,9 +3837,9 @@
       "K": "Knob (Neo Series)"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 4300.0,
-      "AMC 2 Year without Rubber": 7750.0
+      "AMC 2 Year without Rubber": 7750.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -3883,9 +3899,9 @@
       "8014": "Capacity & RPM: 8 kg | 1400 RPM"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 4300.0,
-      "AMC 2 Year without Rubber": 7750.0
+      "AMC 2 Year without Rubber": 7750.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -3937,9 +3953,9 @@
       "8014": "Capacity & RPM: 8 kg | 1400 RPM"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 4300.0,
-      "AMC 2 Year without Rubber": 7750.0
+      "AMC 2 Year without Rubber": 7750.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -3986,9 +4002,9 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 4300.0,
-      "AMC 2 Year without Rubber": 7750.0
+      "AMC 2 Year without Rubber": 7750.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -4036,9 +4052,9 @@
       "8012": "Capacity & RPM: 8 kg | 1200 RPM"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 4300.0,
-      "AMC 2 Year without Rubber": 7750.0
+      "AMC 2 Year without Rubber": 7750.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -4087,9 +4103,9 @@
       "8012": "Capacity & RPM: 8 kg | 1200 RPM"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 4300.0,
-      "AMC 2 Year without Rubber": 7750.0
+      "AMC 2 Year without Rubber": 7750.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -4150,9 +4166,9 @@
       "SSL": "Smart Sense Logic"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 4300.0,
-      "AMC 2 Year without Rubber": 7750.0
+      "AMC 2 Year without Rubber": 7750.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -4264,9 +4280,9 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 4300.0,
-      "AMC 2 Year without Rubber": 7750.0
+      "AMC 2 Year without Rubber": 7750.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -4318,9 +4334,9 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "Motor Warranty 10 years": 847.5,
       "AMC 1 Year without Rubber": 4200.0,
       "AMC 2 Year without Rubber": 7500.0,
+      "Motor Warranty 10 years": 847.5,
       "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
@@ -4486,9 +4502,9 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
+      "AMC 1 Year without Rubber": 4300.0,
       "AMC 2 Year without Rubber": 7750.0,
-      "AMC 1 Year without Rubber": 4300.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -4544,7 +4560,7 @@
     },
     "testMode": {
       "Program_Position": "OFF position",
-      "Test_Mode_Button": "V & \u039b- Press OK to start",
+      "Test_Mode_Button": "V & Λ- Press OK to start",
       "Display_Shows": "SF09"
     }
   },
@@ -4657,9 +4673,9 @@
       "8014": "Capacity & RPM: 8 kg | 1400 RPM"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 4300.0,
-      "AMC 2 Year without Rubber": 7750.0
+      "AMC 2 Year without Rubber": 7750.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "Cotton Cold",
@@ -4769,10 +4785,8 @@
     },
     "nomenclature": {},
     "amcEw": {
-      "Motor Warranty 10 years": 847.5,
-      "Labour AMC 1 Year": 2250.0,
-      "AMC 1 Year without Rubber": 4050.0,
-      "AMC 2 Year without Rubber": 7250.0,
+      "AMC 1 Year without Rubber": 4450.0,
+      "AMC 2 Year without Rubber": 5200.0,
       "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
@@ -4825,9 +4839,10 @@
       "8012": "Capacity & RPM: 8 kg | 1200 RPM"
     },
     "amcEw": {
+      "AMC 1 Year without Rubber": 4050.0,
+      "AMC 2 Year without Rubber": 7250.0,
       "Labour AMC 1 Year": 2250.0,
-      "AMC 1 Year without Rubber": 4450.0,
-      "AMC 2 Year without Rubber": 5200.0,
+      "Motor Warranty 10 years": 847.5,
       "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
@@ -4880,6 +4895,9 @@
       "S": "Steam Series"
     },
     "amcEw": {
+      "AMC 1 Year without Rubber": 4100.0,
+      "AMC 2 Year without Rubber": 7350.0,
+      "Motor Warranty 10 years": 847.5,
       "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
@@ -4933,11 +4951,11 @@
       "STEAM": "Steam Technology"
     },
     "amcEw": {
-      "Motor Warranty 10 years": 847.5,
       "AMC 1 Year without Rubber": 4450.0,
       "AMC 2 Year without Rubber": 8050.0,
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Labour AMC 1 Year": 2400.0
+      "Labour AMC 1 Year": 2400.0,
+      "Motor Warranty 10 years": 847.5,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -5038,7 +5056,9 @@
       "6512": "Capacity & RPM: 6.5 kg | 1200 RPM",
       "CMS": "Common Motor Software"
     },
-    "amcEw": {},
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
     "testMode": {
       "Program_Position": "OFF position",
       "Test_Mode_Button": "Spin & Delay",
@@ -5090,7 +5110,9 @@
       "K": "Knob (Neo Series)",
       "CMS": "Common Motor Software"
     },
-    "amcEw": {},
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400.0
+    },
     "testMode": {
       "Program_Position": "OFF position",
       "Test_Mode_Button": "Spin & Delay",
@@ -5141,9 +5163,9 @@
       "K": "Knob (Neo Series)"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
       "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year without Rubber": 4400.0
+      "AMC 2 Year without Rubber": 4400.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -5194,9 +5216,10 @@
       "6510": "Capacity & RPM: 6.5 kg | 1000 RPM"
     },
     "amcEw": {
-      "Motor Warranty 10 years": 847.5,
       "AMC 1 Year without Rubber": 3500.0,
       "AMC 2 Year without Rubber": 6350.0,
+      "Labour AMC 1 Year": 2250.0,
+      "Motor Warranty 10 years": 847.5,
       "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
@@ -5248,9 +5271,9 @@
       "6510": "Capacity & RPM: 6.5 kg | 1000 RPM"
     },
     "amcEw": {
-      "Motor Warranty 10 years": 847.5,
       "AMC 1 Year without Rubber": 3400.0,
       "AMC 2 Year without Rubber": 6100.0,
+      "Motor Warranty 10 years": 847.5,
       "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
@@ -5732,10 +5755,10 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "Motor Warranty 10 years": 847.5,
       "AMC 1 Year without Rubber": 3800.0,
       "AMC 2 Year without Rubber": 6800.0,
       "Labour AMC 1 Year": 2250.0,
+      "Motor Warranty 10 years": 847.5,
       "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
