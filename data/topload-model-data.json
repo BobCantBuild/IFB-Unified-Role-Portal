@@ -1,0 +1,5012 @@
+[
+  {
+    "model": "FB TL - REW 6.5 kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Smart Sense",
+      "Smart Sense + Wash",
+      "Wash + Rinse + Spin",
+      "Smart Sense + Wash + Rinse",
+      "Only Wash",
+      "Wash + Rinse",
+      "Only Rinse",
+      "Rinse + Spin",
+      "Only Spin",
+      "Aqua Save",
+      "Express 30",
+      "Heavy",
+      "Delicate"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Aqua Spa Therapy",
+        "Triadic Pulsator",
+        "4D Wash",
+        "3D Wash",
+        "Crescent Moon Drum",
+        "Intelligent Wash Programs"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Lint Tower Filter"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "W": "White Color",
+      "G": "Grey Color",
+      "6.5Kg": "6.5 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 1950.0,
+      "AMC 1 Year without Rubber": 1650.0,
+      "AMC 2 Year": 3400.0,
+      "AMC 2 Year without Rubber": 2900.0,
+      "Motor Warranty 10 years": 847.5,
+      "EXT WTY 5TH YEAR": 1800.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - R1BRS 7 Kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense",
+      "Express 30’",
+      "Jeans",
+      "Delicates",
+      "Spin",
+      "Delay Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "Crescent Moon Drum",
+        "3D Wash",
+        "In-built heater"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Wheels",
+        "Lint Tower Filter"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "BR": "Brown Color",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "7Kg": "7 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2700.0,
+      "AMC 1 Year without Rubber": 2400.0,
+      "AMC 2 Year": 4700.0,
+      "AMC 2 Year without Rubber": 4250.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - R1WRS 7 kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense",
+      "Express 30’",
+      "Jeans",
+      "Delicates",
+      "Spin",
+      "Delay Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "Crescent Moon Drum",
+        "3D Wash",
+        "In-built heater"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Wheels",
+        "Lint Tower Filter"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "WR": "Wine Red Color",
+      "W": "White Color",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "7Kg": "7 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2700.0,
+      "AMC 1 Year without Rubber": 2400.0,
+      "AMC 2 Year": 4700.0,
+      "AMC 2 Year without Rubber": 4250.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - R2BR 7 kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Smart Sense",
+      "Power Wash",
+      "Express",
+      "Jeans",
+      "Delicates",
+      "Tub Clean"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Aqua Spa Therapy",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "3D Wash",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry",
+        "Wheels",
+        "Lint Tower Filter"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "BR": "Brown Color",
+      "G": "Grey Color",
+      "7Kg": "7 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2700.0,
+      "AMC 1 Year without Rubber": 2400.0,
+      "AMC 2 Year": 4700.0,
+      "AMC 2 Year without Rubber": 4250.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - R2BRS 6.5 Kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense",
+      "Express 30’",
+      "Jeans",
+      "Delicates",
+      "StainFighter™"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "Crescent Moon Drum",
+        "3D Wash",
+        "In-built heater",
+        "Clean with Steam"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Spray Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "BR": "Brown Color",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "6.5Kg": "6.5 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2600.0,
+      "AMC 1 Year without Rubber": 2250.0,
+      "AMC 2 Year": 4700.0,
+      "AMC 2 Year without Rubber": 4000.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - R2BRS 8 kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense",
+      "Express 30’",
+      "Jeans",
+      "Delicates",
+      "StainFighter™"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "Crescent Moon Drum",
+        "3D Wash",
+        "In-built heater",
+        "Clean with Steam"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Spray Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "BR": "Brown Color",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "8Kg": "8 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 3050.0,
+      "AMC 1 Year without Rubber": 2650.0,
+      "AMC 2 Year": 5250.0,
+      "AMC 2 Year without Rubber": 4500.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - R3SG 8 Kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense",
+      "Express 30’",
+      "Jeans",
+      "Delicates",
+      "Blankets (Curtain/Bulky)"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "Crescent Moon Drum",
+        "3D Wash"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "8Kg": "8 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 3050.0,
+      "AMC 1 Year without Rubber": 2650.0,
+      "AMC 2 Year": 5250.0,
+      "AMC 2 Year without Rubber": 4500.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - REG 6.5 kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Smart Sense",
+      "Smart Sense + Wash",
+      "Wash + Rinse + Spin",
+      "Smart Sense + Wash + Rinse",
+      "Only Wash",
+      "Wash + Rinse",
+      "Only Rinse",
+      "Rinse + Spin",
+      "Only Spin",
+      "Aqua Save",
+      "Express 30",
+      "Heavy",
+      "Delicate"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Aqua Spa Therapy",
+        "Triadic Pulsator",
+        "4D Wash",
+        "3D Wash",
+        "Crescent Moon Drum",
+        "Intelligent Wash Programs"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Lint Tower Filter"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "G": "Grey Color",
+      "6.5Kg": "6.5 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2000.0,
+      "AMC 1 Year without Rubber": 1700.0,
+      "AMC 2 Year": 3600.0,
+      "AMC 2 Year without Rubber": 3100.0,
+      "Labour AMC 1 Year": 1650.0,
+      "Motor Warranty 10 years": 847.5,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - REGS 6.5 kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense",
+      "Express 30’",
+      "Jeans",
+      "Delicates",
+      "Spin",
+      "Delay Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "Crescent Moon Drum",
+        "3D Wash",
+        "In-built heater"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Wheels",
+        "Lint Tower Filter"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "6.5Kg": "6.5 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2300.0,
+      "AMC 1 Year without Rubber": 1950.0,
+      "AMC 2 Year": 4150.0,
+      "AMC 2 Year without Rubber": 3550.0,
+      "Motor Warranty 10 years": 847.5,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - REGS 7 kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense",
+      "Express 30’",
+      "Jeans",
+      "Delicates",
+      "Spin",
+      "Delay Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "Crescent Moon Drum",
+        "3D Wash",
+        "In-built heater"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Wheels",
+        "Lint Tower Filter"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "7Kg": "7 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2350.0,
+      "AMC 1 Year without Rubber": 2000.0,
+      "AMC 2 Year": 4200.0,
+      "AMC 2 Year without Rubber": 3550.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - RES 6.5 kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Smart Sense",
+      "Smart Sense + Wash",
+      "Wash + Rinse + Spin",
+      "Smart Sense + Wash + Rinse",
+      "Only Wash",
+      "Wash + Rinse",
+      "Only Rinse",
+      "Rinse + Spin",
+      "Only Spin",
+      "Aqua Save",
+      "Express 30",
+      "Heavy",
+      "Delicate"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Triadic Pulsator",
+        "4D Wash",
+        "3D Wash",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Lint Tower Filter"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "6.5Kg": "6.5 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2000.0,
+      "AMC 1 Year without Rubber": 1700.0,
+      "AMC 2 Year": 3600.0,
+      "AMC 2 Year without Rubber": 3100.0,
+      "Motor Warranty 10 years": 847.5,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - RES 7 kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Smart Sense",
+      "Smart Sense + Wash",
+      "Wash + Rinse + Spin",
+      "Smart Sense + Wash + Rinse",
+      "Only Wash",
+      "Wash + Rinse",
+      "Only Rinse",
+      "Rinse + Spin",
+      "Only Spin",
+      "Aqua Save",
+      "Express 30",
+      "Heavy",
+      "Delicate"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "4D Wash",
+        "3D Wash",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Lint Tower Filter"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "7Kg": "7 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2050.0,
+      "AMC 1 Year without Rubber": 1750.0,
+      "AMC 2 Year": 3700.0,
+      "AMC 2 Year without Rubber": 3150.0,
+      "Motor Warranty 10 years": 847.5,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - RESS 7 kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense",
+      "Express 30’",
+      "Jeans",
+      "Delicates",
+      "Spin",
+      "Delay Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "Crescent Moon Drum",
+        "3D Wash",
+        "In-built heater"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Wheels",
+        "Lint Tower Filter"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "SS": "Sparkling Silver Color",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "7Kg": "7 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 2 Year without Rubber": 3450.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0,
+      "AMC 1 Year": 2300.0,
+      "AMC 1 Year without Rubber": 1950.0,
+      "AMC 2 Year": 4050.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - REWS 6.5 kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense",
+      "Express 30’",
+      "Jeans",
+      "Delicates",
+      "Spin",
+      "Delay Wash"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "Crescent Moon Drum",
+        "3D Wash",
+        "In-built heater"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Wheels",
+        "Lint Tower Filter"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "W": "White Color",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "6.5Kg": "6.5 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2250.0,
+      "AMC 1 Year without Rubber": 1950.0,
+      "AMC 2 Year": 4000.0,
+      "AMC 2 Year without Rubber": 3400.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - RGS 7 kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Smart Sense",
+      "Power Wash",
+      "Express",
+      "Jeans",
+      "Delicates",
+      "Tub Clean"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Aqua Spa Therapy",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "3D Wash",
+        "Crescent Moon Drum",
+        "Intelligent Wash Programs"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Tub Dry",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Auto Tub clean",
+        "Spray Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "7Kg": "7 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2500.0,
+      "AMC 1 Year without Rubber": 2150.0,
+      "AMC 2 Year": 4400.0,
+      "AMC 2 Year without Rubber": 3750.0,
+      "Labour AMC 1 Year": 1650.0,
+      "Motor Warranty 10 years": 847.5,
+      "EXT WTY 5TH YEAR": 1800.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - RPSS 6.5 kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense",
+      "Express 30’",
+      "STAINFIGHTER™",
+      "Jeans",
+      "Delicates"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "Crescent Moon Drum",
+        "3D Wash",
+        "In-built heater",
+        "Clean with Steam"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Spray Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "SS": "Sparkling Silver Color",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "6.5Kg": "6.5 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2350.0,
+      "AMC 1 Year without Rubber": 2000.0,
+      "AMC 2 Year": 4200.0,
+      "AMC 2 Year without Rubber": 3550.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - RPSS 7 kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense",
+      "Express 30’",
+      "STAINFIGHTER™",
+      "Jeans",
+      "Delicates"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "Crescent Moon Drum",
+        "3D Wash",
+        "In-built heater",
+        "Clean with Steam"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Spray Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "SS": "Sparkling Silver Color",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "7Kg": "7 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2450.0,
+      "AMC 1 Year without Rubber": 2100.0,
+      "AMC 2 Year": 4400.0,
+      "AMC 2 Year without Rubber": 3750.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - RSS 6.5 kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Smart Sense",
+      "Power Wash",
+      "Express",
+      "Jeans",
+      "Delicates",
+      "Tub Clean"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Aqua Spa Therapy",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "3D Wash",
+        "Crescent Moon Drum",
+        "Intelligent Wash Programs"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Tub Dry",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Spray Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "SS": "Sparkling Silver Color",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "6.5Kg": "6.5 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2100.0,
+      "AMC 1 Year without Rubber": 1800.0,
+      "AMC 2 Year": 3800.0,
+      "AMC 2 Year without Rubber": 3200.0,
+      "Labour AMC 1 Year": 1650.0,
+      "Motor Warranty 10 years": 847.5,
+      "EXT WTY 5TH YEAR": 1800.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - S1WRS 7 Kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense",
+      "Express 30’",
+      "Blankets (Curtains/Bulky)",
+      "Baby Wear (7 Kg/8 Kg)",
+      "Jeans",
+      "Anti-Allergen",
+      "Delicates",
+      "StainFighter™",
+      "My Cycle (7 Kg/8 Kg)"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Aqua Spa Therapy",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "3D Wash",
+        "In-built heater",
+        "Crescent Moon Drum",
+        "Intelligent Wash Programs"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Auto Tub Clean",
+        "Spray Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "WR": "Wine Red Color",
+      "W": "White Color",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "7Kg": "7 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "Extended Warranty 6 Months - IFB Point": 600.0,
+      "AMC 1 Year": 2700.0,
+      "AMC 1 Year without Rubber": 2400.0,
+      "AMC 2 Year": 4700.0,
+      "AMC 2 Year without Rubber": 4250.0,
+      "EXT WTY 5TH YEAR": 1800.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - S1WRS 8 Kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense",
+      "Express 30’",
+      "Blankets (Curtains/Bulky)",
+      "Baby Wear (7 Kg/8 Kg)",
+      "Jeans",
+      "Anti-Allergen",
+      "Delicates",
+      "StainFighter™",
+      "My Cycle (7 Kg/8 Kg)"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Aqua Spa Therapy",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "3D Wash",
+        "In-built heater",
+        "Crescent Moon Drum",
+        "Intelligent Wash Programs"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Auto Tub Clean",
+        "Spray Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "WR": "Wine Red Color",
+      "W": "White Color",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "8Kg": "8 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "Extended Warranty 6 Months - IFB Point": 600.0,
+      "AMC 1 Year": 3050.0,
+      "AMC 1 Year without Rubber": 2650.0,
+      "AMC 2 Year": 5250.0,
+      "AMC 2 Year without Rubber": 4500.0,
+      "EXT WTY 5TH YEAR": 1800.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - S4INS 12 kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense",
+      "My Cycle",
+      "Delicates",
+      "Express 30’",
+      "Blankets (Curtains/Bulky)",
+      "Saree",
+      "Sports Wear",
+      "Anti-Allergen",
+      "Baby Wear",
+      "Jeans",
+      "StainFighter™"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Aqua Spa Therapy",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "4D Wash",
+        "Crescent Moon Drum",
+        "In-built heater",
+        "Intelligent Wash Programs"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Tub Dry",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Drum Lamp (LED)"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "IN": "Inox Color",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "12Kg": "12 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 4500.0,
+      "AMC 1 Year without Rubber": 3900.0,
+      "AMC 2 Year": 8100.0,
+      "AMC 2 Year without Rubber": 7000.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - S4RBS 12 kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense",
+      "My Cycle",
+      "Delicates",
+      "Express 30’",
+      "Blankets (Curtains/Bulky)",
+      "Saree",
+      "Sports Wear",
+      "Anti-Allergen",
+      "Baby Wear",
+      "Jeans",
+      "StainFighter™"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Aqua Spa Therapy",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "4D Wash",
+        "Crescent Moon Drum",
+        "In-built heater"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Tub Dry",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Drum Lamp (LED)"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "RB": "Royal Blue Color",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "12Kg": "12 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 4500.0,
+      "AMC 1 Year without Rubber": 3900.0,
+      "AMC 2 Year": 8100.0,
+      "AMC 2 Year without Rubber": 7000.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - SBRS 8 kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense*",
+      "Express 30’",
+      "Blankets (Curtains/Bulky)",
+      "Baby Wear (7 Kg/8 Kg)",
+      "Jeans",
+      "Anti-Allergen",
+      "Delicates",
+      "StainFighter™",
+      "My Cycle (7 Kg/8 Kg)"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Aqua Spa Therapy",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "3D Wash",
+        "Crescent Moon Drum",
+        "In-built heater"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Auto Tub Clean"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "BR": "Brown Color",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "8Kg": "8 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 3100.0,
+      "AMC 1 Year without Rubber": 2650.0,
+      "AMC 2 Year": 5550.0,
+      "AMC 2 Year without Rubber": 4700.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - SDG 6.5 kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Smart Sense*",
+      "Power Wash",
+      "Hygiene+",
+      "Jeans",
+      "Blankets",
+      "Delicates",
+      "Express",
+      "Tub Clean",
+      "Favourite (SDSG 7 Kg/SSG 8 Kg)",
+      "Silent (SDSG 7 Kg/SSG 8 Kg)"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Aqua Spa Therapy",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "3D Wash",
+        "Crescent Moon Drum",
+        "Intelligent Wash Programs"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Tub Dry",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Spray Rinse",
+        "Auto Tub Clean"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "SD": "Square Door",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "6.5Kg": "6.5 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2450.0,
+      "AMC 1 Year without Rubber": 2100.0,
+      "AMC 2 Year": 4400.0,
+      "AMC 2 Year without Rubber": 3750.0,
+      "Motor Warranty 10 years": 847.5,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - SDS 7 kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Smart Sense*",
+      "Power Wash",
+      "Hygiene+",
+      "Jeans",
+      "Blankets",
+      "Delicates",
+      "Express",
+      "Tub Clean",
+      "Favourite (SDSG 7 Kg/SSG 8 Kg)",
+      "Silent (SDSG 7 Kg/SSG 8 Kg)"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Aqua Spa Therapy",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "3D Wash",
+        "Crescent Moon Drum",
+        "Intelligent Wash Programs"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Tub Dry",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Spray Rinse",
+        "Auto Tub Clean"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "SD": "Square Door",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "7Kg": "7 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2600.0,
+      "AMC 1 Year without Rubber": 2200.0,
+      "AMC 2 Year": 4600.0,
+      "AMC 2 Year without Rubber": 3950.0,
+      "Labour AMC 1 Year": 1400.0,
+      "Motor Warranty 10 years": 847.5,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - SDSS 8 kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense*",
+      "Express 30’",
+      "Blankets (Curtains/Bulky)",
+      "Baby Wear (7 Kg/8 Kg)",
+      "Jeans",
+      "Anti-Allergen",
+      "Delicates",
+      "StainFighter™",
+      "My Cycle (7 Kg/8 Kg)"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Aqua Spa Therapy",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "3D Wash",
+        "In-built heater",
+        "Crescent Moon Drum",
+        "Intelligent Wash Programs"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Auto Tub Clean",
+        "Spray Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "SD": "Square Door",
+      "SS": "Sparkling Silver Color",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "8Kg": "8 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 3000.0,
+      "AMC 1 Year without Rubber": 2550.0,
+      "AMC 2 Year": 5300.0,
+      "AMC 2 Year without Rubber": 4500.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - SPGS 7 kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense*",
+      "Express 30’",
+      "Blankets (Curtains/Bulky)",
+      "Baby Wear (7 Kg/8 Kg)",
+      "Jeans",
+      "Anti-Allergen",
+      "Delicates",
+      "StainFighter™",
+      "My Cycle (7 Kg/8 Kg)"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Aqua Spa Therapy",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "3D Wash",
+        "In-built heater",
+        "Crescent Moon Drum",
+        "Intelligent Wash Programs"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Auto Tub Clean",
+        "Spray Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "7Kg": "7 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2800.0,
+      "AMC 1 Year without Rubber": 2350.0,
+      "AMC 2 Year": 5000.0,
+      "AMC 2 Year without Rubber": 4250.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - SPLS 8 kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense*",
+      "Express 30’",
+      "Blankets (Curtains/Bulky)",
+      "Baby Wear (7 Kg/8 Kg)",
+      "Jeans",
+      "Anti-Allergen",
+      "Delicates",
+      "StainFighter™",
+      "My Cycle (7 Kg/8 Kg)"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Aqua Spa Therapy",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "3D Wash",
+        "In-built heater",
+        "Crescent Moon Drum",
+        "Intelligent Wash Programs"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Auto Tub Clean",
+        "Spray Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "8Kg": "8 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 3100.0,
+      "AMC 1 Year without Rubber": 2650.0,
+      "AMC 2 Year": 5550.0,
+      "AMC 2 Year without Rubber": 4700.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL - SPSS 6.5 kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense*",
+      "Express 30’",
+      "Blankets (Curtains/Bulky)",
+      "Baby Wear (7 Kg/8 Kg)",
+      "Jeans",
+      "Anti-Allergen",
+      "Delicates",
+      "StainFighter™",
+      "My Cycle (7 Kg/8 Kg)"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Aqua Spa Therapy",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "3D Wash",
+        "In-built heater",
+        "Crescent Moon Drum",
+        "Intelligent Wash Programs"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Auto Tub Clean",
+        "Spray Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "SS": "Sparkling Silver Color",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "6.5Kg": "6.5 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2650.0,
+      "AMC 1 Year without Rubber": 2250.0,
+      "AMC 2 Year": 4750.0,
+      "AMC 2 Year without Rubber": 4050.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL R2WRS 6.5 Kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense",
+      "Express 30’",
+      "StainFighter™",
+      "Jeans",
+      "Delicates"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "Crescent Moon Drum",
+        "3D Wash",
+        "In-built heater",
+        "Clean with Steam"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Spray Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "WR": "Wine Red Color",
+      "W": "White Color",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "6.5Kg": "6.5 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "Extended Warranty 6 Months - IFB Point": 600.0,
+      "AMC 1 Year": 2600.0,
+      "AMC 1 Year without Rubber": 2250.0,
+      "AMC 2 Year": 4700.0,
+      "AMC 2 Year without Rubber": 4000.0,
+      "EXT WTY 5TH YEAR": 1800.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL111IN3SN",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "Bulky(Blankets/Jeans/Curtains)",
+      "Baby Wear",
+      "Anti-Allergen",
+      "Jeans",
+      "Saree",
+      "Sports Wear"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "Crescent Moon Drum",
+        "4D Wash",
+        "In-built heater",
+        "Clean with Steam"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Wheels",
+        "Lint Tower Filter"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "IN": "Inox Color",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "AMC 1 Year": 4300.0,
+      "AMC 1 Year without Rubber": 3700.0,
+      "AMC 2 Year": 7700.0,
+      "AMC 2 Year without Rubber": 6650.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL111RB2SN",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "Bulky(Blankets/Jeans/Curtains)",
+      "Baby Wear",
+      "Anti-Allergen",
+      "Jeans",
+      "Saree",
+      "Sports Wear"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "Crescent Moon Drum",
+        "4D Wash",
+        "In-built heater",
+        "Clean with Steam"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Wheels",
+        "Lint Tower Filter"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "RB": "Royal Blue Color",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL111SS4SN",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "Bulky(Blankets/Jeans/Curtains)",
+      "Baby Wear",
+      "Anti-Allergen",
+      "Jeans",
+      "Saree",
+      "Sports Wear"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "Crescent Moon Drum",
+        "4D Wash",
+        "In-built heater",
+        "Clean with Steam"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Wheels",
+        "Lint Tower Filter"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "SS": "Sparkling Silver Color",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL121BL4SN",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "Bulky(Blankets/Jeans/Curtains)",
+      "Baby Wear",
+      "Anti-Allergen",
+      "Jeans",
+      "Saree",
+      "Sports Wear"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "Crescent Moon Drum",
+        "4D Wash",
+        "In-built heater",
+        "Clean with Steam"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Wheels",
+        "Lint Tower Filter"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "BL": "Black VCM Color",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL121RB2SN",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "Bulky(Blankets/Jeans/Curtains)",
+      "Baby Wear",
+      "Anti-Allergen",
+      "Jeans",
+      "Saree",
+      "Sports Wear"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "Crescent Moon Drum",
+        "4D Wash",
+        "In-built heater",
+        "Clean with Steam"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Wheels",
+        "Lint Tower Filter"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "RB": "Royal Blue Color",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "AMC 1 Year": 4500.0,
+      "AMC 1 Year without Rubber": 3900.0,
+      "AMC 2 Year": 8100.0,
+      "AMC 2 Year without Rubber": 7000.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL650AG1",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "Saree",
+      "Blankets(Curtain/Bulky)",
+      "Baby Wear",
+      "Uniform",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Shower Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "65": "6.5 Kg Capacity",
+      "0": "Front UI",
+      "AG": "Anthracite Grey",
+      "1": "Solid Shade Finish"
+    },
+    "amcEw": {
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL650AG1ID",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Saree",
+      "Synthetic",
+      "Delicates",
+      "Blankets(Curtain/Bulky)",
+      "Baby Wear",
+      "Uniform",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum",
+        "ActivMix",
+        "Eco Inverter Motor"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Shower Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "65": "6.5 Kg Capacity",
+      "0": "Front UI",
+      "AG": "Anthracite Grey",
+      "1": "Solid Shade Finish"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2600.0,
+      "AMC 1 Year without Rubber": 2250.0,
+      "AMC 2 Year": 4700.0,
+      "AMC 2 Year without Rubber": 4000.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL650CB1",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "Saree",
+      "Blankets(Curtain/Bulky)",
+      "Baby Wear",
+      "Uniform",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Shower Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "65": "6.5 Kg Capacity",
+      "0": "Front UI",
+      "CB": "Cobalt Blue",
+      "1": "Solid Shade Finish"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2600.0,
+      "AMC 1 Year without Rubber": 2250.0,
+      "AMC 2 Year": 4700.0,
+      "AMC 2 Year without Rubber": 4000.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL650CB1ID",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "Saree",
+      "Blankets(Curtain/Bulky)",
+      "Baby Wear",
+      "Uniform",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum",
+        "ActivMix",
+        "Eco Inverter Motor"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Shower Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "65": "6.5 Kg Capacity",
+      "0": "Front UI",
+      "CB": "Cobalt Blue",
+      "1": "Solid Shade Finish"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2600.0,
+      "AMC 1 Year without Rubber": 2250.0,
+      "AMC 2 Year": 4700.0,
+      "AMC 2 Year without Rubber": 4000.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL650EP1",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "Saree",
+      "Blankets(Curtain/Bulky)",
+      "Baby Wear",
+      "Uniform",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Shower Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "65": "6.5 Kg Capacity",
+      "0": "Front UI",
+      "EP": "Espresso",
+      "1": "Solid Shade Finish"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2600.0,
+      "AMC 1 Year without Rubber": 2250.0,
+      "AMC 2 Year": 4700.0,
+      "AMC 2 Year without Rubber": 4000.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL650EP1ID",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Saree",
+      "Synthetic",
+      "Delicates",
+      "Blankets(Curtain/Bulky)",
+      "Baby Wear",
+      "Uniform",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum",
+        "ActivMix",
+        "Eco Inverter Motor"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Shower Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "65": "6.5 Kg Capacity",
+      "0": "Front UI",
+      "EP": "Espresso",
+      "1": "Solid Shade Finish"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2600.0,
+      "AMC 1 Year without Rubber": 2250.0,
+      "AMC 2 Year": 4700.0,
+      "AMC 2 Year without Rubber": 4000.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL650MB1",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30°",
+      "Synthetic",
+      "Delicates",
+      "Saree",
+      "Blankets (Curtain/Bulky)",
+      "Baby Wear",
+      "Uniform",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Shower Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "65": "6.5 Kg Capacity",
+      "0": "Front UI",
+      "MB": "Midnight Black",
+      "1": "Solid Shade Finish"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL650MB1ID",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Saree",
+      "Synthetic",
+      "Delicates",
+      "Blankets (Curtain/Bulky)",
+      "Baby Wear",
+      "Uniform",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum",
+        "ActivMix",
+        "Eco Inverter Motor"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Shower Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "65": "6.5 Kg Capacity",
+      "0": "Front UI",
+      "MB": "Midnight Black",
+      "1": "Solid Shade Finish"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2600.0,
+      "AMC 1 Year without Rubber": 2250.0,
+      "AMC 2 Year": 4700.0,
+      "AMC 2 Year without Rubber": 4000.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL650MG1",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "Saree",
+      "Blankets (Curtain/Bulky)",
+      "Baby Wear",
+      "Uniform",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Shower Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "65": "6.5 Kg Capacity",
+      "0": "Front UI",
+      "MG": "Medium Grey",
+      "1": "Solid Shade Finish"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2600.0,
+      "AMC 1 Year without Rubber": 2250.0,
+      "AMC 2 Year": 4700.0,
+      "AMC 2 Year without Rubber": 4000.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL650MG1ID",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "Saree",
+      "Blankets (Curtain/Bulky)",
+      "Baby Wear",
+      "Uniform",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum",
+        "ActivMix",
+        "Eco Inverter Motor"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Shower Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "65": "6.5 Kg Capacity",
+      "0": "Front UI",
+      "MG": "Medium Grey",
+      "1": "Solid Shade Finish"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2600.0,
+      "AMC 1 Year without Rubber": 2250.0,
+      "AMC 2 Year": 4700.0,
+      "AMC 2 Year without Rubber": 4000.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL650MG1S",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "Bulky (Blankets/Jeans/Curtains)",
+      "Baby Wear",
+      "Anti-Allergen",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum",
+        "3D Wash",
+        "In-built heater",
+        "Clean with Steam"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Shower Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "65": "6.5 Kg Capacity",
+      "0": "Front UI",
+      "MG": "Medium Grey",
+      "1": "Solid Shade Finish",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2600.0,
+      "AMC 1 Year without Rubber": 2250.0,
+      "AMC 2 Year": 4700.0,
+      "AMC 2 Year without Rubber": 4000.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL700AG1SWID",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "StainFighterTM",
+      "Bulky",
+      "Baby Wear",
+      "Anti Allergen",
+      "Rinse+Spin",
+      "Tub Clean",
+      "Jeans",
+      "Sports Wear",
+      "Saree",
+      "Uniform"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "In-built Heater",
+        "Crescent Moon Drum",
+        "Intelligent Wash Programs"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Shower Rinse",
+        "9 Swirl wash"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "70": "7 Kg Capacity",
+      "0": "Front UI",
+      "AG": "Anthracite Grey",
+      "1": "Solid Shade Finish",
+      "S": "Steam Series",
+      "W": "WiFi Enabled"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL700CB1SWID",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "StainFighterTM",
+      "Bulky",
+      "Baby Wear",
+      "Anti Allergen",
+      "Rinse+Spin",
+      "Tub Clean",
+      "Jeans",
+      "Sports Wear",
+      "Saree",
+      "Uniform"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "In-built Heater",
+        "Crescent Moon Drum",
+        "Intelligent Wash Programs"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Shower Rinse",
+        "9 Swirl wash"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "70": "7 Kg Capacity",
+      "0": "Front UI",
+      "CB": "Cobalt Blue",
+      "1": "Solid Shade Finish",
+      "S": "Steam Series",
+      "W": "WiFi Enabled"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL700EP1S",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "StainFighterTM",
+      "Bulky (Blankets/Jeans/Curtains)",
+      "Baby Wear",
+      "Anti-Allergen",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum",
+        "3D Wash",
+        "In-built heater",
+        "Clean with Steam"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Shower Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "70": "7 Kg Capacity",
+      "0": "Front UI",
+      "EP": "Espresso",
+      "1": "Solid Shade Finish",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2700.0,
+      "AMC 1 Year without Rubber": 2400.0,
+      "AMC 2 Year": 4700.0,
+      "AMC 2 Year without Rubber": 4250.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL700MB1S",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "Bulky (Blankets/Jeans/Curtains)",
+      "Baby Wear",
+      "Anti-Allergen",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum",
+        "3D Wash",
+        "In-built heater",
+        "Clean with Steam"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Air Dry",
+        "Wheels",
+        "Lint Tower Filter",
+        "Spray Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "70": "7 Kg Capacity",
+      "0": "Front UI",
+      "MB": "Midnight Black",
+      "1": "Solid Shade Finish",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2700.0,
+      "AMC 1 Year without Rubber": 2400.0,
+      "AMC 2 Year": 4700.0,
+      "AMC 2 Year without Rubber": 4250.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL701AG1",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30°",
+      "Synthetic",
+      "Delicates",
+      "Saree",
+      "Blankets (Curtain/Bulky)",
+      "Baby Wear",
+      "Uniform",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum",
+        "3D Wash",
+        "In-built heater",
+        "Clean with Steam"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Shower Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "70": "7 Kg Capacity",
+      "1": "Solid Shade Finish",
+      "AG": "Anthracite Grey"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2700.0,
+      "AMC 1 Year without Rubber": 2400.0,
+      "AMC 2 Year": 4700.0,
+      "AMC 2 Year without Rubber": 4250.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL701AG1ID",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Saree",
+      "Synthetic",
+      "Delicates",
+      "Blankets (Curtain/Bulky)",
+      "Baby Wear",
+      "Uniform",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum",
+        "ActivMix",
+        "Eco Inverter Motor"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Shower Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "70": "7 Kg Capacity",
+      "1": "Solid Shade Finish",
+      "AG": "Anthracite Grey"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2700.0,
+      "AMC 1 Year without Rubber": 2400.0,
+      "AMC 2 Year": 4700.0,
+      "AMC 2 Year without Rubber": 4250.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL701CB1",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "Saree",
+      "Blankets (Curtain/Bulky)",
+      "Baby Wear",
+      "Uniform",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Shower Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "70": "7 Kg Capacity",
+      "1": "Solid Shade Finish",
+      "CB": "Cobalt Blue"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2700.0,
+      "AMC 1 Year without Rubber": 2400.0,
+      "AMC 2 Year": 4700.0,
+      "AMC 2 Year without Rubber": 4250.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL701CB1ID",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Saree",
+      "Synthetic",
+      "Delicates",
+      "Blankets (Curtain/Bulky)",
+      "Baby Wear",
+      "Uniform",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum",
+        "ActivMix",
+        "Eco Inverter Motor"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Shower Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "70": "7 Kg Capacity",
+      "1": "Solid Shade Finish",
+      "CB": "Cobalt Blue"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2700.0,
+      "AMC 1 Year without Rubber": 2400.0,
+      "AMC 2 Year": 4700.0,
+      "AMC 2 Year without Rubber": 4250.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL701EP1",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "Saree",
+      "Blankets (Curtain/Bulky)",
+      "Baby Wear",
+      "Uniform",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Shower Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "70": "7 Kg Capacity",
+      "1": "Solid Shade Finish",
+      "EP": "Espresso"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2700.0,
+      "AMC 1 Year without Rubber": 2400.0,
+      "AMC 2 Year": 4700.0,
+      "AMC 2 Year without Rubber": 4250.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL701EP1ID",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "Saree",
+      "Blankets (Curtain/Bulky)",
+      "Baby Wear",
+      "Uniform",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum",
+        "ActivMix",
+        "Eco Inverter Motor"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Shower Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "70": "7 Kg Capacity",
+      "1": "Solid Shade Finish",
+      "EP": "Espresso"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2700.0,
+      "AMC 1 Year without Rubber": 2400.0,
+      "AMC 2 Year": 4700.0,
+      "AMC 2 Year without Rubber": 4250.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL701MB1ID",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "Saree",
+      "Blankets (Curtain/Bulky)",
+      "Baby Wear",
+      "Uniform",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum",
+        "ActivMix",
+        "Eco Inverter Motor"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Shower Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "70": "7 Kg Capacity",
+      "1": "Solid Shade Finish",
+      "MB": "Midnight Black"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL701MG1",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "Saree",
+      "Blankets (Curtain/Bulky)",
+      "Baby Wear",
+      "Uniform",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Soft Scrub Pads",
+        "Swirl Jets",
+        "Centre Punch",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Shower Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "70": "7 Kg Capacity",
+      "1": "Solid Shade Finish",
+      "MG": "Medium Grey"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL701MG1ID",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Saree",
+      "Synthetic",
+      "Delicates",
+      "Blankets (Curtain/Bulky)",
+      "Baby Wear",
+      "Uniform",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Soft Scrub Pads",
+        "Swirl Jets",
+        "Centre Punch",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum",
+        "ActivMix",
+        "Eco Inverter Motor"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Favourite",
+        "Delay Start",
+        "Air Dry",
+        "Tub Clean Reminder"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "70": "7 Kg Capacity",
+      "1": "Solid Shade Finish",
+      "MG": "Medium Grey"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2050.0,
+      "AMC 1 Year without Rubber": 1850.0,
+      "AMC 2 Year": 3750.0,
+      "AMC 2 Year without Rubber": 3350.0,
+      "Labour AMC 1 Year": 1650.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL701MG1S",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "Bulky (Blankets/Jeans/Curtains)",
+      "Baby Wear",
+      "Anti-Allergen",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Soft Scrub Pads",
+        "Swirl Jets",
+        "Centre Punch",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum",
+        "3D Wash",
+        "In-built heater",
+        "Clean with Steam"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Favourite",
+        "Delay Start",
+        "Air Dry",
+        "Tub Clean Reminder"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "70": "7 Kg Capacity",
+      "1": "Solid Shade Finish",
+      "MG": "Medium Grey",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL701WR2ID",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Saree",
+      "Synthetic",
+      "Delicates",
+      "Blankets (Curtain/Bulky)",
+      "Baby Wear",
+      "Uniform",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Soft Scrub Pads",
+        "Swirl Jets",
+        "Centre Punch",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum",
+        "ActivMix",
+        "Eco Inverter Motor"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Favourite",
+        "Delay Start",
+        "Air Dry",
+        "Tub Clean Reminder"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "WR": "Wine Red Color",
+      "W": "White Color",
+      "ID": "Traceability Identifier"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2050.0,
+      "AMC 1 Year without Rubber": 1850.0,
+      "AMC 2 Year": 3750.0,
+      "AMC 2 Year without Rubber": 3350.0,
+      "Labour AMC 1 Year": 1650.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL751MS2S",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "Bulky (Blankets/Jeans/Curtains)",
+      "Baby Wear",
+      "Anti-Allergen",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Soft Scrub Pads",
+        "Swirl Jets",
+        "Centre Punch",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum",
+        "3D Wash",
+        "In-built heater",
+        "Clean with Steam"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Favourite",
+        "Delay Start",
+        "Air Dry",
+        "Tub Clean Reminder"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "75": "7.5 Kg Capacity",
+      "1": "Solid Shade Finish",
+      "MS": "Mystic Silver",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2700.0,
+      "AMC 1 Year without Rubber": 2400.0,
+      "AMC 2 Year": 4700.0,
+      "AMC 2 Year without Rubber": 4250.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL751OG2S",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "Bulky (Blankets/Jeans/Curtains)",
+      "Baby Wear",
+      "Anti-Allergen",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Soft Scrub Pads",
+        "Swirl Jets",
+        "Centre Punch",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum",
+        "3D Wash",
+        "In-built heater",
+        "Clean with Steam"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Favourite",
+        "Delay Start",
+        "Air Dry",
+        "Tub Clean Reminder"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "75": "7.5 Kg Capacity",
+      "1": "Solid Shade Finish",
+      "OG": "Onyx Grey",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL800AG1SID",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "StainFighterTM",
+      "Bulky",
+      "Baby Wear",
+      "Anti Allergen",
+      "Rinse+Spin",
+      "Tub Clean",
+      "Jeans",
+      "Sports Wear",
+      "Saree",
+      "Uniform"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Deep Clean",
+        "Aqua Energie",
+        "Aqua Spa Therapy",
+        "3D Wash",
+        "Bi-Axial Clothes Rotation",
+        "In-built Heater",
+        "Crescent Moon Drum",
+        "Intelligent Wash Programs",
+        "Powered by Ai"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softner Dispenser",
+        "Bleach Dispenser",
+        "Drum Hygiene",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Auto Tub Clean",
+        "9 Swirl Wash"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "80": "8 Kg Capacity",
+      "0": "Front UI",
+      "AG": "Anthracite Grey",
+      "1": "Solid Shade Finish",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "AMC 1 Year": 3050.0,
+      "AMC 1 Year without Rubber": 2650.0,
+      "AMC 2 Year": 5250.0,
+      "AMC 2 Year without Rubber": 4500.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL800CB1S",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "StainFighterTM",
+      "Bulky (Blankets/Jeans/Curtains)",
+      "Baby Wear",
+      "Anti-Allergen",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum",
+        "3D Wash",
+        "In-built heater",
+        "Clean with Steam"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Air Dry",
+        "Delay Wash",
+        "Tub Clean Reminder",
+        "Favourite",
+        "PreClean"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "80": "8 Kg Capacity",
+      "0": "Front UI",
+      "CB": "Cobalt Blue",
+      "1": "Solid Shade Finish",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "AMC 1 Year": 3050.0,
+      "AMC 1 Year without Rubber": 2650.0,
+      "AMC 2 Year": 5250.0,
+      "AMC 2 Year without Rubber": 4500.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL800CB1SID",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "StainFighterTM",
+      "Bulky",
+      "Baby Wear",
+      "Anti Allergen",
+      "Rinse+Spin",
+      "Tub Clean",
+      "Jeans",
+      "Sports Wear",
+      "Saree",
+      "Uniform"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Deep Clean",
+        "Aqua Energie",
+        "In-built Heater",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum",
+        "Intelligent Wash Programs"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Auto Tub Clean",
+        "9 Swirl Wash"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "80": "8 Kg Capacity",
+      "0": "Front UI",
+      "CB": "Cobalt Blue",
+      "1": "Solid Shade Finish",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "AMC 1 Year": 3050.0,
+      "AMC 1 Year without Rubber": 2650.0,
+      "AMC 2 Year": 5250.0,
+      "AMC 2 Year without Rubber": 4500.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL800EP1S",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "StainFighterTM",
+      "Bulky (Blankets/Jeans/Curtains)",
+      "Baby Wear",
+      "Anti-Allergen",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum",
+        "3D Wash",
+        "In-built heater",
+        "Clean with Steam"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Air Dry",
+        "Delay",
+        "Tub Clean Wash",
+        "Favourite",
+        "Pre Clean"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "80": "8 Kg Capacity",
+      "0": "Front UI",
+      "EP": "Espresso",
+      "1": "Solid Shade Finish",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "AMC 1 Year": 3050.0,
+      "AMC 1 Year without Rubber": 2650.0,
+      "AMC 2 Year": 5250.0,
+      "AMC 2 Year without Rubber": 4500.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL801AG1",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "Saree",
+      "Blankets (Curtain/Bulky)",
+      "Baby Wear",
+      "Uniform",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Shower Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "80": "8 Kg Capacity",
+      "1": "Solid Shade Finish",
+      "AG": "Anthracite Grey"
+    },
+    "amcEw": {
+      "AMC 1 Year": 3050.0,
+      "AMC 1 Year without Rubber": 2650.0,
+      "AMC 2 Year": 5250.0,
+      "AMC 2 Year without Rubber": 4500.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL801EP1S",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "Bulky (Blankets/Jeans/Curtains)",
+      "Baby Wear",
+      "Anti-Allergen",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum",
+        "3D Wash",
+        "In-built heater",
+        "Clean with Steam"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Delay Start",
+        "Favourite",
+        "Air Dry",
+        "Soft Closing Lid",
+        "Auto Restart",
+        "Buzzer"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "80": "8 Kg Capacity",
+      "1": "Solid Shade Finish",
+      "EP": "Espresso",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "AMC 1 Year": 3050.0,
+      "AMC 1 Year without Rubber": 2650.0,
+      "AMC 2 Year": 5250.0,
+      "AMC 2 Year without Rubber": 4500.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL801MB1S",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "Bulky (Blankets/Jeans/Curtains)",
+      "Baby Wear",
+      "Anti-Allergen",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum",
+        "3D Wash",
+        "In-built heater",
+        "Clean with Steam"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Delay Start",
+        "Favourite",
+        "Air Dry",
+        "Soft Closing Lid",
+        "Auto Restart",
+        "Buzzer"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "80": "8 Kg Capacity",
+      "1": "Solid Shade Finish",
+      "MB": "Midnight Black",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "AMC 1 Year": 3050.0,
+      "AMC 1 Year without Rubber": 2650.0,
+      "AMC 2 Year": 5250.0,
+      "AMC 2 Year without Rubber": 4500.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL801MG1",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "Saree",
+      "Blankets/Curtains/Bulky",
+      "Baby Wear",
+      "Uniform",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Shower Rinse"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "80": "8 Kg Capacity",
+      "1": "Solid Shade Finish",
+      "MG": "Medium Grey"
+    },
+    "amcEw": {
+      "AMC 1 Year": 3050.0,
+      "AMC 1 Year without Rubber": 2650.0,
+      "AMC 2 Year": 5250.0,
+      "AMC 2 Year without Rubber": 4500.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL801MM2SWID",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "StainFighterTM",
+      "Bulky",
+      "Baby Wear",
+      "Anti Allergen",
+      "Rinse+Spin",
+      "Tub Clean",
+      "Jeans",
+      "Sports Wear",
+      "Saree",
+      "Uniform"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "DeepClean Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "4-Bi-Axial Clothes Rotation",
+        "In-built Heater",
+        "Crescent Moon Drum",
+        "Intelligent Wash Programs"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Fresh Air Dry",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Auto Tub Clean",
+        "9 Swirl Wash"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "80": "8 Kg Capacity",
+      "1": "Solid Shade Finish",
+      "MM": "Mystic Mocha",
+      "S": "Steam Series",
+      "W": "WiFi Enabled"
+    },
+    "amcEw": {
+      "AMC 1 Year": 3050.0,
+      "AMC 1 Year without Rubber": 2650.0,
+      "AMC 2 Year": 5250.0,
+      "AMC 2 Year without Rubber": 4500.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL801MS2ID",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Saree",
+      "Synthetic",
+      "Delicates",
+      "Blankets (Curtain/Bulky)",
+      "Baby Wear",
+      "Uniform",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "Crescent Moon Drum",
+        "ActivMix",
+        "Eco Inverter Motor"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Air Dry",
+        "Delay Start",
+        "Favourite",
+        "Soft Closing Lid",
+        "Lint Tower Filter"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "80": "8 Kg Capacity",
+      "1": "Solid Shade Finish",
+      "MS": "Mystic Silver",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "AMC 1 Year": 3050.0,
+      "AMC 1 Year without Rubber": 2650.0,
+      "AMC 2 Year": 5250.0,
+      "AMC 2 Year without Rubber": 4500.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL801NB2SWID",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Synthetic",
+      "Delicates",
+      "StainFighterTM",
+      "Bulky",
+      "Baby Wear",
+      "Anti Allergen",
+      "Rinse+Spin",
+      "Tub Clean",
+      "Jeans",
+      "Sports Wear",
+      "Saree",
+      "Uniform"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Deep Clean",
+        "Aqua Energie",
+        "3D Wash",
+        "4D Wash",
+        "In-built Heater",
+        "Crescent Moon Drum",
+        "Intelligent Wash Programs"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Tub Clean"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softner Dispenser",
+        "Bleach Dispenser",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing Lid",
+        "Spray Wash"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "80": "8 Kg Capacity",
+      "1": "Solid Shade Finish",
+      "NB": "Noir Black",
+      "S": "Steam Series",
+      "W": "WiFi Enabled"
+    },
+    "amcEw": {
+      "AMC 1 Year": 3050.0,
+      "AMC 1 Year without Rubber": 2650.0,
+      "AMC 2 Year": 5250.0,
+      "AMC 2 Year without Rubber": 4500.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL801OG2ID",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Cotton",
+      "Express 30’",
+      "Saree",
+      "Synthetic",
+      "Delicates",
+      "Blankets (Curtain/Bulky)",
+      "Baby Wear",
+      "Uniform",
+      "Rinse+Spin"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "Aqua Energie",
+        "Triadic Pulsator",
+        "Crescent Moon Drum",
+        "ActivMix",
+        "Eco Inverter Motor"
+      ],
+      "Machine Care": [
+        "Auto Tub Clean",
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Air Dry",
+        "Delay Start",
+        "Favourite",
+        "Tub Clean Reminder"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "80": "8 Kg Capacity",
+      "1": "Solid Shade Finish",
+      "OG": "Onyx Grey"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL-S4BLS 10.0KG AQUA",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense",
+      "My Cycle",
+      "Delicates",
+      "Express 30’",
+      "Blankets (Curtains/Bulky)",
+      "Saree",
+      "Sports Wear",
+      "Anti-Allergen",
+      "Baby Wear",
+      "Jeans",
+      "StainFighterTM"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Deep Clean",
+        "Aqua Energie",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "4D Wash",
+        "Crescent Moon Drum",
+        "In-built heater",
+        "Powered by Ai"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Tub Dry",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Tower Filter",
+        "Drum Lamp (LED Lamp)"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "BL": "Black VCM Color",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "10.0Kg": "10.0 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL-S4RBS 9.0KG AQUA",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense",
+      "My Cycle",
+      "Delicates",
+      "Express 30’",
+      "Blankets (Curtains/Bulky)",
+      "Saree",
+      "Sports Wear",
+      "Anti-Allergen",
+      "Baby Wear",
+      "Jeans",
+      "StainFighterTM"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Deep Clean",
+        "Aqua Energie",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "4D Wash",
+        "Crescent Moon Drum",
+        "In-built heater",
+        "Powered by Ai"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Tub Dry",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Tower Filter",
+        "Drum Lamp (LED Lamp)"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "RB": "Royal Blue Color",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "9.0Kg": "9.0 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 4050.0,
+      "AMC 1 Year without Rubber": 3500.0,
+      "AMC 2 Year": 7300.0,
+      "AMC 2 Year without Rubber": 6300.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL-S4RBS 10.0KG AQUA",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense",
+      "My Cycle",
+      "Delicates",
+      "Express 30’",
+      "Blankets (Curtains/Bulky)",
+      "Saree",
+      "Sports Wear",
+      "Anti-Allergen",
+      "Baby Wear",
+      "Jeans",
+      "StainFighterTM"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Deep Clean",
+        "Aqua Energie",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "4D Wash",
+        "Crescent Moon Drum",
+        "In-built heater",
+        "Powered by Ai"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Tub Dry",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Tower Filter",
+        "Drum Lamp (LED Lamp)"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "RB": "Royal Blue Color",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "10.0Kg": "10.0 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 4350.0,
+      "AMC 1 Year without Rubber": 3750.0,
+      "AMC 2 Year": 7800.0,
+      "AMC 2 Year without Rubber": 6750.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL-S4STS 9.0KG AQUA",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense",
+      "My Cycle",
+      "Delicates",
+      "Express 30’",
+      "Blankets (Curtains/Bulky)",
+      "Saree",
+      "Sports Wear",
+      "Anti-Allergen",
+      "Baby Wear",
+      "Jeans",
+      "StainFighterTM"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "4D Wash",
+        "Crescent Moon Drum",
+        "In-built heater"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Tub Dry",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Tower Filter",
+        "Drum Lamp (LED Lamp)"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "ST": "Stainless VCM Color",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "9.0Kg": "9.0 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 4050.0,
+      "AMC 1 Year without Rubber": 3500.0,
+      "AMC 2 Year": 7300.0,
+      "AMC 2 Year without Rubber": 6300.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL-SIBS 10.0KG AQUA",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense",
+      "My Cycle",
+      "Delicates",
+      "Express 30’",
+      "Blankets (Curtains/Bulky)",
+      "Saree",
+      "Sports Wear",
+      "Anti-Allergen",
+      "Baby Wear",
+      "Jeans",
+      "StainFighterTM"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "4D Wash",
+        "Crescent Moon Drum",
+        "In-built heater"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Tub Dry",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Tower Filter",
+        "Drum Lamp (LED Lamp)"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "10.0Kg": "10.0 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 3450.0,
+      "AMC 1 Year without Rubber": 2950.0,
+      "AMC 2 Year": 6200.0,
+      "AMC 2 Year without Rubber": 5250.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TL-SLBS 9.0KG AQUA",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense",
+      "My Cycle",
+      "Delicates",
+      "Express 30’",
+      "Blankets (Curtains/Bulky)",
+      "Saree",
+      "Sports Wear",
+      "Anti-Allergen",
+      "Baby Wear",
+      "Jeans",
+      "StainFighterTM"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "4D Wash",
+        "Crescent Moon Drum",
+        "In-built heater"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Tub Dry",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Tower Filter",
+        "Drum Lamp (LED Lamp)"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "LB": "Luxury Black",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "TL - S1BRS 7 Kg Aqua",
+    "type": "topload",
+    "programs": [
+      "Mix/Daily",
+      "Smart Sense",
+      "Express 30’",
+      "Blankets (Curtains/Bulky)",
+      "Baby Wear",
+      "Jeans",
+      "Anti-Allergen",
+      "Delicates",
+      "StainFighterTM",
+      "My Cycle"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Aqua Spa Therapy",
+        "Pentad Pulsator",
+        "Tri Axial Cloth Movements",
+        "3D Wash",
+        "Crescent Moon Drum",
+        "In-built heater"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Soft Closing",
+        "Auto Tub Clean"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "R": "Round Door",
+      "BR": "Brown Color",
+      "G": "Grey Color",
+      "S": "Steam Series",
+      "7Kg": "7 Kg Capacity",
+      "Aqua": "Aqua Energy"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2700.0,
+      "AMC 1 Year without Rubber": 2400.0,
+      "AMC 2 Year": 4700.0,
+      "AMC 2 Year without Rubber": 4250.0,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "TL - SDIN",
+    "type": "topload",
+    "programs": [
+      "Smart Sense",
+      "Aqua Conserve",
+      "Hygiene+",
+      "Silent",
+      "Express",
+      "Favorite",
+      "Tub Clean",
+      "Sportswear",
+      "Delicates",
+      "Blankets",
+      "Jeans",
+      "Sari"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Aqua Spa Therapy",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "4D Wash",
+        "Crescent Moon Drum",
+        "In-built Heater",
+        "Intelligent Wash Programs"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Tub Dry",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Auto Tub Clean"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "SD": "Square Door",
+      "IN": "Inox Color",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "AMC 1 Year": 3500.0,
+      "AMC 1 Year without Rubber": 3000.0,
+      "AMC 2 Year": 6250.0,
+      "AMC 2 Year without Rubber": 5350.0,
+      "Motor Warranty 10 years": 847.5,
+      "EXT WTY 5TH YEAR": 1800.0,
+      "Extended Warranty 6 Months - IFB Point": 600.0
+    },
+    "testMode": {}
+  },
+  {
+    "model": "TL - SSBL",
+    "type": "topload",
+    "programs": [
+      "Smart Sense",
+      "Aqua Conserve",
+      "Hygiene+",
+      "Silent",
+      "Express",
+      "Favorite",
+      "Tub Clean",
+      "Sportswear",
+      "Delicates",
+      "Blankets",
+      "Jeans",
+      "Sari"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Aqua Spa Therapy",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "4D Wash",
+        "Crescent Moon Drum",
+        "In-built Heater",
+        "Intelligent Wash Programs"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Tub Dry",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Auto Tub Clean"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "SS": "Sparkling Silver Color",
+      "BL": "Black VCM Color",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "Motor Warranty 10 years": 847.5
+    },
+    "testMode": {}
+  },
+  {
+    "model": "TL- SSDG",
+    "type": "topload",
+    "programs": [
+      "Smart Sense",
+      "Aqua Conserve",
+      "Hygiene+",
+      "Silent",
+      "Express",
+      "Favorite",
+      "Tub Clean",
+      "Sportswear",
+      "Delicates",
+      "Blankets",
+      "Jeans",
+      "Sari"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Aqua Energie",
+        "Aqua Spa Therapy",
+        "Triadic Pulsator",
+        "Bi-Axial Clothes Rotation",
+        "4D Wash",
+        "Crescent Moon Drum",
+        "In-built Heater",
+        "Intelligent Wash Programs"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Tub Dry",
+        "Auto Softener Dispenser",
+        "Bleach Dispenser",
+        "Air Dry Option",
+        "Wheels",
+        "Lint Tower Filter",
+        "Auto Tub Clean"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TL": "Top Load",
+      "SD": "Square Door",
+      "SS": "Sparkling Silver Color",
+      "G": "Grey Color",
+      "S": "Steam Series"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2600.0,
+      "AMC 1 Year without Rubber": 2150.0,
+      "AMC 2 Year": 4550.0,
+      "AMC 2 Year without Rubber": 3750.0,
+      "Labour AMC 1 Year": 1650.0,
+      "Motor Warranty 10 years": 847.5,
+      "EXT WTY 5TH YEAR": 1800.0
+    },
+    "testMode": {}
+  }
+]

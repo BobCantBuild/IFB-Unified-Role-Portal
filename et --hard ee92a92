@@ -1,0 +1,103 @@
+[33m1576e83[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdev[m[33m, [m[1;31morigin/dev[m[33m)[m Add Top Load models + combined search with type badges
+[33mee92a92[m Updated stock size
+[33mea224d7[m Updated data set
+[33m54a046b[m Updated data set
+[33mbc24f1b[m Updated data set
+[33mc3a4bbf[m Updated data set
+[33ma6e1f77[m Move model-lookup files to root
+[33ma0f2866[m Move model-lookup files to root
+[33mdefc3e5[m Move model-lookup files to root
+[33m7a0b807[m Move model-lookup files to root
+[33m304744e[m Move model-lookup files to root
+[33mcf06398[m Add IFB model lookup
+[33m59bab83[m Add IFB model lookup
+[33m81cb720[m Add IFB model lookup
+[33mc19600e[m Add IFB model lookup
+[33m1552b15[m Add IFB model lookup
+[33mbce131b[m RSS Feed update
+[33m6756ac1[m RSS Feed update
+[33m8471ea1[m Remove unused docs and test files
+[33mf953435[m Fix duplicate Latest News heading and missing newsList div
+[33m8db2345[m Remove duplicate Latest News header
+[33m0cb8fab[m Remove duplicate IFB Latest News heading
+[33md3e5de0[m Remove age filter, show real publisher name
+[33m5b1d689[m 5 news cards in a single row
+[33mac62442[m Expand news list to full width
+[33m05d7cbb[m Simplify news to single top 5 IFB news list
+[33me6f604d[m Remove cron — not needed on Hobby plan
+[33m8dae189[m Remove all LinkedIn and Instagram CSS traces
+[33mda24778[m Replace social feeds with 5-category IFB news
+[33m323be37[m Replace social feeds with 5-category IFB news
+[33m87b349d[m ✅ FIX: Use demo data as primary source, Apify as optional override
+[33m1551bd5[m 🐛 FIX: Add comprehensive error logging and try-catch to identify issue
+[33m83bb5cc[m 🚀 FORCE REDEPLOY: Add version marker to trigger Vercel rebuild
+[33m866fa92[m 🐛 FIX: Add comprehensive logging + fallback demo data for social feeds
+[33m6b5488d[m ✅ FINAL FIX: Correct news article age filter and refresh schedule
+[33m6baffef[m 🔧 FIX: Filter old news articles (7-day cutoff) and reduce cache to 15 minutes
+[33m48cdf1c[m 📝 Add: Final summary for node-cache migration (session complete!)
+[33m65e46ba[m 🎉 MAJOR IMPROVEMENT: Replace Redis with node-cache (zero external APIs!)
+[33m59785bb[m 🎯 Add: Quick action checklist for Vercel deployment
+[33m67d6453[m 📝 Add: Completion report for 30-min refresh implementation
+[33m384ae6c[m 🔧 MAJOR FIX: Implement 30-min refresh cycle with Redis caching
+[33mb3332e4[m Fix: correct LinkedIn actor ID oAf7819001ttSmFDv with companyUrls input and datePublished mapping
+[33m358d810[m Fix: LinkedIn actor requires companyUrls not companyUrl
+[33m5342643[m Fix: correct LinkedIn actor input field to urls[]
+[33m07721b0[m Fix: use exact LinkedIn actor ID oAf7819001ttSmFDv
+[33m6bdf0fb[m Fix: switch LinkedIn to automation-lab actor, update field mapping
+[33mf3a39ea[m Self-contained social feed - no manual steps ever
+[33mcaf64ee[m Replace Apify with direct RSS fetch for LinkedIn and Instagram
+[33m3f4760f[m Fix LinkedIn input format, fix cron timing to 10min gap
+[33ma46444d[m Increase social cache TTL to 24 hours
+[33m04fa501[m Rename social.js to social-feed.js to force Vercel cache bust
+[33m8dce5fe[m Force redeploy
+[33m5272644[m Fix getRedis missing in social.js, add rss-parser to deps
+[33mac3b175[m Fix social 500 crash - remove Apify call from handler
+[33m48d1d7b[m Fix social feed: auto-fetch when cache is empty instead of returning pending
+[33me37c574[m Fix Redis URL quotes in env
+[33mf650a95[m Remove Redis cache from news, always fetch fresh sorted by date
+[33m019941e[m Fix news feed to show newest articles first with date sort
+[33mbffb098[m Fix LinkedIn actor ID and input in social-cron
+[33m58a203e[m Diverse news topics, fix LinkedIn post URL, equal column heights
+[33m8cca917[m Diverse news topics, fix LinkedIn post URL, equal column heights
+[33m264c350[m Fix Instagram mapping with all format fallbacks
+[33m291f9be[m Clean rewrite of social cron and collect
+[33m13487c5[m Force redeploy
+[33m3c2ca47[m Fix LinkedIn actor input field to company_name
+[33mfd3991b[m Switch to apimaestro company posts actor for LinkedIn
+[33m018e6dd[m Add social-collect to cron schedule
+[33mf8b6aad[m Add social-collect endpoint to fetch Apify results by runId
+[33m2e074c4[m Fix timeout: fire-and-forget with Apify webhook
+[33me140e52[m Add cache clear and debug endpoints to social-cron
+[33m3253423[m Use HarvestAPI LinkedIn actor with correct profileUrls input
+[33mc97f104[m Switch LinkedIn to ifb-appliances page
+[33m3b9404c[m Switch LinkedIn to ifb-appliances page
+[33m7a983bc[m Fix LinkedIn actor input to use correct urls field
+[33m0254a0a[m Fix api routes and social feed widget
+[33m7e45144[m Fix Redis lazyConnect error
+[33mf30576d[m Fix Apify actor IDs for LinkedIn and Instagram
+[33mb61cb6a[m Fix Apify actor IDs for LinkedIn and Instagram
+[33m32eb7d3[m Fix cron schedule for Hobby plan
+[33mac0a161[m Fix api routes and social feed widget
+[33mab68f9a[m Add social feed and news widget
+[33m17b74c5[m Add social feed and news widget
+[33m5697332[m Add social feed and news widget
+[33mdd75b3b[m Add social feed and news widget
+[33mc6ca220[m fix api/stock.js
+[33m167bd42[m fix api/stock.js
+[33m44a7124[m fix api/stock.js
+[33ma973f2b[m fix api/stock.js
+[33m979dbfc[m fix api/stock.js
+[33mfe1e269[m fix api/stock.js
+[33mc542643[m fix api/stock.js
+[33mda0c58a[m fix api/stock.js
+[33mb000857[m fix api/stock.js
+[33mf7b0c4c[m fix api/stock.js
+[33me5e7e2b[m fix api/stock.js
+[33meea594d[m fix api/stock.js
+[33m4f49acf[m fix api/stock.js
+[33m1b2ac82[m fix api/stock.js
+[33mbb16578[m fix api/stock.js
+[33m47d9f77[m fix api/stock.js
+[33m41a6ff4[m fix proxy URL
+[33m6c50441[m fix proxy URL
+[33m60424da[m first commit
