@@ -8,12 +8,14 @@
   /* ─── TL descriptions — exposed globally for overlay descMap ─── */
   window._TL_DESC = {
   "Smart Sense": "Intelligent sensing program that automatically detects laundry load and optimises water level, wash time and rinse cycles for efficient washing.",
-  "Smart Sense + Wash": "Program combination where Smart Sense and Wash LEDs glow together.",
+    "DeepClean Powered by Ai": "Intelligent sensing program that automatically detects laundry load and optimises water level, wash time and rinse cycles for efficient washing.",
+    "Smart Sense + Wash": "Program combination where Smart Sense and Wash LEDs glow together.",
   "Smart Sense + Wash + Rinse": "Program combination where Smart Sense, Wash and Rinse LEDs glow together.",
 
   "Wash + Rinse + Spin": "Combination program for washing, rinsing and spinning.",
   "Wash + Rinse": "Combination program for washing and rinsing.",
   "Rinse + Spin": "Combination program for rinsing and spinning.",
+  "Rinse+Spin": "Combination program for rinsing and spinning.",
   "Only Wash": "Performs only washing operation.",
   "Only Rinse": "Performs only rinsing operation.",
   "Only Spin": "Performs only spinning operation.",
