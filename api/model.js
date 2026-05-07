@@ -3,39 +3,36 @@ const fs   = require('fs');
 
 let frontData = null, topData = null, wdrData = null;
 
-function loadFront() {
-  if (frontData) return frontData;
-  const p = path.join(process.cwd(), 'data', 'model-data.json');
-  frontData = JSON.parse(fs.readFileSync(p, 'utf-8'));
-  console.log('[model] front:', frontData.length); return frontData;
-}
-function loadTop() {
-  if (topData) return topData;
-  const p = path.join(process.cwd(), 'data', 'topload-model-data.json');
-  topData = JSON.parse(fs.readFileSync(p, 'utf-8'));
-  console.log('[model] top:', topData.length); return topData;
-}
-function loadWdr() {
-  if (wdrData) return wdrData;
-  const p = path.join(process.cwd(), 'data', 'wdr-model-data.json');
-  wdrData = JSON.parse(fs.readFileSync(p, 'utf-8'));
-  console.log('[model] wdr:', wdrData.length); return wdrData;
+function load(key, filename) {
+  const p = path.join(process.cwd(), 'data', filename);
+  if (!fs.existsSync(p)) throw new Error(filename + ' not found at: ' + p);
+  const d = JSON.parse(fs.readFileSync(p, 'utf-8'));
+  console.log('[model]', key + ':', d.length);
+  return d;
 }
 
 module.exports = async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Cache-Control', 's-maxage=3600');
-  const query = (req.query.q    || '').trim().toLowerCase();
-  const type  = (req.query.type || '').trim().toLowerCase();
-  if (!query || query.length < 2)
+
+  const q    = (req.query.q    || '').trim().toLowerCase();
+  const type = (req.query.type || '').trim().toLowerCase();
+
+  if (!q || q.length < 2)
     return res.status(400).json({ ok: false, error: 'Query too short.' });
+
   try {
+    if (!frontData) frontData = load('front', 'model-data.json');
+    if (!topData)   topData   = load('top',   'topload-model-data.json');
+    if (!wdrData)   wdrData   = load('wdr',   'wdr-model-data.json');
+
     let pool = [];
-    if      (type === 'front') pool = loadFront();
-    else if (type === 'top')   pool = loadTop();
-    else if (type === 'wdr')   pool = loadWdr();
-    else pool = [...loadFront(), ...loadTop(), ...loadWdr()];
-    const results = pool.filter(m => m.model.toLowerCase().includes(query));
+    if      (type === 'front') pool = frontData;
+    else if (type === 'top')   pool = topData;
+    else if (type === 'wdr')   pool = wdrData;
+    else pool = [...frontData, ...topData, ...wdrData];
+
+    const results = pool.filter(m => m.model.toLowerCase().includes(q));
     return res.status(200).json({ ok: true, found: results.length > 0, count: results.length, results });
   } catch (err) {
     console.error('[model]', err.message);
