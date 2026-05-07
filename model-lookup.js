@@ -528,7 +528,7 @@
   "Aroma.": "A refreshing cycle that uses fragrance to leave clothes smelling fresh after washing.",
   "Cupboard Dry / Eco Dry": "Cupboard Dry removes all moisture for immediate storage; Eco Dry uses less energy for lightly damp clothes."
 };
-  const DESC_MAP = { front: FL_DESC, top: TL_DESC, wdr: WDR_DESC };
+  const DESC_MAP = { front: FL_DESC, top: TL_DESC, topload: TL_DESC, wdr: WDR_DESC };
 
   const TYPES = [
     { id: 'front', label: 'Front Load', emoji: '🟢', ph: 'Search Front Load model… e.g. Senator Neo, Eva ZX' },
@@ -621,9 +621,9 @@
   function renderFeatures(d, dm) {
     const kf   = d.keyFeatures || {};
     const secs = [
-      { title: '?? Advanced Wash Technology', key: 'Advanced Wash Technology' },
-      { title: '??️ Machine Care',       key: 'Machine Care'             },
-      { title: '?? User Convenience',         key: 'User Convenience'         },
+      { title: 'Advanced Wash Technology', key: 'Advanced Wash Technology' },
+      { title: 'Machine Care',       key: 'Machine Care'             },
+      { title: 'User Convenience',         key: 'User Convenience'         },
     ];
     const html = secs.map(function(s) {
       const items = kf[s.key] || [];
@@ -687,11 +687,11 @@
 
   /* ── Overlay ── */
   const TABS = [
-    { id: 'programs',     label: '?? Programs'     },
-    { id: 'features',     label: ' Key Features'       },
-    { id: 'nomenclature', label: '?? Nomenclature' },
-    { id: 'amc',          label: '?? AMC / EW'     },
-    { id: 'testmode',     label: '??️ Test Mode' },
+    { id: 'programs',     label: 'Programs'     },
+    { id: 'features',     label: 'Key Features' },
+    { id: 'nomenclature', label: 'Nomenclature' },
+    { id: 'amc',          label: 'AMC / EW'     },
+    { id: 'testmode',     label: 'Test Mode'    },
   ];
   let curData = null, curTab = 'programs';
 
