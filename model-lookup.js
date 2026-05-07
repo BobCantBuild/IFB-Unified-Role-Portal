@@ -4,7 +4,7 @@
 ═══════════════════════════════════════════════════════ */
 (function () {
 
-  const FL_DESC  = {
+  const FL_DESC = {
   "Cotton Normal": "Cotton colour-fast garments such as shirts, pants, uniforms, bed and table linen, towels, nightdresses, pyjamas, underwear, etc.",
   "Cotton Eco Plus": "An energy-efficient cotton wash for lightly to normally soiled cotton items. Achieves effective cleaning at lower temperatures, reducing electricity and water consumption.",
   "Cotton Eco": "A resource-saving wash variant for cotton items, optimising water levels and temperature to deliver clean results while minimising energy use.",
@@ -131,9 +131,18 @@
   "Technology": "Proprietary IFB wash technology integrated into this model.",
   "Express 15’": "Lightly soiled coloured laundry. Completed in 15 minutes — the fastest programme available.",
   "Express 30’": "Lightly soiled coloured laundry. Completed in 30 minutes.",
-  "Mix/Daily 60’": "Cotton, synthetic and easy-care garments with moderate soiling. Extended 60-minute cycle for a deeper clean."
+  "Mix/Daily 60’": "Cotton, synthetic and easy-care garments with moderate soiling. Extended 60-minute cycle for a deeper clean.",
+  "Anti Crease": "Periodically rotates the drum after the wash cycle ends to prevent wrinkles from setting.",
+  "Child Lock": "Locks the machine's control panel to prevent children from accidentally changing settings.",
+  "Inbuilt Easy Iron": "Uses steam and controlled tumbling to reduce creases, making clothes easier to iron.",
+  "Laundry Add": "Pause the cycle in the early stage to add forgotten garments, then resume without restarting.",
+  "Laundry Add Option": "Allows adding forgotten items during the early stage of the wash cycle.",
+  "Pre Wash": "An initial short soak and rinse cycle before the main wash — ideal for heavily soiled garments.",
+  "Rapid Wash": "A quick wash cycle for small lightly soiled loads when time is short.",
+  "Start/Pause Program Interrupt": "Pause the running cycle at any point to add or remove laundry, then resume seamlessly.",
+  "Steam Wash": "Steam is injected during the wash for deeper cleaning, better stain removal and fresher-smelling clothes."
 };
-  const TL_DESC  = {
+    const TL_DESC  = {
   "Smart Sense": "An intelligent program that uses advanced sensors and microchip technology to automatically determine the laundry load and optimise water, wash time, rinse cycles and spinning time.",
   "Smart Sense + Wash": "Program combination where Smart Sense and Wash LEDs glow together.",
   "Wash + Rinse + Spin": "Combination program for washing, rinsing and spinning.",

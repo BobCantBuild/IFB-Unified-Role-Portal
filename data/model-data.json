@@ -1,6 +1,7 @@
 [
   {
     "model": "Eva ZX",
+    "type": "front",
     "programs": [
       "Cotton Normal/ Cotton Eco Plus",
       "Synthetic Daily",
@@ -38,12 +39,11 @@
       "ZX": "Color: White"
     },
     "amcEw": {
-      "AMC 1 Year": 3850.0,
+      "Motor Warranty 10 years": 847.5,
       "AMC 1 Year without Rubber": 3300.0,
-      "AMC 2 Year": 7000.0,
-      "AMC 2 Year without Rubber": 5900.0,
+      "Labour AMC 1 Year": 2250.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 2 Year without Rubber": 5900.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -53,6 +53,7 @@
   },
   {
     "model": "Eva ZXS",
+    "type": "front",
     "programs": [
       "Cotton Normal/ Cotton Eco Plus",
       "Synthetic Daily",
@@ -91,12 +92,11 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "AMC 1 Year": 4000.0,
+      "Motor Warranty 10 years": 847.5,
       "AMC 1 Year without Rubber": 3450.0,
-      "AMC 2 Year": 7300.0,
       "AMC 2 Year without Rubber": 6150.0,
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "Labour AMC 1 Year": 2250.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -106,6 +106,7 @@
   },
   {
     "model": "IFB Diva Aqua BXS 6008",
+    "type": "front",
     "programs": [
       "Mix/ Daily",
       "Cotton/ Cotton Eco",
@@ -144,12 +145,9 @@
       "6008": "Capacity & RPM: 6 kg | 800 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 2900.0,
-      "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year": 5100.0,
-      "AMC 2 Year without Rubber": 4400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 2 Year without Rubber": 4400.0,
+      "AMC 1 Year without Rubber": 2500.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -159,6 +157,7 @@
   },
   {
     "model": "IFB Diva Aqua BXS",
+    "type": "front",
     "programs": [
       "Mix/ Daily",
       "Cotton/ Cotton Eco",
@@ -196,12 +195,7 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "AMC 1 Year": 2900.0,
-      "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year": 5100.0,
-      "AMC 2 Year without Rubber": 4400.0,
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -211,6 +205,7 @@
   },
   {
     "model": "IFB Diva Aqua MXS 7010",
+    "type": "front",
     "programs": [
       "Mix/ Daily",
       "Cotton/ Cotton Eco",
@@ -249,12 +244,9 @@
       "7010": "Capacity & RPM: 7 kg | 1000 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 2900.0,
-      "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year": 5100.0,
-      "AMC 2 Year without Rubber": 4400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 2500.0,
+      "AMC 2 Year without Rubber": 4400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -264,6 +256,7 @@
   },
   {
     "model": "IFB Diva Aqua SBS 6008",
+    "type": "front",
     "programs": [
       "Mix/ Daily",
       "Cotton/ Cotton Eco",
@@ -302,12 +295,9 @@
       "6008": "Capacity & RPM: 6 kg | 800 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 2900.0,
-      "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year": 5100.0,
-      "AMC 2 Year without Rubber": 4400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 2 Year without Rubber": 4400.0,
+      "AMC 1 Year without Rubber": 2500.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -317,6 +307,7 @@
   },
   {
     "model": "IFB Diva Aqua SBS",
+    "type": "front",
     "programs": [
       "Mix/ Daily",
       "Cotton/ Cotton Eco",
@@ -354,12 +345,7 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "AMC 1 Year": 2900.0,
-      "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year": 5100.0,
-      "AMC 2 Year without Rubber": 4400.0,
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -369,6 +355,7 @@
   },
   {
     "model": "IFB Diva Aqua SXS 6008",
+    "type": "front",
     "programs": [
       "Mix/ Daily",
       "Cotton/ Cotton Eco",
@@ -407,12 +394,9 @@
       "6008": "Capacity & RPM: 6 kg | 800 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 2900.0,
-      "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year": 5100.0,
-      "AMC 2 Year without Rubber": 4400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 2 Year without Rubber": 4400.0,
+      "AMC 1 Year without Rubber": 2500.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -422,6 +406,7 @@
   },
   {
     "model": "IFB Diva Aqua SXS 7010",
+    "type": "front",
     "programs": [
       "Mix/ Daily",
       "Cotton/ Cotton Eco",
@@ -460,12 +445,9 @@
       "7010": "Capacity & RPM: 7 kg | 1000 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 4650.0,
-      "AMC 1 Year without Rubber": 4000.0,
-      "AMC 2 Year": 8450.0,
-      "AMC 2 Year without Rubber": 7150.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 4000.0,
+      "AMC 2 Year without Rubber": 7150.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -475,6 +457,7 @@
   },
   {
     "model": "IFB Diva Aqua SXS",
+    "type": "front",
     "programs": [
       "Mix/ Daily",
       "Cotton/ Cotton Eco",
@@ -512,12 +495,9 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "AMC 1 Year": 2900.0,
-      "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year": 5100.0,
-      "AMC 2 Year without Rubber": 4400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 4000.0,
+      "AMC 2 Year without Rubber": 7150.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -527,6 +507,7 @@
   },
   {
     "model": "IFB Diva Aqua VSS 6008",
+    "type": "front",
     "programs": [
       "Mix/ Daily",
       "Cotton/ Cotton Eco",
@@ -565,12 +546,9 @@
       "6008": "Capacity & RPM: 6 kg | 800 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 2900.0,
-      "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year": 5100.0,
-      "AMC 2 Year without Rubber": 4400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 2 Year without Rubber": 4400.0,
+      "AMC 1 Year without Rubber": 2500.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -580,6 +558,7 @@
   },
   {
     "model": "IFB Diva Aqua VSS 7010",
+    "type": "front",
     "programs": [
       "Mix/ Daily",
       "Cotton/ Cotton Eco",
@@ -618,12 +597,9 @@
       "7010": "Capacity & RPM: 7 kg | 1000 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 2900.0,
-      "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year": 5100.0,
-      "AMC 2 Year without Rubber": 4400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 2500.0,
+      "AMC 2 Year without Rubber": 4400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -633,6 +609,7 @@
   },
   {
     "model": "IFB Diva Aqua VSS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -641,7 +618,7 @@
       "Express 15'",
       "Wool",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Bulky/Bedding"
     ],
     "keyFeatures": {
@@ -651,7 +628,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -672,12 +649,9 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "AMC 1 Year": 2900.0,
-      "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year": 5100.0,
-      "AMC 2 Year without Rubber": 4400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 2500.0,
+      "AMC 2 Year without Rubber": 4400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -687,6 +661,7 @@
   },
   {
     "model": "IFB Diva GXN 6010 CMS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -695,17 +670,17 @@
       "Express 15'",
       "Wool",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Bulky/Bedding"
     ],
     "keyFeatures": {
       "Advanced Wash Technology": [
         "Powered by Ai",
-        "Oxyjet Technology",
+        "Oxyjet® Technology",
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -730,8 +705,7 @@
       "CMS": "Common Motor Software"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -741,12 +715,13 @@
   },
   {
     "model": "IFB Diva Plus BXS 6008",
+    "type": "front",
     "programs": [
       "Cotton",
       "Cotton Eco",
       "Synthetic/Daily",
       "Quick 30",
-      "CradleWash",
+      "CradleWash®",
       "Woollens 30",
       "Mix Soiled 40"
     ],
@@ -757,7 +732,7 @@
         "Start/Pause (Program Interrupt)",
         "2D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -782,12 +757,9 @@
       "6008": "Capacity & RPM: 6 kg | 800 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 2900.0,
-      "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year": 5100.0,
-      "AMC 2 Year without Rubber": 4400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 2 Year without Rubber": 4400.0,
+      "AMC 1 Year without Rubber": 2500.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -797,12 +769,13 @@
   },
   {
     "model": "IFB Diva Plus VXS 6008",
+    "type": "front",
     "programs": [
       "Cotton",
       "Cotton Eco",
       "Synthetic/Daily",
       "Quick 30",
-      "CradleWash",
+      "CradleWash®",
       "Woollens 30",
       "Mix Soiled 40"
     ],
@@ -813,7 +786,7 @@
         "Start/Pause",
         "2D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -838,12 +811,9 @@
       "6008": "Capacity & RPM: 6 kg | 800 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 2900.0,
-      "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year": 5100.0,
-      "AMC 2 Year without Rubber": 4400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 2 Year without Rubber": 4400.0,
+      "AMC 1 Year without Rubber": 2500.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -853,6 +823,7 @@
   },
   {
     "model": "IFB Diva SXN 6010K CMS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -861,7 +832,7 @@
       "Express 15'",
       "Wool",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Bulky/Bedding"
     ],
     "keyFeatures": {
@@ -870,7 +841,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -896,8 +867,7 @@
       "CMS": "Common Motor Software"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -907,6 +877,7 @@
   },
   {
     "model": "IFB Diva VXN 6010",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -914,7 +885,7 @@
       "Express 15'",
       "Refresh",
       "Synthetic",
-      "Cradlewash",
+      "Cradlewash®",
       "Wool",
       "Bulky/ Bedding"
     ],
@@ -948,12 +919,9 @@
       "6010": "Capacity & RPM: 6 kg | 1000 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 2900.0,
-      "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year": 5100.0,
-      "AMC 2 Year without Rubber": 4400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 2500.0,
+      "AMC 2 Year without Rubber": 4400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -963,6 +931,7 @@
   },
   {
     "model": "IFB Elena GXN 6510 CMS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -970,7 +939,7 @@
       "Express 15'",
       "Refresh",
       "Synthetic",
-      "Cradlewash",
+      "Cradlewash®",
       "Wool",
       "Bulky Bedding"
     ],
@@ -1005,8 +974,7 @@
       "CMS": "Common Motor Software"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -1016,12 +984,13 @@
   },
   {
     "model": "IFB Elena Plus SXS",
+    "type": "front",
     "programs": [
       "Mixed Soiled",
       "Cotton Normal/Cotton Eco Plus",
       "Synthetic/Daily",
       "Baby Wear",
-      "Cradlewash",
+      "Cradlewash®",
       "Express Wash",
       "Woolens"
     ],
@@ -1055,12 +1024,9 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "AMC 1 Year": 2900.0,
-      "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year": 5100.0,
-      "AMC 2 Year without Rubber": 4400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 2 Year without Rubber": 4400.0,
+      "AMC 1 Year without Rubber": 2500.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -1070,12 +1036,13 @@
   },
   {
     "model": "IFB Elena SBS",
+    "type": "front",
     "programs": [
       "Cotton",
       "Cotton Eco",
       "Synthetic/Daily",
       "Quick 30",
-      "CradleWash",
+      "CradleWash®",
       "Woollens 30",
       "Mix Soiled 40"
     ],
@@ -1084,7 +1051,7 @@
         "Powered by AI",
         "2D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1108,12 +1075,9 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "AMC 1 Year": 2900.0,
-      "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year": 5100.0,
-      "AMC 2 Year without Rubber": 4400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 2500.0,
+      "AMC 2 Year without Rubber": 4400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -1123,6 +1087,7 @@
   },
   {
     "model": "IFB Elena SXN 6510",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -1130,7 +1095,7 @@
       "Express 15",
       "Refresh",
       "Synthetic",
-      "Cradlewash",
+      "Cradlewash®",
       "Wool",
       "bulky/Bedding"
     ],
@@ -1141,7 +1106,7 @@
         "9 Swirl Wash",
         "Crescent Moon Drum",
         "Powered by AI",
-        "CradleWash"
+        "CradleWash®"
       ],
       "Machine Care": [
         "High-Low Voltage Protection",
@@ -1164,12 +1129,9 @@
       "6510": "Capacity & RPM: 6.5 kg | 1000 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 2900.0,
-      "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year": 5100.0,
-      "AMC 2 Year without Rubber": 4400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 2500.0,
+      "AMC 2 Year without Rubber": 4400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -1179,12 +1141,13 @@
   },
   {
     "model": "IFB Elena SXS",
+    "type": "front",
     "programs": [
       "Cotton",
       "Cotton Eco",
       "Synthetic/Daily",
       "Quick 30",
-      "CradleWash",
+      "CradleWash®",
       "Woollens 30",
       "Mix Soiled 40"
     ],
@@ -1195,7 +1158,7 @@
         "Start/Pause (Program Interrupt)",
         "2D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1219,12 +1182,9 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "AMC 1 Year": 2900.0,
-      "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year": 5100.0,
-      "AMC 2 Year without Rubber": 4400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 2 Year without Rubber": 4400.0,
+      "AMC 1 Year without Rubber": 2500.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -1234,10 +1194,11 @@
   },
   {
     "model": "IFB Elena ZSS",
+    "type": "front",
     "programs": [
       "Mixed Soiled",
       "Cotton Normal/Cotton Eco",
-      "CradleWash",
+      "CradleWash®",
       "Baby Wear",
       "Synthetic/Daily",
       "Express Wash",
@@ -1251,7 +1212,7 @@
         "7 Swirl Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1274,12 +1235,9 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "AMC 1 Year": 4300.0,
       "AMC 1 Year without Rubber": 3700.0,
-      "AMC 2 Year": 7850.0,
       "AMC 2 Year without Rubber": 6650.0,
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -1289,10 +1247,11 @@
   },
   {
     "model": "IFB Elena ZWS",
+    "type": "front",
     "programs": [
       "Mixed Soiled",
       "Cotton Normal/Cotton Eco",
-      "CradleWash",
+      "CradleWash®",
       "Baby Wear",
       "Synthetic/Daily",
       "Express Wash",
@@ -1306,7 +1265,7 @@
         "7 Swirl Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1329,12 +1288,9 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "AMC 1 Year": 4150.0,
       "AMC 1 Year without Rubber": 3550.0,
-      "AMC 2 Year": 7550.0,
       "AMC 2 Year without Rubber": 6400.0,
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -1344,21 +1300,22 @@
   },
   {
     "model": "IFB Elite BXN 7012HK CMS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam",
+      "PowerSteam®",
       "Shirts",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -1369,7 +1326,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1396,8 +1353,7 @@
       "CMS": "Common Motor Software"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -1407,21 +1363,22 @@
   },
   {
     "model": "IFB Elite MBN 7012HK CMS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam",
+      "PowerSteam®",
       "Shirts",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -1432,7 +1389,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1440,7 +1397,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "User Convenience": [
@@ -1459,9 +1416,7 @@
       "H": "Hairline Finish / Premium Colour",
       "CMS": "Common Motor Software"
     },
-    "amcEw": {
-      "Extended Warranty 6 Months - IFB Point": 600.0
-    },
+    "amcEw": {},
     "testMode": {
       "Program_Position": "OFF position",
       "Test_Mode_Button": "Temperature & Select",
@@ -1470,10 +1425,11 @@
   },
   {
     "model": "IFB Elite MXS 7012",
+    "type": "front",
     "programs": [
       "Mixed Soiled",
       "Cotton Normal/Cotton Eco",
-      "CradleWash",
+      "CradleWash®",
       "Baby Wear",
       "Synthetic/Daily",
       "Express Wash",
@@ -1487,7 +1443,7 @@
         "7 Swirl Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1511,12 +1467,9 @@
       "7012": "Capacity & RPM: 7 kg | 1200 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 4750.0,
       "AMC 1 Year without Rubber": 4100.0,
-      "AMC 2 Year": 8700.0,
       "AMC 2 Year without Rubber": 7350.0,
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -1526,6 +1479,7 @@
   },
   {
     "model": "IFB Elite Plus WSS 7012",
+    "type": "front",
     "programs": [
       "Mixed Soiled",
       "Cotton Normal/Cotton Eco Plus",
@@ -1533,7 +1487,7 @@
       "Anti Allergen",
       "Woollens",
       "Synthetic/Daily",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Express Wash",
       "Curtains"
@@ -1543,7 +1497,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1566,12 +1520,9 @@
       "7012": "Capacity & RPM: 7 kg | 1200 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 4650.0,
       "AMC 1 Year without Rubber": 4000.0,
-      "AMC 2 Year": 8450.0,
       "AMC 2 Year without Rubber": 7150.0,
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -1581,10 +1532,11 @@
   },
   {
     "model": "IFB Elite ZLS 7012",
+    "type": "front",
     "programs": [
       "Mixed Soiled",
       "Cotton Normal/Cotton Eco",
-      "CradleWash",
+      "CradleWash®",
       "Baby Wear",
       "Synthetic/Daily",
       "Express Wash",
@@ -1598,7 +1550,7 @@
         "7 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1622,12 +1574,9 @@
       "7012": "Capacity & RPM: 7 kg | 1200 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 4900.0,
       "AMC 1 Year without Rubber": 4200.0,
-      "AMC 2 Year": 8900.0,
       "AMC 2 Year without Rubber": 7500.0,
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -1637,10 +1586,11 @@
   },
   {
     "model": "IFB Elite ZRS 7012",
+    "type": "front",
     "programs": [
       "Mixed Soiled",
       "Cotton Normal/Cotton Eco",
-      "CradleWash",
+      "CradleWash®",
       "Baby Wear",
       "Synthetic/Daily",
       "Express Wash",
@@ -1654,7 +1604,7 @@
         "7 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1678,12 +1628,9 @@
       "7012": "Capacity & RPM: 7 kg | 1200 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 4900.0,
       "AMC 1 Year without Rubber": 4200.0,
-      "AMC 2 Year": 8900.0,
       "AMC 2 Year without Rubber": 7500.0,
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -1693,13 +1640,14 @@
   },
   {
     "model": "IFB Eva Plus ZWS 6010",
+    "type": "front",
     "programs": [
       "Mixed/Soiled",
       "Cotton Normal/Cotton Eco Plus",
       "Baby Wear",
       "Express Wash",
       "Wool",
-      "CradleWash",
+      "CradleWash®",
       "Synthetic/Daily",
       "Hygiene",
       "Bulky/Bedding"
@@ -1710,7 +1658,7 @@
         "3D Wash",
         "7 Swirl",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1734,12 +1682,9 @@
       "6010": "Capacity & RPM: 6 kg | 1000 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 2900.0,
-      "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year": 5100.0,
-      "AMC 2 Year without Rubber": 4400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 2 Year without Rubber": 4400.0,
+      "AMC 1 Year without Rubber": 2500.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -1749,34 +1694,35 @@
   },
   {
     "model": "IFB Executive BHC 9014 SSLC",
+    "type": "front",
     "programs": [
-      "Mix/Daily 60",
+      "Mix/Daily 60’",
       "Cotton",
       "Uniform",
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash",
       "Jeans",
       "Shirts",
       "Inner Wear",
-      "PowerSteam"
+      "PowerSteam®"
     ],
     "keyFeatures": {
       "Advanced Wash Technology": [
         "Powered by Ai",
-        "Oxyjet Technology",
+        "Oxyjet® Technology",
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1801,12 +1747,9 @@
       "SSLC": "Smart Sense Logic (Common)"
     },
     "amcEw": {
-      "AMC 1 Year": 6100.0,
-      "AMC 1 Year without Rubber": 5200.0,
-      "AMC 2 Year": 11150.0,
-      "AMC 2 Year without Rubber": 9400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 5200.0,
+      "AMC 2 Year without Rubber": 9400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -1816,6 +1759,7 @@
   },
   {
     "model": "IFB Executive BXN 9014K CMS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -1823,15 +1767,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Jeans",
       "Synthetic",
       "Inner Wear",
-      "PowerSteam",
+      "PowerSteam®",
       "Shirts",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -1842,7 +1786,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -1868,8 +1812,7 @@
       "CMS": "Common Motor Software"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -1879,6 +1822,7 @@
   },
   {
     "model": "IFB Executive MBN 9014K CMS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -1886,15 +1830,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Jeans",
       "Synthetic",
       "Inner Wear",
-      "PowerSteam",
+      "PowerSteam®",
       "Shirts",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -1907,15 +1851,15 @@
         "Baby Wear",
         "Refresh",
         "Anti Allergen",
-        "Express 30",
-        "Express 15",
+        "Express 30’",
+        "Express 15’",
         "Wool",
         "Jeans",
         "Synthetic",
         "Inner Wear",
-        "PowerSteamae",
+        "PowerSteam®",
         "Shirts",
-        "CradleWash",
+        "CradleWash®",
         "Sports Wear",
         "Bulky/Bedding",
         "Dark Wash"
@@ -1927,15 +1871,15 @@
         "Baby Wear",
         "Refresh",
         "Anti Allergen",
-        "Express 30",
-        "Express 15",
+        "Express 30’",
+        "Express 15’",
         "Wool",
         "Jeans",
         "Synthetic",
         "Inner Wear",
-        "PowerSteam",
+        "PowerSteam®",
         "Shirts",
-        "CradleWash",
+        "CradleWash®",
         "Sports Wear",
         "Bulky/Bedding",
         "Dark Wash"
@@ -1955,10 +1899,7 @@
       "K": "Knob (Neo Series)",
       "CMS": "Common Motor Software"
     },
-    "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
-    },
+    "amcEw": {},
     "testMode": {
       "Program_Position": "OFF position",
       "Test_Mode_Button": "Temperature & Select",
@@ -1967,18 +1908,19 @@
   },
   {
     "model": "IFB Executive MSC 9014 SSLC",
+    "type": "front",
     "programs": [
-      "Mix/Daily 60",
+      "Mix/Daily 60’",
       "Cotton",
       "Uniform",
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash",
@@ -1990,11 +1932,11 @@
     "keyFeatures": {
       "Advanced Wash Technology": [
         "Powered by Ai",
-        "Oxyjet Technology",
+        "Oxyjet® Technology",
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -2019,12 +1961,9 @@
       "SSLC": "Smart Sense Logic (Common)"
     },
     "amcEw": {
-      "AMC 1 Year": 6100.0,
-      "AMC 1 Year without Rubber": 5200.0,
-      "AMC 2 Year": 11150.0,
-      "AMC 2 Year without Rubber": 9400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 5200.0,
+      "AMC 2 Year without Rubber": 9400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -2034,6 +1973,7 @@
   },
   {
     "model": "IFB Executive MSN 9014K CMS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -2041,15 +1981,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam",
+      "PowerSteam®",
       "Shirts",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -2060,7 +2000,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -2086,8 +2026,7 @@
       "CMS": "Common Motor Software"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -2097,6 +2036,7 @@
   },
   {
     "model": "IFB Executive MSN 9014K",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -2104,15 +2044,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam",
+      "PowerSteam®",
       "Shirts",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -2123,7 +2063,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -2148,12 +2088,9 @@
       "K": "Knob (Neo Series)"
     },
     "amcEw": {
-      "AMC 1 Year": 6100.0,
-      "AMC 1 Year without Rubber": 5200.0,
-      "AMC 2 Year": 11150.0,
-      "AMC 2 Year without Rubber": 9400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 5200.0,
+      "AMC 2 Year without Rubber": 9400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -2163,6 +2100,7 @@
   },
   {
     "model": "IFB Executive MSS ID",
+    "type": "front",
     "programs": [
       "Mixed Soiled+",
       "Cotton Normal",
@@ -2173,17 +2111,17 @@
       "Express Wash",
       "Woollens",
       "Synthetic/Daily",
-      "CradleWash",
+      "CradleWash®",
       "Bulky/Bedding",
-      "PowerSteam"
+      "PowerSteam®"
     ],
     "keyFeatures": {
       "Advanced Wash Technology": [
         "Powered by Ai",
-        "9 Swirl",
+        "9 Swirl®",
         "4D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum",
         "Hot Rinse"
       ],
@@ -2209,12 +2147,9 @@
       "ID": "Inverter Drive"
     },
     "amcEw": {
-      "AMC 1 Year": 5650.0,
-      "AMC 1 Year without Rubber": 4850.0,
-      "AMC 2 Year": 10350.0,
-      "AMC 2 Year without Rubber": 8750.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 4850.0,
+      "AMC 2 Year without Rubber": 8750.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -2224,18 +2159,19 @@
   },
   {
     "model": "IFB Executive MXC  9014 SSLC",
+    "type": "front",
     "programs": [
-      "Mix/Daily 60",
+      "Mix/Daily 60’",
       "Cotton",
       "Uniform",
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash",
@@ -2247,11 +2183,11 @@
     "keyFeatures": {
       "Advanced Wash Technology": [
         "Powered by Ai",
-        "Oxyjet Technology",
+        "Oxyjet® Technology",
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -2276,12 +2212,9 @@
       "SSLC": "Smart Sense Logic (Common)"
     },
     "amcEw": {
-      "AMC 1 Year": 6100.0,
-      "AMC 1 Year without Rubber": 5200.0,
-      "AMC 2 Year": 11150.0,
-      "AMC 2 Year without Rubber": 9400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 5200.0,
+      "AMC 2 Year without Rubber": 9400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -2291,6 +2224,7 @@
   },
   {
     "model": "IFB Executive MXS ID 1014",
+    "type": "front",
     "programs": [
       "Mixed Soiled +",
       "Cotton Normal",
@@ -2301,17 +2235,17 @@
       "Express Wash",
       "Woollens",
       "Synthetic/Daily",
-      "CradleWash",
+      "CradleWash®",
       "Bulky/Bedding",
-      "PowerSteam"
+      "PowerSteam®"
     ],
     "keyFeatures": {
       "Advanced Wash Technology": [
         "Powered by Ai",
-        "9 Swirl",
+        "9 Swirl®",
         "4D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum",
         "Hot Rinse"
       ],
@@ -2338,12 +2272,9 @@
       "1014": "Capacity & RPM: 10 kg | 1400 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 6100.0,
-      "AMC 1 Year without Rubber": 5200.0,
-      "AMC 2 Year": 11150.0,
-      "AMC 2 Year without Rubber": 9400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 5200.0,
+      "AMC 2 Year without Rubber": 9400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -2353,6 +2284,7 @@
   },
   {
     "model": "IFB Executive OXN 9014 CMS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -2360,15 +2292,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam",
+      "PowerSteam®",
       "Shirts",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -2379,7 +2311,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -2404,8 +2336,7 @@
       "CMS": "Common Motor Software"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -2415,6 +2346,7 @@
   },
   {
     "model": "IFB Executive Plus BXN 1014KH",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -2422,15 +2354,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam",
+      "PowerSteam®",
       "Shirts",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -2441,7 +2373,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -2467,12 +2399,9 @@
       "H": "Hairline Finish / Premium Colour"
     },
     "amcEw": {
-      "AMC 1 Year": 6100.0,
-      "AMC 1 Year without Rubber": 5200.0,
-      "AMC 2 Year": 11150.0,
-      "AMC 2 Year without Rubber": 9400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 5200.0,
+      "AMC 2 Year without Rubber": 9400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -2482,6 +2411,7 @@
   },
   {
     "model": "IFB Executive Plus BXN 1114KH",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -2489,15 +2419,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam",
+      "PowerSteam®",
       "Shirts",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -2508,7 +2438,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -2534,12 +2464,9 @@
       "H": "Hairline Finish / Premium Colour"
     },
     "amcEw": {
-      "AMC 1 Year": 7200.0,
-      "AMC 1 Year without Rubber": 5800.0,
-      "AMC 2 Year": 11520.0,
-      "AMC 2 Year without Rubber": 9600.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 5800.0,
+      "AMC 2 Year without Rubber": 9600.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -2549,6 +2476,7 @@
   },
   {
     "model": "IFB Executive Plus MBN 1014K CMS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -2556,15 +2484,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam",
+      "PowerSteam®",
       "Shirts",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -2575,7 +2503,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -2600,9 +2528,7 @@
       "K": "Knob (Neo Series)",
       "CMS": "Common Motor Software"
     },
-    "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0
-    },
+    "amcEw": {},
     "testMode": {
       "Program_Position": "OFF position",
       "Test_Mode_Button": "Temperature & Select",
@@ -2611,18 +2537,19 @@
   },
   {
     "model": "IFB Executive Plus MXC 1014 SSL",
+    "type": "front",
     "programs": [
-      "Mix/Daily 60",
+      "Mix/Daily 60’",
       "Cotton",
       "Uniform",
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Synthetic",
-      "CrandleWash",
+      "CrandleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash",
@@ -2633,11 +2560,11 @@
     "keyFeatures": {
       "Advanced Wash Technology": [
         "Powered by Ai",
-        "Oxyjet Technology",
+        "Oxyjet® Technology",
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -2662,12 +2589,9 @@
       "SSL": "Smart Sense Logic"
     },
     "amcEw": {
-      "AMC 1 Year": 6100.0,
-      "AMC 1 Year without Rubber": 5200.0,
-      "AMC 2 Year": 11150.0,
-      "AMC 2 Year without Rubber": 9400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 5200.0,
+      "AMC 2 Year without Rubber": 9400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -2677,14 +2601,15 @@
   },
   {
     "model": "IFB Executive Plus MXS 9014",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton/Cotton Eco Plus",
       "Baby Wear",
       "Power Steam",
       "Refresh",
-      "CradleWash",
-      "Express 15",
+      "CradleWash®",
+      "Express 15’",
       "Synthetic",
       "Bulky",
       "Anti Allergen",
@@ -2696,7 +2621,7 @@
         "Aqua Energie",
         "Crescent Moon Drum",
         "Powered by AI",
-        "CradleWash"
+        "CradleWash®"
       ],
       "Machine Care": [
         "High-Low Voltage Protection",
@@ -2719,12 +2644,9 @@
       "9014": "Capacity & RPM: 9 kg | 1400 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 6100.0,
-      "AMC 1 Year without Rubber": 5200.0,
-      "AMC 2 Year": 11150.0,
-      "AMC 2 Year without Rubber": 9400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 2 Year without Rubber": 9400.0,
+      "AMC 1 Year without Rubber": 5200.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -2734,18 +2656,19 @@
   },
   {
     "model": "IFB Executive Plus VSC 1014 SSL",
+    "type": "front",
     "programs": [
-      "Mix/Daily 60",
+      "Mix/Daily 60’",
       "Cotton",
       "Uniform",
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash",
@@ -2757,11 +2680,11 @@
     "keyFeatures": {
       "Advanced Wash Technology": [
         "Powered by Ai",
-        "Oxyjet Technology",
+        "Oxyjet® Technology",
         "9 Swirl Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -2786,12 +2709,9 @@
       "SSL": "Smart Sense Logic"
     },
     "amcEw": {
-      "AMC 1 Year": 6100.0,
-      "AMC 1 Year without Rubber": 5200.0,
-      "AMC 2 Year": 11150.0,
-      "AMC 2 Year without Rubber": 9400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 5200.0,
+      "AMC 2 Year without Rubber": 9400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -2801,6 +2721,7 @@
   },
   {
     "model": "IFB Executive Plus VSG 1114",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton/Cotton Eco",
@@ -2812,8 +2733,8 @@
       "Wool",
       "Bulky/Bedding",
       "Synthetic",
-      "CradleWash",
-      "PowerSteam",
+      "CradleWash®",
+      "PowerSteam®",
       "Active Wear/Sports wear",
       "Dark Wash",
       "Inner Wear",
@@ -2827,7 +2748,7 @@
         "3D Wash",
         "Ai Dos",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum",
         "BLDC Motor Technology",
         "Hot Rinse"
@@ -2853,10 +2774,7 @@
       "G": "Gold Series",
       "1114": "Capacity & RPM: 11 kg | 1400 RPM"
     },
-    "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
-    },
+    "amcEw": {},
     "testMode": {
       "Program_Position": "OFF position",
       "Test_Mode_Button": "Temperature & Select",
@@ -2865,13 +2783,14 @@
   },
   {
     "model": "IFB Executive Smart Touch SXS",
+    "type": "front",
     "programs": [
       "Cotton Normal",
       "Cotton Eco",
       "Synthetic",
       "Mixed",
       "Express Wash",
-      "CradleWash",
+      "CradleWash®",
       "Anti Allergen",
       "Baby Wear",
       "Bulky/ Bedding",
@@ -2882,7 +2801,7 @@
         "3D Wash System",
         "Air-Bubble Wash",
         "Powered by AI",
-        "CradleWash"
+        "CradleWash®"
       ],
       "Machine Care": [
         "High-Low Voltage Protection",
@@ -2905,12 +2824,9 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "AMC 1 Year": 6100.0,
-      "AMC 1 Year without Rubber": 5200.0,
-      "AMC 2 Year": 11150.0,
-      "AMC 2 Year without Rubber": 9400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 5200.0,
+      "AMC 2 Year without Rubber": 9400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -2920,6 +2836,7 @@
   },
   {
     "model": "IFB Executive SXN 9014K CMS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -2927,15 +2844,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam",
+      "PowerSteam®",
       "Shirts",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -2946,7 +2863,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -2972,8 +2889,7 @@
       "CMS": "Common Motor Software"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -2983,12 +2899,13 @@
   },
   {
     "model": "IFB Executive SXS 9014",
+    "type": "front",
     "programs": [
       "Mixed Soiled",
       "Cotton Normal/Cotton Eco Plus",
       "Anti Allergen",
       "Baby Wear",
-      "CradleWash",
+      "CradleWash®",
       "Express Wash",
       "Synthetic/Daily",
       "Bulky/Bedding",
@@ -3014,7 +2931,8 @@
         "Anti Crease",
         "Auto Foam Control System",
         "Tub Clean",
-        "Drum Lamp"
+        "Drum Lamp",
+        ""
       ]
     },
     "nomenclature": {
@@ -3025,12 +2943,9 @@
       "9014": "Capacity & RPM: 9 kg | 1400 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 5650.0,
-      "AMC 1 Year without Rubber": 4850.0,
-      "AMC 2 Year": 9040.0,
-      "AMC 2 Year without Rubber": 7440.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 4850.0,
+      "AMC 2 Year without Rubber": 7440.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -3040,12 +2955,13 @@
   },
   {
     "model": "IFB Neo Diva BXS 7010",
+    "type": "front",
     "programs": [
       "Mixed Soiled",
       "Cotton Normal/Cotton Eco Plus",
       "Synthetic/Daily",
       "Baby Wear",
-      "CradleWash",
+      "CradleWash®",
       "Express Wash",
       "Woollens"
     ],
@@ -3055,7 +2971,7 @@
         "Aqua Energie",
         "Crescent Moon Drum",
         "7 Swirl Wash",
-        "CradleWash",
+        "CradleWash®",
         "Powered by AI"
       ],
       "Machine Care": [
@@ -3079,12 +2995,9 @@
       "7010": "Capacity & RPM: 7 kg | 1000 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 4200.0,
-      "AMC 1 Year without Rubber": 3600.0,
-      "AMC 2 Year": 7600.0,
-      "AMC 2 Year without Rubber": 6400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 3600.0,
+      "AMC 2 Year without Rubber": 6400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -3094,12 +3007,13 @@
   },
   {
     "model": "IFB Neo Diva SXS 6010",
+    "type": "front",
     "programs": [
       "Mixed Soiled",
       "Cotton Normal/Cotton Eco Plus",
       "Synthetic/Daily",
       "Baby Wear",
-      "CradleWash",
+      "CradleWash®",
       "Express Wash",
       "Woollens"
     ],
@@ -3109,7 +3023,7 @@
         "Aqua Energie",
         "Crescent Moon Drum",
         "7 Swirl Wash",
-        "CradleWash",
+        "CradleWash®",
         "Powered by AI"
       ],
       "Machine Care": [
@@ -3133,12 +3047,9 @@
       "6010": "Capacity & RPM: 6 kg | 1000 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 5550.0,
       "AMC 1 Year without Rubber": 3250.0,
-      "AMC 2 Year": 6850.0,
       "AMC 2 Year without Rubber": 5800.0,
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -3148,12 +3059,13 @@
   },
   {
     "model": "IFB Neo Diva SXS 7010",
+    "type": "front",
     "programs": [
       "Mixed Soiled",
       "Cotton Normal/Cotton Eco Plus",
       "Synthetic/Daily",
       "Baby Wear",
-      "CradleWash",
+      "CradleWash®",
       "Express Wash",
       "Woollens"
     ],
@@ -3163,7 +3075,7 @@
         "Aqua Energie",
         "Crescent Moon Drum",
         "7 Swirl Wash",
-        "CradleWash",
+        "CradleWash®",
         "Powered by AI"
       ],
       "Machine Care": [
@@ -3187,12 +3099,9 @@
       "7010": "Capacity & RPM: 7 kg | 1000 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 4300.0,
       "AMC 1 Year without Rubber": 3700.0,
-      "AMC 2 Year": 7850.0,
       "AMC 2 Year without Rubber": 6650.0,
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -3202,12 +3111,13 @@
   },
   {
     "model": "IFB Neo Diva VXS 6010",
+    "type": "front",
     "programs": [
       "Mixed Soiled",
       "Cotton Normal/Cotton Eco Plus",
       "Synthetic/Daily",
       "Baby Wear",
-      "CradleWash",
+      "CradleWash®",
       "Express Wash",
       "Woollens"
     ],
@@ -3231,7 +3141,7 @@
         "Auto Foam Control System",
         "Auto Tub Clean",
         "7 Swirl Wash",
-        "CradleWash"
+        "CradleWash®"
       ]
     },
     "nomenclature": {
@@ -3242,12 +3152,9 @@
       "6010": "Capacity & RPM: 6 kg | 1000 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 3600.0,
       "AMC 1 Year without Rubber": 3100.0,
-      "AMC 2 Year": 6550.0,
-      "AMC 2 Year without Rubber": 5550.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 2 Year without Rubber": 5550.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -3257,12 +3164,13 @@
   },
   {
     "model": "IFB Neo Diva VXS 7010",
+    "type": "front",
     "programs": [
       "Mixed Soiled",
       "Cotton Normal/Cotton Eco Plus",
       "Synthetic/Daily",
       "Baby Wear",
-      "CradleWash",
+      "CradleWash®",
       "Express Wash",
       "Woollens"
     ],
@@ -3273,7 +3181,7 @@
         "Aqua Energie",
         "Crescent Moon Drum",
         "7 Swirl Wash",
-        "CradleWash",
+        "CradleWash®",
         "Powered by AI"
       ],
       "Machine Care": [
@@ -3297,12 +3205,9 @@
       "7010": "Capacity & RPM: 7 kg | 1000 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 4150.0,
       "AMC 1 Year without Rubber": 3550.0,
-      "AMC 2 Year": 7550.0,
       "AMC 2 Year without Rubber": 6400.0,
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -3312,12 +3217,13 @@
   },
   {
     "model": "IFB Neo Diva WSS 7010",
+    "type": "front",
     "programs": [
       "Mixed Soiled",
       "Cotton Normal",
       "Synthetic/Daily",
       "Baby Wear",
-      "CradleWash",
+      "CradleWash®",
       "Express Wash",
       "Woollens",
       "Cotton Eco Plus",
@@ -3329,7 +3235,7 @@
       "Advanced Wash Technology": [
         "2D Wash",
         "3D Wash",
-        "CradleWash",
+        "CradleWash®",
         "Aqua Energie",
         "Crescent Moon Drum",
         "7 Swirl Wash",
@@ -3356,12 +3262,9 @@
       "7010": "Capacity & RPM: 7 kg | 1000 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 2900.0,
-      "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year": 5100.0,
-      "AMC 2 Year without Rubber": 4400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 2 Year without Rubber": 4400.0,
+      "AMC 1 Year without Rubber": 2500.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -3371,6 +3274,7 @@
   },
   {
     "model": "IFB Senator BCN 8014K CMS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -3378,15 +3282,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam",
+      "PowerSteam®",
       "Shirts",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -3397,7 +3301,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -3422,10 +3326,7 @@
       "K": "Knob (Neo Series)",
       "CMS": "Common Motor Software"
     },
-    "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
-    },
+    "amcEw": {},
     "testMode": {
       "Program_Position": "OFF position",
       "Test_Mode_Button": "Temperature & Select",
@@ -3434,6 +3335,7 @@
   },
   {
     "model": "IFB Senator BXN 8012 CMS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -3441,12 +3343,12 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 15",
-      "Express 30",
+      "Express 15’",
+      "Express 30’",
       "Wool",
       "Synthetic",
-      "CradleWash",
-      "PowerSteam",
+      "CradleWash®",
+      "PowerSteam®",
       "Dark Wash",
       "Shirts",
       "Sports Wear",
@@ -3460,7 +3362,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -3485,8 +3387,7 @@
       "CMS": "Common Motor Software"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -3496,6 +3397,7 @@
   },
   {
     "model": "IFB Senator BXN 8012K CMS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -3503,15 +3405,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam",
+      "PowerSteam®",
       "Shirts",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -3522,7 +3424,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -3548,8 +3450,7 @@
       "CMS": "Common Motor Software"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -3559,6 +3460,7 @@
   },
   {
     "model": "IFB Senator BXN 8014K CMS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -3566,15 +3468,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam",
+      "PowerSteam®",
       "Shirts",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -3585,7 +3487,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -3611,8 +3513,7 @@
       "CMS": "Common Motor Software"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -3622,6 +3523,7 @@
   },
   {
     "model": "IFB Senator GXN 8012 CMS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -3629,12 +3531,12 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 15",
-      "Express 30",
+      "Express 15’",
+      "Express 30’",
       "Wool",
       "Synthetic",
-      "CradleWash",
-      "PowerSteam",
+      "CradleWash®",
+      "PowerSteam®",
       "Dark Wash",
       "Shirts",
       "Sports Wear",
@@ -3648,7 +3550,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -3673,8 +3575,7 @@
       "CMS": "Common Motor Software"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -3684,6 +3585,7 @@
   },
   {
     "model": "IFB Senator MBN 8012 CMS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -3691,12 +3593,12 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 15",
-      "Express 30",
+      "Express 15’",
+      "Express 30’",
       "Wool",
       "Synthetic",
-      "CradleWash",
-      "PowerSteam",
+      "CradleWash®",
+      "PowerSteam®",
       "Dark Wash",
       "Shirts",
       "Sports Wear",
@@ -3710,7 +3612,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -3735,8 +3637,7 @@
       "CMS": "Common Motor Software"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -3746,6 +3647,7 @@
   },
   {
     "model": "IFB Senator MBN 8012K",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -3753,15 +3655,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam",
+      "PowerSteam®",
       "Shirts",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -3772,7 +3674,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -3797,12 +3699,9 @@
       "K": "Knob (Neo Series)"
     },
     "amcEw": {
-      "AMC 1 Year": 5000.0,
-      "AMC 1 Year without Rubber": 4300.0,
-      "AMC 2 Year": 9150.0,
-      "AMC 2 Year without Rubber": 7750.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 4300.0,
+      "AMC 2 Year without Rubber": 7750.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -3812,6 +3711,7 @@
   },
   {
     "model": "IFB Senator MBN 8014",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -3819,12 +3719,12 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 15",
-      "Express 30",
+      "Express 15’",
+      "Express 30’",
       "Wool",
       "Synthetic",
-      "CradleWash",
-      "PowerSteam",
+      "CradleWash®",
+      "PowerSteam®",
       "Dark Wash",
       "Shirts",
       "Sports Wear",
@@ -3838,7 +3738,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -3862,12 +3762,9 @@
       "8014": "Capacity & RPM: 8 kg | 1400 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 5000.0,
-      "AMC 1 Year without Rubber": 4300.0,
-      "AMC 2 Year": 9150.0,
-      "AMC 2 Year without Rubber": 7750.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 4300.0,
+      "AMC 2 Year without Rubber": 7750.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -3877,6 +3774,7 @@
   },
   {
     "model": "IFB Senator MBN 8014K",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -3884,15 +3782,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam",
+      "PowerSteam®",
       "Shirts",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -3903,7 +3801,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -3928,12 +3826,9 @@
       "K": "Knob (Neo Series)"
     },
     "amcEw": {
-      "AMC 1 Year": 5000.0,
-      "AMC 1 Year without Rubber": 4300.0,
-      "AMC 2 Year": 9150.0,
-      "AMC 2 Year without Rubber": 7750.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 4300.0,
+      "AMC 2 Year without Rubber": 7750.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -3943,6 +3838,7 @@
   },
   {
     "model": "IFB Senator MSN 8012K",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -3950,15 +3846,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam",
+      "PowerSteam®",
       "Shirts",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -3969,7 +3865,7 @@
         "Powered by AI",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -3994,12 +3890,9 @@
       "K": "Knob (Neo Series)"
     },
     "amcEw": {
-      "AMC 1 Year": 5000.0,
-      "AMC 1 Year without Rubber": 4300.0,
-      "AMC 2 Year": 9150.0,
-      "AMC 2 Year without Rubber": 7750.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 4300.0,
+      "AMC 2 Year without Rubber": 7750.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -4009,6 +3902,7 @@
   },
   {
     "model": "IFB Senator MSN 8014",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -4016,12 +3910,12 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 15",
-      "Express 30",
+      "Express 15’",
+      "Express 30’",
       "Wool",
       "Synthetic",
-      "CradleWash",
-      "PowerSteam",
+      "CradleWash®",
+      "PowerSteam®",
       "Dark Wash",
       "Shirts",
       "Sports Wear",
@@ -4035,7 +3929,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -4059,12 +3953,9 @@
       "8014": "Capacity & RPM: 8 kg | 1400 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 5000.0,
-      "AMC 1 Year without Rubber": 4300.0,
-      "AMC 2 Year": 9150.0,
-      "AMC 2 Year without Rubber": 7750.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 4300.0,
+      "AMC 2 Year without Rubber": 7750.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -4074,13 +3965,14 @@
   },
   {
     "model": "IFB Senator MXS 8014",
+    "type": "front",
     "programs": [
       "Mixed Soiled",
       "Cotton Normal/Cotton Eco Plus",
       "Anti Allergen",
       "Baby Wear",
       "Cotton Eco Plus",
-      "CradleWash",
+      "CradleWash®",
       "Express Wash",
       "Synthetic/Daily",
       "Bulky/Bedding",
@@ -4116,12 +4008,9 @@
       "8014": "Capacity & RPM: 8 kg | 1400 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 5000.0,
-      "AMC 1 Year without Rubber": 4300.0,
-      "AMC 2 Year": 9150.0,
-      "AMC 2 Year without Rubber": 7750.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 4300.0,
+      "AMC 2 Year without Rubber": 7750.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -4131,12 +4020,13 @@
   },
   {
     "model": "IFB Senator Neo MXS",
+    "type": "front",
     "programs": [
       "Mixed Soiled",
       "Cotton Normal/Cotton Eco Plus",
       "Synthetic/Daily",
       "Baby Wear",
-      "CradleWash",
+      "CradleWash®",
       "Express Wash",
       "Woollens"
     ],
@@ -4168,12 +4058,9 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "AMC 1 Year": 5000.0,
-      "AMC 1 Year without Rubber": 4300.0,
-      "AMC 2 Year": 9150.0,
-      "AMC 2 Year without Rubber": 7750.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 4300.0,
+      "AMC 2 Year without Rubber": 7750.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -4183,12 +4070,13 @@
   },
   {
     "model": "IFB Senator Neo SXS 8012",
+    "type": "front",
     "programs": [
       "Mixed Soiled",
       "Cotton Normal/Cotton Eco Plus",
       "Synthetic/Daily",
       "Baby Wear",
-      "CradleWash",
+      "CradleWash®",
       "Express Wash",
       "Woollens"
     ],
@@ -4221,12 +4109,9 @@
       "8012": "Capacity & RPM: 8 kg | 1200 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 5000.0,
-      "AMC 1 Year without Rubber": 4300.0,
-      "AMC 2 Year": 9150.0,
-      "AMC 2 Year without Rubber": 7750.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 4300.0,
+      "AMC 2 Year without Rubber": 7750.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -4236,12 +4121,13 @@
   },
   {
     "model": "IFB Senator Neo VXS 8012",
+    "type": "front",
     "programs": [
       "Mixed Soiled",
       "Cotton Normal/Cotton Eco Plus",
       "Synthetic/Daily",
       "Baby Wear",
-      "CradleWash",
+      "CradleWash®",
       "Express Wash",
       "Woollens",
       "Cradlewash"
@@ -4275,12 +4161,9 @@
       "8012": "Capacity & RPM: 8 kg | 1200 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 5000.0,
-      "AMC 1 Year without Rubber": 4300.0,
-      "AMC 2 Year": 9150.0,
-      "AMC 2 Year without Rubber": 7750.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 4300.0,
+      "AMC 2 Year without Rubber": 7750.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -4290,18 +4173,19 @@
   },
   {
     "model": "IFB Senator Plus MSC 8014 SSL",
+    "type": "front",
     "programs": [
-      "Mix/Daily 60",
+      "Mix/Daily 60’",
       "Cotton",
       "Uniform",
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash",
@@ -4312,11 +4196,11 @@
     "keyFeatures": {
       "Advanced Wash Technology": [
         "Powered by Ai",
-        "Oxyjet Technology",
+        "Oxyjet® Technology",
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -4341,12 +4225,9 @@
       "SSL": "Smart Sense Logic"
     },
     "amcEw": {
-      "AMC 1 Year": 5000.0,
-      "AMC 1 Year without Rubber": 4300.0,
-      "AMC 2 Year": 9150.0,
-      "AMC 2 Year without Rubber": 7750.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 4300.0,
+      "AMC 2 Year without Rubber": 7750.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -4356,18 +4237,19 @@
   },
   {
     "model": "IFB Senator Plus MXC 8014 SSL",
+    "type": "front",
     "programs": [
-      "Mix/Daily 60",
+      "Mix/Daily 60’",
       "Cotton",
       "Uniform",
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash",
@@ -4378,11 +4260,11 @@
     "keyFeatures": {
       "Advanced Wash Technology": [
         "Powered by Ai",
-        "Oxyjet Technology",
+        "Oxyjet® Technology",
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -4407,7 +4289,7 @@
       "SSL": "Smart Sense Logic"
     },
     "amcEw": {
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -4417,6 +4299,7 @@
   },
   {
     "model": "IFB Senator Plus MXS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton/Cotton Eco Plus",
@@ -4435,7 +4318,7 @@
         "4D Wash",
         "Aqua Energie",
         "Crescent Moon Drum",
-        "CradleWash",
+        "CradleWash®",
         "Powered by Ai"
       ],
       "Machine Care": [
@@ -4458,12 +4341,9 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "AMC 1 Year": 5000.0,
-      "AMC 1 Year without Rubber": 4300.0,
-      "AMC 2 Year": 9150.0,
-      "AMC 2 Year without Rubber": 7750.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 4300.0,
+      "AMC 2 Year without Rubber": 7750.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -4473,13 +4353,14 @@
   },
   {
     "model": "IFB Senator Plus SRS",
+    "type": "front",
     "programs": [
       "Mixed Soiled/Mixed Solid",
       "Cotton Normal/Cotton Eco Plus",
       "Anti Allergen",
       "Baby Wear",
       "Cotton Rinse",
-      "CradleWash",
+      "CradleWash®",
       "Express Wash",
       "Synthetic/Daily",
       "Bulky/Bedding",
@@ -4492,7 +4373,7 @@
         "Crescent Moon Drum",
         "Air Bubble Wash",
         "Powered by Ai",
-        "CradleWash"
+        "CradleWash®"
       ],
       "Machine Care": [
         "Auto Foam Control System",
@@ -4515,12 +4396,10 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "AMC 1 Year": 4900.0,
+      "Motor Warranty 10 years": 847.5,
       "AMC 1 Year without Rubber": 4200.0,
-      "AMC 2 Year": 8900.0,
       "AMC 2 Year without Rubber": 7500.0,
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -4530,18 +4409,19 @@
   },
   {
     "model": "IFB Senator Plus SXC 8014 SSL",
+    "type": "front",
     "programs": [
-      "Mix/Daily 60",
+      "Mix/Daily 60’",
       "Cotton",
       "Uniform",
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash",
@@ -4552,11 +4432,11 @@
     "keyFeatures": {
       "Advanced Wash Technology": [
         "Powered by Ai",
-        "Oxyjet Technology",
+        "Oxyjet® Technology",
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -4581,8 +4461,7 @@
       "SSL": "Smart Sense Logic"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -4592,12 +4471,13 @@
   },
   {
     "model": "IFB Senator Plus SXS",
+    "type": "front",
     "programs": [
       "Mixed Soiled/Mixed Solid",
       "Cotton Normal/Cotton Eco Plus",
       "Anti Allergen",
       "Baby Wear",
-      "CradleWash",
+      "CradleWash®",
       "Express Wash",
       "Synthetic/Daily",
       "Bulky/Bedding",
@@ -4610,7 +4490,7 @@
         "Crescent Moon Drum",
         "Air Bubble Wash",
         "Powered by Ai",
-        "CradleWash"
+        "CradleWash®"
       ],
       "Machine Care": [
         "High-Low Voltage Protection",
@@ -4633,12 +4513,9 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "AMC 1 Year": 5000.0,
       "AMC 1 Year without Rubber": 4300.0,
-      "AMC 2 Year": 9150.0,
       "AMC 2 Year without Rubber": 7750.0,
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -4648,12 +4525,13 @@
   },
   {
     "model": "IFB Senator Plus VXS",
+    "type": "front",
     "programs": [
       "Mixed Soiled/Mixed Solid",
       "Cotton Normal/Cotton Eco Plus",
       "Anti Allergen",
       "Baby Wear",
-      "CradleWash",
+      "CradleWash®",
       "Express Wash",
       "Synthetic/Daily",
       "Bulky/Bedding",
@@ -4666,7 +4544,7 @@
         "Crescent Moon Drum",
         "Air Bubble Wash",
         "Powered by Ai",
-        "CradleWash"
+        "CradleWash®"
       ],
       "Machine Care": [
         "High-Low Voltage Protection",
@@ -4689,12 +4567,9 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "AMC 1 Year": 5000.0,
-      "AMC 1 Year without Rubber": 4300.0,
-      "AMC 2 Year": 9150.0,
-      "AMC 2 Year without Rubber": 7750.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 2 Year without Rubber": 7750.0,
+      "AMC 1 Year without Rubber": 4300.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -4704,11 +4579,12 @@
   },
   {
     "model": "IFB Senator Smart Touch SX",
+    "type": "front",
     "programs": [
       "Cotton Normal/Cotton Eco",
       "Synthetic/Daily",
       "Mixed",
-      "Cradlewash",
+      "Cradlewash®",
       "Woollens",
       "Express Wash",
       "Bulky Bedding",
@@ -4720,7 +4596,7 @@
         "3D Wash System",
         "Air-Bubble Wash",
         "Powered by Ai",
-        "Cradlewash"
+        "Cradlewash®"
       ],
       "Machine Care": [
         "Auto Balance System",
@@ -4742,12 +4618,11 @@
       "SX": "Color: Silver"
     },
     "amcEw": {
-      "AMC 1 Year": 6800.0,
       "AMC 1 Year without Rubber": 6500.0,
-      "AMC 2 Year": 10200.0,
       "AMC 2 Year without Rubber": 7940.0,
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "Labour AMC 1 Year": 2250.0,
+      "Motor Warranty 10 years": 847.5,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -4757,6 +4632,7 @@
   },
   {
     "model": "IFB Senator SXN 8012K CMS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -4764,15 +4640,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam",
+      "PowerSteam®",
       "Shirts",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -4783,7 +4659,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -4809,8 +4685,7 @@
       "CMS": "Common Motor Software"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "Cotton Cold",
@@ -4820,6 +4695,7 @@
   },
   {
     "model": "IFB Senator SXN 8014",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -4827,11 +4703,11 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 15",
-      "Express 30",
+      "Express 15’",
+      "Express 30’",
       "Wool",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding"
     ],
@@ -4841,7 +4717,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -4865,12 +4741,9 @@
       "8014": "Capacity & RPM: 8 kg | 1400 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 5000.0,
-      "AMC 1 Year without Rubber": 4300.0,
-      "AMC 2 Year": 9150.0,
-      "AMC 2 Year without Rubber": 7750.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 4300.0,
+      "AMC 2 Year without Rubber": 7750.0
     },
     "testMode": {
       "Program_Position": "Cotton Cold",
@@ -4880,6 +4753,7 @@
   },
   {
     "model": "IFB Senator SXN 8014K CMS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -4887,15 +4761,15 @@
       "Baby Wear",
       "Refresh",
       "Anti Allergen",
-      "Express 30",
-      "Express 15",
+      "Express 30’",
+      "Express 15’",
       "Wool",
       "Jeans",
       "Inner Wear",
-      "PowerSteam",
+      "PowerSteam®",
       "Shirts",
       "Synthetic",
-      "CradleWash",
+      "CradleWash®",
       "Sports Wear",
       "Bulky/Bedding",
       "Dark Wash"
@@ -4906,7 +4780,7 @@
         "Powered by Ai",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -4932,8 +4806,7 @@
       "CMS": "Common Motor Software"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "Cotton Cold",
@@ -4943,13 +4816,14 @@
   },
   {
     "model": "IFB Senator SXS 8012",
+    "type": "front",
     "programs": [
       "Mixed Soiled",
       "Cotton Normal",
       "Cotton Eco Plus",
       "Uniform",
       "Baby Wear",
-      "CradleWash",
+      "CradleWash®",
       "Express Wash",
       "Synthetic/Daily",
       "Anti Allergen",
@@ -4963,7 +4837,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -4981,12 +4855,11 @@
     },
     "nomenclature": {},
     "amcEw": {
-      "AMC 1 Year": 8050.0,
-      "AMC 1 Year without Rubber": 4450.0,
-      "AMC 2 Year": 9550.0,
-      "AMC 2 Year without Rubber": 5200.0,
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "Motor Warranty 10 years": 847.5,
+      "Labour AMC 1 Year": 2250.0,
+      "AMC 1 Year without Rubber": 4050.0,
+      "AMC 2 Year without Rubber": 7250.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -4996,11 +4869,12 @@
   },
   {
     "model": "IFB Senator VSS 8012",
+    "type": "front",
     "programs": [
       "Mixed Soiled",
       "Cotton Normal/Cotton Eco Plus/Uniform",
       "Baby Wear",
-      "CradleWash",
+      "CradleWash®",
       "Express Wash",
       "Synthetic/Daily",
       "Anti Allergen",
@@ -5014,7 +4888,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5038,12 +4912,10 @@
       "8012": "Capacity & RPM: 8 kg | 1200 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 4700.0,
-      "AMC 1 Year without Rubber": 4050.0,
-      "AMC 2 Year": 8600.0,
-      "AMC 2 Year without Rubber": 7250.0,
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "Labour AMC 1 Year": 2250.0,
+      "AMC 1 Year without Rubber": 4450.0,
+      "AMC 2 Year without Rubber": 5200.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -5053,13 +4925,14 @@
   },
   {
     "model": "IFB Senator VXS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
       "Baby Wear",
       "Power Steam",
       "Refresh",
-      "CradleWash",
+      "CradleWash®",
       "Express 15",
       "Synthetic",
       "Bulky",
@@ -5071,7 +4944,7 @@
         "4D Wash",
         "Aqua Energie",
         "Crescent Moon Drum",
-        "CradleWash",
+        "CradleWash®",
         "Powered by AI"
       ],
       "Machine Care": [
@@ -5095,12 +4968,7 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "AMC 1 Year": 4750.0,
-      "AMC 1 Year without Rubber": 4100.0,
-      "AMC 2 Year": 8700.0,
-      "AMC 2 Year without Rubber": 7350.0,
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -5110,13 +4978,14 @@
   },
   {
     "model": "IFB Senator WSS STEAM",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
       "Baby Wear",
       "Power Steam",
       "Refresh",
-      "CradleWash",
+      "CradleWash®",
       "Express 15",
       "Synthetic",
       "Bulky",
@@ -5128,7 +4997,7 @@
         "4D Wash",
         "Aqua Energie",
         "Crescent Moon Drum",
-        "CradleWash",
+        "CradleWash®",
         "Powered by AI"
       ],
       "Machine Care": [
@@ -5153,12 +5022,11 @@
       "STEAM": "Steam Technology"
     },
     "amcEw": {
-      "AMC 1 Year": 5200.0,
+      "Motor Warranty 10 years": 847.5,
       "AMC 1 Year without Rubber": 4450.0,
-      "AMC 2 Year": 9550.0,
       "AMC 2 Year without Rubber": 8050.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "Labour AMC 1 Year": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -5168,10 +5036,11 @@
   },
   {
     "model": "IFB Senator ZMS",
+    "type": "front",
     "programs": [
       "Mixed Soiled",
       "Cotton Normal/Cotton Eco",
-      "CradleWash",
+      "CradleWash®",
       "Baby Wear",
       "Synthetic/Daily",
       "Express Wash",
@@ -5185,7 +5054,7 @@
         "7 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5208,8 +5077,7 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -5219,6 +5087,7 @@
   },
   {
     "model": "IFB Senorita BXN 6512 CMS",
+    "type": "front",
     "programs": [
       "Mix/ Daily",
       "Cotton",
@@ -5236,7 +5105,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5260,10 +5129,7 @@
       "6512": "Capacity & RPM: 6.5 kg | 1200 RPM",
       "CMS": "Common Motor Software"
     },
-    "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
-    },
+    "amcEw": {},
     "testMode": {
       "Program_Position": "OFF position",
       "Test_Mode_Button": "Spin & Delay",
@@ -5272,6 +5138,7 @@
   },
   {
     "model": "IFB Senorita MSN 6512K CMS",
+    "type": "front",
     "programs": [
       "Mix/ Daily",
       "Cotton",
@@ -5290,7 +5157,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5315,10 +5182,7 @@
       "K": "Knob (Neo Series)",
       "CMS": "Common Motor Software"
     },
-    "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
-    },
+    "amcEw": {},
     "testMode": {
       "Program_Position": "OFF position",
       "Test_Mode_Button": "Spin & Delay",
@@ -5327,6 +5191,7 @@
   },
   {
     "model": "IFB Senorita SXN 6512K",
+    "type": "front",
     "programs": [
       "Mix/ Daily",
       "Cotton",
@@ -5344,7 +5209,7 @@
         "7 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5369,12 +5234,9 @@
       "K": "Knob (Neo Series)"
     },
     "amcEw": {
-      "AMC 1 Year": 2900.0,
-      "AMC 1 Year without Rubber": 2500.0,
-      "AMC 2 Year": 5100.0,
-      "AMC 2 Year without Rubber": 4400.0,
       "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "AMC 1 Year without Rubber": 2500.0,
+      "AMC 2 Year without Rubber": 4400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -5384,13 +5246,14 @@
   },
   {
     "model": "IFB Senorita SXS 6510",
+    "type": "front",
     "programs": [
       "Mixed/Soiled",
       "Cotton Normal/Cotton Eco Plus",
       "Baby Wear",
       "Express Wash",
       "Wool",
-      "CradleWash",
+      "CradleWash®",
       "Synthetic/Daily",
       "Hygiene",
       "Bulky/Bedding"
@@ -5401,7 +5264,7 @@
         "3D Wash",
         "7 Swirl",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5425,12 +5288,10 @@
       "6510": "Capacity & RPM: 6.5 kg | 1000 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 4100.0,
+      "Motor Warranty 10 years": 847.5,
       "AMC 1 Year without Rubber": 3500.0,
-      "AMC 2 Year": 7500.0,
       "AMC 2 Year without Rubber": 6350.0,
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -5440,6 +5301,7 @@
   },
   {
     "model": "IFB Senorita VXS 6510",
+    "type": "front",
     "programs": [
       "Mix Soiled",
       "Cotton",
@@ -5457,7 +5319,7 @@
         "7 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5481,12 +5343,10 @@
       "6510": "Capacity & RPM: 6.5 kg | 1000 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 3950.0,
+      "Motor Warranty 10 years": 847.5,
       "AMC 1 Year without Rubber": 3400.0,
-      "AMC 2 Year": 7200.0,
       "AMC 2 Year without Rubber": 6100.0,
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -5496,6 +5356,7 @@
   },
   {
     "model": "IFB Serena BXN 7012K CMS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -5521,7 +5382,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5547,8 +5408,7 @@
       "CMS": "Common Motor Software"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -5558,6 +5418,7 @@
   },
   {
     "model": "IFB Serena GXN 7012 CMS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -5583,7 +5444,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5608,8 +5469,7 @@
       "CMS": "Common Motor Software"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -5619,6 +5479,7 @@
   },
   {
     "model": "IFB Serena MBN 7012 CMS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -5644,7 +5505,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5669,8 +5530,7 @@
       "CMS": "Common Motor Software"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -5680,6 +5540,7 @@
   },
   {
     "model": "IFB Serena MBN 7012K CMS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -5705,7 +5566,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5731,8 +5592,7 @@
       "CMS": "Common Motor Software"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -5742,6 +5602,7 @@
   },
   {
     "model": "IFB Serena MSN 7012K CMS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -5767,7 +5628,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5793,8 +5654,7 @@
       "CMS": "Common Motor Software"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -5804,6 +5664,7 @@
   },
   {
     "model": "IFB Serena SXN 7012 CMS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -5829,7 +5690,7 @@
         "9 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5854,8 +5715,7 @@
       "CMS": "Common Motor Software"
     },
     "amcEw": {
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -5865,6 +5725,7 @@
   },
   {
     "model": "IFB Serena ZSS 7010",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -5890,7 +5751,7 @@
         "7 Swirl",
         "3D Wash",
         "Aqua Energie",
-        "CradleWash",
+        "CradleWash®",
         "Crescent Moon Drum"
       ],
       "Machine Care": [
@@ -5914,12 +5775,9 @@
       "7010": "Capacity & RPM: 7 kg | 1000 RPM"
     },
     "amcEw": {
-      "AMC 1 Year": 4550.0,
       "AMC 1 Year without Rubber": 3900.0,
-      "AMC 2 Year": 8300.0,
       "AMC 2 Year without Rubber": 7000.0,
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
@@ -5929,6 +5787,7 @@
   },
   {
     "model": "IFB Serena ZXS",
+    "type": "front",
     "programs": [
       "Mix/Daily",
       "Cotton",
@@ -5954,7 +5813,7 @@
         "Aqua Energie",
         "Crescent Moon Drum",
         "7 Swirl Wash",
-        "CradleWash"
+        "CradleWash®"
       ],
       "Machine Care": [
         "High-Low Voltage Protection",
@@ -5976,12 +5835,11 @@
       "S": "Steam Series"
     },
     "amcEw": {
-      "AMC 1 Year": 4450.0,
+      "Motor Warranty 10 years": 847.5,
       "AMC 1 Year without Rubber": 3800.0,
-      "AMC 2 Year": 8050.0,
       "AMC 2 Year without Rubber": 6800.0,
-      "EXT WTY 5TH YEAR": 2400.0,
-      "Extended Warranty 6 Months - IFB Point": 600.0
+      "Labour AMC 1 Year": 2250.0,
+      "EXT WTY 5TH YEAR": 2400.0
     },
     "testMode": {
       "Program_Position": "OFF position",
