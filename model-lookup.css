@@ -283,3 +283,5 @@
   .ml-tab { padding: 9px 10px; font-size: 0.75rem; }
   .ml-overlay-panel { max-height: 94vh; }
 }
+
+.ml-badge-dryer { background: #fff4d6; color: #7a5000; border: 1px solid #f5d98a; }

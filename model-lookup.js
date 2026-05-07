@@ -528,12 +528,29 @@
   "Aroma.": "A refreshing cycle that uses fragrance to leave clothes smelling fresh after washing.",
   "Cupboard Dry / Eco Dry": "Cupboard Dry removes all moisture for immediate storage; Eco Dry uses less energy for lightly damp clothes."
 };
-  const DESC_MAP = { front: FL_DESC, top: TL_DESC, topload: TL_DESC, wdr: WDR_DESC };
+  const DRYER_DESC = {
+  "Mixed Load": "Mixture of Loads (Iron Dry 90 min, Cupboard Dry 120 min)",
+  "Cotton": "Heavier items such as towels and flannel blankets ( Refresh Cycle: 20 mins, Iron Dry :140 mins, Cupboard Dry: 160 mins).",
+  "Synthetics": "Delicate fabrics prone to shrinkage such as lingerie, synthetics etc  (Iron Dry :50 mins, Cupboard Dry: 70 mins).",
+  "Anticrease": "The clothes dryer has been programmed to rotate in one direction for 3 minutes and then in the other direction for 3 minutes. This reduces tangling and ensures even drying in a shorter time.",
+  "Safety Reset": "A temperature activated safety cut-off device protects the clothes dryer from overheating. A safety reset switch located near the door latch activates the safety device.",
+  "Lint Filter": "Captures lint and fabric fibres from clothes during drying to maintain drying efficiency and prevent lint buildup inside the machine.",
+  "Safety Door Switch": "Automatically stops dryer operation when the door is opened to ensure user safety during operation.",
+  "Auto Cooldown": "Continues airflow after the drying cycle to cool down clothes and internal components for safer handling and wrinkle reduction.",
+  "Adjustable Feet": "Allows height adjustment for proper machine levelling and stable operation on uneven surfaces.",
+  "Reversible Badge": "Enables the control panel/badge orientation to be adjusted when the dryer is wall mounted in different positions.",
+  "Wall Mounting Kit": "Accessories provided to safely mount the dryer on a wall for space-saving installation.",
+  "Venting Kit": "Helps exhaust hot and moist air from the dryer to the outside environment for efficient drying performance.",
+  "Levelling Kit": "Assists in balancing and stabilising the dryer during installation to minimise vibration and movement.",
+  "Manual Safety Cut-off Switch": "Protective safety mechanism that allows manual interruption of power supply during unsafe operating conditions."
+};
+  const DESC_MAP = { front: FL_DESC, top: TL_DESC, topload: TL_DESC, wdr: WDR_DESC, dryer: DRYER_DESC };
 
   const TYPES = [
     { id: 'front', label: 'Front Load', emoji: '🟢', ph: 'Search Front Load model… e.g. Senator Neo, Eva ZX' },
     { id: 'top',   label: 'Top Load',   emoji: '🔵', ph: 'Search Top Load model… e.g. TL-RBR, TL-R1WRS'    },
     { id: 'wdr',   label: 'WDR',        emoji: '🔴', ph: 'Search WDR model… e.g. Executive Plus ZXB'        },
+    { id: 'dryer', label: 'Dryer',      emoji: '🟠', ph: 'Search Dryer model… e.g. Turbo Dry LX'             },
   ];
   let activeType = 'front';
 
@@ -607,7 +624,7 @@
   }
   function typeBadge(type) {
     const t   = TYPES.find(x => x.id === type);
-    const cls = { front: 'ml-badge-front', top: 'ml-badge-top', wdr: 'ml-badge-wdr' };
+    const cls = { front: 'ml-badge-front', top: 'ml-badge-top', topload: 'ml-badge-top', wdr: 'ml-badge-wdr', dryer: 'ml-badge-dryer' };
     return t ? '<span class="ml-type-badge ' + (cls[type] || '') + '">' + t.emoji + ' ' + t.label + '</span>' : '';
   }
 

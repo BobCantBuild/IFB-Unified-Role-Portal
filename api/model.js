@@ -1,7 +1,7 @@
 const path = require('path');
 const fs   = require('fs');
 
-let frontData = null, topData = null, wdrData = null;
+let frontData = null, topData = null, wdrData = null, dryerData = null;
 
 function load(key, filename) {
   const p = path.join(process.cwd(), 'data', filename);
@@ -22,15 +22,17 @@ module.exports = async function handler(req, res) {
     return res.status(400).json({ ok: false, error: 'Query too short.' });
 
   try {
-    if (!frontData) frontData = load('front', 'model-data.json');
-    if (!topData)   topData   = load('top',   'topload-model-data.json');
-    if (!wdrData)   wdrData   = load('wdr',   'wdr-model-data.json');
+    if (!frontData)  frontData  = load('front', 'model-data.json');
+    if (!topData)    topData    = load('top',   'topload-model-data.json');
+    if (!wdrData)    wdrData    = load('wdr',   'wdr-model-data.json');
+    if (!dryerData)  dryerData  = load('dryer', 'dryer-model-data.json');
 
     let pool = [];
-    if      (type === 'front') pool = frontData;
-    else if (type === 'top')   pool = topData;
-    else if (type === 'wdr')   pool = wdrData;
-    else pool = [...frontData, ...topData, ...wdrData];
+    if      (type === 'front')  pool = frontData;
+    else if (type === 'top')    pool = topData;
+    else if (type === 'wdr')    pool = wdrData;
+    else if (type === 'dryer')  pool = dryerData;
+    else pool = [...frontData, ...topData, ...wdrData, ...dryerData];
 
     const results = pool.filter(m => m.model.toLowerCase().includes(q));
     return res.status(200).json({ ok: true, found: results.length > 0, count: results.length, results });

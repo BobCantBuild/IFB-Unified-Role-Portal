@@ -1,0 +1,207 @@
+[
+  {
+    "model": "IFB Turbo Dry LX (5.5 kg)",
+    "type": "dryer",
+    "programs": [
+      "Mixed Load",
+      "Cotton",
+      "Synthetics"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Anticrease",
+        "Safety Reset"
+      ],
+      "Machine Care": [
+        "Lint Filter",
+        "Safety Door Switch",
+        "Auto Cooldown"
+      ],
+      "User Convenience": [
+        "Adjustable Feet",
+        "Reversible Badge",
+        "Wall Mounting Kit",
+        "Venting Kit",
+        "Levelling Kit",
+        "Manual Safety Cut-off Switch"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Turbo Dry": "Dryer Series",
+      "LX": "Yellow Color Variant",
+      "5.5 kg": "Drying Capacity"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2400,
+      "AMC 2 Year": 3400.0,
+      "Labour AMC 1 Year": 1150,
+      "Extended Warranty 1 Year": 1800
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB Turbo Dry MX (5.5 kg)",
+    "type": "dryer",
+    "programs": [
+      "Mixed Load",
+      "Cotton",
+      "Synthetics"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Anticrease",
+        "Safety Reset"
+      ],
+      "Machine Care": [
+        "Lint Filter",
+        "Safety Door Switch",
+        "Auto Cooldown"
+      ],
+      "User Convenience": [
+        "Adjustable Feet",
+        "Reversible Badge",
+        "Wall Mounting Kit",
+        "Venting Kit",
+        "Levelling Kit",
+        "Manual Safety Cut-off Switch"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Turbo Dry": "Dryer Series",
+      "MX": "Mocha Color Variant",
+      "5.5 kg": "Drying Capacity"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2400,
+      "AMC 2 Year": 3400.0,
+      "Labour AMC 1 Year": 1150,
+      "Extended Warranty 1 Year": 1800
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB Turbo Dry RX (5.5 kg)",
+    "type": "dryer",
+    "programs": [
+      "Mixed Load",
+      "Cotton",
+      "Synthetics"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Anticrease",
+        "Safety Reset"
+      ],
+      "Machine Care": [
+        "Lint Filter",
+        "Safety Door Switch",
+        "Auto Cooldown"
+      ],
+      "User Convenience": [
+        "Adjustable Feet",
+        "Reversible Badge",
+        "Wall Mounting Kit",
+        "Venting Kit",
+        "Levelling Kit",
+        "Manual Safety Cut-off Switch"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Turbo Dry": "Dryer Series",
+      "RX": "Red Color Variant",
+      "5.5 kg": "Drying Capacity"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2400,
+      "AMC 2 Year": 3400.0,
+      "Labour AMC 1 Year": 1150,
+      "Extended Warranty 1 Year": 1800
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TurboDry 550 (5.5 kg)",
+    "type": "dryer",
+    "programs": [
+      "Mixed Load",
+      "Cotton",
+      "Synthetics"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Anticrease",
+        "Safety Reset"
+      ],
+      "Machine Care": [
+        "Lint Filter",
+        "Safety Door Switch",
+        "Auto Cooldown"
+      ],
+      "User Convenience": [
+        "Adjustable Feet",
+        "Reversible Badge",
+        "Wall Mounting Kit",
+        "Venting Kit",
+        "Levelling Kit",
+        "Manual Safety Cut-off Switch"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TurboDry": "Dryer Series",
+      "550": "5.5 kg Capacity Model",
+      "Color": "White Color Variant"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2400,
+      "AMC 2 Year": 3400.0,
+      "Labour AMC 1 Year": 1150,
+      "Extended Warranty 1 Year": 1800
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB TurboDry EX (5.5 kg)",
+    "type": "dryer",
+    "programs": [
+      "Mixed Load",
+      "Cotton",
+      "Synthetics"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Anticrease",
+        "Safety Reset"
+      ],
+      "Machine Care": [
+        "Lint Filter",
+        "Safety Door Switch",
+        "Auto Cooldown"
+      ],
+      "User Convenience": [
+        "Adjustable Feet",
+        "Reversible Badge",
+        "Wall Mounting Kit",
+        "Venting Kit",
+        "Levelling Kit",
+        "Manual Safety Cut-off Switch"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "TurboDry": "Dryer Series",
+      "EX": "Silver Color Variant",
+      "5.5 kg": "Drying Capacity"
+    },
+    "amcEw": {
+      "AMC 1 Year": 2400,
+      "AMC 2 Year": 3400.0,
+      "Labour AMC 1 Year": 1150,
+      "Extended Warranty 1 Year": 1800
+    },
+    "testMode": {}
+  }
+]
