@@ -1,0 +1,846 @@
+[
+  {
+    "model": "IFB Executive Plus ZBG (11^7^3 kg)",
+    "type": "wdr",
+    "programs": [
+      "Wash+Dry 2Hr",
+      "Wash+Dry 4Hr",
+      "Refresh",
+      "Power Steam",
+      "Mix/Daily",
+      "Cotton/Cotton Eco",
+      "Baby Wear",
+      "Anti Allergen",
+      "Express 15/Express 30",
+      "Refresh",
+      "Wool",
+      "Bulky/Bedding",
+      "Synthetic",
+      "CradleWash",
+      "PowerSteam",
+      "Active Wear/Sports wear",
+      "Dark Wash",
+      "Inner Wear",
+      "Shirts/Blouses",
+      "Jeans",
+      "Bamboo Wash",
+      "Aroma"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "9 Swirl",
+        "3D Wash",
+        "AI Dos",
+        "Aqua Energie",
+        "CradleWash",
+        "Crescent Moon Drum",
+        "BLDC Motor Technology",
+        "Hot Rinse"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System",
+        "Drum Lamp"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Tub Clean",
+        "Auto Foam Control System"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive Plus": "Model Series",
+      "ZB": "Black VCM",
+      "G": "Series: Gold",
+      "11": "Washing Capacity: 11 kg",
+      "7": "Dryer Capacity: 7 kg",
+      "3": "Refresher Capacity: 3 kg"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400,
+      "Extended Warranty 6 Months - IFB Point": 600
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB Executive Plus ZXB (10^7^3 kg)",
+    "type": "wdr",
+    "programs": [
+      "Mix/Daily",
+      "Cotton/Cotton Eco",
+      "Baby Wear",
+      "Anti Allergen",
+      "Express 15",
+      "Refresh",
+      "Wool",
+      "Bulky/Bedding",
+      "Synthetic",
+      "CradleWash",
+      "PowerSteam",
+      "Wash + Dry 2 Hr/Wash + Dry 4 Hr",
+      "Cupboard Dry/Eco Dry",
+      "Iron Dry",
+      "Gentle Dry",
+      "Time Dry",
+      "Aroma"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "9 Swirl",
+        "3D Wash",
+        "AI Dos",
+        "Aqua Energie",
+        "CradleWash",
+        "Crescent Moon Drum",
+        "BLDC Motor Technology",
+        "Hot Rinse"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System",
+        "Drum Lamp"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Tub Clean",
+        "Auto Foam Control System"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive Plus": "Model Series",
+      "ZX": "Prefix Colour Code",
+      "B": "Colour: Black VCM",
+      "10": "Washing Capacity: 10 kg",
+      "7": "Dryer Capacity: 7 kg",
+      "3": "Refresher Capacity: 3 kg"
+    },
+    "amcEw": {
+      "AMC 1 Year": 7650,
+      "AMC 2 Year": 12240,
+      "EXT WTY 5TH YEAR": 2400,
+      "Extended Warranty 6 Months - IFB Point": 600
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB Executive Plus ZXM (10^7^3 kg)",
+    "type": "wdr",
+    "programs": [
+      "Mix/Daily",
+      "Cotton/Cotton Eco",
+      "Baby Wear",
+      "Anti Allergen",
+      "Express 15",
+      "Refresh",
+      "Wool",
+      "Bulky/Bedding",
+      "Synthetic",
+      "CradleWash",
+      "PowerSteam",
+      "Wash + Dry 2 Hr/Wash + Dry 4 Hr",
+      "Cupboard Dry/Eco Dry",
+      "Iron Dry",
+      "Gentle Dry",
+      "Time Dry",
+      "Aroma"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "9 Swirl",
+        "3D Wash",
+        "AI Dos",
+        "Aqua Energie",
+        "CradleWash",
+        "Crescent Moon Drum",
+        "BLDC Motor Technology",
+        "Hot Rinse"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System",
+        "Drum Lamp"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Tub Clean",
+        "Auto Foam Control System"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive Plus": "Model Series",
+      "ZX": "Prefix Colour Code",
+      "M": "Colour: Mocha",
+      "10": "Washing Capacity: 10 kg",
+      "7": "Dryer Capacity: 7 kg",
+      "3": "Refresher Capacity: 3 kg"
+    },
+    "amcEw": {
+      "AMC 1 Year": 7650,
+      "AMC 2 Year": 12240,
+      "EXT WTY 5TH YEAR": 2400,
+      "Extended Warranty 6 Months - IFB Point": 600
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB Executive Plus ZXS (10^7^3 kg)",
+    "type": "wdr",
+    "programs": [
+      "Mix/Daily",
+      "Cotton/Cotton Eco",
+      "Baby Wear",
+      "Anti Allergen",
+      "Express 15",
+      "Refresh",
+      "Wool",
+      "Bulky/Bedding",
+      "Synthetic",
+      "CradleWash",
+      "PowerSteam",
+      "Wash + Dry 2 Hr/Wash + Dry 4 Hr",
+      "Cupboard Dry/Eco Dry",
+      "Iron Dry",
+      "Gentle Dry",
+      "Time Dry",
+      "Aroma"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "9 Swirl",
+        "3D Wash",
+        "AI Dos",
+        "Aqua Energie",
+        "CradleWash",
+        "Crescent Moon Drum",
+        "BLDC Motor Technology",
+        "Hot Rinse"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System",
+        "Drum Lamp"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Tub Clean",
+        "Auto Foam Control System"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive Plus": "Model Series",
+      "ZX": "Prefix Colour Code",
+      "S": "Colour: Silver",
+      "10": "Washing Capacity: 10 kg",
+      "7": "Dryer Capacity: 7 kg",
+      "3": "Refresher Capacity: 3 kg"
+    },
+    "amcEw": {
+      "AMC 1 Year": 7650,
+      "AMC 2 Year": 12240,
+      "EXT WTY 5TH YEAR": 2400,
+      "Extended Warranty 6 Months - IFB Point": 600
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB Executive Plus ZXV (10^7^3 kg)",
+    "type": "wdr",
+    "programs": [
+      "Mix/Daily",
+      "Cotton/Cotton Eco",
+      "Baby Wear",
+      "Anti Allergen",
+      "Express 15",
+      "Refresh",
+      "Wool",
+      "Bulky/Bedding",
+      "Synthetic",
+      "CradleWash",
+      "PowerSteam",
+      "Wash + Dry 2 Hr/Wash + Dry 4 Hr",
+      "Cupboard Dry/Eco Dry",
+      "Iron Dry",
+      "Gentle Dry",
+      "Time Dry",
+      "Aroma"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "9 Swirl",
+        "3D Wash",
+        "AI Dos",
+        "Aqua Energie",
+        "CradleWash",
+        "Crescent Moon Drum",
+        "BLDC Motor Technology",
+        "Hot Rinse"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System",
+        "Drum Lamp"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Tub Clean",
+        "Auto Foam Control System"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive Plus": "Model Series",
+      "ZX": "Prefix Colour Code",
+      "V": "Colour: SUS VCM",
+      "10": "Washing Capacity: 10 kg",
+      "7": "Dryer Capacity: 7 kg",
+      "3": "Refresher Capacity: 3 kg"
+    },
+    "amcEw": {
+      "AMC 1 Year": 7650,
+      "AMC 2 Year": 12240,
+      "EXT WTY 5TH YEAR": 2400,
+      "Extended Warranty 6 Months - IFB Point": 600
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB Executive ZBN CMS (9^6^3 kg)",
+    "type": "wdr",
+    "programs": [
+      "Mix/Daily",
+      "Cotton/Cotton Eco",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 15/Express 30",
+      "Wool",
+      "Bulky/Bedding",
+      "Synthetic",
+      "CradleWash",
+      "PowerSteam",
+      "Wash + Dry 2 Hr/Wash + Dry 4 Hr",
+      "Sports Wear",
+      "Dark Wash",
+      "Jeans",
+      "Shirts",
+      "Inner Wear"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash",
+        "Crescent Moon Drum",
+        "BLDC Motor Technology",
+        "Hot Rinse"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Tub Clean",
+        "Auto Foam Control System"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive": "Model Series",
+      "ZB": "Colour: Black PCM",
+      "N": "Series: Neo",
+      "CMS": "Connected/Model Suffix",
+      "9": "Washing Capacity: 9 kg",
+      "6": "Dryer Capacity: 6 kg",
+      "3": "Refresher Capacity: 3 kg"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB Executive ZMN (9^6^3 kg)",
+    "type": "wdr",
+    "programs": [
+      "Mix/Daily",
+      "Cotton/Cotton Eco",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 15/Express 30",
+      "Wool",
+      "Bulky/Bedding",
+      "Synthetic",
+      "CradleWash",
+      "PowerSteam",
+      "Wash + Dry 2 Hr/Wash + Dry 4 Hr",
+      "Sports Wear",
+      "Dark Wash",
+      "Jeans",
+      "Shirts",
+      "Inner Wear"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash",
+        "Crescent Moon Drum",
+        "BLDC Motor Technology",
+        "Hot Rinse"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Tub Clean",
+        "Auto Foam Control System"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive": "Model Series",
+      "ZM": "Colour: Mocha",
+      "N": "Series: Neo",
+      "9": "Washing Capacity: 9 kg",
+      "6": "Dryer Capacity: 6 kg",
+      "3": "Refresher Capacity: 3 kg"
+    },
+    "amcEw": {
+      "AMC 1 Year": 7650,
+      "AMC 1 Year without Rubber": 6550,
+      "AMC 2 Year": 12240,
+      "AMC 2 Year without Rubber": 10480,
+      "EXT WTY 5TH YEAR": 2400,
+      "Extended Warranty 6 Months - IFB Point": 600
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB Executive ZVN (9^6^3 kg)",
+    "type": "wdr",
+    "programs": [
+      "Mix/Daily",
+      "Cotton/Cotton Eco",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 15/Express 30",
+      "Wool",
+      "Bulky/Bedding",
+      "Synthetic",
+      "CradleWash",
+      "PowerSteam",
+      "Wash + Dry 2 Hr/Wash + Dry 4 Hr",
+      "Sports Wear",
+      "Dark Wash",
+      "Jeans",
+      "Shirts",
+      "Inner Wear"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash",
+        "Crescent Moon Drum",
+        "BLDC Motor Technology",
+        "Hot Rinse"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Tub Clean",
+        "Auto Foam Control System"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive": "Model Series",
+      "ZV": "Colour: White",
+      "N": "Series: Neo",
+      "9": "Washing Capacity: 9 kg",
+      "6": "Dryer Capacity: 6 kg",
+      "3": "Refresher Capacity: 3 kg"
+    },
+    "amcEw": {
+      "EXT WTY 5TH YEAR": 2400,
+      "Extended Warranty 6 Months - IFB Point": 600
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB Executive ZXB (8.5^6.5^2.5 kg)",
+    "type": "wdr",
+    "programs": [
+      "Mix/Daily",
+      "Cotton/Cotton Eco",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 15",
+      "Wool",
+      "Bulky/Bedding",
+      "Synthetic",
+      "CradleWash",
+      "PowerSteam",
+      "Wash + Dry 2 Hr/Wash + Dry 4 Hr",
+      "Cupboard Dry",
+      "Iron Dry",
+      "Gentle Dry",
+      "Time Dry",
+      "Aroma."
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "3D Wash",
+        "Aqua Energie",
+        "Crescent Moon Drum",
+        "BLDC Motor Technology",
+        "Hot Rinse"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "Drum Lamp"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive": "Model Series",
+      "ZX": "Prefix Colour Code",
+      "B": "Colour: Black VCM",
+      "8.5": "Washing Capacity: 8.5 kg",
+      "6.5": "Dryer Capacity: 6.5 kg",
+      "2.5": "Refresher Capacity: 2.5 kg"
+    },
+    "amcEw": {
+      "AMC 1 Year": 7650,
+      "AMC 1 Year without Rubber": 6550,
+      "AMC 2 Year": 12240,
+      "AMC 2 Year without Rubber": 10480,
+      "EXT WTY 5TH YEAR": 2400,
+      "Extended Warranty 6 Months - IFB Point": 600
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB EXECUTIVE ZXB (9^6^3 kg)",
+    "type": "wdr",
+    "programs": [
+      "Mix/Daily",
+      "Cotton/Cotton Eco/Uniform/Linen",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 15 / Express 30",
+      "Wool",
+      "Bulky/Bedding",
+      "Synthetic",
+      "CradleWash",
+      "PowerSteam",
+      "Wash + Dry 2 Hr / Wash + Dry 4 Hr",
+      "Sports Wear",
+      "Dark Wash",
+      "Jeans",
+      "Shirts",
+      "Inner Wear",
+      "Cupboard Dry / Eco Dry",
+      "Gentle Dry",
+      "Iron Dry",
+      "Time Dry"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash",
+        "Crescent Moon Drum",
+        "BLDC Motor Technology",
+        "Hot Rinse"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Tub Clean",
+        "Auto Foam Control System"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive": "Model Series",
+      "ZX": "Prefix Colour Code",
+      "B": "Colour: Black VCM",
+      "9": "Washing Capacity: 9 kg",
+      "6": "Dryer Capacity: 6 kg",
+      "3": "Refresher Capacity: 3 kg"
+    },
+    "amcEw": {
+      "AMC 1 Year": 7650,
+      "AMC 1 Year without Rubber": 6550,
+      "AMC 2 Year": 12240,
+      "AMC 2 Year without Rubber": 10480,
+      "EXT WTY 5TH YEAR": 2400,
+      "Extended Warranty 6 Months - IFB Point": 600
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB Executive ZXM (8.5^6.5^2.5 kg)",
+    "type": "wdr",
+    "programs": [
+      "Mix/Daily",
+      "Cotton/Cotton Eco",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 15",
+      "Wool",
+      "Bulky/Bedding",
+      "Synthetic",
+      "CradleWash",
+      "PowerSteam",
+      "Wash + Dry 2 Hr/Wash + Dry 4 Hr",
+      "Cupboard Dry",
+      "Iron Dry",
+      "Gentle Dry",
+      "Time Dry",
+      "Aroma."
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash",
+        "Crescent Moon Drum",
+        "BLDC Motor Technology",
+        "Hot Rinse"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "Drum Lamp"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive": "Model Series",
+      "ZX": "Prefix Colour Code",
+      "M": "Colour: Mocha",
+      "8.5": "Washing Capacity: 8.5 kg",
+      "6.5": "Dryer Capacity: 6.5 kg",
+      "2.5": "Refresher Capacity: 2.5 kg"
+    },
+    "amcEw": {
+      "AMC 1 Year": 7900,
+      "AMC 1 Year without Rubber": 6750,
+      "AMC 2 Year": 14600,
+      "AMC 2 Year without Rubber": 12300,
+      "EXT WTY 5TH YEAR": 2400,
+      "Extended Warranty 6 Months - IFB Point": 600
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB Executive ZXV (8.5^6.5^2.5 kg)",
+    "type": "wdr",
+    "programs": [
+      "Mix/Daily",
+      "Cotton/Cotton Eco",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 15",
+      "Wool",
+      "Bulky/Bedding",
+      "Synthetic",
+      "CradleWash",
+      "PowerSteam",
+      "Wash + Dry 2 Hr/Wash + Dry 4 Hr",
+      "Cupboard Dry",
+      "Iron Dry",
+      "Gentle Dry",
+      "Time Dry",
+      "Aroma."
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash",
+        "Crescent Moon Drum",
+        "BLDC Motor Technology",
+        "Hot Rinse"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Tub Clean",
+        "Auto Foam Control System",
+        "Drum Lamp"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive": "Model Series",
+      "ZX": "Prefix Colour Code",
+      "V": "Colour: SUS VCM",
+      "8.5": "Washing Capacity: 8.5 kg",
+      "6.5": "Dryer Capacity: 6.5 kg",
+      "2.5": "Refresher Capacity: 2.5 kg"
+    },
+    "amcEw": {
+      "AMC 1 Year": 7650,
+      "AMC 1 Year without Rubber": 6550,
+      "AMC 2 Year": 12240,
+      "AMC 2 Year without Rubber": 10480,
+      "EXT WTY 5TH YEAR": 2400,
+      "Extended Warranty 6 Months - IFB Point": 600
+    },
+    "testMode": {}
+  },
+  {
+    "model": "IFB EXECUTIVE ZXV (9^6^3 kg)",
+    "type": "wdr",
+    "programs": [
+      "Mix/Daily",
+      "Cotton/Cotton Eco",
+      "Baby Wear",
+      "Refresh",
+      "Anti Allergen",
+      "Express 15",
+      "Wool",
+      "Bulky/Bedding",
+      "Synthetic",
+      "CradleWash",
+      "PowerSteam",
+      "Wash + Dry 2 Hr/Wash + Dry 4 Hr",
+      "Cupboard Dry",
+      "Iron Dry",
+      "Gentle Dry",
+      "Time Dry",
+      "Aroma."
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Powered by Ai",
+        "9 Swirl",
+        "3D Wash",
+        "Aqua Energie",
+        "CradleWash",
+        "Crescent Moon Drum",
+        "BLDC Motor Technology",
+        "Hot Rinse"
+      ],
+      "Machine Care": [
+        "High-Low Voltage Protection",
+        "Program Memory Backup",
+        "Auto Imbalance System"
+      ],
+      "User Convenience": [
+        "Child Lock",
+        "Laundry Add",
+        "Anti Crease",
+        "Auto Tub Clean",
+        "Auto Foam Control System"
+      ]
+    },
+    "nomenclature": {
+      "IFB": "Brand",
+      "Executive": "Model Series",
+      "ZX": "Prefix Colour Code",
+      "V": "Colour: SUS VCM",
+      "9": "Washing Capacity: 9 kg",
+      "6": "Dryer Capacity: 6 kg",
+      "3": "Refresher Capacity: 3 kg"
+    },
+    "amcEw": {
+      "AMC 1 Year": 7650,
+      "AMC 1 Year without Rubber": 6550,
+      "AMC 2 Year": 12240,
+      "AMC 2 Year without Rubber": 10480,
+      "EXT WTY 5TH YEAR": 2400,
+      "Extended Warranty 6 Months - IFB Point": 600
+    },
+    "testMode": {}
+  }
+]

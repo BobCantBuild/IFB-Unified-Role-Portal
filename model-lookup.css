@@ -424,3 +424,35 @@
   #modelOverlayTitle     { font-size: 0.95rem; }
   #modelTabBody          { padding: 14px; }
 }
+
+/* ── Pill wrap ── */
+.ml-pill-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.ml-pill {
+  padding: 7px 16px;
+  border: 1.5px solid #d4d1ca;
+  border-radius: 999px;
+  background: #f4f1ec;
+  color: #547086;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 160ms;
+}
+.ml-pill:hover { background: #e0eef4; border-color: #006f8f; color: #006f8f; }
+.ml-pill.active { background: #006f8f; border-color: #006f8f; color: #fff; }
+
+/* Update search section to be vertical now */
+.model-search-section {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* WDR badge */
+.ml-badge-wdr   { background: #ffe5e5; color: #8b1a1a; border: 1px solid #f5b8b8; }
+.ml-badge-dryer { background: #fff4d6; color: #7a5000; border: 1px solid #f5d98a; }

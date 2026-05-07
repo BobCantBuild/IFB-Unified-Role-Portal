@@ -128,51 +128,17 @@
 
 
     <!-- ✅ MODEL SEARCH — dual horizontal bars -->
-    <div class="model-search-section">
-
-      <!-- Front Load -->
-      <div class="model-search-col">
-        <div class="model-search-label">
-          <span class="ml-loader-dot ml-dot-front"></span>
-          Front Load Model Lookup
-        </div>
-        <div class="ml-search-wrap">
-          <input
-            type="text"
-            id="flSearchInput"
-            placeholder="🟢 Search Front Load… e.g. Senator Neo, Eva ZX"
-            autocomplete="off"
-            spellcheck="false"
-          />
-          <button id="flSearchBtn">Search</button>
-          <div id="flSuggestions"></div>
-        </div>
-      </div>
-
-      <!-- Divider -->
-      <div class="model-search-divider"></div>
-
-      <!-- Top Load -->
-      <div class="model-search-col">
-        <div class="model-search-label">
-          <span class="ml-loader-dot ml-dot-top"></span>
-          Top Load Model Lookup
-        </div>
-        <div class="ml-search-wrap">
-          <input
-            type="text"
-            id="tlSearchInput"
-            placeholder="🔵 Search Top Load… e.g. TL-RBR, TL-R1WRS"
-            autocomplete="off"
-            spellcheck="false"
-          />
-          <button id="tlSearchBtn">Search</button>
-          <div id="tlSuggestions"></div>
-        </div>
-      </div>
-
-    </div>
-
+    <!-- MODEL SEARCH — Pill selector + single bar -->
+<div class="model-search-section">
+  <div class="ml-pill-wrap" id="mlPillWrap"></div>
+  <div class="ml-search-wrap">
+    <input type="text" id="mlSearchInput"
+      placeholder="🟢 Search Front Load… e.g. Senator Neo, Eva ZX"
+      autocomplete="off" spellcheck="false" />
+    <button id="mlSearchBtn">Search</button>
+    <div id="mlSuggestions"></div>
+  </div>
+</div>
 
     <!-- IFB LATEST NEWS SECTION -->
     <section class="ifb-feed-section">
