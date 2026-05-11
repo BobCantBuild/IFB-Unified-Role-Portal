@@ -452,3 +452,17 @@ body {
 .widget-column .widget-card {
   flex: 1;          /* fills the stretched widget-column vertically */
 }
+
+.qa-news-row {
+  display: flex;
+  gap: 16px;
+  margin: 18px 0 0 0;
+  align-items: flex-start;
+}
+.qa-col         { flex: 1; min-width: 0; }
+.qa-future-col  { width: 300px; flex-shrink: 0; }
+
+@media (max-width: 768px) {
+  .qa-news-row { flex-direction: column; }
+  .qa-future-col { width: 100%; }
+}
