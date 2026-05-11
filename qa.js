@@ -66,14 +66,12 @@
         </div>
         <div class="qa-actions">
           <button class="qa-submit-btn" id="qaSubmit" disabled>Submit</button>
-          <button class="qa-skip-btn" id="qaSkip">Next &rsaquo;</button>
         </div>
         <div class="qa-feedback" id="qaFeedback"></div>
       </div>`;
 
     const optBtns   = root.querySelectorAll(".qa-opt");
     const submitBtn = document.getElementById("qaSubmit");
-    const skipBtn   = document.getElementById("qaSkip");
 
     optBtns.forEach(btn => {
       btn.addEventListener("click", () => {
@@ -120,13 +118,6 @@
       }, 1900);
     });
 
-    skipBtn.addEventListener("click", () => {
-      if (confirmed) return;
-      current++;
-      selected  = null;
-      confirmed = false;
-      renderQuestion(true);
-    });
   }
 
   /* ── Confetti burst ── */

@@ -114,7 +114,7 @@
 .qa-opt-text { font-size: 0.81rem; color: #2c3e50; line-height: 1.45; }
 
 /* ── Submit + Skip row ─────────────────────────────── */
-.qa-actions { display: flex; gap: 8px; margin-top: auto; }
+.qa-actions { display: flex; margin-top: auto; }
 .qa-submit-btn {
   flex: 1;
   padding: 10px;
@@ -131,20 +131,6 @@
 .qa-submit-btn:hover:not(:disabled) { background: #005a75; }
 .qa-submit-btn:disabled { background: #b8cdd4; cursor: not-allowed; }
 
-.qa-skip-btn {
-  padding: 10px 16px;
-  background: #f4f1ec;
-  color: #547086;
-  border: 1.5px solid #d4d1ca;
-  border-radius: 8px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  cursor: pointer;
-  font-family: inherit;
-  transition: background 140ms, color 140ms, border-color 140ms;
-  white-space: nowrap;
-}
-.qa-skip-btn:hover { background: #e0eef4; color: #006f8f; border-color: #006f8f; }
 
 /* ── Feedback ──────────────────────────────────────── */
 .qa-feedback    { font-size: 0.79rem; min-height: 20px; }
