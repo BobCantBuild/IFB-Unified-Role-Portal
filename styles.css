@@ -459,11 +459,11 @@ body {
   margin: 18px 0 0 0;
   align-items: flex-start;
 }
-.qa-future-col  { flex: 1; min-width: 0; }   /* LEFT — future widget, takes remaining space */
-.qa-col         { width: 320px; flex-shrink: 0; }  /* RIGHT — Q&A fixed width */
+.qa-future-col { flex: 1; min-width: 0; }        /* LEFT — future widget */
+.qa-col        { width: calc(50% - 8px); flex-shrink: 0; }  /* RIGHT — Q&A = 50% of row */
 
 @media (max-width: 768px) {
-  .qa-news-row    { flex-direction: column; }
+  .qa-news-row   { flex-direction: column; }
   .qa-col,
-  .qa-future-col  { width: 100%; }
+  .qa-future-col { width: 100%; }
 }
