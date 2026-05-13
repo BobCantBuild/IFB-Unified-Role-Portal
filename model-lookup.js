@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════════════════
    model-lookup.js  —  Pill Selector + Single Search Bar
-   Supports: Front Load | Top Load | WDR
+   Supports: Front Load | Top Load | WDR | Dryer | Dishwasher
 ═══════════════════════════════════════════════════════ */
 (function () {
 
