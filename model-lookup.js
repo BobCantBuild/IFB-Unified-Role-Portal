@@ -629,12 +629,21 @@ const DW_DESC = {
 };
 
 // === ESSENTIALS DATA ===
-const ESSENTIALS_DATA = {
+let ESSENTIALS_DATA = {
   fl_dwr: [],
   tl: [],
   dryer: [],
   dw: []
 };
+
+async function loadEssentialsData() {
+  try {
+    const res = await fetch('/data/essentials.json');
+    ESSENTIALS_DATA = await res.json();
+  } catch (e) {
+    console.error('[ML] essentials load failed', e);
+  }
+}
 
 function getEssentialsForType(type) {
   if (type === 'front' || type === 'wdr') return ESSENTIALS_DATA.fl_dwr;
@@ -941,5 +950,6 @@ function openOverlay(obj) {
   searchIn.addEventListener('blur',    function() { setTimeout(suggestHide, 150); });
   searchBtn.addEventListener('click',  doSearch);
 
+  loadEssentialsData();
   console.log('[ML] model-lookup.js ready ✅');
 })();
