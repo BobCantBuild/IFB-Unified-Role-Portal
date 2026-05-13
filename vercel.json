@@ -3,6 +3,7 @@
   "routes": [
     { "src": "/api/social", "dest": "/api/social-feed.js" },
     { "src": "/api/(.*)", "dest": "/api/$1.js" },
+    { "handle": "filesystem" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
