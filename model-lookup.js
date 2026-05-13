@@ -628,6 +628,33 @@ const DW_DESC = {
   "Natural Drying": "Uses residual heat and airflow to dry dishes naturally."
 };
 
+// === ESSENTIALS DATA ===
+const ESSENTIALS_DATA = {
+  fl_dwr: [],
+  tl: [],
+  dryer: [],
+  dw: []
+};
+
+function getEssentialsForType(type) {
+  if (type === 'front' || type === 'wdr') return ESSENTIALS_DATA.fl_dwr;
+  if (type === 'top' || type === 'topload') return ESSENTIALS_DATA.tl;
+  if (type === 'dryer') return ESSENTIALS_DATA.dryer;
+  if (type === 'dw') return ESSENTIALS_DATA.dw;
+  return [];
+}
+
+function renderEssentials(list) {
+  if (!list || !list.length) return '<p class="ml-empty">No essentials available.</p>';
+  return '<div class="ml-ess-grid">' + list.map(function(x) {
+    const mrp = (x.mrp === null || x.mrp === undefined || x.mrp === '-') ? '-' : ('₹' + x.mrp);
+    return '<div class="ml-essential-card">' +
+      '<div class="ml-essential-name">' + x.essential + '</div>' +
+      '<div class="ml-essential-meta"><span>' + x.quantity + '</span><span>' + x.washes + '</span><span>' + mrp + '</span></div>' +
+      '<div class="ml-essential-feature">' + x.feature + '</div>' +
+    '</div>';
+  }).join('') + '</div>';
+}
 
 
   const DESC_MAP = { front: FL_DESC, top: TL_DESC, topload: TL_DESC, wdr: WDR_DESC, dryer: DRYER_DESC,dw: DW_DESC};
@@ -811,6 +838,7 @@ const TYPES = [
     { id: 'nomenclature', label: 'Nomenclature' },
     { id: 'amc',          label: 'AMC / EW'     },
     { id: 'testmode',     label: 'Test Mode'    },
+    { id: 'essentials', label: 'Essentials can be used' }
   ];
   let curData = null, curTab = 'programs';
 
@@ -820,6 +848,7 @@ if (id === 'features')     return d.type === 'dw' ? renderKeyFeatures(d) : rende
     if (id === 'nomenclature') return renderNom(d);
     if (id === 'amc')          return renderAMC(d);
     if (id === 'testmode')     return renderTest(d);
+    if (id === 'essentials') return renderEssentials(getEssentialsForType(d.type));
     return '';
   }
 
