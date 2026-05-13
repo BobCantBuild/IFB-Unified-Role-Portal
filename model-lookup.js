@@ -730,7 +730,9 @@ const TYPES = [
     '<div class="ml-feature-section">' +
       '<h4>' + cat + '</h4>' +
       '<div class="ml-chip-grid">' + 
-        items.map(p => '<span class="ml-chip">' + p + '</span>').join('') +
+        items.map(function(p) {
+  return '<span class="ml-chip-wrap"><span class="ml-chip">' + p + '</span>' + infoBtn(p, DW_DESC) + '</span>';
+}).join('') +
       '</div>' +
     '</div>'
   ).join('');
