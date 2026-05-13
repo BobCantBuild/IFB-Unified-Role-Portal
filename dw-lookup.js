@@ -144,12 +144,22 @@
     pill.setAttribute('data-type', DW_PILL_ID);
     pill.innerHTML = '\uD83C\uDF7D\uFE0F Dishwasher';
     pill.addEventListener('click', function(){
-      /* toggle active like other pills */
       var allPills = document.querySelectorAll('.ml-pill');
       var wasActive = pill.classList.contains('active');
+      /* deactivate all pills first */
       allPills.forEach(function(p){ p.classList.remove('active'); });
-      if (!wasActive) pill.classList.add('active');
-      filterDWSuggestions(document.getElementById('mlSearchInput').value.trim(), !wasActive);
+      var input   = document.getElementById('mlSearchInput');
+      var suggest = document.getElementById('mlSuggestions');
+      if (wasActive) {
+        /* toggling off — clear input + suggestions */
+        if (input)   input.value = '';
+        if (suggest) suggest.style.display = 'none';
+      } else {
+        /* activating DW pill — clear input, wait for user to type */
+        pill.classList.add('active');
+        if (input)   { input.value = ''; input.focus(); }
+        if (suggest) suggest.style.display = 'none';
+      }
     });
     pillWrap.appendChild(pill);
   }
@@ -188,7 +198,13 @@
     input.addEventListener('input', function(){
       var dwPill = document.getElementById('dw-pill');
       if (dwPill && dwPill.classList.contains('active')) {
-        filterDWSuggestions(input.value.trim(), true);
+        var q = input.value.trim();
+        if (q.length === 0) {
+          var suggest = document.getElementById('mlSuggestions');
+          if (suggest) suggest.style.display = 'none';
+        } else {
+          filterDWSuggestions(q, true);
+        }
       }
     });
 
