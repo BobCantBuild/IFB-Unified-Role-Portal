@@ -1,0 +1,600 @@
+[
+  {
+    "model": "Neptune BI2",
+    "type": "dw",
+    "placeSettings": 14,
+    "programs": [
+      "Pre-Wash",
+      "Quick 30'",
+      "Eco mode",
+      "Easy Care (60°C)",
+      "Super 50'",
+      "Delicate (40°C)",
+      "Auto Delicate (30–50°C)",
+      "Auto Normal (50–60°C)",
+      "Auto Intensive (60–70°C)"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Hot Water Wash (up to 70°C)",
+        "Intelligent Sensor",
+        "Unique Spray Action",
+        "Active Drying System",
+        "In-built Water Softening Device (up to 700 PPM)",
+        "Anti-Microbial Filters",
+        "Self-Cleaning"
+      ],
+      "Wash Options": [
+        "Delay Start (24 hr)",
+        "Tablet Detergent",
+        "Half Load (Flexi)",
+        "Extra Hygiene",
+        "Extra Rinse",
+        "Extra Drying",
+        "Energy Save Option"
+      ],
+      "User Convenience": [
+        "Touch Controls",
+        "Bottom LED Wash Cycle Indicator",
+        "Digital Display (Program Time)",
+        "Height Adjustable Upper Basket (2 levels)",
+        "Removable Upper Basket",
+        "Large Knife Holder",
+        "Salt & Rinse Aid Indicators"
+      ]
+    },
+    "waterConsumption": 12,
+    "amcEw": {
+      "AMC 1 Year": 4500,
+      "AMC 2 Year": 8250,
+      "Extended Warranty 1 Year": 1991,
+      "Extended Warranty 2 Year": 3474
+    },
+    "nomenclature": {},
+    "testMode": {}
+  },
+  {
+    "model": "Neptune VX2 Plus",
+    "type": "dw",
+    "placeSettings": 16,
+    "programs": [
+      "Pre-Wash",
+      "Quick 30'",
+      "Eco mode",
+      "Easy Care 60°C",
+      "Super 50'",
+      "Auto Delicate (30–50°C)",
+      "Auto Normal (50–60°C)",
+      "Auto Intensive (60–70°C)"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Hot Water Wash (up to 70°C)",
+        "Intelligent Sensor",
+        "Turbo Drying Unit",
+        "Auto Door Opening (Energy Save)",
+        "In-built Water Softening Device (6-level, up to 700 PPM)",
+        "Natural Ion Tech",
+        "Height Adjustable Upper Basket (3 positions)",
+        "Upper Cutlery Basket",
+        "Multi-functional Rack System",
+        "Favourite Program Save",
+        "Save Power Mode",
+        "Auto Restart"
+      ],
+      "Wash Options": [
+        "Delay Start (1–24 hrs)",
+        "Tablet Detergent",
+        "Half Load (Upper / Lower / Both)",
+        "Extra Hygiene",
+        "Extra Rinse",
+        "Extra Drying",
+        "Auto Door Opening",
+        "Child Lock"
+      ],
+      "User Convenience": [
+        "Remaining Time Indicator",
+        "Washing Step Indicators (Wash→Rinse→Dry→End)",
+        "Salt & Rinse Aid Indicators",
+        "Auto Door Opening",
+        "Favourite Program Save",
+        "Buzzer Sound Control (S0–S3)",
+        "Save Power Mode (auto-off after 15 min)",
+        "Natural Ion Tech",
+        "Child Lock"
+      ]
+    },
+    "waterConsumption": 9,
+    "amcEw": {
+      "AMC 1 Year": 3750,
+      "AMC 2 Year": 6950,
+      "Extended Warranty 1 Year": 2200,
+      "Extended Warranty 2 Year": 3800
+    },
+    "nomenclature": {},
+    "testMode": {}
+  },
+  {
+    "model": "Neptune SX2",
+    "type": "dw",
+    "placeSettings": 16,
+    "programs": [
+      "Pre-Wash",
+      "Quick 30'",
+      "Eco mode",
+      "Easy Care (60°C)",
+      "Super 50'",
+      "Auto Delicate (30–50°C)",
+      "Auto Normal (50–60°C)",
+      "Auto Intensive (60–70°C)"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Hot Water Wash (up to 70°C)",
+        "Intelligent Sensor",
+        "Turbo Drying Unit",
+        "Auto Door Opening (Energy Save)",
+        "In-built Water Softening Device (6-level, up to 900 PPM)",
+        "Natural Ion Tech",
+        "Height Adjustable Upper Basket (3 positions)",
+        "Upper Cutlery Basket",
+        "Multi-functional Rack System",
+        "Favourite Program Save",
+        "Save Power Mode",
+        "Auto Restart"
+      ],
+      "Wash Options": [
+        "Delay Start (1–24 hrs)",
+        "Tablet Detergent",
+        "Half Load (Upper / Lower / Both)",
+        "Extra Hygiene",
+        "Extra Rinse",
+        "Extra Drying",
+        "Auto Door Opening",
+        "Child Lock"
+      ],
+      "User Convenience": [
+        "Remaining Time Display",
+        "Auto Door Opening (default ON)",
+        "Auto-Resume After Power Cut",
+        "Detergent & Salt Refill Indicator",
+        "Delay Start (1–24 hrs)",
+        "Child Lock",
+        "Natural Drying"
+      ]
+    },
+    "waterConsumption": null,
+    "amcEw": {
+      "AMC 1 Year": 5700,
+      "AMC 2 Year": 9650,
+      "Extended Warranty 1 Year": 2700,
+      "Extended Warranty 2 Year": 4500
+    },
+    "nomenclature": {},
+    "testMode": {}
+  },
+  {
+    "model": "Neptune VX1",
+    "type": "dw",
+    "placeSettings": 12,
+    "programs": [
+      "Pre-Wash",
+      "Quick 30'",
+      "Eco mode",
+      "Easy Care (60°C)",
+      "Super 50'",
+      "Delicate (40°C)",
+      "Auto Delicate (30–50°C)",
+      "Auto Normal (50–60°C)",
+      "Auto Intensive (60–70°C)"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Hot Water Wash (up to 70°C)",
+        "Intelligent Sensor",
+        "Active Drying Unit",
+        "In-built Water Softening Device (6-level, up to 700 PPM)",
+        "Anti-Microbial Filters",
+        "Height Adjustable Upper Basket (2 levels)",
+        "Four Folding Racks"
+      ],
+      "Wash Options": [
+        "Delay Start (1–24 hrs)",
+        "Tablet Detergent",
+        "Half Load",
+        "Extra Hygiene",
+        "Extra Rinse",
+        "Extra Drying",
+        "Energy Save Option",
+        "Child Lock"
+      ],
+      "User Convenience": [
+        "Touch Controls",
+        "Bottom LED Wash Cycle Indicator",
+        "Digital Display (Program Time)",
+        "Height Adjustable Upper Basket (2 levels)",
+        "Large Knife Holder",
+        "Salt & Rinse Aid Indicators",
+        "Child Lock"
+      ]
+    },
+    "waterConsumption": null,
+    "amcEw": {
+      "AMC 1 Year": 4700,
+      "AMC 2 Year": 7950,
+      "Extended Warranty 1 Year": 2200,
+      "Extended Warranty 2 Year": 3800
+    },
+    "nomenclature": {},
+    "testMode": {}
+  },
+  {
+    "model": "Neptune FX1",
+    "type": "dw",
+    "placeSettings": 12,
+    "programs": [
+      "JETwash 14'",
+      "Intensive (65°C)",
+      "Auto (50°C–65°C)",
+      "Hygiene (70°C)",
+      "Daily (94 min)",
+      "Quick 30' (Crockery)",
+      "Eco 50°C"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Hot Water Wash (up to 70°C)",
+        "Intelligent Sensor",
+        "Active Drying System",
+        "Hygiene Program (70°C)",
+        "In-built Water Softening Device (up to 700 PPM)",
+        "Anti-Microbial Filters",
+        "Self-Cleaning"
+      ],
+      "Wash Options": [
+        "Delay Start (24 hr)",
+        "Tablet Detergent",
+        "Half Load (Flexi)",
+        "Extra Hygiene",
+        "Extra Rinse",
+        "Extra Drying",
+        "Energy Save Option"
+      ],
+      "User Convenience": [
+        "Touch Controls",
+        "Bottom LED Wash Cycle Indicator",
+        "Digital Display (Program Time)",
+        "Height Adjustable Upper Basket (Rail Stop Clip)",
+        "Large Knife Holder",
+        "Salt & Rinse Aid Indicators"
+      ]
+    },
+    "waterConsumption": null,
+    "amcEw": {
+      "AMC 1 Year": 4000,
+      "AMC 2 Year": 6800,
+      "Extended Warranty 1 Year": 1991,
+      "Extended Warranty 2 Year": 3474
+    },
+    "nomenclature": {},
+    "testMode": {}
+  },
+  {
+    "model": "Neptune VX1 Plus",
+    "type": "dw",
+    "placeSettings": 15,
+    "programs": [
+      "Pre-Wash",
+      "Quick 30'",
+      "Eco mode",
+      "Easy Care (60°C)",
+      "Super 50'",
+      "Auto Delicate (30–50°C)",
+      "Auto Normal (50–60°C)",
+      "Auto Intensive (60–70°C)"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Hot Water Wash (up to 70°C)",
+        "Intelligent Sensor",
+        "Turbo Drying Unit",
+        "Auto Door Opening (Energy Save)",
+        "In-built Water Softening Device (6-level, up to 700 PPM)",
+        "Natural Ion Tech",
+        "Height Adjustable Upper Basket (3 levels)",
+        "Upper Cutlery Basket",
+        "Favourite Program Save",
+        "Save Power Mode",
+        "Auto Restart"
+      ],
+      "Wash Options": [
+        "Delay Start (1–24 hrs)",
+        "Tablet Detergent",
+        "Half Load (Upper / Lower / Both)",
+        "Extra Hygiene",
+        "Extra Rinse",
+        "Extra Drying",
+        "Auto Door Opening",
+        "Child Lock"
+      ],
+      "User Convenience": [
+        "Remaining Time Indicator",
+        "Washing Step Indicators (Wash→Rinse→Dry→End)",
+        "Salt & Rinse Aid Indicators",
+        "Auto Door Opening",
+        "Favourite Program Save",
+        "Save Power Mode (auto-off after 15 min)",
+        "Child Lock"
+      ]
+    },
+    "waterConsumption": null,
+    "amcEw": {
+      "AMC 1 Year": 3750,
+      "AMC 2 Year": 6950,
+      "Extended Warranty 1 Year": 2200,
+      "Extended Warranty 2 Year": 3800
+    },
+    "nomenclature": {},
+    "testMode": {}
+  },
+  {
+    "model": "Neptune VX Plus",
+    "type": "dw",
+    "placeSettings": 15,
+    "programs": [
+      "Pre-Wash",
+      "Quick 30'",
+      "Eco mode",
+      "Easy Care (60°C)",
+      "Super 50'",
+      "Delicate (40°C)",
+      "Auto Delicate (30–50°C)",
+      "Auto Normal (50–60°C)",
+      "Auto Intensive (60–70°C)"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Hot Water Wash (up to 70°C)",
+        "Intelligent Sensor",
+        "Unique Triple Spray Action",
+        "Active Drying System",
+        "In-built Water Softening Device (up to 800 PPM)",
+        "Anti-Microbial Filters",
+        "Self-Cleaning"
+      ],
+      "Wash Options": [
+        "Delay Start (24 hr)",
+        "Tablet Detergent",
+        "Half Load (Flexi)",
+        "Extra Hygiene",
+        "Extra Rinse",
+        "Extra Drying",
+        "Energy Save Option"
+      ],
+      "User Convenience": [
+        "Touch Controls",
+        "Bottom LED Wash Cycle Indicator",
+        "Digital Display (Program Time)",
+        "Height Adjustable Upper Basket (3 levels)",
+        "Removable Upper Basket",
+        "Large Knife Holder",
+        "Salt & Rinse Aid Indicators"
+      ]
+    },
+    "waterConsumption": null,
+    "amcEw": {
+      "AMC 1 Year": 4400,
+      "AMC 2 Year": 8100,
+      "Extended Warranty 1 Year": 1991,
+      "Extended Warranty 2 Year": 3474
+    },
+    "nomenclature": {},
+    "testMode": {}
+  },
+  {
+    "model": "Neptune WX",
+    "type": "dw",
+    "placeSettings": 12,
+    "programs": [
+      "Express (55 min)",
+      "Mix Load (60°C)",
+      "Crystal/Glass",
+      "Heavily Soiled (60°C)",
+      "Extra Heavily Soiled (70°C)",
+      "Pots/Pans (70°C)",
+      "Normal (Pre-Wash + 50°C)"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Hot Water Wash (up to 70°C)",
+        "Intelligent Sensor",
+        "Active Drying System",
+        "In-built Water Softening Device (6-level, up to 800 PPM)",
+        "Modular & Adjustable Baskets",
+        "Double Spray Action"
+      ],
+      "Wash Options": [
+        "Delay Start (1–24 hrs)",
+        "Tablet Detergent",
+        "Half Load",
+        "Extra Hygiene",
+        "Extra Rinse",
+        "Extra Drying",
+        "Child Lock"
+      ],
+      "User Convenience": [
+        "Remaining Time Indicator",
+        "Washing Step Indicators (Wash→Rinse→Dry→End)",
+        "Salt & Rinse Aid Indicators",
+        "Child Lock"
+      ]
+    },
+    "waterConsumption": null,
+    "amcEw": {
+      "AMC 1 Year": 3900,
+      "AMC 2 Year": 7200,
+      "Extended Warranty 1 Year": 2200,
+      "Extended Warranty 2 Year": 3800
+    },
+    "nomenclature": {},
+    "testMode": {}
+  },
+  {
+    "model": "Neptune SX1",
+    "type": "dw",
+    "placeSettings": 15,
+    "programs": [
+      "Pre-Wash",
+      "Quick 30'",
+      "Eco mode",
+      "Easy Care (60°C)",
+      "Super 50'",
+      "Auto Delicate (30–50°C)",
+      "Auto Normal (50–60°C)",
+      "Auto Intensive (60–70°C)"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Hot Water Wash (up to 70°C)",
+        "Intelligent Sensor",
+        "Active Drying System",
+        "In-built Water Softening Device (6-level, up to 700 PPM)",
+        "Natural Ion Tech",
+        "Height Adjustable Upper Basket (3 levels)",
+        "Upper Cutlery Basket",
+        "Favourite Program Save",
+        "Save Power Mode"
+      ],
+      "Wash Options": [
+        "Delay Start (1–24 hrs)",
+        "Tablet Detergent",
+        "Half Load (Upper / Lower / Both)",
+        "Extra Hygiene",
+        "Extra Rinse",
+        "Extra Drying",
+        "Child Lock"
+      ],
+      "User Convenience": [
+        "Remaining Time Indicator",
+        "Washing Step Indicators (Wash→Rinse→Dry→End)",
+        "Salt & Rinse Aid Indicators",
+        "Favourite Program Save",
+        "Save Power Mode (auto-off after 15 min)",
+        "Child Lock"
+      ]
+    },
+    "waterConsumption": null,
+    "amcEw": {
+      "AMC 1 Year": 4450,
+      "AMC 2 Year": 8200,
+      "Extended Warranty 1 Year": 2200,
+      "Extended Warranty 2 Year": 3800
+    },
+    "nomenclature": {},
+    "testMode": {}
+  },
+  {
+    "model": "Neptune FX",
+    "type": "dw",
+    "placeSettings": 12,
+    "programs": [
+      "JETwash 14'",
+      "Intensive (65°C)",
+      "Auto (50°C–65°C)",
+      "Hygiene (70°C)",
+      "Daily (94 min)",
+      "Quick 30' (Crockery)",
+      "Eco 50°C"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Hot Water Wash (up to 70°C)",
+        "Intelligent Sensor",
+        "Active Drying System",
+        "Hygiene Program (70°C)",
+        "In-built Water Softening Device (up to 700 PPM)",
+        "Anti-Microbial Filters",
+        "Self-Cleaning"
+      ],
+      "Wash Options": [
+        "Delay Start (24 hr)",
+        "Tablet Detergent",
+        "Half Load (Flexi)",
+        "Extra Hygiene",
+        "Extra Rinse",
+        "Extra Drying",
+        "Energy Save Option"
+      ],
+      "User Convenience": [
+        "Touch Controls",
+        "Bottom LED Wash Cycle Indicator",
+        "Digital Display (Program Time)",
+        "Large Knife Holder",
+        "Salt & Rinse Aid Indicators"
+      ]
+    },
+    "waterConsumption": null,
+    "amcEw": {
+      "AMC 1 Year": 3900,
+      "AMC 2 Year": 6800,
+      "Extended Warranty 1 Year": 1991,
+      "Extended Warranty 2 Year": 3474
+    },
+    "nomenclature": {},
+    "testMode": {}
+  },
+  {
+    "model": "Neptune VX",
+    "type": "dw",
+    "placeSettings": 12,
+    "programs": [
+      "Pre-Wash",
+      "Quick 30'",
+      "Eco mode",
+      "Easy Care (60°C)",
+      "Super 50'",
+      "Delicate (40°C)",
+      "Auto Delicate (30–50°C)",
+      "Auto Normal (50–60°C)",
+      "Auto Intensive (60–70°C)"
+    ],
+    "keyFeatures": {
+      "Advanced Wash Technology": [
+        "Hot Water Wash (up to 70°C)",
+        "Intelligent Sensor",
+        "Unique Spray Action",
+        "Active Drying System",
+        "In-built Water Softening Device (up to 700 PPM)",
+        "Anti-Microbial Filters",
+        "Self-Cleaning"
+      ],
+      "Wash Options": [
+        "Delay Start (24 hr)",
+        "Tablet Detergent",
+        "Half Load (Flexi)",
+        "Extra Hygiene",
+        "Extra Rinse",
+        "Extra Drying",
+        "Energy Save Option"
+      ],
+      "User Convenience": [
+        "Touch Controls",
+        "Bottom LED Wash Cycle Indicator",
+        "Digital Display (Program Time)",
+        "Height Adjustable Upper Basket (2 levels)",
+        "Removable Upper Basket",
+        "Large Knife Holder",
+        "Salt & Rinse Aid Indicators"
+      ]
+    },
+    "waterConsumption": null,
+    "amcEw": {
+      "AMC 1 Year": 4600,
+      "AMC 2 Year": 8500,
+      "Extended Warranty 1 Year": 1991,
+      "Extended Warranty 2 Year": 3474
+    },
+    "nomenclature": {},
+    "testMode": {}
+  }
+]
