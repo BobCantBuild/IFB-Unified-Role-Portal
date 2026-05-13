@@ -546,12 +546,13 @@
 };
   const DESC_MAP = { front: FL_DESC, top: TL_DESC, topload: TL_DESC, wdr: WDR_DESC, dryer: DRYER_DESC };
 
-  const TYPES = [
-    { id: 'front', label: 'Front Load', emoji: '🟢', ph: 'Search Front Load model… e.g. Senator Neo, Eva ZX' },
-    { id: 'top',   label: 'Top Load',   emoji: '🔵', ph: 'Search Top Load model… e.g. TL-RBR, TL-R1WRS'    },
-    { id: 'wdr',   label: 'WDR',        emoji: '🔴', ph: 'Search WDR model… e.g. Executive Plus ZXB'        },
-    { id: 'dryer', label: 'Dryer',      emoji: '🟠', ph: 'Search Dryer model… e.g. Turbo Dry LX'             },
-  ];
+const TYPES = [
+  { id: 'front', label: 'Front Load',  emoji: '🟢', ph: 'Search Front Load model… e.g. Senator Neo, Eva ZX'  },
+  { id: 'top',   label: 'Top Load',    emoji: '🔵', ph: 'Search Top Load model… e.g. TL-RBR, TL-R1WRS'     },
+  { id: 'wdr',   label: 'WDR',         emoji: '🔴', ph: 'Search WDR model… e.g. Executive Plus ZXB'         },
+  { id: 'dryer', label: 'Dryer',       emoji: '🟠', ph: 'Search Dryer model… e.g. Turbo Dry LX'              },
+  { id: 'dw',    label: 'Dishwasher',  emoji: '🍽️', ph: 'Search Dishwasher model… e.g. Neptune VX, Neptune SX2' },
+];
   let activeType = 'front';
 
   const overlay   = document.getElementById('modelOverlay');
@@ -724,7 +725,7 @@
   function openOverlay(obj) {
     curData  = obj;
     curTab   = 'programs';
-    activeDM = DESC_MAP[obj.type] || {};
+    activeDM = DESC_MAP[obj.type] || (typeof DW_DESC !== 'undefined' && obj.type === 'dw' ? DW_DESC : {});
     titleEl.innerHTML = obj.model + ' ' + typeBadge(obj.type);
     tabsEl.innerHTML  = TABS.map(function(t) {
       return '<button class="ml-tab' + (t.id === curTab ? ' active' : '') + '" data-tab="' + t.id + '">' + t.label + '</button>';
