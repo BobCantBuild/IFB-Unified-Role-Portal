@@ -628,21 +628,14 @@ const DW_DESC = {
   "Natural Drying": "Uses residual heat and airflow to dry dishes naturally."
 };
 
-// === ESSENTIALS DATA ===
-let ESSENTIALS_DATA = {
-  fl_dwr: [],
-  tl: [],
-  dryer: [],
-  dw: []
-};
+// === ESSENTIALS ===
+let ESSENTIALS_DATA = { fl_dwr: [], tl: [], dryer: [], dw: [] };
 
 async function loadEssentialsData() {
   try {
     const res = await fetch('/data/essentials.json');
     ESSENTIALS_DATA = await res.json();
-  } catch (e) {
-    console.error('[ML] essentials load failed', e);
-  }
+  } catch (e) { console.error('[ML] essentials load failed', e); }
 }
 
 function getEssentialsForType(type) {
@@ -851,24 +844,35 @@ const TYPES = [
   ];
   let curData = null, curTab = 'programs';
 
-  function getRenderer(id, d, dm) {
-    if (id === 'programs')     return renderPrograms(d, dm);
-if (id === 'features')     return d.type === 'dw' ? renderKeyFeatures(d) : renderFeatures(d, dm);
-    if (id === 'nomenclature') return renderNom(d);
-    if (id === 'amc')          return renderAMC(d);
-    if (id === 'testmode')     return renderTest(d);
-    if (id === 'essentials') return renderEssentials(getEssentialsForType(d.type));
-    return '';
-  }
+function getRenderer(id, d, dm) {
+  if (id === 'programs') return renderPrograms(d, dm);
+  if (id === 'features') return d.type === 'dw' ? renderKeyFeatures(d) : renderFeatures(d, dm);
+  if (id === 'nomenclature') return renderNom(d);
+  if (id === 'amc') return renderAMC(d);
+  if (id === 'testmode') return renderTest(d);
+  if (id === 'essentials') return renderEssentials(getEssentialsForType(d.type));
+  return '';
+}
+function hasTabData(id, d) {
+  if (id === 'programs') return d.programs && d.programs.length > 0;
+  if (id === 'features') return d.keyFeatures && Object.keys(d.keyFeatures).length > 0;
+  if (id === 'nomenclature') return d.nomenclature && Object.keys(d.nomenclature).length > 0;
+  if (id === 'amc') return d.amcEw && Object.keys(d.amcEw).length > 0;
+  if (id === 'testmode') return d.testMode && Object.keys(d.testMode).length > 0;
+  if (id === 'essentials') return (getEssentialsForType(d.type) || []).length > 0;
+  return true;
+}
 
 function openOverlay(obj) {
   curData  = obj;
   curTab   = 'programs';
   activeDM = DESC_MAP[obj.type] || (typeof DW_DESC !== 'undefined' && obj.type === 'dw' ? DW_DESC : {});
   titleEl.innerHTML = obj.model + ' ' + typeBadge(obj.type);
-  tabsEl.innerHTML  = TABS.map(function(t) {
-    return '<button class="ml-tab' + (t.id === curTab ? ' active' : '') + '" data-tab="' + t.id + '">' + t.label + '</button>';
-  }).join('');
+const visibleTabs = TABS.filter(function(t) { return hasTabData(t.id, obj); });
+tabsEl.innerHTML = visibleTabs.map(function(t) {
+  return '<button class="ml-tab' + (t.id === curTab ? ' active' : '') + '" data-tab="' + t.id + '">' + t.label + '</button>';
+}).join('');
+if (!visibleTabs.some(t => t.id === curTab)) curTab = visibleTabs[0] ? visibleTabs[0].id : '';
   bodyEl.innerHTML  = getRenderer(curTab, obj, activeDM);  // ← CHANGED THIS LINE
   overlay.classList.add('open');
   document.body.style.overflow = 'hidden';
