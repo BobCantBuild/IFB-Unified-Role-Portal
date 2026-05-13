@@ -45,7 +45,7 @@
     {
       "essential": "Dirt & Colour Catcher",
       "quantity": "30 Sheets",
-      "washes": "-",
+      "washes": "Usage based",
       "feature": "Dirt Magnet - For dyes and dirt in wash load; Colour Safety - Wash mixed loads without worries; Bleed Protection - Prevents colour damage; Put sheets with clothes into the drum",
       "mrp": 275
     },
@@ -59,21 +59,21 @@
     {
       "essential": "FABO Stain Remover",
       "quantity": "100 ML",
-      "washes": "-",
+      "washes": "Usage based",
       "feature": "No Stains - Effective against protein and non-protein stains; No Grime - Removes grime from cuffs and collars; 100% Safe - Cost-effective preservation of clothes; Apply on stain & wash",
       "mrp": 200
     },
     {
       "essential": "FABO Stain Remover Pen",
       "quantity": "9 ML",
-      "washes": "-",
+      "washes": "Usage based",
       "feature": "Portable - Easy to carry, easy to use; Stain Shield - Effective against egg, blood, wine and chocolate; Safe Choice - Great for clothes; Apply on-the-go & wash later",
       "mrp": 200
     },
     {
       "essential": "DESCAL Appliance Descaler (Washing Machine)",
       "quantity": "100 G",
-      "washes": "-",
+      "washes": "Usage based",
       "feature": "Limescale Removal - Treats scale and stubborn residues; Increases Longevity - Keeps machine running smoothly for years; Cost Saving - Lowers maintenance, saves power",
       "mrp": 200
     },
@@ -87,14 +87,14 @@
     {
       "essential": "Equipment Sanitiser & Cleaner (Premium Descal)",
       "quantity": "250 ML",
-      "washes": "-",
+      "washes": "Usage based",
       "feature": "Germ Protection - Kills 99.9% germs, eliminates foul odours; Fights Scaling - Removes limescale and residual dirt; Citrus Scent - Pleasant aroma after each use; 6-in-1 maintenance benefits",
       "mrp": null
     },
     {
       "essential": "Surface Cleaner Liquid (2-in-1 Kitchen Disinfectant & Cleaner)",
       "quantity": "500 ML",
-      "washes": "-",
+      "washes": "Usage based",
       "feature": "Stain Care - Formulated for common kitchen surface stains; Germ-Free Hygiene - Disinfects surfaces, kills 99.9% germs in 30 seconds; Citrus Scent - Refreshing lemony fragrance; Just spray, wait and wipe",
       "mrp": 280
     }
@@ -110,21 +110,21 @@
     {
       "essential": "AUTODISH Dishwashing Detergent",
       "quantity": "1 KG",
-      "washes": "-",
+      "washes": "Usage based",
       "feature": "Stain Removal - Tackles grease, tea and food odours; Oily Stains - Effective against oily and grease residues; Hygienic Wash - Ensures utensils are germ-free; 1 Teaspoon = 10 G",
       "mrp": 400
     },
     {
       "essential": "AUTODISH Dishwashing Salt",
       "quantity": "1 KG",
-      "washes": "-",
+      "washes": "Usage based",
       "feature": "Uniform Action - Consistent performance; Eco Friendly - Safe for appliances and the environment; Works well with all dishwashers",
       "mrp": 190
     },
     {
       "essential": "AUTODISH Rinse Aid",
       "quantity": "200 ML",
-      "washes": "-",
+      "washes": "Usage based",
       "feature": "Spot Prevention - No more water spots and streaks on glasses or dishes; Quick Dry - Enhances drying, adds an extra sparkle; Works with all dishwashers",
       "mrp": 190
     },
@@ -138,7 +138,7 @@
     {
       "essential": "DESCAL Dishwasher Descaler",
       "quantity": "100 G",
-      "washes": "-",
+      "washes": "Usage based",
       "feature": "Sparkling Clean - Keeps dishwasher fresh and hygienic; Fights Scaling - Removes limescale and stubborn grime; Smells Fresh - Spreads a pleasant aroma after every use",
       "mrp": 200
     }
@@ -154,7 +154,7 @@
     {
       "essential": "SENSORA Fragrance Booster (Morning Dew & Ocean Mist)",
       "quantity": "150 ML",
-      "washes": "-",
+      "washes": "Usage based",
       "feature": "Superior Freshness - Infuse an exotic fragrance; Instant Refresh - Revive clothes without washing; Choose between 2 exotic fragrances; Just 1 Cap (30 ml)",
       "mrp": 580
     }
