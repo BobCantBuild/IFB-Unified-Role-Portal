@@ -544,7 +544,93 @@
   "Levelling Kit": "Assists in balancing and stabilising the dryer during installation to minimise vibration and movement.",
   "Manual Safety Cut-off Switch": "Protective safety mechanism that allows manual interruption of power supply during unsafe operating conditions."
 };
-  const DESC_MAP = { front: FL_DESC, top: TL_DESC, topload: TL_DESC, wdr: WDR_DESC, dryer: DRYER_DESC };
+
+const DW_DESC = {
+  "Pre-Wash": "Cold pre-rinse for dried or stubborn food residue before the main wash. No detergent required.",
+  "Quick 30'": "30-minute fast wash for lightly soiled, recently used dishes. Completes wash and rinse quickly.",
+  "Eco mode": "Energy-efficient program optimized to reduce water and electricity usage for everyday loads.",
+  "Easy Care (60°C)": "Gentle 60°C cycle for mixed everyday utensils, balancing cleaning and care.",
+  "Super 50'": "50-minute higher-intensity wash for normally soiled dishes and daily use.",
+  "Delicate (40°C)": "Low-temperature program for fragile items such as fine glassware and delicate tableware.",
+  "Auto Delicate (30–50°C)": "Sensor-based program that automatically adjusts temperature for lightly soiled delicate items.",
+  "Auto Normal (50–60°C)": "Automatic program for standard mixed loads with temperature selection based on soil level.",
+  "Auto Intensive (60–70°C)": "Automatic high-intensity cycle for heavily soiled cookware and stubborn residue.",
+  "JETwash 14'": "Ultra-fast 14-minute cycle for very lightly soiled dishes when speed matters most.",
+  "Intensive (65°C)": "High-temperature cycle for heavily soiled pots, pans, and baked-on food.",
+  "Auto (50°C–65°C)": "Automatic cycle that selects the best wash conditions between 50 and 65°C.",
+  "Hygiene (70°C)": "Maximum-temperature cycle for sanitising dishes and reducing germs.",
+  "Daily (94 min)": "Balanced daily wash cycle for regular mixed loads in 94 minutes.",
+  "Quick 30' (Crockery)": "Fast 30-minute cycle tuned for crockery such as plates, bowls, and cups.",
+  "Eco 50°C": "Energy-saving wash at 50°C for normal daily tableware.",
+  "Express (55 min)": "Quick 55-minute wash and dry cycle for smaller loads.",
+  "Mix Load (60°C)": "60°C wash for mixed crockery and cookware in the same load.",
+  "Crystal/Glass": "Gentle wash for crystal and glassware to avoid damage and clouding.",
+  "Heavily Soiled (60°C)": "Intensive cycle for dirty dishes with heavy residue and grease.",
+  "Extra Heavily Soiled (70°C)": "Powerful 70°C program for burnt-on and highly greasy utensils.",
+  "Pots/Pans (70°C)": "Dedicated high-intensity wash for cookware like pots, pans, and kadhais.",
+  "Normal (Pre-Wash + 50°C)": "Standard wash that begins with a pre-wash, then continues with a 50°C main wash.",
+  "Hot Water Wash (up to 70°C)": "Internal heating up to 70°C for strong cleaning and hygienic washing.",
+  "Intelligent Sensor": "Sensor that measures soil level and adjusts water, temperature, and time automatically.",
+  "Unique Spray Action": "Special spray-arm design that improves water coverage across all items.",
+  "Active Drying System": "Heated drying system that improves drying performance after washing.",
+  "In-built Water Softening Device (up to 700 PPM)": "Built-in softener that treats hard water up to 700 PPM.",
+  "Anti-Microbial Filters": "Filters designed to help prevent bacteria and mould growth.",
+  "Self-Cleaning": "Self-clean cycle that helps flush residue from the wash system.",
+  "Turbo Drying Unit": "Enhanced drying unit that speeds up moisture removal after the cycle.",
+  "Auto Door Opening (Energy Save)": "Door opens slightly at cycle end to release steam and assist drying.",
+  "In-built Water Softening Device (6-level, up to 700 PPM)": "Six-level softening system for hard water up to 700 PPM.",
+  "Natural Ion Tech": "Ion-based technology that helps improve wash efficiency and hygiene.",
+  "Height Adjustable Upper Basket (3 positions)": "Upper basket can be shifted across three height positions for flexible loading.",
+  "Upper Cutlery Basket": "Additional upper basket space for cutlery and small utensils.",
+  "Multi-functional Rack System": "Flexible rack arrangement for different utensil shapes and sizes.",
+  "Favourite Program Save": "Lets you save a preferred wash program for quick reuse.",
+  "Save Power Mode": "Reduces standby power usage after inactivity.",
+  "Auto Restart": "Resumes the wash program automatically after a power interruption.",
+  "In-built Water Softening Device (6-level, up to 900 PPM)": "Six-level softening system for very hard water up to 900 PPM.",
+  "Active Drying Unit": "Active drying system that uses air and heat to dry dishes more effectively.",
+  "Height Adjustable Upper Basket (2 levels)": "Upper basket can be moved between two height levels for extra loading flexibility.",
+  "Four Folding Racks": "Foldable rack sections that create more space for large items.",
+  "Hygiene Program (70°C)": "High-temperature hygiene cycle for sanitising dishes.",
+  "Height Adjustable Upper Basket (Rail Stop Clip)": "Basket height can be adjusted using a rail stop clip mechanism.",
+  "Height Adjustable Upper Basket (3 levels)": "Upper basket with three adjustable height levels.",
+  "Unique Triple Spray Action": "Three spray arms for improved washing coverage.",
+  "In-built Water Softening Device (up to 800 PPM)": "Built-in softener for water hardness up to 800 PPM.",
+  "Modular & Adjustable Baskets": "Adjustable basket system for larger or irregular cookware.",
+  "In-built Water Softening Device (6-level, up to 800 PPM)": "Six-level softener for water hardness up to 800 PPM.",
+  "Natural Drying System": "Residual-heat drying that uses natural air circulation.",
+  "Double Spray Action": "Two spray arms working together for balanced cleaning.",
+  "Delay Start (24 hr)": "Lets you delay the wash start for up to 24 hours.",
+  "Tablet Detergent": "Optimised for all-in-one detergent tablets.",
+  "Half Load (Flexi)": "Allows washing a partial load to save water and energy.",
+  "Extra Hygiene": "Raises wash intensity for improved hygiene.",
+  "Extra Rinse": "Adds an extra rinse to remove detergent residue.",
+  "Extra Drying": "Adds more drying time for drier dishes.",
+  "Energy Save Option": "Reduces energy usage during the cycle.",
+  "Delay Start (1–24 hrs)": "Delay start option with flexible timing up to 24 hours.",
+  "Half Load (Upper / Lower / Both)": "Choose which basket zone to wash for partial loads.",
+  "Auto Door Opening": "Door opens slightly at the end of drying to release steam.",
+  "Child Lock": "Locks controls to prevent accidental changes.",
+  "Half Load": "Runs a smaller load with reduced water and power.",
+  "Touch Controls": "Capacitive touch control panel.",
+  "Bottom LED Wash Cycle Indicator": "LED light projected on the floor to show wash progress.",
+  "Digital Display (Program Time)": "Shows remaining program time digitally.",
+  "Removable Upper Basket": "Upper basket can be removed for loading bigger items.",
+  "Large Knife Holder": "Dedicated holder for large knives and long utensils.",
+  "Salt & Rinse Aid Indicators": "Alerts when salt or rinse aid needs refilling.",
+  "Remaining Time Indicator": "Displays the remaining time of the cycle.",
+  "Washing Step Indicators (Wash→Rinse→Dry→End)": "Shows which stage of the wash cycle is active.",
+  "Buzzer Sound Control (S0–S3)": "Lets you adjust buzzer volume levels.",
+  "Save Power Mode (auto-off after 15 min)": "Auto-off power saving after 15 minutes of inactivity.",
+  "Remaining Time Display": "Shows the remaining time clearly on the display.",
+  "Auto Door Opening (default ON)": "Auto door opening enabled by default.",
+  "Auto-Resume After Power Cut": "Resumes the cycle after power returns.",
+  "Detergent & Salt Refill Indicator": "Combined indicator for detergent and salt refill.",
+  "Natural Drying": "Uses residual heat and airflow to dry dishes naturally."
+};
+
+
+
+  const DESC_MAP = { front: FL_DESC, top: TL_DESC, topload: TL_DESC, wdr: WDR_DESC, dryer: DRYER_DESC,dw: DW_DESC};
 
 const TYPES = [
   { id: 'front', label: 'Front Load',  emoji: '🟢', ph: 'Search Front Load model… e.g. Senator Neo, Eva ZX'  },
@@ -636,6 +722,19 @@ const TYPES = [
       return '<span class="ml-chip-wrap"><span class="ml-chip">' + p + '</span>' + infoBtn(p, dm) + '</span>';
     }).join('') + '</div>';
   }
+  function renderKeyFeatures(d) {
+  const kf = d.keyFeatures || {};
+  if (!Object.keys(kf).length) return '<p class="ml-empty">No features data.</p>';
+  
+  return Object.entries(kf).map(([cat, items]) => 
+    '<div class="ml-feature-section">' +
+      '<h4>' + cat + '</h4>' +
+      '<div class="ml-chip-grid">' + 
+        items.map(p => '<span class="ml-chip">' + p + '</span>').join('') +
+      '</div>' +
+    '</div>'
+  ).join('');
+}
   function renderFeatures(d, dm) {
     const kf   = d.keyFeatures || {};
     const secs = [
@@ -715,25 +814,25 @@ const TYPES = [
 
   function getRenderer(id, d, dm) {
     if (id === 'programs')     return renderPrograms(d, dm);
-    if (id === 'features')     return renderFeatures(d, dm);
+if (id === 'features')     return d.type === 'dw' ? renderKeyFeatures(d) : renderFeatures(d, dm);
     if (id === 'nomenclature') return renderNom(d);
     if (id === 'amc')          return renderAMC(d);
     if (id === 'testmode')     return renderTest(d);
     return '';
   }
 
-  function openOverlay(obj) {
-    curData  = obj;
-    curTab   = 'programs';
-    activeDM = DESC_MAP[obj.type] || (typeof DW_DESC !== 'undefined' && obj.type === 'dw' ? DW_DESC : {});
-    titleEl.innerHTML = obj.model + ' ' + typeBadge(obj.type);
-    tabsEl.innerHTML  = TABS.map(function(t) {
-      return '<button class="ml-tab' + (t.id === curTab ? ' active' : '') + '" data-tab="' + t.id + '">' + t.label + '</button>';
-    }).join('');
-    bodyEl.innerHTML = renderPrograms(obj, activeDM);
-    overlay.classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
+function openOverlay(obj) {
+  curData  = obj;
+  curTab   = 'programs';
+  activeDM = DESC_MAP[obj.type] || (typeof DW_DESC !== 'undefined' && obj.type === 'dw' ? DW_DESC : {});
+  titleEl.innerHTML = obj.model + ' ' + typeBadge(obj.type);
+  tabsEl.innerHTML  = TABS.map(function(t) {
+    return '<button class="ml-tab' + (t.id === curTab ? ' active' : '') + '" data-tab="' + t.id + '">' + t.label + '</button>';
+  }).join('');
+  bodyEl.innerHTML  = getRenderer(curTab, obj, activeDM);  // ← CHANGED THIS LINE
+  overlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
 
   tabsEl.addEventListener('click', function(e) {
     const btn = e.target.closest('[data-tab]');
