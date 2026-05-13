@@ -144,18 +144,17 @@
     pill.setAttribute('data-type', DW_PILL_ID);
     pill.innerHTML = '\uD83C\uDF7D\uFE0F Dishwasher';
     pill.addEventListener('click', function(){
-      var allPills = document.querySelectorAll('.ml-pill');
       var wasActive = pill.classList.contains('active');
-      /* deactivate all pills first */
-      allPills.forEach(function(p){ p.classList.remove('active'); });
-      var input   = document.getElementById('mlSearchInput');
-      var suggest = document.getElementById('mlSuggestions');
+      var input     = document.getElementById('mlSearchInput');
+      var suggest   = document.getElementById('mlSuggestions');
+      /* always deactivate all other pills first */
+      document.querySelectorAll('.ml-pill').forEach(function(p){ p.classList.remove('active'); });
       if (wasActive) {
-        /* toggling off — clear input + suggestions */
+        /* second click — deactivate, clear */
         if (input)   input.value = '';
         if (suggest) suggest.style.display = 'none';
       } else {
-        /* activating DW pill — clear input, wait for user to type */
+        /* first click — activate, focus, wait for typing */
         pill.classList.add('active');
         if (input)   { input.value = ''; input.focus(); }
         if (suggest) suggest.style.display = 'none';
